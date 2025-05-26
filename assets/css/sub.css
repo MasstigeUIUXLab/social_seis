@@ -2992,9 +2992,14 @@
 .bx-top + .form-header {
   padding-top: 0;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .bx-top > strong, .bx-top .txt-area > strong {
     font-size: 20px;
+  }
+}
+@media all and (max-width: 768px) {
+  .bx-top > strong, .bx-top .txt-area > strong {
+    font-size: 18px;
   }
 }
 
@@ -4764,6 +4769,29 @@
   }
 }
 
+.intro-sc2-1 {
+  position: relative;
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  background-color: #F2FEF4;
+  text-align: center;
+  overflow: hidden;
+}
+.intro-sc2-1 .sub {
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.223;
+  font-weight: 600;
+}
+.intro-sc2-1 .tit {
+  margin-top: 1.25rem;
+  font-size: 2.25rem;
+  line-height: 1.1945;
+}
+.intro-sc2-1 .tit strong {
+  font-weight: 800;
+  color: #006012;
+}
 .intro-sc2-2 {
   position: relative;
   margin-top: 0.625rem;
@@ -4793,9 +4821,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -12px;
@@ -4809,6 +4834,7 @@
   padding: 0 12px;
 }
 .intro-sc2-3 .inner {
+  height: 100%;
   padding: 1.5rem 1rem;
   border: 1px solid #EAEAEA;
   border-radius: 1.25rem;
@@ -4847,7 +4873,7 @@
   color: #666;
   line-height: 1.5;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1400px) {
   .intro-sc2-3 .item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -4855,15 +4881,15 @@
   }
   .intro-sc2-3 .inner {
     position: relative;
-    padding: 40px 40px 40px 160px;
+    padding: 20px 16px 20px 120px;
     text-align: left;
   }
   .intro-sc2-3 .inner i {
     position: absolute;
     top: 50%;
-    left: 42px;
-    width: 84px;
-    height: 84px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -4874,11 +4900,17 @@
     margin-top: 10px;
     word-break: keep-all;
   }
-  .intro-sc2-3 .inner .txt br {
-    display: none;
-  }
 }
 @media all and (max-width: 768px) {
+  .intro-sc2-1 {
+    padding: 20px;
+  }
+  .intro-sc2-1 .sub {
+    font-size: 14px;
+  }
+  .intro-sc2-1 .tit {
+    font-size: 20px;
+  }
   .intro-sc2-2 {
     padding: 40px 0;
   }
@@ -4890,13 +4922,14 @@
     font-size: 14px;
     line-height: 1.5;
   }
-  .intro-sc2-3 .item {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    max-width: 100%;
+  .intro-sc2-3 {
+    margin-right: -6px;
+    margin-left: -6px;
+    gap: 12px 0;
   }
   .intro-sc2-3 .inner {
-    padding: 20px 16px 20px 92px;
+    border-radius: 12px;
+    padding: 20px 16px 20px 100px;
   }
   .intro-sc2-3 .inner i {
     left: 20px;
@@ -4905,10 +4938,18 @@
   }
   .intro-sc2-3 .inner .tit {
     margin-top: 0;
+    font-size: 16px;
   }
   .intro-sc2-3 .inner .txt {
-    margin-top: 10px;
+    margin-top: 6px;
     word-break: keep-all;
+  }
+}
+@media all and (max-width: 576px) {
+  .intro-sc2-3 .item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
   }
   .intro-sc2-3 .inner .txt br {
     display: none;
@@ -4980,7 +5021,7 @@
   margin-top: 1.25rem;
   margin-bottom: 1rem;
   font-size: 1.375rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.36364;
 }
 .intro-sc3 .inner .tit span {
@@ -5027,7 +5068,7 @@
   font-size: 1.125rem;
   font-weight: 700;
   color: #DADADA;
-  line-height: 1.2778;
+  line-height: 1.167;
 }
 @media all and (max-width: 1200px) {
   .intro-sc3 .item {
@@ -5038,28 +5079,9 @@
   .intro-sc3 .inner {
     position: relative;
     display: block;
-    padding: 30px 30px 88px 30px;
-  }
-  .intro-sc3 .inner i {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-  }
-  .intro-sc3 .inner b {
-    display: inline-block;
-    margin-right: 8px;
-    line-height: 24px;
-    vertical-align: middle;
-    word-break: keep-all;
-    pointer-events: none;
   }
   .intro-sc3 .inner .tit {
-    display: inline-block;
     font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 24px;
-    vertical-align: middle;
   }
   .intro-sc3 .inner .tit span {
     display: inline-block;
@@ -5091,13 +5113,22 @@
   }
 }
 @media all and (max-width: 768px) {
+  .intro-sc3 {
+    margin-right: -6px;
+    margin-left: -6px;
+    gap: 12px 0;
+  }
   .intro-sc3 .item {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    max-width: 100%;
+    padding: 0 6px;
   }
   .intro-sc3 .inner {
-    padding: 20px 20px 70px 20px;
+    border-radius: 12px;
+    padding: 16px 8px;
+  }
+  .intro-sc3 .inner .tit {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 16px;
   }
   .intro-sc3 .inner .txt > :last-child {
     font-size: 20px;

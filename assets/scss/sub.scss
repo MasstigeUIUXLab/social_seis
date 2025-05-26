@@ -3366,9 +3366,15 @@
         padding-top:0;
     }
 
-    @include mdq-max(md){
+    @include mdq-max(lg){
         & > strong, .txt-area > strong{
             font-size:20px;
+        }
+    }
+
+    @include mdq-max(md){
+        & > strong, .txt-area > strong{
+            font-size:18px;
         }
     }
 }
@@ -5217,6 +5223,33 @@
 
 
 .intro-sc2{
+    &-1{
+        position: relative;
+        padding: rem(40);
+        border-radius: rem(20);
+        background-color: #F2FEF4;
+        text-align: center;
+        overflow: hidden;
+
+        .sub{
+            display: block;
+            font-size: rem(18);
+            line-height: 1.223;
+            font-weight: 600;
+        }
+
+        .tit{
+            margin-top: rem(20);
+            font-size: rem(36);
+            line-height: 1.1945;
+
+            strong{
+                font-weight: 800;
+                color: #006012;
+            }
+        }
+    }
+
     &-2{
         position:relative;
         margin-top:rem(10);
@@ -5247,7 +5280,6 @@
 
     &-3{
         display:flex;
-        align-items:center;
         flex-wrap:wrap;
         margin-right:-12px;
         margin-left:-12px;
@@ -5260,6 +5292,7 @@
         }
 
         .inner{
+            height: 100%;
             padding:rem(24) 1rem;
             border:1px solid #EAEAEA;
             border-radius:rem(20);
@@ -5297,7 +5330,7 @@
         }
     }
 
-    @include mdq-max(lg){
+    @include mdq-max(xxl){
         &-3{
             .item{
                 flex-basis:50%;
@@ -5306,15 +5339,15 @@
             
             .inner{
                 position:relative;
-                padding:40px 40px 40px 160px;
+                padding:20px 16px 20px 120px;
                 text-align:left;
 
                 i{
                     position:absolute;
                     top:50%;
-                    left:42px;
-                    width:84px;
-                    height:84px;
+                    left:20px;
+                    width:70px;
+                    height:70px;
                     transform:translateY(-50%);
                 }
 
@@ -5325,10 +5358,6 @@
                 .txt{
                     margin-top:10px;
                     word-break:keep-all;
-
-                    br{
-                        display:none;
-                    }
                 }
             }
         }
@@ -5336,6 +5365,18 @@
 
     
     @include mdq-max(md){
+        &-1{
+            padding: 20px;
+
+            .sub{
+                font-size: 14px;
+            }
+
+            .tit{
+                font-size: 20px;
+            }
+        }
+
         &-2{  
             padding:40px 0;
 
@@ -5351,13 +5392,13 @@
         }
 
         &-3{
-            .item{
-                flex-basis:100%;
-                max-width:100%;
-            }
-            
+            margin-right: -6px;
+            margin-left: -6px;
+            gap: 12px 0;
+
             .inner{
-                padding:20px 16px 20px 92px;
+                border-radius: 12px;
+                padding:20px 16px 20px 100px;
 
                 i{
                     left:20px;
@@ -5367,18 +5408,28 @@
 
                 .tit{
                     margin-top:0;
+                    font-size: 16px;
                 }
 
                 .txt{
-                    margin-top:10px;
+                    margin-top:6px;
                     word-break:keep-all;
-
-                    br{
-                        display:none;
-                    }
                 }
             }
         }
+    }
+    
+    @include mdq-max(sm){
+        &-3 {
+            .item{
+                flex-basis:100%;
+                max-width:100%;
+            }    
+
+            .inner .txt br{
+                display: none;
+            }
+        }    
     }
 }
 
@@ -5506,7 +5557,7 @@
             margin-top:rem(20);
             margin-bottom: 1rem;
             font-size:rem(22);
-            font-weight:700;
+            font-weight:600;
             line-height: 1.36364;
 
             span{
@@ -5562,7 +5613,7 @@
             font-size:rem(18);
             font-weight:700;  
             color:#DADADA;
-            line-height: 1.2778;
+            line-height: 1.167;
         }
     }
     
@@ -5575,30 +5626,30 @@
         .inner{
             position:relative;
             display:block;
-            padding:30px 30px 88px 30px;
+            // padding:30px 30px 88px 30px;
 
-            i{
-                position:absolute;
-                bottom:30px;
-                right:30px;
-            }
+            // i{
+            //     position:absolute;
+            //     bottom:30px;
+            //     right:30px;
+            // }
 
-            b{
-                display:inline-block;        
-                margin-right:8px;
-                line-height:24px;
-                vertical-align:middle;
-                word-break:keep-all;
-                pointer-events:none;
-            }
+            // b{
+            //     display:inline-block;        
+            //     margin-right:8px;
+            //     line-height:24px;
+            //     vertical-align:middle;
+            //     word-break:keep-all;
+            //     pointer-events:none;
+            // }
 
             .tit{
-                display:inline-block;
+                // display:inline-block;
                 font-size:20px;
-                margin-top:0;
-                margin-bottom:0;
-                line-height:24px;
-                vertical-align:middle;
+                // margin-top:0;
+                // margin-bottom:0;
+                // line-height:24px;
+                // vertical-align:middle;
                 
                 span{
                     display:inline-block;
@@ -5640,13 +5691,26 @@
     }
     
     @include mdq-max(md){
+        margin-right: -6px;
+        margin-left: -6px;
+        gap: 12px 0;
+
         .item{
-            flex-basis:100%;
-            max-width:100%;
+        //     flex-basis:100%;
+        //     max-width:100%;
+            padding: 0 6px;
         }
 
         .inner{
-            padding:20px 20px 70px 20px;
+            border-radius: 12px;
+            padding: 16px 8px;
+            // padding:20px 20px 70px 20px;
+
+            .tit{
+                margin-top: 8px;
+                margin-bottom: 12px;
+                font-size: 16px;
+            }
 
             .txt>:last-child{
                 font-size:20px;
