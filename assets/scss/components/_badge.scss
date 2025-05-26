@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@mixin badge-variant($name, $color) {
+  color: color-yiq($color);
+  background-color: $color;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5em 0.7125em;
+  border-radius: 30px;
+  background-color: #F7F7F7;
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: 1.2143;
+}
+
+@each $name, $color in $theme-colors {
+  .badge-#{$name} {
+    @include badge-variant($name, $color);
+  }
+}

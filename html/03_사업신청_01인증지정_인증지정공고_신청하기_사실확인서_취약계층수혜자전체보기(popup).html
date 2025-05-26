@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="title" content="한국사회적기업포털" />
+<meta name="keywords" content="" />
+<meta name="author" content="Masstige" />
+<meta name="description" content="" />
+<meta name="Robots" content="index, follow" />
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="한국사회적기업포털" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="한국사회적기업포털" />
+<meta property="og:url" content="" />
+<meta property="og:description" content="" />
+<!-- Twitter -->
+<meta name="twitter:image" content="" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:title" content="한국사회적기업포털" />
+<!-- Naver Webmaster Tool -->
+<meta name="naver-site-verification" content="" />
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="" />
+<link rel="image_src" href="#" />
+<!-- 대표 이미지 -->
+<link rel="shortcut icon" href="#" />
+<!-- 파비콘 -->
+<link rel="canonical" href="#" />
+<!-- 대표 URL -->
+<!-- XEIcon -->
+<link rel="stylesheet" href="../assets/fonts/icons/xeicon/xeicon.css" />
+<!-- Masstige Custom Icon for Board Template -->
+<link rel="stylesheet" href="../assets/fonts/icons/icomoon/masstige-icons.css" />
+<!-- Google Material Icons -->
+<link rel="stylesheet" href="../assets/fonts/icons/material/material-icons.css" />
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="../assets/fonts/icons/bootstrap/bootstrap-icons.min.css" />
+<!-- Stylesheet -->
+<link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../assets/css/common.css" />
+<script src="../assets/js/lib/jquery-3.5.1.min.js"></script>
+<script src="../assets/js/lib/jquery-migrate-1.4.1.min.js"></script> 
+<script src="../assets/js/lib/jquery-ui.min.js"></script>
+<script src="../assets/js/lib/popper.min.js"></script>
+<script src="../assets/js/lib/bootstrap.min.js"></script>
+<script src="../assets/js/lib/slick.min.js"></script>
+<script src="../assets/js/lib/wow.min.js"></script>
+<script src="../assets/js/lib/aos.min.js"></script>
+<script src="../assets/js/lib/jquery.magnific-popup.min.js"></script>
+<script src="../assets/js/lib/easings.min.js"></script>
+<script src="../assets/js/lib/fullpage.min.js"></script>
+<script src="../assets/js/lib/swiper.min.js"></script>
+<script src="../assets/js/lib/jquery.scrollbar.min.js"></script>
+<script src="../assets/js/lib/jquery.mCustomScrollbar.min.js"></script>
+<script src="../assets/js/custom/nav_active-1.1.6.masstige.min.js"></script>
+<script src="../assets/js/custom/tab-1.1.0.masstige.js"></script>
+<script src="../assets/js/custom/resizingCheck-1.0.0.masstige.js"></script>
+<script src="../assets/js/custom/nav_drop-1.0.1.masstige.min.js"></script>
+<script src="../assets/js/custom/scroll_track-1.0.1.masstige.min.js"></script>
+<!-- [D] 달력 js/css -->
+<script src="../assets/js/lib/moment.min.js"></script>
+<script src="../assets/js/lib/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<!-- // -->
+<script src="../assets/js/common.js"></script>
+<!-- [D] * only main -->
+<!-- <link rel="stylesheet" href="../assets/css/main.css" />
+<script src="../assets/js/main.js"></script> -->
+<!-- [D] * only sub -->
+<link rel="stylesheet" href="../assets/css/sub.css" />
+<title></title>
+</head>
+<!-- 
+[D] 
+	body class=""
+
+ 	* main : main-body 
+	* main 페이지를 제외한 나머지 : sub-body 
+	* [D] 04-21 수정 / 신청서 페이지의 경우 : form-page
+-->
+<body class="sub-body">
+	<!-- 취약계층수혜자 전체보기 -->
+	<div id="modal1" class="modal fade modal-large" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="tit">취약계층 근로자 또는 수혜자</h3>
+					<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="content-group">
+						<div class="tab">
+							<ul class="nav nav-tabs">
+								<li class="nav-item">
+									<a href="#" class="nav-link active" data-toggle="tab">취약계층 근로자</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link" data-toggle="tab">취약계층 수혜자</a>
+								</li>
+							</ul>
+						</div>
+						<div class="form-sect">
+							<div class="form-header">
+								<h3 class="tit">취약계층 수혜자</h3>
+								<div class="btn-wrp">
+									<button type="button" class="btn btn-xs btn-blue">행추가</button>
+									<button type="button" class="btn btn-xs btn-red">행삭제</button>
+								</div>
+							</div>
+							<!-- 표 -->
+							<div class="board-wrap">
+								<div class="tb-wrap">
+									<table class="tb">
+										<colgroup>
+											<col width="5.5%">
+											<col width="8%">
+											<col width="22%">
+											<col width="22%">
+											<col width="42.5%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>
+													<input type="checkbox" name="chk_all1" id="chk_all1" class="input-label--chkbx" />
+													<label for="chk_all1"></label>
+												</th>
+												<th>일련번호</th>
+												<th>이름</th>
+												<th>주민등록번호</th>
+												<th>구분(사회적기업 육성법 시행령」 제2조에 따라 고령자 등 해당 취약계층을 기재)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<input type="checkbox" name="chk_one" id="chk_one1_1" class="input-label--chkbx" />
+													<label for="chk_one1_1"></label>
+												</td>
+												<td>1</td>
+												<td>
+													<input type="text" name="" value="김길동" class="form-control"/>
+												</td>
+												<td>
+													<div class="form-input-group">
+														<input type="number" name="" value="999999" class="form-control"/>
+														<span class="w-auto">-</span>
+														<input type="number" name="" value="999999" class="form-control"/>
+													</div>
+												</td>
+												<td>
+													<select name="" class="form-control">
+														<option value="" selected disabled>선택</option>
+														<option value="">선택</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox" name="chk_one" id="chk_one1_2" class="input-label--chkbx" />
+													<label for="chk_one1_2"></label>
+												</td>
+												<td>2</td>
+												<td>
+													<input type="text" name="" value="김길동" class="form-control"/>
+												</td>
+												<td>
+													<div class="form-input-group">
+														<input type="number" name="" value="999999" class="form-control"/>
+														<span class="w-auto">-</span>
+														<input type="number" name="" value="999999" class="form-control"/>
+													</div>
+												</td>
+												<td>
+													<select name="" class="form-control">
+														<option value="" selected disabled>선택</option>
+														<option value="">선택</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox" name="chk_one" id="chk_one1_3" class="input-label--chkbx" />
+													<label for="chk_one1_3"></label>
+												</td>
+												<td>3</td>
+												<td>
+													<input type="text" name="" value="김길동" class="form-control"/>
+												</td>
+												<td>
+													<div class="form-input-group">
+														<input type="number" name="" value="999999" class="form-control"/>
+														<span class="w-auto">-</span>
+														<input type="number" name="" value="999999" class="form-control"/>
+													</div>
+												</td>
+												<td>
+													<select name="" class="form-control">
+														<option value="" selected disabled>선택</option>
+														<option value="">선택</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox" name="chk_one" id="chk_one1_4" class="input-label--chkbx" />
+													<label for="chk_one1_4"></label>
+												</td>
+												<td>4</td>
+												<td>
+													<input type="text" name="" value="김길동" class="form-control"/>
+												</td>
+												<td>
+													<div class="form-input-group">
+														<input type="number" name="" value="999999" class="form-control"/>
+														<span class="w-auto">-</span>
+														<input type="number" name="" value="999999" class="form-control"/>
+													</div>
+												</td>
+												<td>
+													<select name="" class="form-control">
+														<option value="" selected disabled>선택</option>
+														<option value="">선택</option>
+													</select>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- // -->
+						</div>
+					</div>
+				</div>    
+				<div class="modal-foot">
+					<div class="btn-wrp justify-content-center">
+						<a href="#" class="btn btn-blue">저장</a>
+						<a href="#" class="btn btn-outline-black" data-dismiss="modal">닫기</a>
+					</div>   
+				</div>   
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$('#modal1').modal();
+	</script>
+	<!-- // 취약계층수혜자 전체보기 -->
+</body>
+</html>

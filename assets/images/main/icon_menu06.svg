@@ -1,0 +1,24 @@
+<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38.666 16V14H34.666V7H32.666V11H30.666V14H25.666V16H21.666V20H43.666V16H38.666Z" fill="#44AB57"/>
+<path d="M43.666 20V16H38.666V14H31.666V16H29.666V20H15.666V57H48.666V20H43.666Z" fill="#D9E5DB"/>
+<path d="M23.666 24H19.666V28H23.666V24Z" fill="white"/>
+<path d="M30.666 24H26.666V28H30.666V24Z" fill="white"/>
+<path d="M37.666 24H33.666V28H37.666V24Z" fill="white"/>
+<path d="M44.666 24H40.666V28H44.666V24Z" fill="white"/>
+<path d="M23.666 31H19.666V35H23.666V31Z" fill="white"/>
+<path d="M30.666 31H26.666V35H30.666V31Z" fill="white"/>
+<path d="M37.666 31H33.666V35H37.666V31Z" fill="white"/>
+<path d="M44.666 31H40.666V35H44.666V31Z" fill="white"/>
+<path d="M23.666 38H19.666V42H23.666V38Z" fill="white"/>
+<path d="M30.666 38H26.666V42H30.666V38Z" fill="white"/>
+<path d="M37.666 38H33.666V42H37.666V38Z" fill="white"/>
+<path d="M44.666 38H40.666V42H44.666V38Z" fill="white"/>
+<path d="M23.666 45H19.666V49H23.666V45Z" fill="white"/>
+<path d="M30.666 45H26.666V49H30.666V45Z" fill="white"/>
+<path d="M37.666 45H33.666V49H37.666V45Z" fill="white"/>
+<path d="M44.666 45H40.666V49H44.666V45Z" fill="white"/>
+<path d="M55.166 57C55.166 54.2 52.966 52 50.166 52C47.366 52 45.166 54.2 45.166 57H55.166Z" fill="#2CF050"/>
+<path d="M47.6664 57C47.6664 54.9 45.9664 53.2 43.8664 53.2C41.7664 53.2 40.0664 54.9 40.0664 57H47.6664Z" fill="#2CF050"/>
+<path d="M21.166 47C21.166 50.3 18.666 53 15.666 53C12.666 53 10.166 50.3 10.166 47C10.166 43.7 12.666 37 15.666 37C18.666 37 21.166 43.7 21.166 47Z" fill="#2CF050"/>
+<path d="M15.666 45V57" stroke="#44AB57" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

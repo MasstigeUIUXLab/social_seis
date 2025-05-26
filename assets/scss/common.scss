@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+@import "functions";
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+// Utilities
+@import "utilities";
+
+// Font-face
+@import "font-face";
+
+// Reset
+@import "reset";
+
+// Library
+@import "library";
+
+// Layout
+@import "layout";
+
+// Components
+@import "components";
+
+// Grid
+@import "grid";
+
+// Board Template
+// @import 'board';
+
+// Board Template Old Version
+@import "board.old";
+// @import "board";
+
+#wrap {
+    overflow: hidden;
+}
+
+body {
+    &.body-fixed {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &.layer-oepn {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1480px;
+}
+
+.text-primary {
+    color: $color-1 !important;
+}
+
+.text-secondary {
+    color: $gray-6 !important;
+}
+
+[class^="icon-"] {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    vertical-align: top;
+    text-indent: -1000em;
+    outline: 0 !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.link-underline{
+    position: relative;
+
+    &:after{
+        content:'';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #222;
+        transform-origin: 100% 50%;
+        transform: scale3d(0, 1, 1);
+        transition: transform 0.3s;
+    }
+
+    &.on,
+    &:hover {
+        &:after {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
+        }
+    }
+}
+
+.btn-text, 
+.text-link{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.flex-1{
+    flex: 1 !important
+}
+.flex-auto{
+    flex: 0 0 auto !important;
+}
+.w-auto{
+    width: auto !important;
+}
+.w40{
+    width: 40px !important;
+}
+.w80{
+    width: 80px !important;
+}
+.w100{
+    width: 100px !important;
+}
+.w110{
+    width: 110px !important;
+}
+.w120{
+    width: 120px !important;
+}
+.w140{
+    width: 140px !important;
+}
+.w160{
+    width: 160px !important;
+}
+.w180{
+    width: 180px !important;
+}
+.w200{
+    width: 200px !important;
+}
+.w220{
+    width: 220px !important;
+}
+.w240{
+    width: 240px !important;
+}
+.w260{
+    width: 260px !important;
+}
+.w280{
+    width: 280px !important;
+}
+.w300{
+    width: 300px !important;
+}
+.w320{
+    width: 320px !important;
+}
+.w340{
+    width: 340px !important;
+}
+.w360{
+    width: 360px !important;
+}
+.w400{
+    width: 400px !important;
+}
+.w408{
+    width: 408px !important;
+}
+.w430{
+    width: 430px !important;
+}
+.w560{
+    width: 560px !important;
+}
+.w680{
+    width: 680px !important;
+}
+.w800{
+    width: 800px !important;
+}
+.pa0{
+    padding: 0px !important;
+}
+.pa8{
+    padding: 8px !important;
+}
+.pa16{
+    padding: 16px !important;
+}
+.fw400{
+    font-weight: 400 !important;
+}
+.fw500{
+    font-weight: 500 !important;
+}
+.fw600{
+    font-weight: 600 !important;
+}
+.fw700{
+    font-weight: 700 !important;
+}
+.fs10{
+    font-size: 10px !important;
+}
+.fs11{
+    font-size: 11px !important;
+}
+.fs12{
+    font-size: 12px !important;
+}
+.fs13{
+    font-size: 13px !important;
+}
+.fs14{
+    font-size: 14px !important;
+}
+.fs15{
+    font-size: 15px !important;
+}
+.fs16{
+    font-size: 16px !important;
+}
+.fs17{
+    font-size: 17px !important;
+}
+.fs18{
+    font-size: 18px !important;
+}
+.fs19{
+    font-size: 19px !important;
+}
+.fs20{
+    font-size: 20px !important;
+}
+.fs21{
+    font-size: 21px !important;
+}
+.fs22{
+    font-size: 22px !important;
+}
+.fs23{
+    font-size: 23px !important;
+}
+.fs24{
+    font-size: 24px !important;
+}
+.fs25{
+    font-size: 25px !important;
+}
+.fs26{
+    font-size: 26px !important;
+}
+
+.p60{
+    width: 60% !important;
+}
+
+.bg-ivory{
+    background-color: #FFF4D9 !important;
+}
+
+.bg-pinkivory{
+    background-color: #FEF2EB !important;
+}
+
+.bg-babyblue{
+    background-color: #E9F0FD !important;
+}
+
+.font-sans {
+    padding-top: 0.15em;
+    font-family: "GmarketSans" !important;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+}
+
+.only-pc{
+    display: block !important;
+}
+
+.only-mo{
+    display: none !important;
+}
+
+@include mdq-max(md) {
+    .only-pc{
+        display: none !important;
+    }
+
+    .only-mo{
+        display: block !important;
+    }
+}
+
+.white-nowrap{
+    white-space: nowrap !important;
+}
