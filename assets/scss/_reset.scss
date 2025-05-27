@@ -86,8 +86,8 @@ a {
 }
 
 *:not(.btn):focus-visible{
-  outline: 1px solid #407aec;
-  box-shadow: 0 0 0 2px #407aec;
+  outline: 1px solid;
+  box-shadow: 0 0 0 2px;
 }
 
 /**

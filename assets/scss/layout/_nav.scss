@@ -24,8 +24,6 @@
 		display: none;
 	}
 	.depth-1 {
-		position: relative;
-
 		&:hover{
 			&>.link:after {
 				transform-origin: 0% 50%;
@@ -36,14 +34,14 @@
 		> .link {
 			position: relative;
 			height: $nav-height;
-       		padding: 0 72px;
+       		padding: 0 35px;
 			display: flex;
 			align-items: center;
             justify-content: center;
 			text-align: center;
-			color: #333;
-			font-size: em(18);
-			font-weight: 500;
+			color: #333;    
+			font-size: rem(22);
+    		font-weight: 600;
 			line-height: 1.1667;
 			
 			&:after{
@@ -53,7 +51,7 @@
 				left: 0;
 				width: 100%;
 				height: 4px;
-				background-color: #656EB7;
+				background-color: #44AB57;
 				transform-origin: 100% 50%;
 				transform: scale3d(0, 1, 1);
 				// transition: transform 0.3s;
@@ -79,16 +77,18 @@
 
 			&.on {
 				&::after {
-					width: calc(100% - 1.45833vw * 2);
-					left: 1.45833vw;
+					width: calc(100% - 70px);
+					left: 50%;
+					transform: translateX(-50%);
 				}
 			}
 		}
 
 		&.hover {
 			> .link::after {
-				width: calc(100% - 1.45833vw * 2);
-				left: 1.45833vw;
+				width: calc(100% - 70px);
+				left: 50%;
+				transform: translateX(-50%);
 			}
 
 			// .nav-list--depth2{
@@ -171,6 +171,127 @@
 			margin: 0 1rem;
 		}
 	}
+
+	.submenu{
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		min-height: 360px;
+		padding: 40px;
+		border-top: 1px solid #E3E3E3;
+    	background: url(../images/common/bg_gnb.svg) no-repeat left bottom / auto, linear-gradient(90deg, #F8FFF9 0%, #FFF 100%)#FFF;
+
+		&-inner{
+			display: flex;
+			gap: 24px;
+			max-width: 1440px;
+			margin: 0 auto;
+			
+			.nav-list--depth2{
+				position: relative;
+				top: unset;
+				flex: 1;
+				display: flex !important;
+				margin-right: -24px;
+				margin-left: -24px;
+    			flex-wrap: wrap;
+				gap: 54px 0;
+				background-color: transparent;
+
+			}
+
+			.depth-2{
+				width: 25%;
+				padding: 0 24px;
+				margin: 0;
+				text-align: left;
+
+				& > .link{
+					margin-bottom: 6px;
+					padding: 0;
+					padding-bottom: 11px;
+					font-size: 20px;
+					font-weight: 600;
+					border-bottom: 1px solid #E3E3E3;
+					transition: 0.25s;
+				}
+
+				&:hover{
+					& > .link{
+						color: #008518;
+						border-color: #008518;
+					}
+				}
+
+				&.divide-2{
+					width: 50%;
+
+					.inner{
+						display: flex;
+    					gap: 48px;
+						width: 100%;
+					
+						.nav-list--depth3{
+							width: calc( 50% - 24px );
+						}
+					}
+				}
+			}
+
+			.nav-list--depth3{
+				display: block;
+				margin-top: 14px;
+			}
+
+			.depth-3 .link{
+				display: block;
+				position: relative;
+				padding: 6px 24px 6px 0;
+				font-size: 16px;
+				font-weight: 400;
+				color: #666;
+				line-height: 1.5;
+				transition: 0.25s;
+				
+				&:after{
+					content:'';
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translateY(-50%);
+					width: 20px;
+					height: 20px;
+					background: url(../images/common/icon_submenu_on.svg) no-repeat center / 100% auto;
+					opacity: 0;
+					transition: 0.15s;
+				}
+
+				&:hover, &.on{
+					color: #222;
+					
+					&:after{
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		.nav-title{
+			flex-basis: 342px;
+			max-width: 342px;
+			padding-top: 6px;
+			text-align: left;
+
+			strong{
+				font-size: 40px;
+				font-weight: 600;
+				line-height: 52px;
+				color: #008518;
+			}
+		}
+	}
 }
 
 // ASIDE
@@ -229,6 +350,10 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		min-height: 100%;
 		background: rgba(#000, 0.5);
 		z-index: 600;
+		
+		@include mdq-min(xxl) {
+			display: none !important;
+		}
 	}
 
 	&__head {
@@ -294,56 +419,75 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		}
 	}
 	&__body {
-		padding-bottom: 50px; //모바일 브라우저 스크롤 여백
-		height: 100%;
 		position: relative;
 		overflow-y: auto;
 		height: calc(100vh - #{$nav-height-lg});
 	}
 
 	.depth-1 {
+		width: 120px;
+
 		> .link {
 			text-align: left;
 			color: #000;
-			border-bottom: 1px solid #ddd;
+			background: #f8f8f8;
 			display: block;
-			padding: 1rem 1rem;
-			font-size: 1.2rem;
+			padding: 12px;
+    		font-size: 14px;
 			position: relative;
+			
+			&:after{
+				content:'';
+				position: absolute;
+				top: 50%;
+				right: 8px;
+				transform: translateY(-50%);
+				width: 14px;
+    			height: 14px;
+				background: url(../images/common/icon_submenu_on.svg) no-repeat center / 100% auto;
+				opacity: 0;
+				transition: .25s;
+			}
+
 			&.active {
-				background-color: #246BEB;
-				color: #fff;
+				padding-right: 30px;
+				background-color: #fff;
+				color: #222;
+				
+				&:after{
+					opacity: 1;
+				}
 			}
 		}
 	}
+
 	.depth-2 {
 		> .link {
 			display: block;
-			padding: 0.7rem 1rem;
-			padding-left: (0.8rem * 2); //들여쓰기
-			background-color: #f8f8f8; // #f5f5f5;
-			color: #1D1D1D;
-			font-size: 1rem;
+			padding: 10px 0;
+			border-bottom: 1px solid #e4e4e4;
+			color: #222;
+			font-size: 16px;
+			margin-bottom: 6px;
 			&.active {
 				color: #246BEB;
 			}
 		}
 
 		&:first-child > .link {
-			padding-top: 1rem;
+			padding-top: 10px;
 		}
 		&:last-child > .link {
-			padding-bottom: 1rem;
+			margin-bottom: 12x;
 		}
 	}
+	
 	.depth-3 {
 		> .link {
 			display: block;
-			padding: 0.8rem 1rem;
-			padding-left: (0.8rem * 3); //들여쓰기
-			background-color: darken(#fff, 8%); // #ebebeb;
-			color: #1D1D1D;
-			font-size: 0.8rem;
+			padding: 6px 0;
+			color: #222;
+			font-size: 14px;
 		}
 	}
 
@@ -353,25 +497,42 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 			display: block;
 			position: relative;
 		}
-		&._down {
-			> .link {
-				@include xi-icon('\e941');
-				&.active:before {
-					content: '\e944';
-				}
-				&:before {
-					position: absolute;
-					top: 50%;
-					font-size: 1rem;
-					margin-top: -0.5rem;
-					right: 1rem;
-				}
-			}
-		}
+		// &._down {
+		// 	> .link {
+		// 		@include xi-icon('\e941');
+		// 		&.active:before {
+		// 			content: '\e944';
+		// 		}
+		// 		&:before {
+		// 			position: absolute;
+		// 			top: 50%;
+		// 			font-size: 1rem;
+		// 			margin-top: -0.5rem;
+		// 			right: 1rem;
+		// 		}
+		// 	}
+		// }
 	}
 
-	.nav-list--depth2,
-	.nav-list--depth3 {
+	.nav-list--depth2{
 		display: none;
+		position: absolute;
+		top: 0;
+        left: 120px;
+        width: calc(100% - 120px);
+        height: 100%;
+		padding: 0 16px;
+        overflow-y: auto;
+	}
+	
+	.nav-list--depth3{
+		margin-top: 6px;
+		margin-bottom: 12px;
+	}
+}
+
+@include mdq-max(xxl) {
+	body.nav-mobile-open{
+		overflow: hidden !important;
 	}
 }

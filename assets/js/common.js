@@ -33,6 +33,7 @@ var navMobile = {
     };
     $navBtn.on('click', function () {
       toggleNav();
+      $('body').toggleClass('nav-mobile-open');
     });
     $navBg.on('click', function () {
       toggleNav();
@@ -42,7 +43,11 @@ var navMobile = {
     //활성화된 메뉴 열어두기(1depth)
     // $('.nav-mobile .depth-1 > .link.on').next('.nav-list--depth2').show();
     // $('.nav-mobile .depth-1 > .link.on').addClass('active');
-    $('.nav-mobile .depth-1 > .link.on,.nav-mobile .depth-2 > .link.on').addClass('active').next().show();
+    if($('.nav-mobile .link').filter('.on').length){
+      $('.nav-mobile .depth-1 > .link.on,.nav-mobile .depth-2 > .link.on').addClass('active').next().show();
+    } else {
+      $('.nav-mobile .depth-1:first-child > .link').addClass('active').next().show();
+    }
   },
   nav_mobile_down: function () {
     // 하위메뉴가있는 메뉴에 드롭다운 표시를 위한 클래스 붙이기
@@ -62,41 +67,34 @@ var navMobile = {
       $depth3_list = $('.nav-mobile .nav-list--depth3');
 
     $depth1.children('.link').click(function () {
-      if ($(this).next().length > 0) {
-        if ($(this).next().css('display') === 'none') {
-          $depth2.find('.link').removeClass('active');
+      if(!$(this).hasClass('active')){
+        if ($(this).next().length > 0) {
           $depth1.children('.link').removeClass('active');
+          $depth2_list.hide();
           $(this).addClass('active');
-          $depth3_list.hide();
-          $depth2.find('.link').removeClass('active');
-          $depth2_list.slideUp(300);
-          $(this).next().stop(false, true).slideDown(300);
-        } else {
-          $depth2.find('.link').removeClass('active');
-          $(this).next().slideUp(200);
-          $depth1.children('.link').removeClass('active');
+          $(this).next().show();
         }
-        return false;
       } else {
+          return false;
       }
     });
 
-    $depth2.children('.link').click(function () {
-      if ($(this).next().length > 0) {
-        if ($(this).next().css('display') === 'none') {
-          $depth3_list.find('.link').removeClass('active');
-          $depth3_list.stop(false, true).slideUp(300);
-          $(this).addClass('active');
-          $(this).next().stop(false, true).slideDown(300);
-        } else {
-          $depth3_list.find('.link').removeClass('active');
-          $(this).removeClass('active');
-          $(this).next().stop(false, true).slideUp(300);
-        }
-        return false;
-      } else {
-      }
-    });
+    // $depth2.children('.link').click(function () {
+    //   if ($(this).next().length > 0) {
+    //     if ($(this).next().css('display') === 'none') {
+    //       $depth2_list.find('.link').removeClass('active');
+    //       $depth3_list.stop(false, true).slideUp(300);
+    //       $(this).addClass('active');
+    //       $(this).next().stop(false, true).slideDown(300);
+    //     } else {
+    //       $depth3_list.find('.link').removeClass('active');
+    //       $(this).removeClass('active');
+    //       $(this).next().stop(false, true).slideUp(300);
+    //     }
+    //     return false;
+    //   } else {
+    //   }
+    // });
   },
 };
 
@@ -327,6 +325,37 @@ $(document).ready(function () {
 		$('#quick').toggleClass('on');
 	});
 
+  // 웹접근성
+  let focusAbleElement = 'a[href], input:not([disabled]), select:not([disabled]), button:not([disabled]), [tabindex="0"]';
+  $('.header .nav').find(focusAbleElement).last().on("keydown", function(e) {
+    console.log('키다운');
+    if (e.keyCode == "9" && e.shiftKey) {
+      console.log($(this), '마지막요소 떠나기');
+    } else {
+      console.log($(this),'마지막요소 진입');
+      $('#header').removeClass('gnb-hover').find('.hover').removeClass('hover');
+      $('.nav__bg, .submenu').hide();
+    }
+  });
+  
+  $('.header__wrap').find(focusAbleElement).first().on("keydown", function(e) {
+    if (e.keyCode == "9" && e.shiftKey) {
+    } else {
+      console.log($(this), '처음요소 진입')
+      $('#header').addClass('gnb-hover');
+    }
+  });
+  
+  $('.header .nav').find(focusAbleElement).first().on("keydown", function(e) {
+
+    if (e.keyCode == "9" && e.shiftKey) {
+      console.log($(this), '처음요소 떠나기')
+      $('#header').removeClass('gnb-hover').find('.hover').removeClass('hover');
+      $('.nav__bg, .submenu').hide();
+    } else {
+    }
+  })
+
   // modal
   /* $(document).on('show.bs.modal', '.modal', function() {
     const zIndex = 1040 + 10 * $('.modal:visible').length;
@@ -372,7 +401,7 @@ $(document).ready(function () {
 
   /* HEADER GNB Drop */
   $('.header').navDrop({
-        type: 'all', // 기본값 udnefiend, 선언하지 않거나 없는 값을 선언할 경우 콘솔창에 경고문구 출력
+        type: 'each', // 기본값 udnefiend, 선언하지 않거나 없는 값을 선언할 경우 콘솔창에 경고문구 출력
         background: true, // 기본값 true, 배경 엘리먼트가 없을 경우 콘솔창에 경고문구 출력
         backgroundClass: '.nav__bg', // 기본값 .nav__bg
         backgroundAutoColor: false, // 기본값 false, depth2의 배경색을 자동으로 적용
