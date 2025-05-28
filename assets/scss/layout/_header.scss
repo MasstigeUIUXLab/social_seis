@@ -120,7 +120,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
         display: block;
         
         img{
-          height: 36px;
+          height: 30px;
         }
       }
     }
@@ -140,7 +140,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
         }
 
         .logo img{
-          height: 30px;
+          height: 28px;
         }
       }
   }
@@ -325,7 +325,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
 
   .btn-srch{
     width: rem(70);
-    height: $nav-height-lg;
+    height: rem(70);
     background: url(../../assets/images/common/icon_srch.svg) no-repeat center / rem(30) auto;
     transition: all .35s;
   }
@@ -333,7 +333,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
   .btn-sitemap{
     display: none;
     width: rem(70);
-    height: $nav-height-lg;
+    height: rem(70);
     background: url(../../assets/images/common/icon_sitemap.svg) no-repeat center / rem(30) auto;
 
   }
@@ -352,11 +352,10 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
     .lang-area{
       margin: 0;
     }
-  }
-  
-  @include mdq-max(sm) {
-    .btn-srch{
-      width: 40px;
+
+    .btn-srch{ 
+      width: 36px;
+      background-size: 20px;
     }
   }
 

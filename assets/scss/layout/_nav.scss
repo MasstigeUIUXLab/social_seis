@@ -332,7 +332,7 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 			justify-content: center;
 		}
 		@include mdq-max(lg) {
-			right: 10px; 
+			right: 4px; 
 			height: $nav-height-lg;
 			font-size: 28px;   
 		}
@@ -362,7 +362,7 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		border-bottom: 1px solid #ddd;
 
 		.logo {
-			padding: 0 rem(20);
+			padding: 0 10px;
 
 			img {
 				height: 30px;
@@ -374,7 +374,7 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		}
 
 		.lang-area{
-			display: none;
+			display: block;
 			position: absolute;
 			top: 50%;
 			right: 48px;
@@ -389,33 +389,22 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		}
 
 		.util{
-			right: 60px;
+			right: 54px;
 			gap: 10px;
 			font-size: 12px;
 		}
 
 		.nav-mobile__btn{
-			font-size: 32px;
+			font-size: 24px;
 			color: #222 !important;
+		
+			.xi-close{
+				font-size: 20px;
+			}
 		}
 		
 		@include mdq-max(lg) {
 			height: $nav-height-lg;
-			
-		}
-		
-		@include mdq-max(sm) {
-			.logo img{
-				height: 28px;
-			}
-			
-			.lang-area{
-				display: flex;
-			}
-			
-			.nav-mobile__btn{
-				font-size: 24px;
-			}
 		}
 	}
 	&__body {
@@ -478,7 +467,7 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		}
 
 		&:first-child > .link {
-			padding-top: 10px;
+			padding-top: 12px;
 		}
 		&:last-child {
 			margin-bottom: 12px;
