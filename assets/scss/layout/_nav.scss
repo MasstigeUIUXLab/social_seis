@@ -425,15 +425,15 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 	}
 
 	.depth-1 {
-		width: 120px;
+		width: 110px;
 
 		> .link {
 			text-align: left;
 			color: #000;
 			background: #f8f8f8;
 			display: block;
-			padding: 12px;
-    		font-size: 14px;
+			padding: 10px;
+    		font-size: 12px;
 			position: relative;
 			
 			&:after{
@@ -449,10 +449,11 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 				transition: .25s;
 			}
 
-			&.active {
+			&.active{
 				padding-right: 30px;
 				background-color: #fff;
 				color: #222;
+				font-weight: 600;
 				
 				&:after{
 					opacity: 1;
@@ -464,30 +465,33 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 	.depth-2 {
 		> .link {
 			display: block;
-			padding: 10px 0;
+			padding: 10px;
 			border-bottom: 1px solid #e4e4e4;
 			color: #222;
-			font-size: 16px;
-			margin-bottom: 6px;
-			&.active {
-				color: #246BEB;
+			font-size: 12px;
+    		font-weight: 600;
+			line-height: 1.167;
+
+			&.active, &.on {
+				color: #008518;
 			}
 		}
 
 		&:first-child > .link {
 			padding-top: 10px;
 		}
-		&:last-child > .link {
-			margin-bottom: 12x;
+		&:last-child {
+			margin-bottom: 12px;
 		}
 	}
 	
 	.depth-3 {
 		> .link {
 			display: block;
-			padding: 6px 0;
-			color: #222;
-			font-size: 14px;
+			padding: 10px;
+			color: #666;
+			font-size: 12px;
+			line-height: 1.167;
 		}
 	}
 
@@ -518,17 +522,17 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		display: none;
 		position: absolute;
 		top: 0;
-        left: 120px;
-        width: calc(100% - 120px);
+        left: 110px;
+        width: calc(100% - 110px);
         height: 100%;
-		padding: 0 16px;
+		padding: 0 12px;
         overflow-y: auto;
 	}
 	
-	.nav-list--depth3{
-		margin-top: 6px;
-		margin-bottom: 12px;
-	}
+	// .nav-list--depth3{
+	// 	margin-top: 6px;
+	// 	margin-bottom: 12px;
+	// }
 }
 
 @include mdq-max(xxl) {
