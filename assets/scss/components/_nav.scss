@@ -126,12 +126,22 @@
         background-color: #F8F8F8;
         border-radius: 30px;
         color: #A2A2A2;
+        font-size: rem(18);
         
         &.active, &.on, &:active, &:not(:disabled):not(.disabled):active{
             background-color: #fff;
             border-color: #246BEB;
             color: #246BEB;
             font-weight: 600;
+        }
+    }
+    
+    @include mdq-max(md) {
+        gap: 8px;
+
+        .nav-link{
+            padding: 10px 16px;
+            font-size: 16px;
         }
     }
 }

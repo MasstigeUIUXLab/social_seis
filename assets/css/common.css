@@ -44089,12 +44089,22 @@ body.is-scroll .header {
   background-color: #F8F8F8;
   border-radius: 30px;
   color: #A2A2A2;
+  font-size: 1.125rem;
 }
 .nav-pills .nav-link.active, .nav-pills .nav-link.on, .nav-pills .nav-link:active, .nav-pills .nav-link:not(:disabled):not(.disabled):active {
   background-color: #fff;
   border-color: #246BEB;
   color: #246BEB;
   font-weight: 600;
+}
+@media all and (max-width: 768px) {
+  .nav-pills {
+    gap: 8px;
+  }
+  .nav-pills .nav-link {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
 }
 
 .tab-scroll {
