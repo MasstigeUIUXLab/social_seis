@@ -237,10 +237,10 @@
 /*페이지 바로가기*/
 ul.rlist{width:100%; overflow:hidden;}
 ul.rlist li{float:left;  width:24%; margin-right:0.8%; margin-bottom:10px;padding-left:3.2%; font-size:17px; line-height:28px;  }
-ul.rlist li span{display:inline; background:url("../../imgs/contents/point_bg.png") repeat-x left 5px; letter-spacing:-1px;}
+ul.rlist li span{display:inline; background:url("/home/imgs/contents/point_bg.png") repeat-x left 5px; letter-spacing:-1px;}
 ul.rlist li span a{position:relative;display:inline-block;margin:0 2px;white-space:nowrap;color:#1b6bcc;padding-bottom:3px;margin-right:21px;margin-bottom:2px;background:url('/home/imgs/contents/conDott.png') repeat-x left bottom;padding-left:35px;}
-ul.rlist li span a:before {position:absolute; top:2px; left:0; content:""; width:27px; height:27px; background:url("../../imgs/contents/ankimg.png") no-repeat left 2px;}
-ul.rlist li span a:hover:before {background:url("../../imgs/contents/ankimg_on.png") no-repeat left 2px;}
+ul.rlist li span a:before {position:absolute; top:2px; left:0; content:""; width:27px; height:27px; background:url("/home/imgs/contents/ankimg.png") no-repeat left 2px;}
+ul.rlist li span a:hover:before {background:url("/home/imgs/contents/ankimg_on.png") no-repeat left 2px;}
 ul.rlist li span a:hover{text-decoration:underline; color:#00254e;}
 a.blank.line {line-height:1.3em; background:url('/site/mpva/images/contents/conDott.png') repeat-x left bottom; padding:0 0 3px 0;}
 a.blank:after{content:'';display:inline-block;width:12px;height:14px; position:absolute; top:7px; right:-18px; background:url(/common/images/template.png) -201px -13px no-repeat;vertical-align:middle;}

@@ -116,7 +116,7 @@ table th, table td{vertical-align:middle;}
 .board_insert .tbl2Area{border:1px solid #CFCFCF;height:100px;width:100%;font-size:0.75em;}
 .board_insert th.b_title{text-overflow:initial !important;white-space:initial !important;}
 .board_insert .b_title{padding:12px 8px 12px 8px !important;font-size:1.4em;text-align:center;}
-.board_insert .inText{background:url("../../imgs/board/inText.gif") no-repeat 0 0;border:none;border-right:1px solid #dfdfdf;padding:2px;height:17px;font-size:1em;}
+.board_insert .inText{background:url("/base/imgs/board/inText.gif") no-repeat 0 0;border:none;border-right:1px solid #dfdfdf;padding:2px;height:17px;font-size:1em;}
 .board_insert video{width:100% !important;}
 .board_insert tr.related > th{border-bottom:1px solid #dae1e4;font-size:0.95em;color:#4A839D !important;font-weight:600;}
 .board_insert tr.related > td{border-bottom:1px solid #dae1e4;font-size:0.95em;}

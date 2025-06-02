@@ -290,7 +290,7 @@ div.errorWarp div.errorCenter .rigthBox span{font-weight:500;color:#044ea1;}
 .paginate span.bt_end{width:32px;background-position:-96px 0}
 .paginate span.on{background-position:0 0}
 .paginate .on{background-position:0 0}
-.paginate [class^="bt_"]{background-image:url("../../imgs/main/btn_paginate.png");background-repeat:no-repeat;}
+.paginate [class^="bt_"]{background-image:url("/home/imgs/main/btn_paginate.png");background-repeat:no-repeat;}
 @media all and (max-width:500px){
 	.paginate{padding:10px 0 5px;}
 	.paginate strong a, .paginate2 a, .paginate2 span{width:auto;padding:0 3px; border:none;}
@@ -300,8 +300,8 @@ div.errorWarp div.errorCenter .rigthBox span{font-weight:500;color:#044ea1;}
 
 /* 2020.02.21 Updates :calendar style */
 .cal_month{text-align:center;font-weight:500;color:#414141;font-size:2.1em;letter-spacing:0px;font-family:tahoma;padding:0 0 10px 0;vertical-align:top;line-height:48px;}
-.cal_month .month_prev{display:inline-block;background:url("../../imgs/board/m_writer_left.gif") no-repeat 50% 50%;background-size:15px 27px;line-height:0;font-size:0;width:30px;height:50px;vertical-align:top;}
-.cal_month .month_next{display:inline-block;background:url("../../imgs/board/m_writer_right.gif") no-repeat 50% 50%;background-size:15px 27px;line-height:0;font-size:0;width:30px;height:50px;vertical-align:top;}
+.cal_month .month_prev{display:inline-block;background:url("/base/imgs/board/m_writer_left.gif") no-repeat 50% 50%;background-size:15px 27px;line-height:0;font-size:0;width:30px;height:50px;vertical-align:top;}
+.cal_month .month_next{display:inline-block;background:url("/base/imgs/board/m_writer_right.gif") no-repeat 50% 50%;background-size:15px 27px;line-height:0;font-size:0;width:30px;height:50px;vertical-align:top;}
 .board_cal{width:100%;border-bottom:1px solid #d9dbde;border-collapse:collapse;}
 .board_cal th{padding:7px 0 6px;background-color:#698396;border:1px solid #698396;color:#fff;font-size:0.85em;font-family:tahoma;border-right:1px solid #b3c3ce;}
 .board_cal th:nth-child(6){border-right:none;}

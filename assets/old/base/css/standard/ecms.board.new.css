@@ -25,8 +25,8 @@
 .boardViewBox .bvbox_related ul li:first-child  {width:20%;float:left;}
 .boardViewBox .bvbox_related ul li:last-child {width:80%;float:right;padding:15px 20px;background:#fff;}
 .boardViewBox .bvbox_related ul li span {padding-left:40px;color:#5d7a87;}
-.boardViewBox .bvbox_related ul li.bvbox_related_next {background:url("../../imgs/board/ico_next_text.gif") no-repeat 15px 50%;padding-left:30px;}
-.boardViewBox .bvbox_related ul li.bvbox_related_prev {background:url("../../imgs/board/ico_prev_text.gif") no-repeat 15px 50%;padding-left:30px;}
+.boardViewBox .bvbox_related ul li.bvbox_related_next {background:url("/base/imgs/board/ico_next_text.gif") no-repeat 15px 50%;padding-left:30px;}
+.boardViewBox .bvbox_related ul li.bvbox_related_prev {background:url("/base/imgs/board/ico_prev_text.gif") no-repeat 15px 50%;padding-left:30px;}
 .boardViewBox .bvbox_tit .brbox_txt.files {position:relative;padding:7px 0 4px 70px;word-break:initial;border-top:1px dotted #bbd9e7;}
 .boardViewBox .bvbox_tit .brbox_txt.files strong {position:absolute;left:0;color:#1a3475;}
 .boardViewBox .bvbox_tit .brbox_txt.files div {word-break:break-all; line-height:25px;}

@@ -58,7 +58,7 @@
 
 /* main leftColumn lnb */
 .leftColumn #lnb ul li {position: relative;}
-.leftColumn #lnb ul li::before {position:absolute; right: 20px; top:25px; content:""; width:5px; height:9px; background: url("../../imgs/icons/arrow/ico_arrow_right.png")no-repeat 92% 50%; opacity: 0.80;}
+.leftColumn #lnb ul li::before {position:absolute; right: 20px; top:25px; content:""; width:5px; height:9px; background: url("/base/imgs/icons/arrow/ico_arrow_right.png")no-repeat 92% 50%; opacity: 0.80;}
 .leftColumn #lnb ul li a {display: block; color: #fff; line-height: 20px; padding: 20px 40px 20px 20px; font-size: 16px; border-bottom: solid 1px #314f80;}
 .leftColumn #lnb ul li a:hover {background:#095caa; border-color: transparent; box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);}
 .leftColumn #lnb ul li:hover::before {opacity: 1;}
@@ -133,11 +133,11 @@
 .leftColumn .subMenu>ul>li>a {border-bottom:solid 1px #415d8a;}
 
 .leftColumn .subMenu>ul>li>a:hover,
-.leftColumn .subMenu>ul>li.on>a {background: #0467c5 url("../../imgs/icons/arrow/ico_arrow_down.png")no-repeat 92% 50%;color:#fff;font-weight:500;}
+.leftColumn .subMenu>ul>li.on>a {background: #0467c5 url("/base/imgs/icons/arrow/ico_arrow_down.png")no-repeat 92% 50%;color:#fff;font-weight:500;}
 .leftColumn .subMenu>ul>li.on>a {border-color: transparent; box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);}
 .leftColumn .subMenu>ul>li>ul {display:block !important; border-bottom:solid 1px #415d8a; }
 
-.leftColumn .subMenu>ul>li>a {background:url("../../imgs/icons/arrow/ico_arrow_right.png")no-repeat 92% 50%;color:#fff;}
+.leftColumn .subMenu>ul>li>a {background:url("/base/imgs/icons/arrow/ico_arrow_right.png")no-repeat 92% 50%;color:#fff;}
 .leftColumn .subMenu>ul>li>ul>li {position:relative;}
 .leftColumn .subMenu>ul>li>ul>li:after {position:absolute;left: 20px;top: 16px;width: 3px;height: 3px; background:#9bacbf; content:'';}
 .leftColumn .subMenu>ul>li>ul>li:hover:after,
@@ -218,7 +218,7 @@ table td.btn a{padding-bottom:2px;}
 
 /* 2019.12.12 Updates : paginate */
 .paginate {overflow:hidden; margin:0 auto; padding:10px 5px 5px 5px; text-align:center;}
-.paginate a,.paginate span{display:inline-block;width:26px;height:27px;margin:0 2px;padding-right:2px;border:0 none;background:url("../../imgs/paginate/btn_pkg_c.png") -28px -100px no-repeat;color:#666;font-family:tahoma,applegothic,sans-serif;font-size:12px;font-weight:500;letter-spacing:-1px;line-height:27px; text-align:center;vertical-align:top}
+.paginate a,.paginate span{display:inline-block;width:26px;height:27px;margin:0 2px;padding-right:2px;border:0 none;background:url("/base/imgs/paginate/btn_pkg_c.png") -28px -100px no-repeat;color:#666;font-family:tahoma,applegothic,sans-serif;font-size:12px;font-weight:500;letter-spacing:-1px;line-height:27px; text-align:center;vertical-align:top}
 .paginate a.currentno{border:1px solid #2d7ed0;border-radius:0;background-color:transparent;color:#2d7ed0;text-decoration:none;box-shadow:1px 1px 2px rgba(0,0,0,0.2);}
 .paginate a.currentno:hover{border:1px solid #2d7ed0;color:#2d7ed0;text-decoration:none}
 .paginate a:hover{position:relative;left:0;border:0 none;background-position:-131px -100px;color:#000;text-decoration:none}
@@ -239,7 +239,7 @@ table td.btn a{padding-bottom:2px;}
 .paginate span.bt_end{width:28px;background-position:-34px -260px}
 .paginate span.on{background-position:0 -100px}
 .paginate .on{background-position:0 -180px}
-.paginate [class^="bt_"]{border-radius:0;background-image:url("../../imgs/paginate/btn_pkg_c.png");background-repeat:no-repeat;}
+.paginate [class^="bt_"]{border-radius:0;background-image:url("/base/imgs/paginate/btn_pkg_c.png");background-repeat:no-repeat;}
 
 .layer_wrap{overflow-y:auto;position:fixed;top:50%;left:50%;z-index:1001;transform: translate(-50%,-50%);}
 .layer_wrap .box2{margin-bottom:14px;background-color:#f4f7ff;}

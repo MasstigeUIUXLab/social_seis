@@ -48,7 +48,7 @@
 .board_img_view{/*border-top:1px solid #333;*/}
 .board_img_view .gray {padding:12px 10px 11px 10px;background-color:#fafafb; color:#2f3743; text-align:right; font-weight:bold;box-sizing:border-box;}
 .board_img_view .txt_left {padding-left:5px; text-align:left;}
-.board_img_view .inText {background:url("../../imgs/board/inText.gif") no-repeat 0 0; border:none; border-right:1px solid #dfdfdf; padding:2px; height:17px; font-size:1em;}
+.board_img_view .inText {background:url("/base/imgs/board/inText.gif") no-repeat 0 0; border:none; border-right:1px solid #dfdfdf; padding:2px; height:17px; font-size:1em;}
 .board_img_view .view_title{border-bottom:1px solid #e5e5e5;text-align:center;font-weight:bold;color:#565656;}
 .board_img_view .view_title img{width:18px;margin:3px 0 0 3px;}
 .board_img_view .details_info{}

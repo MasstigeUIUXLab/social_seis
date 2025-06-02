@@ -28,8 +28,8 @@ a:focus, button:focus{outline:1px dotted #000;}
 
 .skip{font-size:1px;height:1px;overflow:hidden;position:absolute !important;top:-1000px;width:1px;color:transparent;}
 span.term{padding:0 4px 0 0;display:inline-block;vertical-align:middle;}
-span.blank_w{display:inline-block;margin-left:5px;vertical-align:middle;width:14px;height:14px;text-indent:-9999px;overflow:hidden;background:url("../../imgs/icon/blank_w.png") no-repeat;}
-span.blank_b{display:inline-block;margin-left:5px;vertical-align:middle;width:14px;height:14px;text-indent:-9999px;overflow:hidden;background:url("../../imgs/icon/blank_b.png") no-repeat;}
+span.blank_w{display:inline-block;margin-left:5px;vertical-align:middle;width:14px;height:14px;text-indent:-9999px;overflow:hidden;background:url("/base/imgs/icon/blank_w.png") no-repeat;}
+span.blank_b{display:inline-block;margin-left:5px;vertical-align:middle;width:14px;height:14px;text-indent:-9999px;overflow:hidden;background:url("/base/imgs/icon/blank_b.png") no-repeat;}
 
 /* Clearfix */
 .clearfix:before, .clearfix:after{display:block;content:'';line-height:0;}
@@ -63,7 +63,7 @@ input.inpline2 {border:1px solid #ccc; padding:2px 8px; height:39px; border-radi
 
 
 /* Datepicker */
-input.hasDatepicker{background:#fff url("../../imgs/btn/btn_calendar.png") no-repeat 92% 50% !important;width:110px;text-align:left;margin-right:4px;}
+input.hasDatepicker{background:#fff url("/base/imgs/btn/btn_calendar.png") no-repeat 92% 50% !important;width:110px;text-align:left;margin-right:4px;}
 input.ui-datepicker-trigger{display:inline-block;vertical-align:middle;cursor:pointer;padding-top:10px;}
 input.datepickerSingle{}
 
