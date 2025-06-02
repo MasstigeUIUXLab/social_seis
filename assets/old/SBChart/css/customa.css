@@ -1,0 +1,35 @@
+.bg-ceo-node{
+    background                  :#344cab!important;
+}
+/*
+.bg-audit-node{
+    background                  :#8455f5!important
+}
+*/
+.bg-lab-node{
+    background                  :#ea4335!important
+}
+
+.bg-support-node{
+    background                  :#34a85a!important;
+}
+
+.bg-ui-node{
+    background                  :#8a8d92!important;
+}
+
+.bg-dev-node{
+    background                  :#fbbc05!important;
+}
+
+.bg-manage-node{
+    background                  :#4285f4!important;
+}
+
+.bg-node{
+    background                  : #e4f6f6!important;
+}
+
+.bg-audit-node{
+    background                  :#ddedfc!important
+}

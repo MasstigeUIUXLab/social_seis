@@ -1,0 +1,19 @@
+/*!
+ * @FontsCss
+ * @version 1.0.0 | 2023.01.02 Updates
+ */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*
+@font-face {font-family:'SCDream';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');font-weight:200;}
+@font-face {font-family:'SCDream';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');font-weight:300;}
+@font-face {font-family:'SCDream';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');font-weight:400;}
+@font-face {font-family:'SCDream';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');font-weight:500;}
+@font-face {font-family:'SCDream';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');font-weight:600;}
+@font-face {font-family:'SCDream';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');font-weight:800;}
+*/
+@font-face {font-family:'SCDream';src:url('/jsdelivr/woff/S-CoreDream-2ExtraLight.woff') format('woff');font-weight:200;}
+@font-face {font-family:'SCDream';src:url('/jsdelivr/woff/S-CoreDream-3Light.woff') format('woff');font-weight:300;}
+@font-face {font-family:'SCDream';src:url('/jsdelivr/woff/S-CoreDream-4Regular.woff') format('woff');font-weight:400;}
+@font-face {font-family:'SCDream';src:url('/jsdelivr/woff/S-CoreDream-5Medium.woff') format('woff');font-weight:500;}
+@font-face {font-family:'SCDream';src:url('/jsdelivr/woff/S-CoreDream-6Bold.woff') format('woff');font-weight:600;}
+@font-face {font-family:'SCDream';src: url('/jsdelivr/woff/S-CoreDream-8Heavy.woff') format('woff');font-weight:800;}

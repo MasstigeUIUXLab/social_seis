@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.loginBody {background: #efefef;}
+
+.loginBox {background: #fff; border-radius: 10px; padding: 60px 90px; width: 670px; margin: 100px auto; word-break: keep-all; box-shadow: 15px 15px 30px 5px rgba(0, 0, 0, 0.08); box-sizing: border-box;}
+.loginBox .loginLogo {text-align: center;}
+.loginBox .loginLogo img {max-width: 100%;}
+.loginBox p {font-size: 18px; text-align: center; margin: 45px 0 30px; line-height: 24px;}
+.loginBox p strong {font-size: 20px;}
+
+.loginBox ul li {margin-bottom: 10px; padding: 5px 5px 5px 20px; font-size: 15px; background: #f5f5f5;}
+.loginBox ul li label {display: inline-block; vertical-align: middle; width: 115px; line-height: 50px; margin: 0 5px; position:relative;}
+.loginBox ul li label:after {content:''; width: 1px; height: 25px; display: block; position:absolute; top: 13px; right: 0; background: #dbd9d9;}
+.loginBox ul li input {padding: 5px 20px; width: calc(100% - 125px); height: 50px;  background: #f5f5f5; box-sizing: border-box; border: 0; float: right;}
+.loginBox ul li input:focus {outline: none;}
+.loginBox .material-symbols-outlined {vertical-align: sub;}
+
+.loginBox .loginBtn {margin-top: 25px;}
+.loginBox .loginBtn button {background: #1c2b49; color: #fff; font-size: 22px; width: 100%; height: 70px; cursor: pointer; font-weight: 600;}
+
+.loginBox .botText {font-size: 15px; line-height: 22px; text-align: center;}
+.loginBox .botText:before {content: ''; width: 100%; height: 1px; display: block; background: url('/base/imgs/icons/cmmn/ico_dot.png'); margin: 25px 0;}
+.loginBox .botText span {color: #0f8dd6;}
+
+@media all and (max-width:767px) {
+		.loginBox {width: 90%;}
+}
+@media all and (max-width:640px) {
+	.loginBox {padding: 40px 30px; margin: 40px auto;}
+	.loginBox p {font-size: 16px;}
+	.loginBox p strong {font-size: 18px;}
+}
+@media all and (max-width:460px) {
+	.loginBox {padding: 40px 20px;}
+	.loginBox ul li {padding: 5px 5px 5px 10px;}
+	.loginBox ul li label {width: 65px;}
+	.loginBox ul li input {width: calc(100% - 110px); padding: 5px 10px;}
+}
