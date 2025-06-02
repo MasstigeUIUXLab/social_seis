@@ -1,0 +1,321 @@
+/* Basic styling */
+/* Draw the lines */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.SBOrgChartA .sb-line {
+    height                : 20px;
+    width                 : 2px;
+}
+
+.SBOrgChartA .sb-down {
+    background-color 		: #e4e2e2;	
+    margin 				: 0px auto;
+}
+
+.SBOrgChartA .sb-top {
+    border-top          : 1px solid #e4e2e2;
+}
+
+.SBOrgChartA .sb-left {
+    border-right          : 1px solid #e4e2e2;
+}
+
+.SBOrgChartA .sb-right {
+    border-left           : 1px solid #e4e2e2;
+}
+
+.SBOrgChartA .sb-bottom {
+    border-bottom       : 1px solid #e4e2e2;
+}
+
+/* node cell */
+.SBOrgChartA td {
+    text-align                  : center;
+    box-sizing                  : border-box;
+    vertical-align              : top;
+    padding                     : 0;
+}
+
+.SBOrgChartA caption{
+    color                       :black;
+    font-size                   : 18px;
+    font-weight                 : bold;
+    margin                      : 1% 0;
+    text-align:center;
+}
+
+/* The node */
+.SBOrgChartA .sb-node{
+    display                     : inline-block;
+    width                       : 137px;
+    height                      : 76px;
+    box-sizing                  : border-box;
+    z-index 				    : 10;
+    border-radius               : 5px;
+}
+
+/* The node */
+.SBOrgChartA .sb-ceo-node{
+    display                     : inline-block;
+    width                       : 129px;
+    height                      : 129px;
+    box-sizing                  : border-box;
+    z-index 				    : 10;
+    border-radius               : 50%;
+    background : #1f75c5!important;
+}
+
+/* The node */
+.SBOrgChartA .sb-dept-node{
+    display                     : inline-block;
+    width                       : 138px;
+    height                      : 46px;
+    box-sizing                  : border-box;
+    z-index 				    : 10;
+    border-radius               : 50px;
+    background                  : #3dc6d8;
+}
+
+.sb-node .sb-cell-content{
+    color : #000;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 10% 0;
+    position: relative;
+    letter-spacing: normal;
+}
+
+.SBOrgChartA .sb-dept-node .sb-cell-content{
+    color : #fff;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 8% 0;
+    position: relative;
+    letter-spacing: normal;
+}
+
+
+.SBOrgChartA .sb-ceo-node .sb-cell-content{
+    color : #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin : 50px 0;
+    letter-spacing: normal;
+}
+
+.SBOrgChartA .sb-node-assistant-line {
+    box-sizing                  : border-box;
+    display                     : inline-block;
+    width                       : 50px;
+    height                      : 100%;
+    z-index 				    : 10;
+}
+
+.SBOrgChartA .sb-vertical-node {
+    display                     : inline-block;
+    background-color 		    : transparent !important;;
+    box-sizing                  : border-box;
+    width                       : 187px;
+    height                      : 140px;
+    z-index 				    : 10;
+    margin                      : 0 2px;
+}
+
+.SBOrgChartA span {
+    font-family                 : 'Noto Sans KR', sans-serif;
+}
+
+.SBOrgChartA .sb-vertical-node-b {
+    display                     : inline-block;
+    background-color 		    : transparent !important;;
+    box-sizing                  : border-box;
+    z-index 				    : 10;
+    margin                      : 0 2px;
+    width                       : 150px;
+    height                      : 187px;
+}
+
+.sb-node-table{
+    width                     : 100%;
+    margin                    : 0 auto;
+    max-height                : 100px;
+    height                    : 100px;
+}
+
+.sb-node-table-b{
+    width                     : 100%;
+    margin                    : 0 auto;
+    max-height                : 187px;
+    height                    : 187px;
+}
+
+.sb-node-table-cell{
+    width                     : 50%;
+    height                    : 100%;
+    box-sizing                : border-box;
+    display                   : inline-block;
+}
+
+.sb-node-left{
+    float                     : left;
+}
+
+.sb-node-right{
+    float                     : right;
+}
+
+.sb-node-line{
+    width                     : 100%;
+    height                    : 50%;
+    box-sizing                : border-box;
+}
+
+/* jQuery drag 'n drop */
+.sb-drop-hover {
+    border-style			    : solid !important;
+    border-color 			    : #E05E00 !important;
+}
+
+/* Custom chart styling */
+.SBOrgChartA {
+    margin                      : 10px;
+    padding                     : 20px;
+}
+
+/* Custom node styling */
+.SBOrgChartA .sb-node{
+    font-size 			        : 14px;
+    background-color 	        :#fff;
+    -moz-border-radius 	        : 2px;
+    border-radius               : 2px;
+}
+
+.SBOrgChartA .sb-wrap-box{
+    border: 1px solid #e4e2e2;
+}
+
+.sb-node p{
+    font-family 	            : tahoma;
+    font-size 	                : 10px;
+    line-height 	            : 11px;
+    padding 		            : 2px;
+}
+
+.sb-img-area{
+    width                     : 100%
+}
+
+.sb-content-area-image{
+    width                     : 100%;
+}
+
+.sb-content-area-image > .sb-content-inner-area{
+    height                    : 100%;
+    box-sizing                : border-box;
+}
+
+.sb-content-area-non-image{
+    width                     : 100%;
+}
+
+.sb-content-area-non-image > .sb-content-inner-area{
+    height                    : 100%;
+    box-sizing                : border-box;
+}
+
+.sb-image{
+    width: 99px;
+    height: 99px;
+    margin: 7% auto;
+}
+
+.sb-cell-title{
+    width                     : 100%;
+    height                    : 30px;
+    box-sizing                : border-box;
+    text-align                : center;
+    font-weight               : bold;
+    color                     : #000;
+    padding                   : 5px 5px 0px 5px;
+    overflow                  : hidden; 
+    text-overflow             : ellipsis;
+    white-space               : nowrap;  /*怨듬갚臾몄옄媛� �덈뒗寃쎌슦 以꾨컮轅� �섏� �딄퀬 �쒖쨪濡� �쒖떆*/
+}
+/*
+.sb-node-collapse{
+    background-image          : url(../images/remove.png);
+    background-size           : 20px;
+    background-repeat         : no-repeat;
+    background-color          : skyblue;
+    border-radius             : 50%;
+    width                     : 20px;
+    height                    : 20px;
+    position                  : relative;
+    top                       : 10%; 
+    left                      : 41%;
+}
+
+.sb-node-expand{
+    background-image          : url(../images/add.png);
+    background-size           : 20px;
+    background-repeat         : no-repeat;
+    background-color          : skyblue;
+    border-radius             : 50%;
+    width                     : 20px;
+    height                    : 20px;
+    position                  : relative;
+    top                       : 10%; 
+    left                      : 41%;
+}
+*/
+
+.sb-hide-cell{
+    visibility:hidden;
+}
+  
+.sb-divHrzLine0 {
+    float: right;
+}
+
+.sb-divHrzLine1 {
+    width: 40px;
+    height: 55px;
+}
+
+.sb-divHrzLine2 {
+    width: 40px;
+    height: 100px;
+}
+
+.sb-divtop {
+    border-top: 2px solid #e4e2e2;
+}
+
+.sb-divbottom {
+    border-bottom: 2px solid #e4e2e2;
+}
+
+.sb-divleft {
+    border-left: 2px solid #e4e2e2;
+}
+
+.sb-divright {
+    border-right: 2px solid #e4e2e2;
+}
+
+.sb-overflow{
+    overflow : scroll;
+}
+
+.sb-node-focus{
+    border                      : 2px solid blue!important;
+}
+
+.sb-box-margin-a{
+    margin                      : 0 33px;
+}
+
+.sb-box-vertical-margin-a{
+    margin-top: 10px;
+}

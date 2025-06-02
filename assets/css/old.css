@@ -2,20 +2,12 @@
  * @StandardCSS
  * @version 1.0.0 | 2023.03.01 Updates
  */
-@import url("../old/home/css/standard/ecms.fonts.css");
-@import url("../old/home/css/standard/ecms.basic.css");
-@import url("../old/home/css/standard/ecms.board.css");
-/* @import url("../old/home/css/standard/ecms.board.new.css?v=20230301"); */
-@import url("../old/home/css/standard/ecms.btn.css");
-/* @import url("../old/home/css/standard/ecms.member.css"); */
-@import url("../old/home/css/standard/ecms.template.css");
-@import url("../old/home/css/standard/ecms.ui.css");
-
-@import url("../old/home/css/ecms.custom.css");
-/* @import url("../old/home/css/ecms.login.css"); */
-@import url("../old/home/css/ecms.basic.css");
-/* @import url("../old/home/css/ecms.lib.css"); */
-@import url("../old/home/css/ecms.sub.css");
-@import url("../old/home/css/ecms.board.css");
-@import url("../old/home/css/ecms.contents.css");
-@import url("../old/home/css/standard/ecms.member.css");
+@import url("/base/css/ecms.standard.css");
+@import url("/base/css/ecms.custom.css");
+/* @import url("/home/css/ecms.login.css"); */
+@import url("/home/css/ecms.basic.css");
+/* @import url("/home/css/ecms.lib.css"); */
+@import url("/home/css/ecms.sub.css");
+@import url("/home/css/ecms.board.css");
+@import url("/home/css/ecms.contents.css");
+@import url("/home/css/standard/ecms.member.css");

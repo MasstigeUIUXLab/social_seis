@@ -1,0 +1,93 @@
+﻿/*!
+ * @BasicCss
+ * @version 1.0.1 | 2023.02.07 Updates
+ */
+
+/* Basic Reset */
+.sub-asis *{margin:0;padding:0;box-sizing:border-box;}
+.sub-asis html{-webkit-text-size-adjust:none;overflow-y:scroll;}
+.sub-asis body{font-family:"Malgun Gothic","Sans-serif";font-size:14px;line-height:16px;color:#222;}
+.sub-asis caption{overflow:hidden;width:100%;height:1px;font-size:0;color:transparent;line-height:0;}
+.sub-asis legend{position:absolute;overflow:hidden;width:0;height:0;font-size:0;}
+.sub-asis button{border:0;background-color:transparent;cursor:pointer;}
+.sub-asis div{outline:none;}
+.sub-asis b,strong{font-weight:500;}
+.sub-asis textarea{padding:10px;vertical-align:top;}
+.sub-asis ol, ul, dl{margin:0;padding:0;}
+.sub-asis li, dd{list-style:none;}
+.sub-asis img, fieldset{border:0;}
+.sub-asis iframe{border:none;}
+
+.sub-asis a:link{color:#222;text-decoration:none;}
+.sub-asis a:visited{color:#222;text-decoration:none;}
+.sub-asis a:active{color:#222;text-decoration:none;}
+.sub-asis a:hover{color:#222;text-decoration:none;outline:none;}
+.sub-asis a:focus, button:focus{outline:1px dotted #000;}
+.sub-asis *:focus-visible{outline:1px solid #407aec;box-shadow:0 0 0 2px #407aec;}
+.sub-asis *:focus:not(:focus-visible){outline:0;}
+
+.sub-asis .skip{font-size:1px;height:1px;overflow:hidden;position:absolute !important;top:-1000px;width:1px;color:transparent;}
+.sub-asis span.term{padding:0 4px 0 0;display:inline-block;vertical-align:middle;}
+.sub-asis span.blank_w{display:inline-block;margin-left:5px;vertical-align:middle;width:14px;height:14px;text-indent:-9999px;overflow:hidden;background:url("/base/imgs/icon/blank_w.png") no-repeat;}
+.sub-asis span.blank_b{display:inline-block;margin-left:5px;vertical-align:middle;width:14px;height:14px;text-indent:-9999px;overflow:hidden;background:url("/base/imgs/icon/blank_b.png") no-repeat;}
+
+/* Clearfix */
+.sub-asis .clearfix:before, .clearfix:after{display:block;content:'';line-height:0;}
+.sub-asis .clearfix:after{clear:both;}
+.sub-asis .clrBoth{clear:both;font-size:1px;line-height:1px;}
+
+/* Errorpage */
+.sub-asis #errorPage{margin:20px;padding:20px;border:1px solid;line-height:20px;display:block;}
+.sub-asis #errorPage span{font-size:1.25rem;font-weight:bold;}
+
+/* Modalbox */
+.sub-asis #modalbox{z-index:20000;position:fixed;top:0;left:0;bottom:0;right:0;display:none;background:rgba(0, 0, 0, 0.5);}
+.sub-asis #modalboxContainer{z-index:20001;position:absolute;width:640px;height:480px;border:1px solid black;left:50%;top:50%;transform:translate(-50%, -50%);overflow:hidden;background-color:#fff;}
+.sub-asis #modalboxCloseBtn{z-index:20002;position:absolute;top:5px;right:5px;background:url('/home/imgs/contents/close.png');width:35px;height:35px;font-size:0;}
+.sub-asis .stop-scroll{width:100%;height:100vh;overflow:hidden;}
+@media all and (max-width:1024px){
+	.sub-asis #modalboxContainer{width:90% !important;}
+	.sub-asis .root_daum_roughmap{width:100% !important;}
+}
+
+/* InputBox */
+.sub-asis input:focus {border-color: #ccc;}
+.sub-asis input:read-only {background: #eee;}
+.sub-asis input.inpline {border:1px solid #ccc; padding:2px 8px; height:39px; border-radius:5px; vertical-align: middle; margin-bottom: 1px; margin-right: 2px;}
+.sub-asis input.inplinekr {border:1px solid #ccc; padding:2px 8px; height:39px; border-radius:5px; vertical-align: middle; margin-bottom: 1px; margin-right: 2px; -webkit-ime-mode:active; -moz-ime-mode:active; -ms-ime-mode:active; ime-mode:active;}
+.sub-asis input.fileline {border:1px solid #ccc; padding:2px 8px; height:39px; border-radius:5px; vertical-align:middle; width:300px;}
+.sub-asis input.multi_cate {width:265px;}
+.sub-asis textarea.inpline {border:1px solid #ccc; padding:2px 8px; border-radius:5px; vertical-align: middle; margin-bottom: 1px; margin-right: 2px;}
+
+.sub-asis input.inpline2 {border:1px solid #ccc; padding:2px 8px; height:39px; border-radius:5px; vertical-align: middle; margin-bottom: 1px; margin-right: 2px;}
+
+
+/* Datepicker */
+.sub-asis input.hasDatepicker{background:#fff url("/base/imgs/btn/btn_calendar.png") no-repeat 92% 50% !important;width:110px;text-align:left;margin-right:4px;}
+.sub-asis input.ui-datepicker-trigger{display:inline-block;vertical-align:middle;cursor:pointer;padding-top:10px;}
+.sub-asis input.datepickerSingle{}
+
+/* SelectBox */
+.sub-asis select{font-family:"Malgun Gothic";}
+.sub-asis select.selline{border:1px #CCC solid;padding:2px 32px 2px 10px;height:38px;border-radius:5px;vertical-align:top;font-size:0.85rem;font-family:"Malgun Gothic";background:#fff url('/base/imgs/board/arrow.gif') no-repeat right 6px center;-webkit-appearance:none;-moz-appearance:none;appearance:none;margin-right:2px;}
+.sub-asis select::-ms-expand{display:none;}
+
+/* CheckBox */
+.sub-asis input[type=checkbox] + label{display:inline-block;cursor:pointer;position:relative;font-size:13px;}
+.sub-asis input[type=checkbox] + label strong{font-size:1.2em;}
+
+/* Mouse-Drag Color */
+.sub-asis *::selection{ background-color:#217adf;color:#fff;}
+.sub-asis *::-moz-selection{background-color:#217adf;color:#fff;}
+
+/* Accessibility */
+.sub-asis #accessibility-foot{position:absolute;visibility:hidden;overflow:hidden;width:0;height:0;font-size:0%;}
+.sub-asis #accessibility{overflow:hidden;position:absolute;top:0;width:100%;z-index:1000}
+.sub-asis #accessibility a{display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;font-size:0;line-height:0;text-align:center}
+.sub-asis #accessibility a:focus, #accessibility a:hover, #accessibility a:active{width:auto;height:27px;margin:0;padding:0;background:#20262c;font-size:14px;font-weight:600;line-height:27px;color:#fff;}
+
+/* Layout */
+.sub-asis .wrap{position:relative;margin:0 auto;max-width:1400px;}
+.sub-asis .wrap:after{content:"";display:block;clear:both;}
+.sub-asis #shadow_device{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:11;background:rgba(0,0,0,0.8);}
+.sub-asis #touchArea{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:880;}
