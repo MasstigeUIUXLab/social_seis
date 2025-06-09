@@ -904,6 +904,9 @@
 .tb td input.text-center {
   padding: 3px;
 }
+.tb tbody tr.active > * {
+  background-color: #F4F8FE;
+}
 .tb input:not([type=radio], [type=checkbox]),
 .tb select,
 .tb textarea {
@@ -954,7 +957,7 @@
   }
   .tb tr > * {
     font-size: 13px;
-    padding: 8px 12px;
+    padding: 6px 8px;
   }
   .tb thead tr > th {
     padding: 10px;
@@ -1249,6 +1252,18 @@
   overflow-x: auto;
   border: 0;
 }
+.board-wrap .tb-wrap.th-sticky {
+  position: relative;
+  max-height: 320px;
+  overflow: auto;
+}
+.board-wrap .tb-wrap.th-sticky .tb {
+  overflow: auto;
+}
+.board-wrap .tb-wrap.th-sticky thead th {
+  position: sticky;
+  top: 0;
+}
 .board-wrap .tb {
   table-layout: fixed;
   -webkit-box-shadow: none;
@@ -1306,16 +1321,25 @@
 }
 @media all and (min-width: 1024.02px) {
   .board-wrap .tb tr > th {
-    padding: 14px 10px;
+    padding: 8px 10px;
   }
   .board-wrap .tb tr > td {
-    padding: 14px 10px;
+    padding: 8px 10px;
   }
   .board-wrap .tb tr > td > .inner {
     padding: 26px 30px;
   }
   .board-wrap .tb thead tr > th {
-    padding: 15px 8px;
+    padding: 14px 8px;
+  }
+  .board-wrap .tb-mobile .tb tr > th {
+    padding: 10px 16px;
+  }
+  .board-wrap .tb-mobile .tb tr > td {
+    padding: 10px 16px;
+  }
+  .board-wrap .tb-mobile .tb thead tr > th {
+    padding: 14px 8px;
   }
 }
 .board-wrap ul.sub {
@@ -1384,8 +1408,12 @@
   }
 }
 @media all and (max-width: 1024px) {
+  .board-wrap .tb-wrap.th-sticky .tb {
+    border-top: 0;
+  }
   .board-wrap .tb {
     min-width: 768px;
+    width: auto;
   }
   .board-wrap .tb.wide {
     min-width: 1024px;
@@ -2459,7 +2487,7 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 .tb-btn .btn {
   background-color: #fff;

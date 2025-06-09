@@ -992,6 +992,12 @@
         padding:3px;
       }
     }
+
+    tbody tr.active{
+        & > *{
+            background-color: #F4F8FE;
+        }
+    }
   
     input:not([type="radio"], [type="checkbox"]),
     select,
@@ -1061,7 +1067,7 @@
     
             & > *{
                 font-size:13px;
-                padding:8px 12px;
+                padding:6px 8px;
             }
         }
     
@@ -1422,8 +1428,25 @@
     .tb-wrap{
         overflow-x:auto;
          border:0;
+
+        &.th-sticky{
+            position: relative;
+            max-height: 320px;
+            overflow: auto;
+            
+            .tb{
+                overflow: auto;
+            }
+
+            thead{
+                th{
+                    position: sticky; 
+                    top: 0;
+                }
+            }
+        }
     }
-  
+
     .tb{
       table-layout:fixed;
       box-shadow:none;
@@ -1515,24 +1538,45 @@
     }
       
       @include mdq-min(lg){
-        tr{
-            & > th{
-                padding:14px 10px;
-            }
-           
-            & > td{
-                padding:14px 10px;
+      }
+    }
 
-                & > .inner{
-                    padding:26px 30px;
+    @include mdq-min(lg){
+        .tb{
+            tr{
+                & > th{
+                    padding:8px 10px;
+                }
+            
+                & > td{
+                    padding:8px 10px;
+
+                    & > .inner{
+                        padding:26px 30px;
+                    }
                 }
             }
+
+            thead tr > th{
+                padding:14px 8px;
+            }
         }
 
-        thead tr > th{
-          padding:15px 8px;
+        .tb-mobile .tb{
+            tr{
+                & > th{
+                    padding:10px 16px;
+                }
+            
+                & > td{
+                    padding:10px 16px;
+                }
+            }
+
+            thead tr > th{
+                padding:14px 8px;
+            }
         }
-      }
     }
 
     ul.sub{
@@ -1604,8 +1648,15 @@
     }
             
     @include mdq-max(lg){
+        .tb-wrap{
+            &.th-sticky .tb{
+                border-top: 0;
+            }
+        }
+
         .tb{
             min-width:768px;
+            width: auto;
             // table-layout:auto;
 
             &.wide{
@@ -2760,7 +2811,7 @@
     align-items:center;
     justify-content:center;
     flex-wrap:wrap;
-    gap:10px;
+    gap: 8px;
     
     .btn{
         background-color:#fff;

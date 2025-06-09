@@ -30,6 +30,7 @@
 			display: flex;
 			align-items: center;
 			gap: rem(16);
+			display: none; // 0609 히든처리
 
 			a{
 				display: inline-block;
@@ -83,6 +84,7 @@
 			right: 0;
 			bottom: 7px;
 			width: 90px;
+			display: none; // 0609 히든처리
 		}
 
 		.copyright{

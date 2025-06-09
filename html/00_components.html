@@ -112,7 +112,7 @@
         </style>
     
         <p class="h0">Components</p>
-        <p class="link">- <a href="#formGuide">form요소</a>, <a href="#tabGuide">탭</a>, <a href="#buttonGuide">버튼</a>, <a href="#textAlignGuide">텍스트정렬</a></p>
+        <p class="link">- <a href="#formGuide">form</a>, <a href="#tableGuide">table</a>, <a href="#tabGuide">tab</a>, <a href="#buttonGuide">button</a>, <a href="#textAlignGuide">text-align</a></p>
     
         
         <!-- S : form -->
@@ -328,8 +328,207 @@
 
         <br><br>
     
+        <!-- S : table -->
+        <p class="h1" id="tableGuide">table</p>
+        <div class="board-wrap">
+            <!-- [D] 06-09 추가 / 테이블 내 헤더 고정 .th-sticky (스크롤 길이는 인라인 스타일 ++ / ex. style="max-height:400px;")-->
+            <div class="tb-wrap th-sticky">
+                <table class="tb">
+                    <colgroup>
+                        <col width="4%">
+                        <col width="4%">
+                        <col width="14%">
+                        <col width="8%">
+                        <col width="11%">
+                        <col width="11%">
+                        <col width="13%">
+                        <col width="12%">
+                        <col width="12%">
+                        <col width="9%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>구분</th>
+                            <th>지점명</th>
+                            <th>대표자명</th>
+                            <th>사업자등록번호</th>
+                            <th>사업장관리번호</th>
+                            <th>소재지</th>
+                            <th>설립일</th>
+                            <th>폐업일</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- [D] 06-09 추가 / 테이블 tr에 .active -->
+                        <tr class="active" onclick="$(this).toggleClass('active').siblings().removeClass('active')">
+                            <td></td>
+                            <td>설립</td>
+                            <td>
+                                <input type="text" name="" id="" value="인천돌봄센터" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="김민수" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="123-12-12345" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="1234567890" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="인천광역시" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <div class="tb-btn">
+                                    <button type="button" class="btn btn-xxs">수정</button>
+                                    <button type="button" class="btn btn-xxs">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="$(this).toggleClass('active').siblings().removeClass('active')">
+                            <td></td>
+                            <td>설립</td>
+                            <td>
+                                <input type="text" name="" id="" value="인천돌봄센터" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="김민수" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="123-12-12345" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="1234567890" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="인천광역시" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <div class="tb-btn">
+                                    <button type="button" class="btn btn-xxs">수정</button>
+                                    <button type="button" class="btn btn-xxs">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="$(this).toggleClass('active').siblings().removeClass('active')">
+                            <td></td>
+                            <td>설립</td>
+                            <td>
+                                <input type="text" name="" id="" value="인천돌봄센터" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="김민수" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="123-12-12345" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="1234567890" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="인천광역시" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <div class="tb-btn">
+                                    <button type="button" class="btn btn-xxs">수정</button>
+                                    <button type="button" class="btn btn-xxs">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="$(this).toggleClass('active').siblings().removeClass('active')">
+                            <td></td>
+                            <td>설립</td>
+                            <td>
+                                <input type="text" name="" id="" value="인천돌봄센터" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="김민수" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="123-12-12345" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="1234567890" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="인천광역시" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <div class="tb-btn">
+                                    <button type="button" class="btn btn-xxs">수정</button>
+                                    <button type="button" class="btn btn-xxs">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="$(this).toggleClass('active').siblings().removeClass('active')">
+                            <td></td>
+                            <td>설립</td>
+                            <td>
+                                <input type="text" name="" id="" value="인천돌봄센터" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="김민수" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="123-12-12345" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="1234567890" readonly class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" value="인천광역시" readonly class="form-control form-srch"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" readonly class="datepicker form-control" data-type="single"/>
+                            </td>
+                            <td>
+                                <div class="tb-btn">
+                                    <button type="button" class="btn btn-xxs">수정</button>
+                                    <button type="button" class="btn btn-xxs">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- // -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- E : table -->
+
+        <br><br>
+    
         <!-- S : tab -->
         <p class="h1" id="tabGuide">tab</p>
+        <!-- type tabs -->
         <div class="tab">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
@@ -346,6 +545,46 @@
                 </li>
             </ul>
         </div>
+        <!-- // -->
+
+        <!-- type step -->
+        <div class="form-processbar">
+            <ul>
+                <!-- [D] 체크 아이콘 .on / 강조 효과 .active -->
+                <li class="on">
+                    <a href="#">
+                        <span class="num"><span>1</span></span>
+                        <p>Step. 1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="num"><span>2</span></span>
+                        <p>Step. 2</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="num"><span>3</span></span>
+                        <p>Step. 3</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span class="num"><span>4</span></span>
+                        <p>정보수집 이용제공에 관한 동의서</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="num"><span>5</span></span>
+                        <p>Step. 5</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- // -->
+
         <!-- E : tab -->
 
         <!-- S : button -->

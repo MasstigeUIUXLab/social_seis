@@ -41471,6 +41471,7 @@ body.is-scroll .header {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
+  display: none;
 }
 .footer__top .sns a {
   display: inline-block;
@@ -41523,6 +41524,7 @@ body.is-scroll .header {
   right: 0;
   bottom: 7px;
   width: 90px;
+  display: none;
 }
 .footer__bottom .copyright {
   margin-top: 1.25rem;
@@ -48431,7 +48433,7 @@ input[type=radio][readonly]:not([checked]) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 12px;
+  gap: 16px;
   color: #222;
   font-weight: 400;
 }
@@ -48442,12 +48444,17 @@ input[type=radio][readonly]:not([checked]) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 12px 24px;
+  gap: 0.75rem 1.5rem;
+}
+.file-list .item:not(:first-child) {
+  padding-top: 12px;
+  border-top: 1px solid #E7E7E7;
 }
 .file-list .item .file-name {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  min-width: 36%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -48523,7 +48530,7 @@ input[type=radio][readonly]:not([checked]) {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    gap: 20px 0;
+    gap: 10px 0;
   }
   .file-list .item .file-name {
     width: 100%;
