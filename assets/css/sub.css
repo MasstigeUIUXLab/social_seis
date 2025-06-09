@@ -2249,7 +2249,7 @@
 .btn-fix .inner .left {
   margin-right: auto;
 }
-.btn-fix .inner > * {
+.btn-fix .inner > .left, .btn-fix .inner > .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2291,17 +2291,21 @@
     gap: 4px;
   }
   .btn-fix .btn {
-    min-width: 0;
     padding: 12px 16px;
   }
 }
 @media all and (max-width: 576px) {
+  .btn-fix .inner > .left, .btn-fix .inner > .right {
+    gap: 4px;
+  }
   .btn-fix .btn {
-    min-width: 0;
-    padding: 10px 12px;
+    min-width: 60px;
+    height: 35px;
+    padding: 7px 10px;
+    border-radius: 4px;
     font-size: 14px;
-    height: 40px;
-    line-height: 40px;
+    line-height: 35px;
+    white-space: nowrap;
   }
 }
 
