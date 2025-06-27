@@ -154,12 +154,32 @@ function closePopup() {
 
 $(document).ready(function(){
   /*사이트 맵*/
+  $('.header__wrap .nav').clone().appendTo('#menu');
+  $('.sitemap > .container > .inner').prepend('<button type="button" class="btn-sitemap-close"><i class="icon-sitemap-close"></i><span class="sr-only"></span></button>')
+
+  // quick
+  $(document).on('click', '.btn-sitemap-close', function(){
+    console.log($(this));
+    if(!$('body').hasClass('sitemap-open')){
+      sitemapToggle(true);
+    } else {
+      sitemapToggle(false);
+    }
+	});
+
   function sitemapToggle(isOpen) {
-    $('.sitemap').toggleClass('active', isOpen);
-    $('body').toggleClass('sitemap-open', isOpen);
+    if(isOpen){
+      $('body').addClass('sitemap-open');
+      $('#menu').find('a').first().focus();
+    } else {
+      $('.btn-sitemap').filter('.active').focus();
+      $('.btn-sitemap').removeClass('active');
+      $('body').removeClass('sitemap-open');
+      $('#header').removeClass('gnb-hover').find('.nav__bg').hide();
+    }
   }
 
-  $('.sitemap-btn').on('click', function () {
+  $('.btn-sitemap').on('click', function () {
     if(!$(this).hasClass('active')){
       $(this).addClass('active');
       sitemapToggle(true);
@@ -169,12 +189,26 @@ $(document).ready(function(){
     }
   });
 
-  $(document).on('keydown', function (e) {
-    if (e.key === 'Escape' && $('.sitemap').hasClass('active')) {
-      sitemapToggle(false);
+	function sitemapFocusMove(tg) {
+		sitemapToggle(false);
+	}
+
+	$('.btn-sitemap-close').on("keydown", function(event) { 
+		if (event.shiftKey && (event.keyCode || event.which) === 9) {
+			event.preventDefault();
+			sitemapFocusMove();
     }
   });
 
+	$('#menu').find('a').last().on("blur", function(event) {
+    $('.btn-sitemap-close').focus();
+	});
+
+  $(document).on('keydown', function (e) {
+    if (e.key === 'Escape' && $('body').hasClass('sitemap-open')) {
+      sitemapToggle(false);
+    }
+  });
   // snb
   if($('#snb').length){
     // if(matchMedia("screen and (max-width:768px)").matches){

@@ -183,131 +183,310 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
   left: 0;
   z-index: 1000;
   width: 100vw;
-  height: 100vh;
-  background: #fff;
-  padding: 0 20px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.35s ease-in;
+  height: 100vh;    
+  padding: 80px 0 40px;   
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: linear-gradient(90deg, #F8FFF9 0%, #FFF 100%);
+  display: none;
+  // transition: 0.35s ease-in;
 
-  .container {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
+  .container{
+    max-width: 1524px;
+    padding: 0 42px;
   }
 
   .inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     position: relative;
     height: 100%;
-    padding: rem(60) 0;
-
-    $menuWidth: 350;
-    $menuPadding: 4.6875vw;
 
     .logo {
-      justify-content: flex-end;
-      top: 60px;
-      width: rem($menuWidth);
-      height: 100px;
-      padding-right: $menuPadding;
+      display: none;
 
       img {
         max-width: none;
       }
     }
 
-    &::before {
-      content: "";
+    .btn-sitemap-close{
       position: absolute;
-      top: 0;
-      left: rem($menuWidth);
-      width: 1px;
-      height: 100%;
-      background-color: rgba($color: $white, $alpha: 0.3);
+      top: -60px;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      z-index: 10;
+    
+      i{
+        width: 100%;
+        height: 100%;
+        background: url(../images/common/icon_sitemap_close.svg) no-repeat center / 20px;
+      }
     }
 
     #menu {
+      width: 100%;
+
       .nav {
-        .depth-1 {
+        display: block;
+        margin: 0;
+
+        .nav-list--depth1 {
           display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          height: rem(100);
-          color: #222;
-          overflow: hidden;
+          align-items: unset;
+          height: 100%;
+          margin-right: -42px;
+          margin-left: -42px;
 
-          > .link {
-            justify-content: flex-end;
-            width: rem($menuWidth);
-            height: 100%;
-            font-size: rem(22);
-            padding-right: $menuPadding;
-            white-space: nowrap;
-            transform: translateY(100%);
-            transition: color 0.25s ease;
+          & > .depth-1:not(:first-child){
+            border-left: 1px solid #E3E3E3;
+          }
+        }
 
-            &:hover {
-              transition-delay: 0s !important;
+        .depth-1 {
+          flex-basis: 20%;
+          max-width: 20%;
+          padding: 0 42px;
+
+          & > .link{
+            height: auto;
+            padding: 0 0 12px;
+            font-size: 24px;
+            font-weight: 600;
+            border-bottom: 1px solid #666;
+            justify-content: flex-start;
+            color: #222 !important;
+
+            &:after{
+              display: none;
+            }
+          }
+        }
+        
+        .nav-list--depth2 {
+          gap: 16px;
+          margin: 0;
+        }
+
+        .depth-2 {
+          width: 100%;
+          margin-top: 0;
+          padding: 0;
+
+          & > .link{
+            position:relative;
+            margin-bottom: 4px;
+            padding:0 0 0 1.2em;
+            border-bottom: 0;
+            font-size:rem(20);
+            font-weight:600;
+
+            &:before{
+                content:'';
+                position:absolute;
+                top:0.4em;
+                left:0;
+                display:inline-block;
+                width: 0.6em;
+                height: 0.6em;
+                border-radius:50%;
+                background-color:#222;
             }
           }
 
-          &.on {
-            font-weight: 700;
+          &.divide-2 .inner {
+              width: 100%;
+              flex-direction: column;
+              gap: 0;
+
+             .nav-list--depth3 {
+                width: 100%;
+              }
           }
         }
-        .depth-2 {
+        
+        .depth-3 {
+          .link{
+            position: relative;
+            padding: 4px 0 4px 12px;
+
+            &:before{  
+              content: "-";
+              position: absolute;
+              left: 0;
+            }
+          }
+        }
+        
+        .nav-list--depth3 {
           margin-top: 0;
+          padding-left: 24px;
         }
-        .nav-list--depth1 {
-          display: block;
-        }
-        .nav-list--depth2 {
-          flex: 1;
-          display: flex !important;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 0 rem(60);
-          position: relative;
-          top: 0;
-          height: 100%;
-          padding: 10px 0;
-          padding-left: 5.2083vw;
-          transform: translateY(100%);
+
+        .submenu{
+            display: block !important;
+            opacity: 1 !important;
+            position: relative;
+            top: unset;
+            min-height: 0;
+            margin-top: 20px;
+            padding: 0;
+            border: 0;
+            background: none;
+
+            &-inner{
+              display: block;
+              
+            }
+
+            .nav-title{
+              display: none;
+            }
         }
       }
     }
-    @media screen and (max-height: 870px) {
-      .top {
-        margin-bottom: rem(30);
-      }
-      #menu {
-        .nav {
-          .depth-1 {
-            & + .depth-1 {
-              margin-top: rem(20);
+  }
+
+  &-open {
+    overflow: hidden !important;
+    .sitemap {
+      display: block;
+    }
+
+    .dimmed {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  @include mdq-max(xxxl) {
+    .inner{
+      #menu{
+        .nav{
+          .nav-list--depth1 {
+            margin-right: -32px;
+            margin-left: -32px;
+          }
+          .depth-1{
+            padding: 0 32px;
+          }
+
+          .nav-list--depth2 {
+            gap: 12px;
+          }
+          
+          .depth-2{
+            & > .link{
+              padding: 0 0 0 20px;
+              font-size: 18px;
+
+              &:before{
+                width: 0.5em;
+                height: 0.5em;
+              }
+            }
+          }
+          .nav-list--depth3 {
+            padding-left: 16px;
+          }
+
+          .depth-3{
+            .link{
+              font-size: 14px;
             }
           }
         }
       }
     }
   }
+  
+  @include mdq-max(xl) {
+    padding: 50px 0 20px;
 
-  @include mdq-min(xl) {
-    &.active {
-      opacity: 1;
-      visibility: visible;
+    .container{
+      padding: 0 20px;
     }
+    .inner{
+      #menu .nav {
+        .nav-list--depth1 {
+        flex-direction: column;
+          margin-right: 0;
+          margin-left: 0;
+          
+          & > .depth-1:not(:first-child){
+            border-left: 0;
+          }
+        }
+        .depth-1{
+          flex-basis: 100%;
+          max-width: 100%;
+          padding: 0;
 
-    &-open {
-      overflow: hidden !important;
+          & > .link{
+            padding: 0 0 12px;
+            font-size: 18px;
+          }
 
-      .dimmed {
-        opacity: 1;
-        visibility: visible;
+          & + .depth-1{
+            margin-top: 32px;
+          }
+        }
+
+        .nav-list--depth2 {
+          gap: 16px 0;
+          margin-right: -8px;
+          margin-left: -8px;
+        }
+
+        .depth-2{
+          flex-basis: 25%;
+          max-width: 25%;
+          padding: 0 8px;
+
+          & > .link{
+            padding: 0 0 0 16px;
+            font-size: 16px;
+
+            &:before{
+              top: 0.5em;
+              width: 6px;
+              height: 6px;
+            }
+          }
+        }
+        .depth-3{
+          .link{
+            padding: 2px 0 2px 10px;
+            font-size: 14px;
+          }
+        }
       }
+
+      .btn-sitemap-close{
+        top: -44px;
+        right: -10px;
+
+        i{
+          background-size: 16px;
+        }
+      }
+    }
+  }
+  
+  @include mdq-max(lg) {
+    .inner #menu .nav .depth-2{
+      flex-basis: 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  @include mdq-max(md) {
+    .inner #menu .nav .depth-2{
+      flex-basis: 50%;
+      max-width: 50%;
     }
   }
 }
