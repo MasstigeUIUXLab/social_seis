@@ -410,6 +410,19 @@
   font-size: 1em;
   line-height: inherit;
 }
+.list-bullet.list-num.v4 > li {
+  padding-left: 1.75em;
+}
+.list-bullet.list-num.v4 > li:before {
+  counter-increment: number 1;
+  content: "0" counter(number);
+  top: 0;
+  width: auto;
+  height: auto;
+  border: 0;
+  font-size: 1em;
+  line-height: inherit;
+}
 .list-bullet.list-dash > li {
   padding-left: 0.778em;
 }
@@ -2958,18 +2971,34 @@
           flex-direction: row;
   gap: 1rem;
 }
-.bx-top.bx-icon-wrp [class^=icon-] {
+.bx-top.bx-icon-wrp.text-center {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+.bx-top.bx-icon-wrp.text-center > * {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bx-top.bx-icon-wrp > [class^=icon-] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 5rem;
           flex: 0 0 5rem;
   width: 5rem;
   height: 5rem;
 }
-.bx-top.bx-icon-wrp [class^=icon-].icon-01 {
+.bx-top.bx-icon-wrp > [class^=icon-].icon-01 {
   background-image: url(../../assets/images/sub/bx_icon01.svg);
 }
-.bx-top.bx-icon-wrp [class^=icon-].icon-02 {
+.bx-top.bx-icon-wrp > [class^=icon-].icon-02 {
   background-image: url(../../assets/images/sub/bx_icon02.svg);
+}
+.bx-top.bx-icon-wrp > [class^=icon-].icon-03 {
+  background-image: url(../../assets/images/sub/bx_icon03.svg);
 }
 @media all and (max-width: 768px) {
   .bx-top.bx-icon-wrp {
@@ -2978,7 +3007,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .bx-top.bx-icon-wrp [class^=icon-] {
+  .bx-top.bx-icon-wrp > [class^=icon-] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40px;
             flex: 0 0 40px;
@@ -3023,6 +3052,9 @@
 }
 .bx-top + .form-header {
   padding-top: 0;
+}
+.bx-top .list-num li:before {
+  color: #246BEB;
 }
 @media all and (max-width: 1024px) {
   .bx-top > strong, .bx-top .txt-area > strong {
@@ -3988,6 +4020,11 @@
   width: 1.5rem;
   height: 1.5rem;
   background: url(../../assets/images/sub/icon_arr.svg) no-repeat center/100% auto;
+}
+.icon-arr-wh {
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url(../../assets/images/sub/icon_arr_wh.svg) no-repeat center/100% auto;
 }
 .icon-arr.reverse {
   -webkit-transform: scale(-1, 1);

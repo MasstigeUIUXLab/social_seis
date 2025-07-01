@@ -82,7 +82,7 @@
 	* main 페이지를 제외한 나머지 : sub-body 
 	* [D] 04-21 수정 / 신청서 페이지의 경우 : form-page
 -->
-<body class="sub-body">
+<body class="sub-body form-page">
 <div id="wrap">
 	<!-- header -->
     <header id="header" class="header">
@@ -618,357 +618,123 @@
 
 <!-- 페이지시작 -->
 <div id="ct">
-	<div class="sub-container sub-layout">
+	<div class="sub-container">
 		<div class="container">
-			<div class="layout">
-				<div class="snb" id="snb">
-                    <h2><a href="#" data-toggle="snb">마이페이지</a></h2>
-					<ul class="nav nav-side">
-						<li class="nav-item">
-							<!-- [D] 04-16 수정 
-							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
-							* 탭 활성화 .active 추가,
-							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a class="nav-link nav-btn" href="#">기업정보관리</a>
-							<ul class="depth2">
-								<li>
-									<a href="#" class="nav-link on">기본정보</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">통합문서함</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">사업보고서</a>
-							<ul class="depth2">
-								<li>
-									<a href="#" class="nav-link">사업보고서 등록</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">자율경영공시 참여</a>
-							<ul class="depth2">
-								<li>
-									<a href="#" class="nav-link">신청</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">신청이력</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">확인서발급</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">통계</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">재정지원 신청</a>
-							<ul class="depth2">
-								<li>
-									<a href="#" class="nav-link">일자리창출</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">전문인력</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">사업개발비</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">사회보험료</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link on" href="#">나의 신청현황</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">증명서 발급 신청</a>
-							<ul class="depth2">
-								<li>
-									<a href="#" class="nav-link">신청</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">조회</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">관심분야</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">나의 정보</a>
-							<ul class="depth2">
-								<li>
-									<a href="#" class="nav-link">정보수정</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">알림관리</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">회원탈퇴</a>
-								</li>
-							</ul>
-						</li>
+			<div class="lnb">
+				<div class="home">
+					<i class="icon-home"></i>
+					<span>홈</span>
+				</div>
+				<i class="icon-lnb-arr"></i>
+				<div class="dropdown">
+					<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">마이페이지</button>
+					<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
+						<li><a class="dropdown-item" href="#">link 1</a></li>
+						<li><a class="dropdown-item" href="#">link 2</a></li>
+						<li><a class="dropdown-item" href="#">link 3</a></li>
 					</ul>
-            	</div>
-				<div class="page">
-					<div class="lnb">
-						<div class="home">
-							<i class="icon-home"></i>
-							<span>홈</span>
+				</div>
+				<i class="icon-lnb-arr"></i>
+				<div class="dropdown">
+					<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">경영공시</button>
+					<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
+						<li><a class="dropdown-item" href="#">link 1</a></li>
+						<li><a class="dropdown-item" href="#">link 2</a></li>
+						<li><a class="dropdown-item" href="#">link 3</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub-header">
+				<h2 class="tit">경영공시</h2>
+			</div>
+			<div class="sub-contents">
+				<div class="form-container">
+					<div class="sect">
+						<!-- S: 1. 동의서 제출 버튼 생성 요청 -->
+						<div class="bx-top bx-icon-wrp text-center">
+							<i class="icon-03"></i>
+							<div class="txt-area">
+								<strong>동의서 제출</strong>
+								<div class="txt">
+									<p>클릭하면 eform으로 연결됩니다.</p> 
+								</div>
+							</div>
+							<div class="btn-wrp">
+								<a href="#" class="btn btn-blue">eform으로 연결<i class="icon-arr-wh"></i></a>
+							</div>
 						</div>
-						<i class="icon-lnb-arr"></i>
-						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">마이페이지</button>
-							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
-								<li><a class="dropdown-item" href="#">link 1</a></li>
-								<li><a class="dropdown-item" href="#">link 2</a></li>
-								<li><a class="dropdown-item" href="#">link 3</a></li>
-							</ul>
-						</div>
-						<i class="icon-lnb-arr"></i>
-						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">나의 신청 현황</button>
-							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
-								<li><a class="dropdown-item" href="#">link 1</a></li>
-								<li><a class="dropdown-item" href="#">link 2</a></li>
-								<li><a class="dropdown-item" href="#">link 3</a></li>
-							</ul>
-						</div>
+						<!-- E: 1. 동의서 제출 버튼 생성 요청 -->
 					</div>
-					<div class="sub-header">
-						<h2 class="tit">신청현황</h2>
-					</div>
-					<div class="sub-contents">
+
+					<div class="sect">
 						<div class="board-wrap">
-							<!-- 표 -->
-							<div class="tb-wrap tb-mobile tb-column">
+							<div class="tb-wrap tb-mobile">
 								<table class="tb">
 									<colgroup>
-										<col width="7%">
-										<col width="18%">
-										<col width="28%">
-										<col width="18%">
-										<col width="14%">
-										<col width="14%">
+										<col width="32%">
+										<col width="68%">
 									</colgroup>
-									<thead>
-										<tr>
-											<th>연번</th>
-											<th>신청일자</th>
-											<th>사업구분</th>
-											<th>진행상태</th>
-											<th>보완마감일자</th>
-											<th>보완제출일자</th>
-										</tr>
-									</thead>
 									<tbody>
-										<!-- [D] 07-01 수정 / tr에 click 이벤트 제거 & td내 상세로 이동하거나 팝업을 띄우려는 버튼에 a태그 삽입 -->
 										<tr>
-											<td class="only-pc">
-												<div class="cell-mo">연번</div>
-												<div class="cell">
-													10
-												</div>
-											</td>
+											<th class="text-left">사업계획서 첨부</th>
 											<td>
-												<div class="cell-mo">신청일자</div>
-												<div class="cell">
-													2025-02-14
+												<!-- S: 2. 표 내 강제 좌측정렬 .text-left 사용 / .mb-2는 여백을 위한 클래스입니다 -->
+												<div class="text-left mb-2">
+													<button type="button" class="btn btn-xs btn-blue">사회가치 측정 보고서 양식 다운로드</button>
 												</div>
-											</td>
-											<td>
-												<div class="cell-mo">사업구분</div>
-												<div class="cell">
-													사회적기업 인증
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">진행상태</div>
-												<div class="cell">
-													<!-- [D] 07-01 수정 -->
-													<a href="04_마이페이지_05나의신청현황_인증신청조회.html" class="btn-text" title="상세로 이동">제출완료</a>
-													<!-- // -->
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">보완마감일</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">보완제출일</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-										</tr>		
-										<tr>
-											<td class="only-pc">
-												<div class="cell-mo">연번</div>
-												<div class="cell">
-													9
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">신청일자</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">사업구분</div>
-												<div class="cell">
-													사회적기업 인증
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">진행상태</div>
-												<div class="cell">
-													<!-- [D] 07-01 수정 -->
-													<a href="04_마이페이지_05나의신청현황_인증신청조회.html" class="btn-text" title="상세로 이동">제출완료</a>
-													<!-- // -->
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">보완마감일</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">보완제출일</div>
-												<div class="cell">
-													2025-02-14
+												<!-- // E: 2. 표 내 강제 좌측정렬-->
+												<div class="file-group">
+													<div class="form-row">
+														<ul class="file-list">
+															<li class="item">
+																<p class="file-name"><span>사업계획서.pdf</span></p>
+																<div class="file-control">
+																	<label class="file-label">
+																		<input type="file" name="file1" onchange="onchangeUpload(event);">
+																		<span class="btn btn-xs btn-outline-blue file-label__btn">파일첨부</span>
+																	</label>
+																	<button type="button" class="btn btn-xs btn-outline-red">파일삭제</button>
+																	<button type="button" class="btn btn-xs btn-outline-blue">PDF 보기</button>
+																	<a href="#" download="" class="btn btn-xs btn-blue">파일다운</a>
+																</div>
+															</li>
+														</ul>
+													</div>
 												</div>
 											</td>
 										</tr>
-										<tr>
-											<td class="only-pc">
-												<div class="cell-mo">연번</div>
-												<div class="cell">
-													10
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">신청일자</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">사업구분</div>
-												<div class="cell">
-													사회적기업 인증
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">진행상태</div>
-												<div class="cell">
-													<!-- [D] 07-01 추가 -->
-													<a href="#modal1" data-toggle="modal" title="반려(사유서확인) 상세 팝업" class="btn-text">반려(사유서확인)</a>
-													<!-- // -->
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">보완마감일</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">보완제출일</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-										</tr>		
-										<tr>
-											<td class="only-pc">
-												<div class="cell-mo">연번</div>
-												<div class="cell">
-													10
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">신청일자</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">사업구분</div>
-												<div class="cell">
-													사회적기업 인증
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">진행상태</div>
-												<div class="cell">
-													<!-- [D] 07-01 추가 -->
-													<a href="#modal1" data-toggle="modal" title="신청취소(사유서확인) 상세 팝업" class="btn-text">신청취소(사유서확인)</a>
-													<!-- // -->
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">보완마감일</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-											<td>
-												<div class="cell-mo">보완제출일</div>
-												<div class="cell">
-													2025-02-14
-												</div>
-											</td>
-										</tr>		
 									</tbody>
 								</table>
 							</div>
-							<!-- // -->
-							
-							<!-- 페이징 -->
-							<div class="paging-area">
-								<ul>
-									<li>
-										<a href="javascript:;" class="prev"><span>이전</span></a>
-									</li>
-									<li>
-										<a href="javascript:;" class="active"><span>1</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><span>2</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><span>3</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><span>4</span></a>
-									</li>
-									<li>
-										<a href="javascript:;"><span>5</span></a>
-									</li>
-									<li>
-										<a href="javascript:;" class="dot"><span></span></a>
-									</li>
-									<li>
-										<a href="javascript:;" class="next"><span>다음</span></a>
-									</li>
-								</ul>
-							</div> 
-							<!-- // 페이징 -->
+						</div>
+					</div>
 
-							<!-- [D] 내역 없을 때** 임시로 display: none 처리 -->
-							<div class="bx-result" style="display: none;">
-								<p>신청내역이 존재하지 않습니다.</p>
-							</div>
-							<!-- // -->
-						</div>     
+					<div class="sect">
+						<!-- S: 3. 박스 디자인 -->
+						<div class="bx-top align-items-start">
+							<strong>재정지원사업 참여관련 공통 공지사항</strong>
+							<!-- [D] 
+							 	list-num type별 
+								* 기본 => ① ② ③
+								* .v2 => 1. 2. 3.
+							 	* .v3 => 01. 02. 03. 
+								* .v4 => 01 02 03 (07.01 추가)
+							-->
+							<ul class="list-bullet list-num v4"> 
+								<li>국가에서 추진하는 재정지원 사업 참여와 관련하여 사업에 대한 만족도 조사 및 지원금의 적정한 지급여부, 관련제도 개선에 필요한 의견조사를 위해 사업참여기업 및 근로자의 전화번호(휴대폰번호) 로 전화조사 또는 설문을 실시할 수 있습니다.</li>
+								<li>사업참여 제한 대상(사업참여기업 대표자, 등기임원의 배우자, 형제 자매, 직계존비속 및 그 배우자의 형제자매, 직계존비속)이 추후에 사업에 참여한 것으로 확인된 경우 부정수급으로 처리됩니다.</li>
+								<li>거짓 신청이나 기타 부정한 방법으로 지원금을 지급받은 경우 금액규모에 관계없이 약정해지되며 모든 재정지원사업에서 참여가 배제됩니다.</li>
+								<li>거짓 신청이나 그 밖의 부정한 방법으로 보조금을 교부받은 경우, 보조금을 다른 용도에 사용한 경우 등을 행정관청이나 수사기관에 신고 또는 고발한 자에게는 예산의 범위에서 포상금이 지급됩니다.</li>
+							</ul>
+						</div>
+						<!-- E: 3. 박스 디자인 -->
+					</div>
+				</div>
+				<div class="btn-fix">
+					<div class="container">
+						<div class="inner">
+							<button type="button" class="btn btn-blue">제출</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1041,48 +807,5 @@
 	</footer>
 	<!-- // footer -->
 </div>
-
-<!-- 반려사유서 -->
-<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h3 class="tit">반려사유서</h3>
-				<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
-			</div>
-			<div class="modal-body">
-				<div class="sect-hd">
-					<h2 class="tit">2026년 제1차 사회적기업 인증 신청 반려 사유</h2>
-				</div>
-				<div class="sect-body">
-					<div class="form-header normal sm">
-						<h3 class="tit">사업장명: (주)사회적기업진흥원</h3>
-					</div>
-					<div class="form-group">
-						<div class="form-tit-wrp">
-							<p class="form-tit">미충족 조건</p>
-						</div>
-						<div class="form-input-group">
-							<textarea name="" id="" readonly class="form-control">텍스트</textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="form-tit-wrp">
-							<p class="form-tit">내용</p>
-						</div>
-						<div class="form-input-group">
-							<textarea name="" id="" readonly class="form-control">텍스트</textarea>
-						</div>
-					</div>
-				</div>
-				<div class="btn-wrp justify-content-center gap8">
-					<a href="#" class="btn btn-outline-black" data-dismiss="modal">닫기</a>
-				</div>
-			</div>          
-		</div>
-	</div>
-</div>
-<!-- // 반려사유서 -->
-
 </body>
 </html>

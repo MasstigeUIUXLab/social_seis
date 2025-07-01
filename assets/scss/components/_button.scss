@@ -17,6 +17,10 @@
   transition: .3s;
   color: #222;
 
+  @include hover {
+    background: #f8f8f8 !important;
+  }
+  
   &-wrp {
     display: flex;
     align-items: center;
@@ -171,7 +175,7 @@
     border-color: #727272 !important;
 
     @include hover {
-      background: #eee !important;
+      background: #f8f8f8 !important;
     }
   }
 
@@ -211,7 +215,7 @@
     color: #222 !important;
 
     @include hover {
-      background: #fefefe !important;
+      background: #f8f8f8 !important;
     }
   }
 

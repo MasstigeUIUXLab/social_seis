@@ -42589,6 +42589,9 @@ body.is-scroll .header {
   transition: 0.3s;
   color: #222;
 }
+.btn:hover {
+  background: #f8f8f8 !important;
+}
 .btn-wrp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42746,7 +42749,7 @@ body.is-scroll .header {
   border-color: #727272 !important;
 }
 .btn-outline-black:hover {
-  background: #eee !important;
+  background: #f8f8f8 !important;
 }
 .btn-outline-green {
   background-color: #fff;
@@ -42778,7 +42781,7 @@ body.is-scroll .header {
   color: #222 !important;
 }
 .btn-outline-gray:hover {
-  background: #fefefe !important;
+  background: #f8f8f8 !important;
 }
 .btn-lg {
   height: 56px;
