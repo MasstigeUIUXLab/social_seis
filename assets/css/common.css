@@ -42590,7 +42590,7 @@ body.is-scroll .header {
   color: #222;
 }
 .btn:hover {
-  background: #f8f8f8 !important;
+  background: #f8f8f8;
 }
 .btn-wrp {
   display: -webkit-box;

@@ -73,6 +73,8 @@
 <!-- [D] * only sub -->
 <!-- [D] 05-30 추가 old 파일 링크 추가 -->
 <link rel="stylesheet" type="text/css" href="../assets/css/old2.css" />
+<!-- [D] 07-02 추가 old 파일 링크 추가 (js) -->
+<script src="../assets/js/old.js"></script>
 <!-- //-->
 <link rel="stylesheet" href="../assets/css/sub.css" />
 <title></title>
@@ -736,6 +738,60 @@
 					</div>
 					<div class="sub-header">
 						<h2 class="tit">사회적가치지표(SVI)</h2>
+						<!-- [D] 07-02 추가 -->
+						<script type="text/javascript">
+						//<![CDATA[
+							$(function() {
+								var url = window.location.href;
+								var proto = window.location.protocol;
+								
+								$('#urlText').val(url);
+								
+								$('#btnCopy').on("click", function(e) {
+									e.preventDefault();
+									
+									$('#urlText').focus();
+									var content = document.getElementById('urlText').value;
+									
+									if (proto.indexOf('https') != -1) {
+										// https 에서만 작동
+										window.navigator.clipboard.writeText(content).then(() => {
+											alert('복사되었습니다.');
+											$(".layer_close").click();
+											return;
+										})
+										.catch(err => {
+											console.log('err', err);
+										})
+									} else {
+										var t = document.createElement("textarea");
+										document.body.appendChild(t);
+										t.value = content;
+										t.select();
+										document.execCommand('copy');
+										document.body.removeChild(t);
+										alert('복사되었습니다.');
+										$(".layer_close").click();
+									}
+								});
+							});
+						//]]>
+						</script>
+						<div class="snsBox">
+							<ul>
+								<li class="share">
+									<a href="#" onclick="return false;" class="sns_open">SNS<span>열기</span></a>
+									<ul>
+										<li><a href="#" title="페이스북에 공유하기 (새창)"><i class="icon-facebook"></i></a></li>
+										<li><a href="#" title="트위터에 공유하기 (새창)"><i class="icon-twiter"></i></a></li>
+										<li><a href="#" title="카카오톡에 공유하기 (새창)"><i class="icon-kakao"></i></a></li>
+										<li class="url"><a href="#modal1" data-toggle="modal" class="btn_open_layer">주소복사</a></li>
+									</ul>
+								</li>
+								<li class="print"><a href="#" onclick="return window.print();">인쇄</a></li>
+							</ul>
+						</div>
+						<!-- // [D] 07-02 추가 -->
 					</div>
 					<div class="sub-contents sub-asis">
 						<div class="raw-html-embed"> <div class="menu_tabs"> <div class="menu_tab4"> <ul> <li class="on"> <a href="#tab1">사회적가치지표(SVI) 개요</a> </li> <li> <a href="#tab2">사회적가치지표(SVI) 측정</a> </li> <li> <a href="#tab3">측정사례</a> </li> </ul> </div> <div class="menu_tab_conts"> <div id="tab1"> <p class="btnR"> <a href="https://www.socialenterprise.or.kr/social/board/view.do?m_cd=D019&amp;pg=1&amp;board_code=BO02&amp;category_id=&amp;category_sub_id=&amp;com_certifi_num=&amp;selectyear=&amp;magazine=&amp;title=&amp;search_word=&amp;search_type=&amp;seq_no=251125 " class="btn_view icon--arrow" target="_blank">2024년도 사회적가치지표(SVI) 측정기업 모집 공고</a> <a href="https://pms.seis.or.kr/cm/mn/cmMnMainPage.do?openMenu=SISM000005" class="btn_view icon--arrow" target="_blank">사회적가치지표(SVI) 자가진단 및 측정 신청</a> <!-- <a href="#" class="btn_view icon--arrow" target="_blank">사회적가치지표(SVI) 자가진단 매뉴얼</a> --> </p> <ol class="list_ol-rd2 single"> <li> <div class="tits"> <h5> 사회적가치지표 (Social Value Index, SVI) </h5> </div> <ul class="list_ul-dot c1"> <li> <span>‘사회적가치지표(SVI)’는 사회적경제기업이 사회적 목적을 가지고 조직운영을 통해 창출하는 사회적 성과와 그 영향을 종합적?객관적으로 측정하는 지표</span> </li> <li> <span>사회적 성과, 경제적 성과, 혁신 성과의 3가지 관점에 따라 14개 지표로 구성</span> </li> </ul> <ol class="box_svi"> <li> <dl> <dt> <span>관점</span>사회적 성과 </dt> <dd> <p> 조직이 사회적 성과를 실현하기 위해서 각종 기제를 설정하고 실행하고 있는지 여부를 측정 </p> <span>사회적 미션의 관리, 주사업활동의 사회적 성과, 사회적 경제 생태계 구축 노력, 이윤의 사회적 목적 재투자, 조직 운영의 민주성, 근로자 지향성 등</span> </dd> </dl> </li> <li> <dl> <dt> <span>관점</span>경제적 성과 </dt> <dd> <p> 조직이 효율적으로 인적·물적 자원을 투입하여 나타난 사업활동의 경제적인 결과를 측정 </p> <span>고용창출 및 재정성과, 노동성과 등</span> </dd> </dl> </li> <li> <dl> <dt> <span>관점</span>혁신 성과 </dt> <dd> <p> 기업활동에서 제품 및 서비스의 혁신성이 제대로 발현되고 있는지 여부를 측정 </p> <span>기업활동의 혁신성</span> </dd> </dl> </li> </ol> </li> <li> <div class="tits"> <h5> 지표구성 (14개) </h5> </div> <div class="table_cont"> <table class="contTable tc"> <caption><span>사회적 성과지표의 지표구성의 관점,범주,영역,측정지표, 배점 내용에 대한 정보입니다.</span></caption> <colgroup> <col style="width:16%"> <col style="width:14%"> <col style="width:20%"> <col> <col style="width:14%"> </colgroup> <thead> <tr> <th scope="col"> 관점 </th> <th scope="col"> 범주 </th> <th scope="col"> 영역 </th> <th scope="col"> 측정지표 </th> <th scope="col"> 배점 </th> </tr> </thead> <tbody> <tr> <th scope="row" rowspan="9"> 사회적 성과 (60) </th> <td rowspan="2"> 조직 미션 </td> <td rowspan="2"> 사회적 미션 </td> <td class="tl"> 1. 사회적 가치 추구 여부 </td> <td> <span class="units"><span class="numb text2">2</span></span> </td> </tr> <tr> <td class="tl"> 2. 사회적 성과 관리체계 구축여부 </td> <td> <span class="units"><span class="numb text2">5</span></span> </td> </tr> <tr> <td rowspan="4"> 사업 활동 </td> <td> 주사업활동의 사회적 가치 </td> <td class="tl"> 3. 사업활동의 사회적 가치 지향성(비계량 지표) </td> <td> <span class="units"><span class="numb text2">15</span></span> </td> </tr> <tr> <td rowspan="2"> 사회적경제 생태계 구축 </td> <td class="tl"> 4. 사회적경제기업과의 협력 수준 </td> <td> <span class="units"><span class="numb text2">5</span></span> </td> </tr> <tr> <td class="tl"> 5. 지역사회와의 협력 수준 </td> <td> <span class="units"><span class="numb text2">5</span></span> </td> </tr> <tr> <td> 사회적 목적 재투자 </td> <td class="tl"> 6. 사회적 환원 노력도(비계량 지표) </td> <td> <span class="units"><span class="numb text2">10</span></span> </td> </tr> <tr> <td rowspan="3"> 조직 운영 </td> <td> 운영의 민주성 </td> <td class="tl"> 7. 참여적 의사결정 비율 </td> <td> <span class="units"><span class="numb text2">5</span></span> </td> </tr> <tr> <td rowspan="2"> 근로자 지향성 </td> <td class="tl"> 8. 근로자 임금수준 </td> <td> <span class="units"><span class="numb text2">8</span></span> </td> </tr> <tr> <td class="tl"> 9. 근로자 역량강화 노력 </td> <td> <span class="units"><span class="numb text2">5</span></span> </td> </tr> <tr> <th scope="row" rowspan="4"> 경제적 성과 (30) </th> <td rowspan="4"> 재정 성과 </td> <td rowspan="3"> 고용창출 및 재정성과 </td> <td class="tl"> 10. 고용성과 </td> <td> <span class="units"><span class="numb text2">10</span></span> </td> </tr> <tr> <td class="tl"> 11. 매출성과 </td> <td> <span class="units"><span class="numb text2">10</span></span> </td> </tr> <tr> <td class="tl"> 12. 영업성과 </td> <td> <span class="units"><span class="numb text2">5</span></span> </td> </tr> <tr> <td> 노동성과 </td> <td class="tl"> 13. 노동생산성 </td> <td> <span class="units"><span class="numb text2">5</span></span> </td> </tr> <tr> <th scope="row"> 혁신 성과 (10) </th> <td> 기업 혁신 </td> <td> 기업 활동의 혁신성 </td> <td class="tl"> 14. 혁신노력도(비계량 지표) </td> <td> <span class="units"><span class="numb text2">10</span></span> </td> </tr> <tr class="total"> <th scope="row" colspan="2"> 합계 </th> <th scope="row" colspan="2"> 14개 지표 </th> <td> <span class="units"><span class="numb">100</span></span> </td> </tr> </tbody> </table> </div> <p class="btnR"> <a href="https://socialenterprise.or.kr/atchFileDownload.do?menuId=BO04&amp;seqNo=250545&amp;fileSeqNo=254535" class="btn_view icon--arrow" target="_blank">사회적가치지표 (SVI) 매뉴얼 다운로드</a> </p> </li> </ol> </div> <div id="tab2"> <ol class="list_ol-rd2 single"> <li> <div class="tits"> <h5> 2023년도 사회적가치지표 (SVI) 측정기업 모집 </h5> </div> <ul class="list_ul-dot c1"> <li> <span>모집기간: 2023.2.28.(화) ~ 2023.10.13.(금)</span> </li> <li> <span>참여대상: 사회적경제기업</span> </li> <li> <span>측정절차</span> <div class="procedure borders sm short"> <ol> <li> <span class="step">STEP<span>01</span></span> <div> <strong>모집 공고</strong> </div> </li> <li> <span class="step">STEP<span>02</span></span> <div> <strong>신청 접수</strong> </div> </li> <li> <span class="step">STEP<span>03</span></span> <div> <strong>SVI 측정</strong> </div> </li> <li> <span class="step">STEP<span>04</span></span> <div> <strong>결과 안내</strong> </div> </li> <li> <span class="step">STEP<span>05</span></span> <div> <strong>홍보 및 확산</strong> </div> </li> </ol> <p class="btnR"> <a href="https://www.socialenterprise.or.kr/social/board/view.do?m_cd=D019&amp;pg=1&amp;board_code=BO02&amp;category_id=&amp;category_sub_id=&amp;com_certifi_num=&amp;selectyear=&amp;magazine=&amp;title=&amp;search_word=&amp;search_type=&amp;seq_no=251125 " class="btn_view icon--arrow" target="_blank" title="새창열림">2023년도 사회적가치지표(SVI) 측정기업 모집 공고</a> </p> </div> </li> <li> <span>신청방법: 통합정보시스템 온라인 신청</span> <p class="btnR"> <!-- <a href="#" class="btn_view icon--arrow" target="_blank">사회적가치지표(SVI) 자가진단 매뉴얼</a> --> <a href="#" class="btn_view icon--arrow" target="_blank" title="새창열림">사회적가치지표(SVI) 자가진단 및 측정 신청</a> </p> </li> </ul> </li> </ol> </div> <div id="tab3"> <ol class="list_ol-rd2 single"> <li> <div class="tits"> <h5> 2022년도 사회적가치지표 (SVI) 측정사례 </h5> </div> <ul class="list_ul-dot c1"> <li> <span>행복나래 주식회사</span> <p> 고객과 함께 사회적가치를 창출하는 SCM전문 사회적 기업 </p> <div class="board_data_view"> <div class="view_box_items"> <ul> <li> <dl> <dt> 대표자명 </dt> <dd> 구영모 </dd> </dl> <dl> <dt> 설립일 </dt> <dd> 2000년 7월 5일 </dd> </dl> </li> <li> <dl> <dt> 인증번호 </dt> <dd> 제2013-067호 </dd> </dl> <dl> <dt> 사회적목적실현유형 </dt> <dd> 기타(창의·혁신형) </dd> </dl> </li> <li> <dl> <dt> 주업종 </dt> <dd> 도매 및 소매업 </dd> </dl> <dl> <dt> 소재지 </dt> <dd> 서울시 중구 </dd> </dl> </li> <li> <dl> <dt> 사업내용 </dt> <dd> SCM서비스, 온라인 유통사업 </dd> </dl> </li> <li> <dl> <dt> SVI측정결과 </dt> <dd> <span class="fs_num fw400 text3">97.0</span> / 탁월 </dd> </dl> </li> </ul> </div> <div class="svi"> <div class="result1"> <span>사회적성과</span> <span class="fs_num"><span class="text3">59</span>/60</span> </div> <div class="result2"> <span>경제적성과</span> <span class="fs_num"><span class="text3">28</span>/30</span> </div> <div class="result3"> <span>혁신 성과</span> <span class="fs_num"><span class="text3">10</span>/10</span> </div> </div> </div> </li> <li> <span>㈜코러싱</span> <p> 혁신적인 전기전자 정보통신기술로 사내가족과 고객, 사회구성원의 작은 행복을 실현하는 매출과 사회적가치평가 위에 사회적기업을 함께 만들어 간다. </p> <div class="board_data_view"> <div class="view_box_items"> <ul> <li> <dl> <dt> 대표자명 </dt> <dd> 박동식 </dd> </dl> <dl> <dt> 설립일 </dt> <dd> 2013년 6월 5일 </dd> </dl> </li> <li> <dl> <dt> 인증번호 </dt> <dd> 제2019-017호 </dd> </dl> <dl> <dt> 사회적목적실현유형 </dt> <dd> 일자리제공형 </dd> </dl> </li> <li> <dl> <dt> 주업종 </dt> <dd> 전문과학기술 서비스업 </dd> </dl> <dl> <dt> 소재지 </dt> <dd> 경북 구미시 </dd> </dl> </li> <li> <dl> <dt> 사업내용 </dt> <dd> 전기, 정보통신, 소방설비 관련 시설물 공사설계, 설치 및 유지보수 </dd> </dl> </li> <li> <dl> <dt> SVI측정결과 </dt> <dd> <span class="fs_num fw400 text3">95.4</span> / 탁월 </dd> </dl> </li> </ul> </div> <div class="svi"> <div class="result1"> <span>사회적성과</span> <span class="fs_num"><span class="text3">59</span>/60</span> </div> <div class="result2"> <span>경제적성과</span> <span class="fs_num"><span class="text3">28</span>/30</span> </div> <div class="result3"> <span>혁신 성과</span> <span class="fs_num"><span class="text3">10</span>/10</span> </div> </div> </div> </li> <li> <span>㈜행복더하기</span> <p> 지역복지 실현으로 지역주민의 삶의 질을 향상하고, 취약계층의 일자리 창출을 위한 소득증대, 고용의 안정적 유지로 행복한 삶 제공에 공헌한다. </p> <div class="board_data_view"> <div class="view_box_items"> <ul> <li> <dl> <dt> 대표자명 </dt> <dd> 유명곤 </dd> </dl> <dl> <dt> 설립일 </dt> <dd> 2012년 8월 9일 </dd> </dl> </li> <li> <dl> <dt> 인증번호 </dt> <dd> 제2015-106호 </dd> </dl> <dl> <dt> 사회적목적실현유형 </dt> <dd> 사회서비스제공형 </dd> </dl> </li> <li> <dl> <dt> 주업종 </dt> <dd> 사회복지서비스업/제조업 </dd> </dl> <dl> <dt> 소재지 </dt> <dd> 경기도 파주시 </dd> </dl> </li> <li> <dl> <dt> 사업내용 </dt> <dd> 장애인활동지원서비스, 장기요양재가방문서비스, 발달장애인주간방과후 서비스 </dd> </dl> </li> <li> <dl> <dt> SVI측정결과 </dt> <dd> <span class="fs_num fw400 text3">93.4</span> / 탁월 </dd> </dl> </li> </ul> </div> <div class="svi"> <div class="result1"> <span>사회적성과</span> <span class="fs_num"><span class="text3">56.4</span>/60</span> </div> <div class="result2"> <span>경제적성과</span> <span class="fs_num"><span class="text3">27</span>/30</span> </div> <div class="result3"> <span>혁신 성과</span> <span class="fs_num"><span class="text3">10</span>/10</span> </div> </div> </div> </li> <li> <span>㈜채움푸드</span> <p> 취약계층에게 다양한 사회서비스를 지원하고 안정적인 일자리를 제공함으로써 사회적 약자의 삶의 질 향상에 기여한다. </p> <div class="board_data_view"> <div class="view_box_items"> <ul> <li> <dl> <dt> 대표자명 </dt> <dd> 김순수 </dd> </dl> <dl> <dt> 설립일 </dt> <dd> 2017년 8월 1일 </dd> </dl> </li> <li> <dl> <dt> 인증번호 </dt> <dd> 제2019-264호 </dd> </dl> <dl> <dt> 사회적목적실현유형 </dt> <dd> 일자리제공형 </dd> </dl> </li> <li> <dl> <dt> 주업종 </dt> <dd> 식품제조가공업 </dd> </dl> <dl> <dt> 소재지 </dt> <dd> 경북 포항시 </dd> </dl> </li> <li> <dl> <dt> 사업내용 </dt> <dd> 식품제조가공업, 음식점업, 광고대행업 </dd> </dl> </li> <li> <dl> <dt> SVI측정결과 </dt> <dd> <span class="fs_num fw400 text3">93.4</span> / 탁월 </dd> </dl> </li> </ul> </div> <div class="svi"> <div class="result1"> <span>사회적성과</span> <span class="fs_num"><span class="text3">54.4</span>/60</span> </div> <div class="result2"> <span>경제적성과</span> <span class="fs_num"><span class="text3">29</span>/30</span> </div> <div class="result3"> <span>혁신 성과</span> <span class="fs_num"><span class="text3">10</span>/10</span> </div> </div> </div> </li> </ul> </li> </ol> <p class="btnR"> <a href="https://www.socialenterprise.or.kr/social/board/view.do?m_cd=D024&amp;pg=1&amp;board_code=BO04&amp;category_id=CA01&amp;category_sub_id=&amp;com_certifi_num=&amp;selectyear=&amp;magazine=&amp;title=&amp;search_word=SVI&amp;search_type=titl&amp;seq_no=248870" class="btn_view icon--arrow" target="_blank">2022년도 사회적가치지표(SVI) 측정기업 리스트</a> </p> </div> </div> </div> </div>
@@ -744,6 +800,32 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- [D] 07-02 추가 / 주소복사 팝업 -->
+	<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="tit">주소복사</h3>
+					<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="sect-body">
+						<div class="form-tit-wrp">
+							<p class="form-tit">아래 복사하기를 누르신 후 원하는 곳에 <span class="text-red">Ctrl+V</span>를 눌러 붙여넣기 하세요.</p>
+						</div>
+						<div class="mt-4">
+							<input id="urlText" type="text" class="form-control" value="" placeholder="http://" style="width:100%;" onfocus="this.select()">
+						</div>
+					</div>
+					<div class="btn-wrp justify-content-center gap8">
+						<button id="btnCopy" class="btn btn-black">복사하기</button>
+					</div>
+				</div>          
+			</div>
+		</div>
+	</div>
+	<!-- // 07-02 추가 / 주소복사 팝업 -->
 </div>
 <!-- // 페이지시작 -->
 
