@@ -85,8 +85,8 @@
   margin-left: 1rem;
   border-radius: 17px;
   background: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
 }
 .sub-header .snsBox > ul > li > a {
   position: relative;
@@ -107,7 +107,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/sub/icon_print.svg) no-repeat center/1.25rem auto;
+  background: url(../images/sub/icon_print.svg) no-repeat center/20px auto;
 }
 .sub-header .snsBox > ul > li.share {
   position: relative;
@@ -137,15 +137,15 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/sub/icon_share.svg) no-repeat center/1.25rem auto;
+  background: url(../images/sub/icon_share.svg) no-repeat center/20px auto;
 }
 .sub-header .snsBox > ul > li.share ul {
-  padding: 0 8px;
   margin-right: 8px;
+  padding-right: 8px;
 }
 .sub-header .snsBox > ul > li.share.on {
+  padding: 0 8px;
   margin-right: -8px;
-  padding: 0 8px 4px 0;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -160,7 +160,6 @@
 .sub-header .snsBox > ul ul {
   display: none;
   position: relative;
-  padding: 0 10px;
 }
 .sub-header .snsBox > ul ul:after {
   content: "";
@@ -184,8 +183,8 @@
   font-size: 0;
 }
 .sub-header .snsBox > ul ul > li > a [class^=icon-] {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-size: 100% auto;
 }
 .sub-header .snsBox > ul ul > li > a .icon-facebook {
@@ -203,7 +202,7 @@
 .sub-header .snsBox .url a {
   position: relative;
   padding: 0 20px 0 0;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.125;
 }
@@ -224,7 +223,7 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .sub-header .snsBox li.print {
+  .sub-header .snsBox > ul > li.print {
     display: none;
   }
   .sub-header .snsBox .url {
