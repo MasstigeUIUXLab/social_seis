@@ -72,7 +72,9 @@
 <script src="../assets/js/main.js"></script> -->
 <!-- [D] * only sub -->
 <!-- [D] 05-30 추가 old 파일 링크 추가 -->
-<link rel="stylesheet" type="text/css" href="../assets/css/old.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/old2.css" />
+<!-- [D] 07-02 추가 old 파일 링크 추가 (js) -->
+<script src="../assets/js/old.js"></script>
 <!-- //-->
 <link rel="stylesheet" href="../assets/css/sub.css" />
 <title></title>
@@ -632,78 +634,37 @@
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a class="nav-link nav-btn" href="#">사회적기업</a>
+							<a href="#" class="nav-link nav-btn">사회적기업</a>
 							<ul class="depth2">
 								<li>
-									<a href="#" class="nav-link">개념</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">사회적기업 인증</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">성장지원센터</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">자원연계</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">판로지원</a>
+									<a href="old_정책소개_사회적기업_개념.html" class="nav-link">개념</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link nav-btn on" href="#">예비사회적기업</a>
+							<a href="#" class="nav-link nav-btn">예비사회적기업</a>
 							<ul class="depth2">
 								<li>
-									<a href="#" class="nav-link on">개념</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">전문컨설팅</a>
+									<a href="old_정책소개_예비사회적기업_개념.html" class="nav-link">개념</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">협동조합</a>
+							<a href="#" class="nav-link nav-btn">협동조합</a>
 							<ul class="depth2">
 								<li>
-									<a href="#" class="nav-link">개념</a>
+									<a href="old_정책소개_협동조합_개념.html" class="nav-link">개념</a>
 								</li>
 								<li>
-									<a href="#" class="nav-link">설립제도</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">협동조합 지원사업</a>
+									<a href="old_정책소개_협동조합_설립제도.html" class="nav-link">설립제도</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">사회적경제</a>
+							<a href="#" class="nav-link nav-btn on">사회적경제</a>
 							<ul class="depth2">
 								<li>
-									<a href="#" class="nav-link">개념</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">사회적가치 및 ESG</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">사회적가치지표(SVI)</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">생태계조성</a>
-							<ul class="depth2">
-								<li>
-									<a href="#" class="nav-link">사회적기업 홍보</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">사회적기업가 아카데미</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">네트워크 구축</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">자율경영공시</a>
+									<a href="old_정책소개_사회적경제.html" class="nav-link on">개념</a>
 								</li>
 							</ul>
 						</li>
@@ -717,7 +678,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">사업소개</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">정책소개</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -726,7 +687,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">생태계조성</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">사회적경제</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -735,15 +696,116 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">생태계조성</h2>
+						<h2 class="tit">사회적경제</h2>
+						<!-- [D] 07-02 추가 -->
+						<script type="text/javascript">
+						//<![CDATA[
+							$(function() {
+								var url = window.location.href;
+								var proto = window.location.protocol;
+								
+								$('#urlText').val(url);
+								
+								$('#btnCopy').on("click", function(e) {
+									e.preventDefault();
+									
+									$('#urlText').focus();
+									var content = document.getElementById('urlText').value;
+									
+									if (proto.indexOf('https') != -1) {
+										// https 에서만 작동
+										window.navigator.clipboard.writeText(content).then(() => {
+											alert('복사되었습니다.');
+											$(".layer_close").click();
+											return;
+										})
+										.catch(err => {
+											console.log('err', err);
+										})
+									} else {
+										var t = document.createElement("textarea");
+										document.body.appendChild(t);
+										t.value = content;
+										t.select();
+										document.execCommand('copy');
+										document.body.removeChild(t);
+										alert('복사되었습니다.');
+										$(".layer_close").click();
+									}
+								});
+							});
+						//]]>
+						</script>
+						<div class="snsBox">
+							<ul>
+								<li class="share">
+									<a href="#" onclick="return false;" class="sns_open">SNS<span>열기</span></a>
+									<ul>
+										<li><a href="#" title="페이스북에 공유하기 (새창)"><i class="icon-facebook"></i></a></li>
+										<li><a href="#" title="트위터에 공유하기 (새창)"><i class="icon-twiter"></i></a></li>
+										<li><a href="#" title="카카오톡에 공유하기 (새창)"><i class="icon-kakao"></i></a></li>
+										<li class="url"><a href="#modal1" data-toggle="modal" class="btn_open_layer">주소복사</a></li>
+									</ul>
+								</li>
+								<li class="print"><a href="#" onclick="return window.print();">인쇄</a></li>
+							</ul>
+						</div>
+						<!-- // [D] 07-02 추가 -->
 					</div>
-					<div class="sub-contents sub-asis">
-						<div class="raw-html-embed"><div class="menu_tabs"> <div class="menu_tab4"> <ul> <li class="on"><a href="#tab1">사회적기업가아카데미</a></li> <li><a href="#tab2">네트워크 구축</a></li> </ul> </div> <div class="menu_tab_conts"> <div id="tab1"> <h4 class="title1">사회적기업가 아카데미</h4> <div class="box2 pattern"><strong>사회적기업의 지속가능성을 높이기 위하여 대상별 역량 강화를 지원합니다.</strong></div> <ol class="list_ol-rd2 single"> <li> <div class="tits"> <h5>사회적기업 온라인 교육</h5> </div> <div class="box1 trans"> <p class="phar1">교육 접근성 제고, 다양한 교육 수요 충족을 위하여 온라인 교육 플랫폼 운영 및 콘텐츠 보급</p> <p class="btnR"><a href="#" class="btn_view icon--arrow" target="_blank" title="새창열림">사회적기업 교육 플랫폼 ‘소클’ 바로가기</a></p> </div> </li> <li> <div class="tits"> <h5>청소년 사회적경제 봉사학습 ‘유스X소셜 에코 브이‘</h5> </div> <div class="box1 trans"> <p class="phar1">환경을 주제로 ‘사회적기업ㆍ봉사ㆍ진로탐색활동’ 을 결합한 프로그램</p> </div> <div class="procedure borders quarter short" style="margin:-20px 0 20px"> <ol> <li> <span class="step">STEP<span>01</span></span> <div> <strong>사회적기업의 환경문제 해결 방식 학습</strong> </div> </li> <li> <span class="step">STEP<span>02</span></span> <div> <strong>새활용키트 제작으로 환경문제 해결 참여</strong> </div> </li> <li> <span class="step">STEP<span>03</span></span> <div> <strong>환경 사회적기업가의 진로 사례 탐구</strong> </div> </li> <li> <span class="step">STEP<span>04</span></span> <div> <strong>도서산간 지역 어르신 대상 새활용물품 기부</strong> </div> </li> </ol> </div> <ul class="list_ul-dot"> <li>환경부 우수 교육 프로그램 지정(2022)</li> <li>유네스코 지속가능발전교육(ESD) 공식 프로젝트 인증(2023)</li> </ul> </li> <li> <div class="tits"> <h5>유스X소셜 에코 브이 홍보 영상</h5> </div> <div class="vod_info"> <div class="video_container"> <iframe src="https://www.youtube.com/embed/r4yOblUBwJk?si=WiN_wygQWyjxpBfJ" frameborder="0" width="560" height="315"></iframe> </div> <!--<div> <strong>공공조달 정보제공, 사회적경제 상품몰, 판로지원 정보제공<span>을 통해 사회적경제기업의 판로를 종합적으로 지원합니다.</span></strong> <p class="btnR"><a href="https://www.sepp.or.kr/shopMal/main" class="btn_view icon--arrow" target="_blank">e-store36.5 바로가기</a></p> </div>--> </div> </li> </ol> </div> <div id="tab2"> <h4 class="title1">사회적경제 네트워크 구축</h4> <div class="box2 pattern"><strong>지역별·업종별·전문분야별 상호 협력할 수 있는 네트워크를 구성하고 운영함으로써 사회적기업의 시장 경쟁력을 확충하고 사회적기업 친화적 생태계를 조성합니다.</strong></div> <ol class="list_ol-rd2 single"> <li> <div class="tits"> <h5>사회적경제활성화 전국네트워크</h5> </div> <p>지방자치단체와 경실련, YMCA, YWCA 등 주요 NGO 및 시민단체가 연대하여 지역사회의 인적·물적 자원 연계를 통해 사회적기업을 지원하는 민관협의체 운영</p> </li> <li> <div class="tits"> <h5>출범(’11.12.14)</h5> </div> <p>사회적경제활성화 전국네트워크는 정부와의 정책협력 및 지역사회와의 연계성 제고를 위한 새로운 형태의 거버넌스 기구의 필요성에 의해 지난 2011년 12월 14일 설립된 민관협의체입니다.</p> </li> <li> <div class="tits"> <h5>주요 참여단체 현황</h5> </div> <p>종교계(기독교, 불교, 가톨릭, 원불교), YMCA, YWCA, 경실련, 한국로타리총재단, 국제라이온스한국연합회, 사회복지공동모금회, 대한상공회의소, 학계, 공공기관 및 유관기관 등</p> </li> <li> <div class="tits"> <h5>주요사업</h5> </div> <ul class="box_comm_biz"> <li> <dl> <dt>사회적기업 활성화 전국 협업커뮤니티</dt> <dd> <ul> <li>지역별 사회적기업 생태계 구축</li> <li>지역사회 사회적기업 캠페인 전개</li> </ul> </dd> </dl> </li> <li> <dl> <dt>자치단체</dt> <dd> <ul> <li>정책결정</li> <li>행정적/재정적 지원</li> </ul> </dd> </dl> </li> <li> <dl> <dt>사회적기업 협의회</dt> <dd> <ul> <li>사회적기업 경영역량 강화</li> <li>투명성/도덕성 제고</li> <li>공동사업 등 추진</li> </ul> </dd> </dl> </li> </ul> </li> </ol> </div> </div> </div></div>
+					<div class="sub-contents sub-asis contentBody" id="contentBody">
+						<div class="raw-html-embed">
+							<div class="menu_tabs">
+								<div class="menu_tab4">
+									<ul>
+										<li class="on">
+											<a href="#tab1">개념</a>
+										</li>
+										<li>
+											<a href="#tab2">사회적가치 및 ESG</a>
+										</li>
+									</ul>
+								</div>
+								<div class="menu_tab_conts"> 
+									<div id="tab1"> 
+										<h4 class="title1">정의</h4> <div class="box2"> <strong class="emphasis">구성원간 협력, 자조를 바탕으로 재화·용역의 생산 및 판매를 통해 사회적가치를 창출하는 민간의 모든 경제적 활동</strong> <p>(사회적경제 활성화 방안, ‘17.10, 일자리위원회·관계부처 합동)<br>국가·시대별로 사회적경제에 대한 정의는 다양하나, 공통적으로 구성원의 참여를 바탕으로 국가와 시장의 경계에서 사회적가치를 추구하는 민간의 경제활동을 의미</p> </div> <h5 class="title2 bul">특징</h5> <ul class="icon_box--feature"> <li data-color="10"> <strong>자율·민주</strong> <p>경제적 효율성보다 구성원의 자발적 참여, 1인1표 등 민주적 의사결정을 통한 자율경영을 통해 운영</p> </li> <li data-color="20"> <strong>사회통합</strong> <p>영리추구보다 구성원간 이익공유, 취약계층 일자리 창출, 지역사회 기여 등 사회적가치를 우선 추구</p> </li> <li data-color="40"> <strong>연대협력</strong> <p>시민들이 사회문제 해결과 사회적가치를 실현하기 위해 자발적 공동체를 구성하여 상호 협력</p> </li> <li data-color="50"> <strong>경쟁·보완</strong> <p>일반 영리기업과 경쟁하면서, 사회문제 해결에 있어 시장과 정부의 실패를 보완하는 제3의 영역으로 기능</p> </li> </ul> <h4 class="title1">사회적경제의 역할</h4> <ul class="social_economy-roles clearfix"> <li class="social_aspect"> <p class="title2 bul">경제적 측면</p> <ul class="clearfix"> <li> <strong>일자리 창출</strong> <p>일반법인에 비해 취업유발 효과<br>가 높으며, 구성원이 전체 이익을 공유함<br>에 따라 양질의 일자리 창출 가능</p> </li> <li> <strong>고용 안정</strong> <p>민주적 의사결정을 통해 노사관계 안정 및 불공정거래 개선에 기여하며, 높은 기업생존율 유지</p> </li> <li> <strong>경제활동 참여인력 확대</strong> <p>경력단절여성, 은퇴자, 장애인 등 취약 계층의 노동시장 진입을 통해 소득과 부가가치를 창출하고, 경제활동 참여인력 확대</p> </li> </ul> </li> <li class="economic_aspect"> <p class="title2 bul">사회적 측면</p> <ul class="clearfix"> <li> <strong>양극화 해소</strong> <p>취약계층 일자리 제공을 통해 소득창출 기반을 마련함으로써 계층간 빈부격차 완화</p> </li> <li> <strong>사회안전망 강화</strong> <p>보건, 문화 등 다양한 분야에서 복지 사각지대를 해소하고, 새로운 복지서비스 수요에 유연하고 탄력적으로 대응</p> </li> <li> <strong>공동체 복원</strong> <p>지역주민의 직접적인 참여를 촉진하여 구성원 간의 장기적 신뢰관계를 회복함으로써 공동체 문화 형성</p> </li> </ul> </li> </ul> <h4 class="title1">사회적경제기업의 종류</h4> <div class="box2"> <p>주요 사회적경제기업으로는 사회적기업, 협동조합, 마을기업, 자활기업, 소셜벤처기업 등이 있습니다.</p> </div> <p class="btnR"><a href="https://www.socialenterprise.or.kr/download/soical_econ_leaflet_2022.pdf" class="btn_view icon--arrow" target="_blank">사회적경제 리플렛 다운로드</a></p>
+									</div>
+									<div id="tab2"> 
+										<h4 class="title1">개념</h4> <h5 class="title2 bul">사회적 가치</h5> <div class="box2">경제적 가치 뿐만 아니라 사회·환경·문화 등 모든 영역에서 공공의이익과 공동체 발전에 이바지할 수 있는 가치</div> <ol class="list_ol-num odd-even"> <li> <strong>인간의 존엄성을 유지하는 기본 권리로서 인권의 보호</strong> <p>행복추구권, 평등권, 알권리, 직업의 자유, 안정적 주거생활 보장 등 헌법상 보장되는 기본권 보장</p> </li> <li> <strong>지역사회 활성화와 공동체 복원</strong> <p>자치와 분권의 원칙을 지역 공동체 차원에서 보장하는 지방자치 실현</p> </li> <li> <strong>재난과 사고로부터 안전한 근로 생활환경의 유지</strong> <p>시장에서 해결할 수 없는 국민의 안전을 지키기 위한 공공의 적극적 조치 필요</p> </li> <li> <strong>경제활동을 통한 이익이 지역에 순환되는 지역경제 공헌</strong> <p>지역 간 균형있는 발전을 위한 지역경제 육성, 수도권 과밀화로 인한 부작용 해소</p> </li> <li> <strong>건강한 생활이 가능한 보건복지의 제공</strong> <p>인간다운 생활의 기본조건으로서 건강한 생활을 영위할 수 있는 보건·의료 서비스를 국가에 요구하고 국가는 이를 제공</p> </li> <li> <strong>윤리적 생산과 유통을 포함한 기업의 자발적인 사회적 책임 이행</strong> <p>사회적 존재로서 기업의 사회적 책임 이행. 인원, 노동권, 환경, 소비자 보호, 지역사회 공헌, 좋은 지배구조 형성</p> </li> <li> <strong>노동권의 보장과 근로조건의 향상</strong> <p>생계를 유지하기 위해 일할 수 있는 권리보장, 노동3권, 안정적인 근로조건 유지, 최저임금인상, 고용안정 등</p> </li> <li> <strong>환경의 지속가능성 보전</strong> <p>국민이 쾌적한 환경에서 생활할 권리를 보장하기 위한 국가의 의무</p> </li> <li> <strong>사회적 약자에 대한 기회제공과 사회통합</strong> <p>여성, 노인, 청소년, 신체장애자, 기타 생활능력이 없는 국민도 인간으로서의 존엄과 가치를 보장받을 수 있는 사회보장 정책 추진</p> </li> <li> <strong>시민적 권리로서 민주적 의사결정과 참여의 실현</strong> <p>민주적 의사결정과 시민 참여를 통한 국민주권 국가 실현을 위한 정부 운영방식 개선, 참여 기제 확보, 참여 수준 심화</p> </li> <li> <strong>대기업 중소기업 간의 상생과 협력</strong> <p>시장의 지배와 경제력의 남용을 방지하고, 경제주체 간의 조화를 통한 경제의 민주화를 위하여 필요한 규제·조정</p> </li> <li> <strong>품위 있는 삶을 누릴 수 있는 양질의 일자리 창출</strong> <p>민간·공공부문 일자리 창출, 노동시간 단축을 통한 일자리 나누기, 노동이사제, 비정규직 축소 등 좋은 일자리 확대</p> </li> </ol> <div class="tr"> <span class="symbols2 reference"> <strong>출처 :</strong> 사회적가치 실현을 위한 공공부문의 추진전략(관계부처 합동, ‘20.1.15) </span> </div> <h5 class="title2 bul">ESG</h5> <div class="box2"> <ul class="list_ul-dot"> <li>환경(Environment), 사회(Social), 지배구조(Governance)의 약자</li> <li>환경경영, 사회적 책임, 건전하고 투명한 지배구조에 초점을 둔 지속가능성을 달성하기 위한 기업경영의 3가지 핵심요소를 의미</li> </ul> </div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- [D] 07-02 추가 / 주소복사 팝업 -->
+	<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="tit">주소복사</h3>
+					<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="sect-body">
+						<div class="form-tit-wrp">
+							<p class="form-tit">아래 복사하기를 누르신 후 원하는 곳에 <span class="text-red">Ctrl+V</span>를 눌러 붙여넣기 하세요.</p>
+						</div>
+						<div class="mt-4">
+							<input id="urlText" type="text" class="form-control" value="" placeholder="http://" style="width:100%;" onfocus="this.select()">
+						</div>
+					</div>
+					<div class="btn-wrp justify-content-center gap8">
+						<button id="btnCopy" class="btn btn-black">복사하기</button>
+					</div>
+				</div>          
+			</div>
+		</div>
+	</div>
+	<!-- // 07-02 추가 / 주소복사 팝업 -->
 </div>
 <!-- // 페이지시작 -->
 

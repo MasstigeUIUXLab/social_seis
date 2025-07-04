@@ -267,7 +267,10 @@
           align-items: center;
   gap: 1.25rem;
   margin-bottom: 1.875rem;
+  font-weight: 500;
+  text-align: left;
   color: #666;
+  line-height: 1.125;
 }
 .lnb .home {
   display: -webkit-box;
@@ -276,8 +279,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 1.25;
-  font-size: 1rem;
 }
 .lnb [class^=icon] {
   width: 20px;
@@ -291,8 +292,10 @@
   background: url(../images/sub/icon_lnb_arr.svg) no-repeat center/cover;
 }
 .lnb .dropdown {
-  font-size: 1rem;
-  text-align: left;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
 }
 .lnb .dropdown.show .dropdown-toggle {
   color: #222;
@@ -303,10 +306,8 @@
 .lnb .dropdown-toggle {
   padding-right: 24px;
   background: url(../images/sub/icon_dropdown_arr.svg) no-repeat right center/20px auto;
-  line-height: 1.25;
-  font-weight: 500;
-  text-align: left;
-  color: #666;
+  font-weight: inherit;
+  color: inherit;
 }
 .lnb .dropdown-menu {
   padding: 5px;
@@ -315,12 +316,11 @@
   left: 50% !important;
   -webkit-transform: translate(-50%, 0) !important;
           transform: translate(-50%, 0) !important;
-  font-size: 13px;
 }
 .lnb .dropdown-item {
-  padding: 4px 5px;
+  padding: 4px 4px;
   border-radius: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: #666;
 }
@@ -1547,7 +1547,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
+  gap: 60px;
 }
 .layout .snb {
   -ms-flex-preferred-size: 280px;
@@ -1652,9 +1652,9 @@
   }
 }
 .layout .page {
-  -ms-flex-preferred-size: calc(100% - 320px);
-      flex-basis: calc(100% - 320px);
-  max-width: calc(100% - 320px);
+  -ms-flex-preferred-size: calc(100% - 340px);
+      flex-basis: calc(100% - 340px);
+  max-width: calc(100% - 340px);
   position: relative;
 }
 .layout .page-header {
@@ -3666,6 +3666,7 @@
           flex: 1;
   padding: 0 20px;
   width: 100%;
+  border-radius: 0;
 }
 .login .login-inner-wrap .bx:not(:first-child) {
   border-left: 1px solid #D8D8D8;

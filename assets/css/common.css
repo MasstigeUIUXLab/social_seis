@@ -41030,6 +41030,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .header {
   width: 100%;
   z-index: 500;
+  background-color: #fff;
   border-bottom: 1px solid #E3EAF1;
   -webkit-transition: 0.25s;
   transition: 0.25s;

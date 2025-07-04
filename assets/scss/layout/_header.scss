@@ -4,6 +4,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
 .header {
   width: 100%;
   z-index: 500;
+  background-color: #fff;
   border-bottom: 1px solid #E3EAF1;
   transition: .25s;
   

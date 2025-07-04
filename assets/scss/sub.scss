@@ -324,13 +324,14 @@
     align-items:center;
     gap:rem(20);
     margin-bottom:rem(30);
+    font-weight:500;
+    text-align:left;
     color:#666;
+    line-height: 1.125;
 
     .home{
         display:flex;
         align-items:center;
-        line-height:1.25;
-        font-size:1rem;
     }
 
     [class^=icon]{
@@ -348,8 +349,10 @@
     }
 
     .dropdown{
-        font-size:1rem;
-        text-align:left;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        line-height: inherit;
 
         &.show{
             .dropdown-toggle{
@@ -364,10 +367,8 @@
     .dropdown-toggle{
         padding-right:24px;
         background:url(../images/sub/icon_dropdown_arr.svg) no-repeat right center / 20px auto;
-        line-height:1.25;
-        font-weight:500;
-        text-align:left;
-        color:#666;
+        font-weight: inherit;
+        color: inherit;
     }
 
     .dropdown-menu{
@@ -376,13 +377,12 @@
         top:100% !important;
         left:50% !important;
         transform:translate(-50%, 0) !important;
-        font-size:13px;
     }
 
     .dropdown-item{
-        padding:4px 5px;
+        padding:4px 4px;
         border-radius:0;
-        font-size:13px;
+        font-size:14px;
         font-weight:400;
         color:#666;
     }
@@ -1879,7 +1879,7 @@
 
 .layout{
     display:flex;
-    gap:40px;
+    gap:60px;
 
     .snb{
         flex-basis:280px;
@@ -2008,8 +2008,8 @@
     }
 
     .page{
-        flex-basis:calc(100% - 320px);
-        max-width:calc(100% - 320px);
+        flex-basis:calc(100% - 340px);
+        max-width:calc(100% - 340px);
         position: relative;
 
         &-header{
@@ -4156,6 +4156,7 @@
             flex:1;
             padding:0 20px;
             width:100%;
+            border-radius: 0;
 
             &:not(:first-child){
                 border-left:1px solid #D8D8D8;

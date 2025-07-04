@@ -964,7 +964,7 @@
 
 /* 주요성과 - 주요현황 : 타이틀 사이즈 - 10p // ecms.contents.css */
 .sub-asis .title2 {font-size: 26px;}
-.sub-asis .title2.bul:before {top:12px;}
+.sub-asis .title2.bul:before {top:14px;}
 
 /* 테이블 폰트 통일 */
 .sub-asis .contTable.chart.tr tbody td {font-family: "Noto Sans KR", sans-serif;}
