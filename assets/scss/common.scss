@@ -309,3 +309,33 @@ body {
 .white-nowrap{
     white-space: nowrap !important;
 }
+
+.row{
+    &.row-sm{
+        margin-right:-9px !important;
+        margin-left:-9px !important;
+        gap:18px 0 !important;
+
+        [class*=col]{
+            padding:0 9px !important;
+        }
+
+        @include mdq-max(md){
+            gap:12px 0 !important;
+        }
+    }
+
+    &.row-xs{
+        margin-right:-4px !important;
+        margin-left:-4px !important;
+        gap:8px 0 !important;
+
+        [class*=col]{
+            padding:0 4px !important;
+        }
+
+        @include mdq-max(md){
+            gap:4px 0 !important;
+        }
+    }
+}

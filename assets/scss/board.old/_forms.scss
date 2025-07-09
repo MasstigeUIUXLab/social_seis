@@ -832,4 +832,40 @@ input[type='radio'] {
         box-shadow: 0 0 0 2px #407aec;
       }
     }
+
+    &--tab{
+      input{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+
+        &:checked + .input-label__txt{
+          background: #246BEB;
+          border-color: #246BEB;
+          color: #fff;
+        }
+
+        &:disabled + .input-label__txt{
+          pointer-events: none;
+        }
+      }
+      
+      .input-label__txt{
+        display: inline-block;
+        padding: 7px 19px;
+        border-radius: 90px;
+        border: 1px solid #E6E6E6;
+        background: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        transition: .25s;
+        cursor: pointer;
+      }
+    }
 }

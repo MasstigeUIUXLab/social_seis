@@ -232,9 +232,6 @@
 											<div class="inner">
 												<ul class="nav-list nav-list--depth3">
 													<li class="nav-list__item depth-3">
-														<a href="#" class="link" title="주요현황 페이지로 이동">주요현황</a>
-													</li>
-													<li class="nav-list__item depth-3">
 														<a href="#" class="link" title="총괄현황 페이지로 이동">총괄현황</a>
 													</li>
 													<li class="nav-list__item depth-3">
@@ -634,7 +631,7 @@
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a href="#" class="nav-link nav-btn">사회적기업 조회</a>
+							<a href="#" class="nav-link nav-btn">사회적기업조회</a>
 							<ul class="depth2">
 								<li>
 									<a href="#" class="nav-link">사회적기업</a>
@@ -648,10 +645,10 @@
 							<a href="#" class="nav-link nav-btn">자율경영공시</a>
 							<ul class="depth2">
 								<li>
-									<a href="old_현황성과_자율경영공시_개념.html" class="nav-link">개념</a>
+									<a href="old_현황성과_자율경영공시_소개.html" class="nav-link">소개</a>
 								</li>
 								<li>
-									<a href="#" class="nav-link">공시 자료 조회</a>
+									<a href="#" class="nav-link">공시자료조회</a>
 								</li>
 							</ul>
 						</li>
@@ -659,7 +656,7 @@
 							<a href="#" class="nav-link nav-btn">사회적가치지표(SVI)</a>
 							<ul class="depth2">
 								<li>
-									<a href="#" class="nav-link">평가 자료 조회</a>
+									<a href="#" class="nav-link">평가자료조회</a>
 								</li>
 							</ul>
 						</li>
@@ -667,7 +664,16 @@
 							<a href="#" class="nav-link nav-btn on">주요성과</a>
 							<ul class="depth2">
 								<li>
-									<a href="old_현황성과_주요성과_주요현황.html" class="nav-link on">주요현황</a>
+									<a href="old_현황성과_주요성과_총괄현황.html" class="nav-link on">총괄현황</a>
+								</li>
+								<li>
+									<a href="old_현황성과_주요성과_조직형태별.html" class="nav-link">조직형태별</a>
+								</li>
+								<li>
+									<a href="old_현황성과_주요성과_인증유형별.html" class="nav-link">인증유형별</a>
+								</li>
+								<li>
+									<a href="old_현황성과_주요성과_서비스분야별.html" class="nav-link">서비스분야별</a>
 								</li>
 								<li>
 									<a href="old_현황성과_주요성과_사회적성과.html" class="nav-link">사회적성과</a>
@@ -704,10 +710,10 @@
 							</ul>
 						</div>
 						<i class="icon-lnb-arr"></i>
-						<span>주요현황</span>
+						<span>총괄현황</span>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">주요현황</h2>
+						<h2 class="tit">총괄현황</h2>
 						<!-- [D] 07-02 추가 -->
 						<script type="text/javascript">
 						//<![CDATA[
@@ -773,33 +779,19 @@
 						<!-- <link href="https://www.sbchart.co.kr/res/sborgchart/css/customb.css" rel="stylesheet" type="text/css"> -->
 						<!-- <script type="text/javascript" src="https://www.sbchart.co.kr/res/sborgchart/js/sborgcharta.js"></script> -->
 						<!-- <script type="text/javascript" src="https://www.sbchart.co.kr/res/sborgchart/js/sborgchartb.js"></script> -->
-						<script src="/SBChart/js/sbchart.js"></script>
-						<link rel="stylesheet" href="/SBChart/css/sbchart.css">
-						<link href="/SBChart/css/charta.css" rel="stylesheet" type="text/css">
-						<link href="/SBChart/css/chartb.css" rel="stylesheet" type="text/css">
-						<link href="/SBChart/css/customa.css" rel="stylesheet" type="text/css">
-						<link href="/SBChart/css/customb.css" rel="stylesheet" type="text/css">
-						<script type="text/javascript" src="/SBChart/js/sborgcharta.js"></script>
-						<script type="text/javascript" src="/SBChart/js/sborgchartb.js"></script>
+						<script src="../SBChart/js/sbchart.js"></script>
+						<link rel="stylesheet" href="../SBChart/css/sbchart.css">
+						<link href="../SBChart/css/charta.css" rel="stylesheet" type="text/css">
+						<link href="../SBChart/css/chartb.css" rel="stylesheet" type="text/css">
+						<link href="../SBChart/css/customa.css" rel="stylesheet" type="text/css">
+						<link href="../SBChart/css/customb.css" rel="stylesheet" type="text/css">
+						<script type="text/javascript" src="../SBChart/js/sborgcharta.js"></script>
+						<script type="text/javascript" src="../SBChart/js/sborgchartb.js"></script>
 
 						<div class="containerIn">
 							<div class="box_purple statics">
 								<p class="btnR"><a href="https://www.seis.or.kr/home/sub.do?menukey=7194&amp;mode=view&amp;seq_no=251843" class="btn_view icon--arrow" target="_blank" title="새창열림">성과분석 보고서 바로 가기</a></p>
 							</div>
-							
-							<div class="category_tab data-tab">
-								<button type="button"></button>
-								<ul>
-									<li><a href="#tab1" class="scrollto on" style="display: block;">총괄현황</a></li>
-									<li><a href="#tab2" class="scrollto">조직형태별</a></li>
-									<li><a href="#tab3" class="scrollto">인증유형별</a></li>
-									<li><a href="#tab4" class="scrollto">서비스분야별</a></li>
-								</ul>
-							</div>
-
-							<div id="tab1">
-								<h4 class="title2 bul">총괄현황</h4>
-								
 								<ol class="list_ol-rd2">
 									<li>
 										<div class="tits">
@@ -1139,295 +1131,6 @@
 										</div>
 									</li>
 								</ol>
-							</div>
-							
-							<div id="tab2">
-								<h4 class="title2 bul">조직형태별</h4>
-
-								<ol class="list_ol-rd2">
-									<li>
-										<div class="tits">
-											<h5> 조직형태별 사회적기업 현황</h5>
-											<div class="tails">
-											<h8>(단위: 개소)</h8>
-												<!-- <p class="table_legend">(단위: 개소)</p> -->
-												<!-- <a href="#" class="icon_excel_down">엑셀 다운로드</a> -->
-											</div>
-										</div>
-										<div class="table_cont">
-											<table class="contTable tr chart">
-												<caption><span>조직형태별 사회적기업 현황의 정보테이블입니다.</span></caption>
-												<colgroup>
-													<col style="width:23%">
-													<col>
-													<col>
-													<col>
-												</colgroup>
-												<thead>
-													<tr>
-														<th scope="col">구분</th>
-														<th scope="col">2022년</th>
-														<th scope="col">2023년</th>
-														<th scope="col">2024년</th>
-														</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th scope="row">민법상 법인</th>
-														<td>312</td>
-														<td>310</td>
-														<td>311</td>
-														</tr>
-													<tr>
-														<th scope="row">비영리 민간단체</th>
-														<td>62</td>
-														<td>57</td>
-														<td>54</td>
-														</tr>
-													<tr>
-														<th scope="row">사회복지법인</th>
-														<td>74</td>
-														<td>74</td>
-														<td>71</td>
-														</tr>
-													<tr>
-														<th scope="row">사회적협동조합</th>
-														<td>276</td>
-														<td>326</td>
-														<td>353</td>
-														</tr>
-													<tr>
-														<th scope="row">기타법인 및 단체</th>
-														<td>2</td>
-																<td>1</td>
-																<td>-</td>
-																</tr>
-													<tr>
-														<th scope="row">상법상회사</th>
-														<td>2,205</td>
-														<td>2,331</td>
-														<td>2,349</td>
-														</tr>
-													<tr>
-														<th scope="row">농(어)업회사법인</th>
-														<td>168</td>
-														<td>189</td>
-														<td>188</td>
-														</tr>
-													<tr>
-														<th scope="row">영농(어)조합법인</th>
-														<td>121</td>
-														<td>116</td>
-														<td>109</td>
-														</tr>
-													<tr>
-														<th scope="row">협동조합</th>
-														<td>314</td>
-														<td>333</td>
-														<td>327</td>
-														</tr>
-													<tr>
-														<th scope="row">합계</th>
-														<td>3,534</td>
-														<td>3,737</td>
-														<td>3,762</td>
-														</tr>
-												</tbody>
-											</table>
-										</div>
-										<div class="chart_container">
-											<p id="chart4" style="min-height: 330px; position: relative;"><svg viewBox="0 0 1110 330" focusable="false" width="1110" height="330" class="sbchart sbchart-chart-svg" style="overflow: hidden; display: block;"><defs><clipPath id="sb-1751594650765-clip"><rect x="0" y="0" width="1048.015625" height="234.63999938964844"></rect></clipPath><clipPath id="sb-1751594650765-clip-grid"><rect width="1048.015625" height="234.63999938964844"></rect></clipPath><clipPath id="sb-1751594650765-clip-xaxis"><rect width="1133" height="130.36000061035156" x="-53.984375" y="-30"></rect></clipPath><clipPath id="sb-1751594650765-clip-yaxis"><rect width="81.984375" height="279.63999938964844" x="-51.984375" y="-5"></rect></clipPath><clipPath id="sb-1751594650765-clip-y2axis"><rect width="81.984375" height="279.63999938964844" x="-51.984375" y="-5"></rect></clipPath></defs><g transform="translate(52.984375, 5)"><g class="sbchart-grid sbchart-grid-y" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650765-clip-grid)"><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="234.63999938964844" y2="234.63999938964844"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="203.7903262676245" y2="203.7903262676245"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="172.94065314560055" y2="172.94065314560055"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="142.09098002357658" y2="142.09098002357658"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="111.24130690155262" y2="111.24130690155262"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="80.39163377952868" y2="80.39163377952868"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="49.54196065750469" y2="49.54196065750469"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="18.69228753548074" y2="18.69228753548074"></line></g><g class="sbchart-chart" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650765-clip)"><g class="sbchart-paint-drawing-canvas0"></g><g class="sbchart-series-bars"><g class="sbchart-group sbchart-group-0"><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2022년 sbchart-target sbchart-target-2022년" style="pointer-events: none;"><rect x="44" y="225.01490137557695" width="30" height="9.625098014071483" animationX="44" animationY="225.01490137557695" animationW="30" animationH="9.625098014071483" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#4E16ED" rx="0" ry="0"></rect><rect x="160.44618055555554" y="232.72731965608295" width="30" height="1.9126797335654828" animationX="160.44618055555554" animationY="232.72731965608295" animationW="30" animationH="1.9126797335654828" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#4E16ED" rx="0" ry="0"></rect><rect x="276.8923611111111" y="232.35712357861865" width="30" height="2.2828758110297827" animationX="276.8923611111111" animationY="232.35712357861865" animationW="30" animationH="2.2828758110297827" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#4E16ED" rx="0" ry="0"></rect><rect x="393.33854166666663" y="226.12548960796985" width="30" height="8.514509781678584" animationX="393.33854166666663" animationY="226.12548960796985" animationW="30" animationH="8.514509781678584" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#4E16ED" rx="0" ry="0"></rect><rect x="509.7847222222222" y="234.5783000434044" width="30" height="0.0616993462440405" animationX="509.7847222222222" animationY="234.5783000434044" animationW="30" animationH="0.0616993462440405" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#4E16ED" rx="0" ry="0"></rect><rect x="626.2309027777778" y="166.61647015558563" width="30" height="68.0235292340628" animationX="626.2309027777778" animationY="166.61647015558563" animationW="30" animationH="68.0235292340628" class="sbchart-bar sbchart-shape sbchart-shape-5" fill="#4E16ED" rx="0" ry="0"></rect><rect x="742.6770833333333" y="229.45725430514838" width="30" height="5.1827450845000556" animationX="742.6770833333333" animationY="229.45725430514838" animationW="30" animationH="5.1827450845000556" class="sbchart-bar sbchart-shape sbchart-shape-6" fill="#4E16ED" rx="0" ry="0"></rect><rect x="859.1232638888889" y="230.90718894188353" width="30" height="3.732810447764905" animationX="859.1232638888889" animationY="230.90718894188353" animationW="30" animationH="3.732810447764905" class="sbchart-bar sbchart-shape sbchart-shape-7" fill="#4E16ED" rx="0" ry="0"></rect><rect x="975.5694444444443" y="224.9532020293329" width="30" height="9.686797360315524" animationX="975.5694444444443" animationY="224.9532020293329" animationW="30" animationH="9.686797360315524" class="sbchart-bar sbchart-shape sbchart-shape-8" fill="#4E16ED" rx="0" ry="0"></rect></g><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2023년 sbchart-target sbchart-target-2023년" style="pointer-events: none;"><rect x="44" y="215.45150270774954" width="30" height="9.563398667827414" animationX="44" animationY="215.45150270774954" animationW="30" animationH="9.563398667827414" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#79DFFF" rx="0" ry="0"></rect><rect x="160.44618055555554" y="230.96888828812757" width="30" height="1.7584313679553816" animationX="160.44618055555554" animationY="230.96888828812757" animationW="30" animationH="1.7584313679553816" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#79DFFF" rx="0" ry="0"></rect><rect x="276.8923611111111" y="230.0742477675889" width="30" height="2.2828758110297542" animationX="276.8923611111111" animationY="230.0742477675889" animationW="30" animationH="2.2828758110297542" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#79DFFF" rx="0" ry="0"></rect><rect x="393.33854166666663" y="216.06849617019" width="30" height="10.056993437779852" animationX="393.33854166666663" animationY="216.06849617019" animationW="30" animationH="10.056993437779852" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#79DFFF" rx="0" ry="0"></rect><rect x="509.7847222222222" y="234.54745037028235" width="30" height="0.03084967312204867" animationX="509.7847222222222" animationY="234.54745037028235" animationW="30" animationH="0.03084967312204867" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#79DFFF" rx="0" ry="0"></rect><rect x="626.2309027777778" y="94.70588210814778" width="30" height="71.91058804743786" animationX="626.2309027777778" animationY="94.70588210814778" animationW="30" animationH="71.91058804743786" class="sbchart-bar sbchart-shape sbchart-shape-5" fill="#79DFFF" rx="0" ry="0"></rect><rect x="742.6770833333333" y="223.62666608508587" width="30" height="5.830588220062509" animationX="742.6770833333333" animationY="223.62666608508587" animationW="30" animationH="5.830588220062509" class="sbchart-bar sbchart-shape sbchart-shape-6" fill="#79DFFF" rx="0" ry="0"></rect><rect x="859.1232638888889" y="227.32862685972876" width="30" height="3.5785620821547752" animationX="859.1232638888889" animationY="227.32862685972876" animationW="30" animationH="3.5785620821547752" class="sbchart-bar sbchart-shape sbchart-shape-7" fill="#79DFFF" rx="0" ry="0"></rect><rect x="975.5694444444443" y="214.68026087969895" width="30" height="10.272941149633965" animationX="975.5694444444443" animationY="214.68026087969895" animationW="30" animationH="10.272941149633965" class="sbchart-bar sbchart-shape sbchart-shape-8" fill="#79DFFF" rx="0" ry="0"></rect></g><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2024년 sbchart-target sbchart-target-2024년" style="pointer-events: none;"><rect x="44" y="205.85725436680008" width="30" height="9.594248340949463" animationX="44" animationY="205.85725436680008" animationW="30" animationH="9.594248340949463" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="160.44618055555554" y="229.3030059395383" width="30" height="1.665882348589264" animationX="160.44618055555554" animationY="229.3030059395383" animationW="30" animationH="1.665882348589264" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="276.8923611111111" y="227.88392097592518" width="30" height="2.190326791663722" animationX="276.8923611111111" animationY="227.88392097592518" animationW="30" animationH="2.190326791663722" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="393.33854166666663" y="205.17856155811555" width="30" height="10.889934612074455" animationX="393.33854166666663" animationY="205.17856155811555" animationW="30" animationH="10.889934612074455" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="509.7847222222222" y="234.63999938964844" width="30" height="0" animationX="509.7847222222222" animationY="234.63999938964844" animationW="30" animationH="0" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="626.2309027777778" y="22.239999944513503" width="30" height="72.46588216363428" animationX="626.2309027777778" animationY="22.239999944513503" animationW="30" animationH="72.46588216363428" class="sbchart-bar sbchart-shape sbchart-shape-5" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="742.6770833333333" y="217.82692753814538" width="30" height="5.799738546940489" animationX="742.6770833333333" animationY="217.82692753814538" animationW="30" animationH="5.799738546940489" class="sbchart-bar sbchart-shape sbchart-shape-6" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="859.1232638888889" y="223.96601248942815" width="30" height="3.362614370300605" animationX="859.1232638888889" animationY="223.96601248942815" animationW="30" animationH="3.362614370300605" class="sbchart-bar sbchart-shape sbchart-shape-7" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="975.5694444444443" y="204.5924177687971" width="30" height="10.087843110901844" animationX="975.5694444444443" animationY="204.5924177687971" animationW="30" animationH="10.087843110901844" class="sbchart-bar sbchart-shape sbchart-shape-8" fill="#E8A7FF" rx="0" ry="0"></rect></g></g></g><g class="sbchart-series-lines"></g><g class="sbchart-event-rects" transform="translate(0, 0)" style="fill-opacity: 0;"><rect class="sbchart-event-rect-0" width="116.44618055555556" height="234.63999938964844" x="0" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-1" width="116.44618055555556" height="234.63999938964844" x="116.44618055555554" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-2" width="116.44618055555556" height="234.63999938964844" x="232.8923611111111" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-3" width="116.44618055555556" height="234.63999938964844" x="349.33854166666663" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-4" width="116.44618055555556" height="234.63999938964844" x="465.7847222222222" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-5" width="116.44618055555556" height="234.63999938964844" x="582.2309027777778" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-6" width="116.44618055555556" height="234.63999938964844" x="698.6770833333333" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-7" width="116.44618055555556" height="234.63999938964844" x="815.1232638888889" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-8" width="116.44618055555556" height="234.63999938964844" x="931.5694444444443" style="fill-opacity: 0;"></rect><line class="sbchart-event-rects-line" pointer-events="none" style="opacity: 0;"></line></g><g class="sbchart-milestone" transform="translate(0, 0)" style="fill-opacity: 0;"></g><g class="sbchart-labels"></g></g><g class="sbchart-axis-container sbchart-axis-x-container" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650765-clip-xaxis)"></g><g clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650765-clip-xaxis)" class="sbchart-axis sbchart-axis-x" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle" style="visibility: visible; opacity: 1;" transform="translate(0, 234.63999938964844)"><text class="sbchart-axis-x-label" transform=""></text><path class="domain" stroke="currentColor" d="M0,6V0H1048.015625V6"></path><g class="tick" opacity="1" transform="translate(58.5, 0)"><line stroke="currentColor" y2="6" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-0" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">민법상 법인</tspan></text></g><g class="tick" opacity="1" transform="translate(174.94618055555554, 0)"><line stroke="currentColor" y2="6" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-1" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">비영리 민간단체</tspan></text></g><g class="tick" opacity="1" transform="translate(291.3923611111111, 0)"><line stroke="currentColor" y2="6" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-2" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">사회복지법인</tspan></text></g><g class="tick" opacity="1" transform="translate(407.83854166666663, 0)"><line stroke="currentColor" y2="6" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-3" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">사회적협동조합</tspan></text></g><g class="tick" opacity="1" transform="translate(524.2847222222222, 0)"><line stroke="currentColor" y2="6" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-4" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">기타법인 및</tspan><tspan x="0" dy="24" dx="0"> 단체</tspan></text></g><g class="tick" opacity="1" transform="translate(640.7309027777778, 0)"><line stroke="currentColor" y2="6" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-5" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">상법상회사</tspan></text></g><g class="tick" opacity="1" transform="translate(757.1770833333333, 0)"><line stroke="currentColor" y2="6" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-6" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">농(어)업회사법</tspan><tspan x="0" dy="24" dx="0">인</tspan></text></g><g class="tick" opacity="1" transform="translate(873.6232638888889, 0)"><line stroke="currentColor" y2="6" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-7" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">영농(어)조합법</tspan><tspan x="0" dy="24" dx="0">인</tspan></text></g><g class="tick" opacity="1" transform="translate(990.0694444444443, 0)"><line stroke="currentColor" y2="0" x1="58.5" x2="58.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-8" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">협동조합</tspan></text></g></g><g class="sbchart-axis sbchart-axis-x" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650765-clip-xaxis)" style="visibility: hidden;"></g><g class="sbchart-axis sbchart-axis-y" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650765-clip-yaxis)" style="visibility: visible; opacity: 1;" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><text class="sbchart-axis-y-label" transform="rotate(-90)"></text><path class="domain" stroke="currentColor" d="M-6,234.63999938964844H0V1H-6"></path><g class="tick" opacity="1" transform="translate(0, 234.63999938964844)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">0</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 203.7903262676245)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">1,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 172.94065314560055)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">2,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 142.09098002357658)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">3,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 111.24130690155262)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">4,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 80.39163377952868)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">5,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 49.54196065750469)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">6,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 18.69228753548074)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">7,000</tspan></text></g></g></g><g class="sbchart-legend" transform="translate(0, 297)" style="visibility: visible; opacity: 1;"><g class="sbchart-legend-item sbchart-legend-item-2022년 sbchart-target sbchart-target-2022년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="474.5199890136719" y="9" opacity="1" style="text-anchor: start;">2022년</text><path class="sbchart-legend-item-tile" d="M 460.5199890136719 0 h 10 v 10 h -10 v -10 Z" fill="#4E16ED" opacity="1"></path><rect class="sbchart-legend-item-event" width="66.32000732421875" height="28" x="460.5199890136719" y="-5" style="fill-opacity: 0;"></rect></g><g class="sbchart-legend-item sbchart-legend-item-2023년 sbchart-target sbchart-target-2023년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="540.8399963378906" y="9" opacity="1" style="text-anchor: start;">2023년</text><path class="sbchart-legend-item-tile" d="M 526.8399963378906 0 h 10 v 10 h -10 v -10 Z" fill="#79DFFF" opacity="1"></path><rect class="sbchart-legend-item-event" width="66.32000732421875" height="28" x="526.8399963378906" y="-5" style="fill-opacity: 0;"></rect></g><g class="sbchart-legend-item sbchart-legend-item-2024년 sbchart-target sbchart-target-2024년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="607.1600036621094" y="9" opacity="1" style="text-anchor: start;">2024년</text><path class="sbchart-legend-item-tile" d="M 593.1600036621094 0 h 10 v 10 h -10 v -10 Z" fill="#E8A7FF" opacity="1"></path><rect class="sbchart-legend-item-event" width="56.32000732421875" height="28" x="593.1600036621094" y="-5" style="fill-opacity: 0;"></rect></g></g><g></g><g></g><g></g></svg><div class="sbchart-tooltip" style="position: absolute; pointer-events: none; display: none;"></div></p>
-										</div>
-									</li>
-								</ol>
-								
-							</div>
-
-							<div id="tab3">
-								<h4 class="title2 bul">인증유형별</h4>
-								<ol class="list_ol-rd2">
-									<li>
-										<div class="tits">
-											<h5>인증유형별 사회적기업 현황</h5>
-											<div class="tails">
-												<h8>(단위 : 개소)</h8>
-												<!-- <a href="#" class="icon_excel_down">엑셀 다운로드</a> -->
-											</div>
-										</div>
-										<div class="table_cont">
-											<table class="contTable tr chart">
-												<caption><span>인증유형별 사회적기업 수의 정보테이블입니다.</span></caption>
-												<colgroup>
-													<col style="width:260px">
-													<col>
-													<col>
-													<col>
-												</colgroup>
-												<thead>
-													<tr>
-														<th scope="col">구분</th>
-														<th scope="col">2022년</th>
-														<th scope="col">2023년</th>
-														<th scope="col">2024년</th>
-														</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th scope="row">일자리제공형</th>
-														<td scope="col">2,349</td>
-														<td scope="col">2,488</td>
-														<td scope="col">2,492</td>
-														</tr>
-													<tr>
-														<th scope="row">사회서비스제공형</th>
-														<td scope="col">271</td>
-														<td scope="col">310</td>
-														<td scope="col">336</td>
-														</tr>
-													<tr>
-														<th scope="row">지역사회공헌형</th>
-														<td scope="col">309</td>
-														<td scope="col">346</td>
-														<td scope="col">362</td>
-														</tr>
-													<tr>
-														<th scope="row">혼합형</th>
-														<td scope="col">207</td>
-														<td scope="col">206</td>
-														<td scope="col">198</td>
-														</tr>
-													<tr>
-														<th scope="row">기타(창의/혁신형)</th>
-														<td scope="col">398</td>
-														<td scope="col">387</td>
-														<td scope="col">374</td>
-														</tr>
-													<tr>
-														<th scope="row">합계</th>
-														<td scope="col">3,534</td>
-														<td scope="col">3,737</td>
-														<td scope="col">3,762</td>
-														</tr>
-												</tbody>
-											</table>
-										</div>
-										<div class="chart_container">
-											<p id="chart5" style="min-height: 252px; position: relative;"><svg viewBox="0 0 1110 252" focusable="false" width="1110" height="252" class="sbchart sbchart-chart-svg" style="overflow: hidden; display: block;"><defs><clipPath id="sb-1751594650794-clip"><rect x="0" y="0" width="1048.015625" height="180.63999938964844"></rect></clipPath><clipPath id="sb-1751594650794-clip-grid"><rect width="1048.015625" height="180.63999938964844"></rect></clipPath><clipPath id="sb-1751594650794-clip-xaxis"><rect width="1133" height="106.36000061035156" x="-53.984375" y="-30"></rect></clipPath><clipPath id="sb-1751594650794-clip-yaxis"><rect width="81.984375" height="225.63999938964844" x="-51.984375" y="-5"></rect></clipPath><clipPath id="sb-1751594650794-clip-y2axis"><rect width="81.984375" height="225.63999938964844" x="-51.984375" y="-5"></rect></clipPath></defs><g transform="translate(52.984375, 5)"><g class="sbchart-grid sbchart-grid-y" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-grid)"><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="180.63999938964844" y2="180.63999938964844"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="158.35741099365634" y2="158.35741099365634"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="136.0748225976643" y2="136.0748225976643"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="113.79223420167224" y2="113.79223420167224"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="91.50964580568017" y2="91.50964580568017"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="69.2270574096881" y2="69.2270574096881"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="46.94446901369603" y2="46.94446901369603"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="24.661880617703968" y2="24.661880617703968"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="2.3792922217118977" y2="2.3792922217118977"></line></g><g class="sbchart-chart" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip)"><g class="sbchart-paint-drawing-canvas0"></g><g class="sbchart-series-bars"><g class="sbchart-group sbchart-group-0"><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2022년 sbchart-target sbchart-target-2022년" style="pointer-events: none;"><rect x="90" y="128.29819924746306" width="30" height="52.34180014218538" animationX="90" animationY="128.29819924746306" animationW="30" animationH="52.34180014218538" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#4E16ED" rx="0" ry="0"></rect><rect x="299.603125" y="174.60141793433462" width="30" height="6.0385814553138175" animationX="299.603125" animationY="174.60141793433462" animationW="30" animationH="6.0385814553138175" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#4E16ED" rx="0" ry="0"></rect><rect x="509.20625" y="173.7546795752869" width="30" height="6.885319814361537" animationX="509.20625" animationY="173.7546795752869" animationW="30" animationH="6.885319814361537" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#4E16ED" rx="0" ry="0"></rect><rect x="718.8093749999999" y="176.02750359167808" width="30" height="4.612495797970354" animationX="718.8093749999999" animationY="176.02750359167808" animationW="30" animationH="4.612495797970354" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#4E16ED" rx="0" ry="0"></rect><rect x="928.4125" y="171.77152920804357" width="30" height="8.868470181604863" animationX="928.4125" animationY="171.77152920804357" animationW="30" animationH="8.868470181604863" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#4E16ED" rx="0" ry="0"></rect></g><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2023년 sbchart-target sbchart-target-2023년" style="pointer-events: none;"><rect x="90" y="72.85911931823482" width="30" height="55.43907992922824" animationX="90" animationY="72.85911931823482" animationW="30" animationH="55.43907992922824" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#79DFFF" rx="0" ry="0"></rect><rect x="299.603125" y="167.69381553157703" width="30" height="6.90760240275759" animationX="299.603125" animationY="167.69381553157703" animationW="30" animationH="6.90760240275759" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#79DFFF" rx="0" ry="0"></rect><rect x="509.20625" y="166.04490399027364" width="30" height="7.709775585013261" animationX="509.20625" animationY="166.04490399027364" animationW="30" animationH="7.709775585013261" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#79DFFF" rx="0" ry="0"></rect><rect x="718.8093749999999" y="171.43729038210373" width="30" height="4.590213209574358" animationX="718.8093749999999" animationY="171.43729038210373" animationW="30" animationH="4.590213209574358" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#79DFFF" rx="0" ry="0"></rect><rect x="928.4125" y="163.14816749879466" width="30" height="8.623361709248911" animationX="928.4125" animationY="163.14816749879466" animationW="30" animationH="8.623361709248911" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#79DFFF" rx="0" ry="0"></rect></g><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2024년 sbchart-target sbchart-target-2024년" style="pointer-events: none;"><rect x="90" y="17.33090903542257" width="30" height="55.528210282812246" animationX="90" animationY="17.33090903542257" animationW="30" animationH="55.528210282812246" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="299.603125" y="160.20686583052372" width="30" height="7.486949701053305" animationX="299.603125" animationY="160.20686583052372" animationW="30" animationH="7.486949701053305" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="509.20625" y="157.97860699092453" width="30" height="8.066296999349106" animationX="509.20625" animationY="157.97860699092453" animationW="30" animationH="8.066296999349106" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="718.8093749999999" y="167.02533787969728" width="30" height="4.41195250240645" animationX="718.8093749999999" animationY="167.02533787969728" animationW="30" animationH="4.41195250240645" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="928.4125" y="154.81447943869364" width="30" height="8.333688060101025" animationX="928.4125" animationY="154.81447943869364" animationW="30" animationH="8.333688060101025" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#E8A7FF" rx="0" ry="0"></rect></g></g></g><g class="sbchart-series-lines"></g><g class="sbchart-event-rects" transform="translate(0, 0)" style="fill-opacity: 0;"><rect class="sbchart-event-rect-0" width="209.603125" height="180.63999938964844" x="0" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-1" width="209.603125" height="180.63999938964844" x="209.603125" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-2" width="209.603125" height="180.63999938964844" x="419.20625" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-3" width="209.603125" height="180.63999938964844" x="628.8093749999999" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-4" width="209.603125" height="180.63999938964844" x="838.4125" style="fill-opacity: 0;"></rect><line class="sbchart-event-rects-line" pointer-events="none" style="opacity: 0;"></line></g><g class="sbchart-milestone" transform="translate(0, 0)" style="fill-opacity: 0;"></g><g class="sbchart-labels"></g></g><g class="sbchart-axis-container sbchart-axis-x-container" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-xaxis)"></g><g clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-xaxis)" class="sbchart-axis sbchart-axis-x" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle" style="visibility: visible; opacity: 1;" transform="translate(0, 180.63999938964844)"><text class="sbchart-axis-x-label" transform=""></text><path class="domain" stroke="currentColor" d="M0,6V0H1048.015625V6"></path><g class="tick" opacity="1" transform="translate(105, 0)"><line stroke="currentColor" y2="6" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-0" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">일자리제공형</tspan></text></g><g class="tick" opacity="1" transform="translate(314.603125, 0)"><line stroke="currentColor" y2="6" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-1" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">사회서비스제공형</tspan></text></g><g class="tick" opacity="1" transform="translate(524.20625, 0)"><line stroke="currentColor" y2="6" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-2" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">지역사회공헌형</tspan></text></g><g class="tick" opacity="1" transform="translate(733.8093749999999, 0)"><line stroke="currentColor" y2="6" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-3" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">혼합형</tspan></text></g><g class="tick" opacity="1" transform="translate(943.4125, 0)"><line stroke="currentColor" y2="0" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-4" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">기타(창의/혁신형)</tspan></text></g></g><g class="sbchart-axis sbchart-axis-x" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-xaxis)" style="visibility: hidden;"></g><g class="sbchart-axis sbchart-axis-y" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-yaxis)" style="visibility: visible; opacity: 1;" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><text class="sbchart-axis-y-label" transform="rotate(-90)"></text><path class="domain" stroke="currentColor" d="M-6,180.63999938964844H0V1H-6"></path><g class="tick" opacity="1" transform="translate(0, 180.63999938964844)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">0</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 158.35741099365634)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">1,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 136.0748225976643)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">2,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 113.79223420167224)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">3,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 91.50964580568017)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">4,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 69.2270574096881)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">5,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 46.94446901369603)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">6,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 24.661880617703968)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">7,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 2.3792922217118977)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">8,000</tspan></text></g></g></g><g class="sbchart-legend" transform="translate(0, 219)" style="visibility: visible; opacity: 1;"><g class="sbchart-legend-item sbchart-legend-item-2022년 sbchart-target sbchart-target-2022년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="474.5199890136719" y="9" opacity="1" style="text-anchor: start;">2022년</text><path class="sbchart-legend-item-tile" d="M 460.5199890136719 0 h 10 v 10 h -10 v -10 Z" fill="#4E16ED" opacity="1"></path><rect class="sbchart-legend-item-event" width="66.32000732421875" height="28" x="460.5199890136719" y="-5" style="fill-opacity: 0;"></rect></g><g class="sbchart-legend-item sbchart-legend-item-2023년 sbchart-target sbchart-target-2023년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="540.8399963378906" y="9" opacity="1" style="text-anchor: start;">2023년</text><path class="sbchart-legend-item-tile" d="M 526.8399963378906 0 h 10 v 10 h -10 v -10 Z" fill="#79DFFF" opacity="1"></path><rect class="sbchart-legend-item-event" width="66.32000732421875" height="28" x="526.8399963378906" y="-5" style="fill-opacity: 0;"></rect></g><g class="sbchart-legend-item sbchart-legend-item-2024년 sbchart-target sbchart-target-2024년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="607.1600036621094" y="9" opacity="1" style="text-anchor: start;">2024년</text><path class="sbchart-legend-item-tile" d="M 593.1600036621094 0 h 10 v 10 h -10 v -10 Z" fill="#E8A7FF" opacity="1"></path><rect class="sbchart-legend-item-event" width="56.32000732421875" height="28" x="593.1600036621094" y="-5" style="fill-opacity: 0;"></rect></g></g><g></g><g></g><g></g></svg><div class="sbchart-tooltip" style="position: absolute; pointer-events: none; display: none;"></div></p>
-										</div>
-									</li>
-								</ol>
-							</div>
-
-							<div id="tab4">
-								<h4 class="title2 bul">사회서비스 유형 및 수혜대상별</h4>
-								<ol class="list_ol-rd2">
-									<li>
-										<div class="tits">
-											<h5>사회서비스 유형 및 수혜대상별 사회적기업 현황</h5>
-											<div class="tails">
-												<h8>(기준: 2023년, 단위 : 개소)</h8>
-												<!-- <a href="#" class="icon_excel_down">엑셀 다운로드</a> -->
-											</div>
-										</div>
-										<div class="table_cont">
-											<table class="contTable tr chart">
-												<caption><span>서비스 제공 대상별 분야별 사회적기업 수의 정보테이블입니다.</span></caption>
-												<colgroup>
-													<col style="auto">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-													<col style="width:6.5%">
-												</colgroup>
-												<thead>
-													<tr>
-														<th scope="col">사회서비스 제공유형</th>
-														<th scope="col">간병/가사지원</th>
-														<th scope="col">고용</th>
-														<th scope="col">관광/운동</th>
-														<th scope="col">교육</th>
-														<th scope="col">문화/예술</th>
-														<!-- <th scope="col">문화재</th> -->
-														<th scope="col">보건</th>
-														<th scope="col">보육</th>
-														<th scope="col">사회복지</th>
-														<th scope="col">산림</th>
-														<th scope="col">청소</th>
-														<th scope="col">환경</th>
-														<th scope="col">기타</th>
-														<th scope="col">전체</th>
-
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th scope="row">전체 대상 제공기업</th>
-														<td>41</td>
-														<td>3</td>
-														<td>20</td>
-														<td>179</td>
-														<td>57</td>
-														<td>9</td>
-														<td>5</td>
-														<td>60</td>
-														<td>3</td>
-														<td>7</td>
-														<td>6</td>
-														<td>102</td>
-														<td>492</td>
-													</tr>
-													<tr>
-														<th scope="row">일반인 대상 제공기업</th>
-														<td>6</td>
-														<td>2</td>
-														<td>4</td>
-														<td>38</td>
-														<td>13</td>
-														<td>1</td>
-														<td>0</td>
-														<td>8</td>
-														<td>2</td>
-														<td>2</td>
-														<td>0</td>
-														<td>12</td>
-														<td>88</td>
-													</tr>
-													<tr>
-														<th scope="row">취약계층 대상 제공기업</th>
-														<td>35</td>
-														<td>1</td>
-														<td>15</td>
-														<td>140</td>
-														<td>42</td>
-														<td>8</td>
-														<td>5</td>
-														<td>52</td>
-														<td>1</td>
-														<td>5</td>
-														<td>6</td>
-														<td>88</td>
-														<td>398</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div class="chart_container">
-											<p id="chart6" style="min-height: 330px; position: relative;"><svg viewBox="0 0 1110 330" focusable="false" width="1110" height="330" class="sbchart sbchart-chart-svg" style="overflow: hidden; display: block;"><defs><clipPath id="sb-1751594650819-clip"><rect x="0" y="0" width="1059.75" height="234.63999938964844"></rect></clipPath><clipPath id="sb-1751594650819-clip-grid"><rect width="1059.75" height="234.63999938964844"></rect></clipPath><clipPath id="sb-1751594650819-clip-xaxis"><rect width="1133" height="130.36000061035156" x="-42.25" y="-30"></rect></clipPath><clipPath id="sb-1751594650819-clip-yaxis"><rect width="70.25" height="279.63999938964844" x="-40.25" y="-5"></rect></clipPath><clipPath id="sb-1751594650819-clip-y2axis"><rect width="70.25" height="279.63999938964844" x="-40.25" y="-5"></rect></clipPath></defs><g transform="translate(41.25, 5)"><g class="sbchart-grid sbchart-grid-y" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650819-clip-grid)"><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="234.63999938964844" y2="234.63999938964844"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="210.90815587622552" y2="210.90815587622552"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="187.17631236280263" y2="187.17631236280263"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="163.44446884937972" y2="163.44446884937972"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="139.71262533595683" y2="139.71262533595683"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="115.98078182253396" y2="115.98078182253396"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="92.24893830911105" y2="92.24893830911105"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="68.51709479568815" y2="68.51709479568815"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="44.78525128226525" y2="44.78525128226525"></line><line class="sbchart-grid-y-line" x1="0" x2="1059.75" y1="21.053407768842348" y2="21.053407768842348"></line></g><g class="sbchart-chart" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650819-clip)"><g class="sbchart-paint-drawing-canvas0"></g><g class="sbchart-series-arearanges"></g><g class="sbchart-series-bars"><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-전체-사회적기업-구분없음- sbchart-target sbchart-target-전체-사회적기업-구분없음-" style="pointer-events: none;"><rect class="sbchart-bar sbchart-shape sbchart-shape-0" x="20" y="185.9897201871315" width="16" height="48.65027920251694" fill="#4E16ED" animationX="20" animationY="185.9897201871315" animationW="16" animationH="48.65027920251694" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-1" x="108.3125" y="231.080222862635" width="16" height="3.5597765270134403" fill="#4E16ED" animationX="108.3125" animationY="231.080222862635" animationW="16" animationH="3.5597765270134403" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-2" x="196.625" y="210.90815587622552" width="16" height="23.731843513422916" fill="#4E16ED" animationX="196.625" animationY="210.90815587622552" animationW="16" animationH="23.731843513422916" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-3" x="284.9375" y="22.239999944513503" width="16" height="212.39999944513494" fill="#4E16ED" animationX="284.9375" animationY="22.239999944513503" animationW="16" animationH="212.39999944513494" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-4" x="373.25" y="167.00424537639316" width="16" height="67.63575401325528" fill="#4E16ED" animationX="373.25" animationY="167.00424537639316" animationW="16" animationH="67.63575401325528" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-5" x="461.5625" y="223.96066980860815" width="16" height="10.679329581040292" fill="#4E16ED" animationX="461.5625" animationY="223.96066980860815" animationW="16" animationH="10.679329581040292" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-6" x="549.875" y="228.70703851129272" width="16" height="5.932960878355715" fill="#4E16ED" animationX="549.875" animationY="228.70703851129272" animationW="16" animationH="5.932960878355715" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-7" x="638.1875" y="163.44446884937972" width="16" height="71.19553054026872" fill="#4E16ED" animationX="638.1875" animationY="163.44446884937972" animationW="16" animationH="71.19553054026872" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-8" x="726.5" y="231.080222862635" width="16" height="3.5597765270134403" fill="#4E16ED" animationX="726.5" animationY="231.080222862635" animationW="16" animationH="3.5597765270134403" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-9" x="814.8125" y="226.33385415995042" width="16" height="8.306145229698018" fill="#4E16ED" animationX="814.8125" animationY="226.33385415995042" animationW="16" animationH="8.306145229698018" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-10" x="903.125" y="227.52044633562156" width="16" height="7.1195530540268805" fill="#4E16ED" animationX="903.125" animationY="227.52044633562156" animationW="16" animationH="7.1195530540268805" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-11" x="991.4375" y="113.60759747119167" width="16" height="121.03240191845677" fill="#4E16ED" animationX="991.4375" animationY="113.60759747119167" animationW="16" animationH="121.03240191845677" style="opacity: 1;"></rect></g><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-일반인-대상-제공기업 sbchart-target sbchart-target-일반인-대상-제공기업" style="pointer-events: none;"><rect class="sbchart-bar sbchart-shape sbchart-shape-0" x="36" y="227.52044633562156" width="16" height="7.1195530540268805" fill="#79DFFF" animationX="36" animationY="227.52044633562156" animationW="16" animationH="7.1195530540268805" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-1" x="124.3125" y="232.26681503830613" width="16" height="2.373184351342303" fill="#79DFFF" animationX="124.3125" animationY="232.26681503830613" animationW="16" animationH="2.373184351342303" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-2" x="212.625" y="229.89363068696386" width="16" height="4.746368702684578" fill="#79DFFF" animationX="212.625" animationY="229.89363068696386" animationW="16" animationH="4.746368702684578" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-3" x="300.9375" y="189.54949671414496" width="16" height="45.09050267550347" fill="#79DFFF" animationX="300.9375" animationY="189.54949671414496" animationW="16" animationH="45.09050267550347" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-4" x="389.25" y="219.21430110592357" width="16" height="15.42569828372487" fill="#79DFFF" animationX="389.25" animationY="219.21430110592357" animationW="16" animationH="15.42569828372487" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-5" x="477.5625" y="233.45340721397727" width="16" height="1.1865921756711657" fill="#79DFFF" animationX="477.5625" animationY="233.45340721397727" animationW="16" animationH="1.1865921756711657" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-6" x="565.875" y="234.63999938964844" width="16" height="0" fill="#79DFFF" animationX="565.875" animationY="234.63999938964844" animationW="16" animationH="0" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-7" x="654.1875" y="225.14726198427928" width="16" height="9.492737405369155" fill="#79DFFF" animationX="654.1875" animationY="225.14726198427928" animationW="16" animationH="9.492737405369155" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-8" x="742.5" y="232.26681503830613" width="16" height="2.373184351342303" fill="#79DFFF" animationX="742.5" animationY="232.26681503830613" animationW="16" animationH="2.373184351342303" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-9" x="830.8125" y="232.26681503830613" width="16" height="2.373184351342303" fill="#79DFFF" animationX="830.8125" animationY="232.26681503830613" animationW="16" animationH="2.373184351342303" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-10" x="919.125" y="234.63999938964844" width="16" height="0" fill="#79DFFF" animationX="919.125" animationY="234.63999938964844" animationW="16" animationH="0" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-11" x="1007.4375" y="220.40089328159468" width="16" height="14.239106108053761" fill="#79DFFF" animationX="1007.4375" animationY="220.40089328159468" animationW="16" animationH="14.239106108053761" style="opacity: 1;"></rect></g><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-취약계층-대상-제공기업 sbchart-target sbchart-target-취약계층-대상-제공기업" style="pointer-events: none;"><rect class="sbchart-bar sbchart-shape sbchart-shape-0" x="52" y="193.10927324115835" width="16" height="41.53072614849009" fill="#E8A7FF" animationX="52" animationY="193.10927324115835" animationW="16" animationH="41.53072614849009" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-1" x="140.3125" y="233.45340721397727" width="16" height="1.1865921756711657" fill="#E8A7FF" animationX="140.3125" animationY="233.45340721397727" animationW="16" animationH="1.1865921756711657" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-2" x="228.625" y="216.84111675458126" width="16" height="17.798882635067173" fill="#E8A7FF" animationX="228.625" animationY="216.84111675458126" animationW="16" animationH="17.798882635067173" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-3" x="316.9375" y="68.51709479568815" width="16" height="166.1229045939603" fill="#E8A7FF" animationX="316.9375" animationY="68.51709479568815" animationW="16" animationH="166.1229045939603" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-4" x="405.25" y="184.80312801146033" width="16" height="49.83687137818811" fill="#E8A7FF" animationX="405.25" animationY="184.80312801146033" animationW="16" animationH="49.83687137818811" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-5" x="493.5625" y="225.14726198427928" width="16" height="9.492737405369155" fill="#E8A7FF" animationX="493.5625" animationY="225.14726198427928" animationW="16" animationH="9.492737405369155" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-6" x="581.875" y="228.70703851129272" width="16" height="5.932960878355715" fill="#E8A7FF" animationX="581.875" animationY="228.70703851129272" animationW="16" animationH="5.932960878355715" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-7" x="670.1875" y="172.93720625474887" width="16" height="61.702793134899565" fill="#E8A7FF" animationX="670.1875" animationY="172.93720625474887" animationW="16" animationH="61.702793134899565" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-8" x="758.5" y="233.45340721397727" width="16" height="1.1865921756711657" fill="#E8A7FF" animationX="758.5" animationY="233.45340721397727" animationW="16" animationH="1.1865921756711657" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-9" x="846.8125" y="228.70703851129272" width="16" height="5.932960878355715" fill="#E8A7FF" animationX="846.8125" animationY="228.70703851129272" animationW="16" animationH="5.932960878355715" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-10" x="935.125" y="227.52044633562156" width="16" height="7.1195530540268805" fill="#E8A7FF" animationX="935.125" animationY="227.52044633562156" animationW="16" animationH="7.1195530540268805" style="opacity: 1;"></rect><rect class="sbchart-bar sbchart-shape sbchart-shape-11" x="1023.4375" y="130.2198879305877" width="16" height="104.42011145906073" fill="#E8A7FF" animationX="1023.4375" animationY="130.2198879305877" animationW="16" animationH="104.42011145906073" style="opacity: 1;"></rect></g></g><g class="sbchart-series-lines"></g><g class="sbchart-event-rects" transform="translate(0, 0)" style="fill-opacity: 0;"><rect class="sbchart-event-rect-0" width="88.3125" height="234.63999938964844" x="0" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-1" width="88.3125" height="234.63999938964844" x="88.3125" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-2" width="88.3125" height="234.63999938964844" x="176.625" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-3" width="88.3125" height="234.63999938964844" x="264.9375" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-4" width="88.3125" height="234.63999938964844" x="353.25" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-5" width="88.3125" height="234.63999938964844" x="441.5625" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-6" width="88.3125" height="234.63999938964844" x="529.875" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-7" width="88.3125" height="234.63999938964844" x="618.1875" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-8" width="88.3125" height="234.63999938964844" x="706.5" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-9" width="88.3125" height="234.63999938964844" x="794.8125" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-10" width="88.3125" height="234.63999938964844" x="883.125" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-11" width="88.3125" height="234.63999938964844" x="971.4375" style="fill-opacity: 0;"></rect><line class="sbchart-event-rects-line" pointer-events="none" style="opacity: 0;"></line></g><g class="sbchart-milestone" transform="translate(0, 0)" style="fill-opacity: 0;"></g><g class="sbchart-labels"><g class="sbchart-label sbchart-label-전체-사회적기업-구분없음- sbchart-target sbchart-target-전체-사회적기업-구분없음-"><text class="sbchart-text sbchart-text-0 sbchart-labels-custom" text-anchor="middle" x="28" y="180.9897201871315" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">41</text><text class="sbchart-text sbchart-text-1 sbchart-labels-custom" text-anchor="middle" x="116.3125" y="226.080222862635" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">3</text><text class="sbchart-text sbchart-text-2 sbchart-labels-custom" text-anchor="middle" x="204.625" y="205.90815587622552" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">20</text><text class="sbchart-text sbchart-text-3 sbchart-labels-custom" text-anchor="middle" x="292.9375" y="17.239999944513503" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">179</text><text class="sbchart-text sbchart-text-4 sbchart-labels-custom" text-anchor="middle" x="381.25" y="162.00424537639316" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">57</text><text class="sbchart-text sbchart-text-5 sbchart-labels-custom" text-anchor="middle" x="469.5625" y="218.96066980860815" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">9</text><text class="sbchart-text sbchart-text-6 sbchart-labels-custom" text-anchor="middle" x="557.875" y="223.70703851129272" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">5</text><text class="sbchart-text sbchart-text-7 sbchart-labels-custom" text-anchor="middle" x="646.1875" y="158.44446884937972" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">60</text><text class="sbchart-text sbchart-text-8 sbchart-labels-custom" text-anchor="middle" x="734.5" y="226.080222862635" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">3</text><text class="sbchart-text sbchart-text-9 sbchart-labels-custom" text-anchor="middle" x="822.8125" y="221.33385415995042" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">7</text><text class="sbchart-text sbchart-text-10 sbchart-labels-custom" text-anchor="middle" x="911.125" y="222.52044633562156" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">6</text><text class="sbchart-text sbchart-text-11 sbchart-labels-custom" text-anchor="middle" x="999.4375" y="108.60759747119167" style="fill: rgb(78, 22, 237); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">102</text></g><g class="sbchart-label sbchart-label-일반인-대상-제공기업 sbchart-target sbchart-target-일반인-대상-제공기업"><text class="sbchart-text sbchart-text-0 sbchart-labels-custom" text-anchor="middle" x="44" y="222.52044633562156" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">6</text><text class="sbchart-text sbchart-text-1 sbchart-labels-custom" text-anchor="middle" x="132.3125" y="227.26681503830613" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">2</text><text class="sbchart-text sbchart-text-2 sbchart-labels-custom" text-anchor="middle" x="220.625" y="224.89363068696386" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">4</text><text class="sbchart-text sbchart-text-3 sbchart-labels-custom" text-anchor="middle" x="308.9375" y="184.54949671414496" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">38</text><text class="sbchart-text sbchart-text-4 sbchart-labels-custom" text-anchor="middle" x="397.25" y="214.21430110592357" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">13</text><text class="sbchart-text sbchart-text-5 sbchart-labels-custom" text-anchor="middle" x="485.5625" y="228.45340721397727" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">1</text><text class="sbchart-text sbchart-text-6 sbchart-labels-custom" text-anchor="middle" x="573.875" y="244.63999938964844" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">0</text><text class="sbchart-text sbchart-text-7 sbchart-labels-custom" text-anchor="middle" x="662.1875" y="220.14726198427928" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">8</text><text class="sbchart-text sbchart-text-8 sbchart-labels-custom" text-anchor="middle" x="750.5" y="227.26681503830613" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">2</text><text class="sbchart-text sbchart-text-9 sbchart-labels-custom" text-anchor="middle" x="838.8125" y="227.26681503830613" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">2</text><text class="sbchart-text sbchart-text-10 sbchart-labels-custom" text-anchor="middle" x="927.125" y="244.63999938964844" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">0</text><text class="sbchart-text sbchart-text-11 sbchart-labels-custom" text-anchor="middle" x="1015.4375" y="215.40089328159468" style="fill: rgb(121, 223, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">12</text></g><g class="sbchart-label sbchart-label-취약계층-대상-제공기업 sbchart-target sbchart-target-취약계층-대상-제공기업"><text class="sbchart-text sbchart-text-0 sbchart-labels-custom" text-anchor="middle" x="60" y="188.10927324115835" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">35</text><text class="sbchart-text sbchart-text-1 sbchart-labels-custom" text-anchor="middle" x="148.3125" y="228.45340721397727" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">1</text><text class="sbchart-text sbchart-text-2 sbchart-labels-custom" text-anchor="middle" x="236.625" y="211.84111675458126" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">15</text><text class="sbchart-text sbchart-text-3 sbchart-labels-custom" text-anchor="middle" x="324.9375" y="63.51709479568815" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">140</text><text class="sbchart-text sbchart-text-4 sbchart-labels-custom" text-anchor="middle" x="413.25" y="179.80312801146033" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">42</text><text class="sbchart-text sbchart-text-5 sbchart-labels-custom" text-anchor="middle" x="501.5625" y="220.14726198427928" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">8</text><text class="sbchart-text sbchart-text-6 sbchart-labels-custom" text-anchor="middle" x="589.875" y="223.70703851129272" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">5</text><text class="sbchart-text sbchart-text-7 sbchart-labels-custom" text-anchor="middle" x="678.1875" y="167.93720625474887" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">52</text><text class="sbchart-text sbchart-text-8 sbchart-labels-custom" text-anchor="middle" x="766.5" y="228.45340721397727" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">1</text><text class="sbchart-text sbchart-text-9 sbchart-labels-custom" text-anchor="middle" x="854.8125" y="223.70703851129272" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">5</text><text class="sbchart-text sbchart-text-10 sbchart-labels-custom" text-anchor="middle" x="943.125" y="222.52044633562156" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">6</text><text class="sbchart-text sbchart-text-11 sbchart-labels-custom" text-anchor="middle" x="1031.4375" y="125.2198879305877" style="fill: rgb(232, 167, 255); fill-opacity: 1; stroke: none; pointer-events: none; font-weight: normal; font-size: 10px; display: block;">88</text></g></g></g><g class="sbchart-axis-container sbchart-axis-x-container" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650819-clip-xaxis)"></g><g clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650819-clip-xaxis)" class="sbchart-axis sbchart-axis-x" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle" style="visibility: visible; opacity: 1;" transform="translate(0, 234.63999938964844)"><text class="sbchart-axis-x-label" transform=""></text><path class="domain" stroke="currentColor" d="M0,6V0H1059.75V6"></path><g class="tick" opacity="1" transform="translate(44.5, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-0" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">간병/가사</tspan><tspan x="0" dy="24" dx="0">지원</tspan></text></g><g class="tick" opacity="1" transform="translate(132.8125, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-1" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">고용</tspan></text></g><g class="tick" opacity="1" transform="translate(221.125, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-2" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">관광/운동</tspan></text></g><g class="tick" opacity="1" transform="translate(309.4375, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-3" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">교육</tspan></text></g><g class="tick" opacity="1" transform="translate(397.75, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-4" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">문화/예술</tspan></text></g><g class="tick" opacity="1" transform="translate(486.0625, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-5" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">보건</tspan></text></g><g class="tick" opacity="1" transform="translate(574.375, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-6" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">보육</tspan></text></g><g class="tick" opacity="1" transform="translate(662.6875, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-7" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">사회복지</tspan></text></g><g class="tick" opacity="1" transform="translate(751, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-8" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">산림</tspan></text></g><g class="tick" opacity="1" transform="translate(839.3125, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-9" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">청소</tspan></text></g><g class="tick" opacity="1" transform="translate(927.625, 0)"><line stroke="currentColor" y2="6" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-10" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">환경</tspan></text></g><g class="tick" opacity="1" transform="translate(1015.9375, 0)"><line stroke="currentColor" y2="0" x1="44.5" x2="44.5"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-11" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">기타</tspan></text></g></g><g class="sbchart-axis sbchart-axis-x" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650819-clip-xaxis)" style="visibility: hidden;"></g><g class="sbchart-axis sbchart-axis-y" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650819-clip-yaxis)" style="visibility: visible; opacity: 1;" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><text class="sbchart-axis-y-label" transform="rotate(-90)"></text><path class="domain" stroke="currentColor" d="M-6,234.63999938964844H0V1H-6"></path><g class="tick" opacity="1" transform="translate(0, 234.63999938964844)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">0</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 210.90815587622552)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">20</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 187.17631236280263)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">40</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 163.44446884937972)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">60</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 139.71262533595683)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">80</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 115.98078182253396)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">100</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 92.24893830911105)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">120</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 68.51709479568815)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">140</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 44.78525128226525)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">160</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 21.053407768842348)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">180</tspan></text></g></g></g><g class="sbchart-legend" transform="translate(0, 297)" style="visibility: visible; opacity: 1;"><g class="sbchart-legend-item sbchart-legend-item-전체-사회적기업-구분없음- sbchart-target sbchart-target-전체-사회적기업-구분없음-" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="311.19444274902344" y="9" opacity="1" style="text-anchor: start;">전체 사회적기업(구분없음)</text><path class="sbchart-legend-item-tile" d="M 297.19444274902344 0 h 10 v 10 h -10 v -10 Z" fill="#4E16ED" opacity="1"></path><rect class="sbchart-legend-item-event" width="196.40798950195312" height="28" x="297.19444274902344" y="-5" style="fill-opacity: 0;"></rect></g><g class="sbchart-legend-item sbchart-legend-item-일반인-대상-제공기업 sbchart-target sbchart-target-일반인-대상-제공기업" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="507.60243225097656" y="9" opacity="1" style="text-anchor: start;">일반인 대상 제공기업</text><path class="sbchart-legend-item-tile" d="M 493.60243225097656 0 h 10 v 10 h -10 v -10 Z" fill="#79DFFF" opacity="1"></path><rect class="sbchart-legend-item-event" width="162.640625" height="28" x="493.60243225097656" y="-5" style="fill-opacity: 0;"></rect></g><g class="sbchart-legend-item sbchart-legend-item-취약계층-대상-제공기업 sbchart-target sbchart-target-취약계층-대상-제공기업" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="670.2430572509766" y="9" opacity="1" style="text-anchor: start;">취약계층 대상 제공기업</text><path class="sbchart-legend-item-tile" d="M 656.2430572509766 0 h 10 v 10 h -10 v -10 Z" fill="#E8A7FF" opacity="1"></path><rect class="sbchart-legend-item-event" width="156.5625" height="28" x="656.2430572509766" y="-5" style="fill-opacity: 0;"></rect></g></g><g></g><g></g><g></g></svg><div class="sbchart-tooltip" style="position: absolute; pointer-events: none; display: none;"></div></p>
-										</div>
-										<p class="symbols3 text_right">※ 자료 : 사회적기업 성과분석 보고서(2023)</p>
-									</li>
-								</ol>
-								
-							</div>
 						</div>
 						<script>
 							var conf = {
@@ -1587,151 +1290,31 @@
 							};
 							var chart3 = sb.chart.render("#chart3", conf3);
 
-							var conf4 = {
+							var conf7 = {
 								global:{
 									color: {
-										pattern: ["#4E16ED","#79DFFF","#E8A7FF"]
-									}
-								},
-								data: {
-									type: "stackbar",
-									columns: [
-										
-										['2022년',312,62,74,276,2,2205,168,121,314],
-										
-										['2023년',310,57,74,326,1,2331,189,116,333],
-										
-										['2024년',311,54,71,353,0,2349,188,109,327],
-										
-									]
-								},
-								axis: {
-									x: {
-										type: "category",
-										categories: ["민법상 법인","비영리 민간단체","사회복지법인","사회적협동조합","기타법인 및 단체","상법상회사","농(어)업회사법인","영농(어)조합법인","협동조합"]
-									}
-								},
-								legend: {
-									item: {
-										onclick: function() {
-											return;
-										}
-									}
-								},
-								grid: {
-									x: { 
-										show: false
-									}
-								},
-								extend: {
-									bar: {
-										width: {
-											max: 30
-										},
+										pattern: ["#4E16ED"]
 									},
-									
-								},
-								tooltip: {
-									format: {
-										value: function(value, id, index, ratio) {
-											return new Intl.NumberFormat().format(value);
-										}
-									}
-								}
-							};
-
-							var chart4 = sb.chart.render("#chart4", conf4);
-
-							var conf5 = {
-								global:{
-									color: {
-										pattern: ["#4E16ED","#79DFFF","#E8A7FF"]
+									animation: {
+										show: true,
+										type: "rise",
+										delay: 500,
 									}
 								},
-								data: {
-									type: "stackbar",
-									columns: [
-										
-										['2022년',2349,271,309,207,398],
-										
-										['2023년',2488,310,346,206,387],
-										
-										['2024년',2492,336,362,198,374],
-										
-									]
-								},
-								axis: {
-									x: {
-										type: "category",
-										categories: ["일자리제공형","사회서비스제공형","지역사회공헌형","혼합형","기타(창의/혁신형)"]
-									},
-									y: {
-										tick: {
-											multiline: false
-										}
-									}
-								},
-								legend: {
-									item: {
-										onclick: function() {
-											return;
-										}
-									}
-								},
-								grid: {
-									x: { 
-										show: false
-									}
-								},
-								extend: {
-									bar: {
-										width: {
-											max: 30
-										}
-									}
-								},
-								tooltip: {
-									format: {
-										value: function(value, id, index, ratio) {
-											return new Intl.NumberFormat().format(value);
-										}
-									}
-								}
-							};
-							var chart5 = sb.chart.render("#chart5", conf5);
-
-							var conf6 = {
-								global:{
-									color: {
-										pattern: ["#4E16ED","#79DFFF","#E8A7FF"]
-									}
-								},
-								data: {
+								data: {     
 									type: "bar",
 									columns: [
-										["전체 사회적기업(구분없음)",41,3,20,179,57,9,5,60,3,7,6,102],
-										["일반인 대상 제공기업",6,2,4,38,13,1,0,8,2,2,0,12],
-										["취약계층 대상 제공기업",35,1,15,140,42,8,5,52,1,5,6,88],
-									],
-									labels: {
-									format: function(value, id, index, ratio) {
-										return value;
-									}
-									}
+										['개소',87,237,50,70,32,58,48,46,54,56,51,35,22,51,42,27,9]
+									]        
 								},
 								axis: {
 									x: {
 										type: "category",
-										categories: ["간병/가사지원","고용","관광/운동","교육","문화/예술","보건","보육","사회복지","산림","청소","환경","기타"]
+										categories: ["서울","경기","인천","강원","광주","충북","충남","전북","전남","경북","부산","대전","대구","경남","제주","울산","세종"]
 									}
 								},
 								legend: {
-									padding: 20,
-									item: {
-										onclick: function() {
-											return;
-										}
-									}
+									show: false
 								},
 								grid: {
 									x: { 
@@ -1741,7 +1324,7 @@
 								extend: {
 									bar: {
 										width: {
-											max: 16
+											max: 30
 										},
 									}
 								},
@@ -1749,59 +1332,11 @@
 									format: {
 										value: function(value, id, index, ratio) {
 											return new Intl.NumberFormat().format(value);
-						}
-					}
-				}
-			};
-			var chart6 = sb.chart.render("#chart6", conf6);
-
-			var conf7 = {
-				global:{
-					color: {
-						pattern: ["#4E16ED"]
-					},
-					animation: {
-						show: true,
-						type: "rise",
-						delay: 500,
-					}
-				},
-				data: {     
-					type: "bar",
-					columns: [
-						['개소',87,237,50,70,32,58,48,46,54,56,51,35,22,51,42,27,9]
-					]        
-				},
-				axis: {
-					x: {
-						type: "category",
-						categories: ["서울","경기","인천","강원","광주","충북","충남","전북","전남","경북","부산","대전","대구","경남","제주","울산","세종"]
-					}
-				},
-				legend: {
-					show: false
-				},
-				grid: {
-					x: { 
-						show: false
-					}
-				},
-				extend: {
-					bar: {
-						width: {
-							max: 30
-						},
-					}
-				},
-				tooltip: {
-					format: {
-						value: function(value, id, index, ratio) {
-							return new Intl.NumberFormat().format(value);
-						}
-					}
-				}
-			};
-			var chart7 = sb.chart.render("#chart7", conf7);
+										}
+									}
+								}
+							};
+							var chart7 = sb.chart.render("#chart7", conf7);
 						</script>
 					</div>
 				</div>

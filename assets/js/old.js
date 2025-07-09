@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 	$(".scrollto").click(function(e) {
 		e.preventDefault();
-		$('html,body').animate( { scrollTop:$(this.hash).offset().top - $('#header').outerHeight() - 40 } , 1000);
+		$('html,body').animate( { scrollTop:$(this.hash).offset().top - $('#header').outerHeight() - 20 } , 500);
 	});
 });
 

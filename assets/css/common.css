@@ -32482,7 +32482,7 @@ html {
   font-family: "Pretendard";
   font-weight: 100;
   font-display: swap;
-  src: local("Pretendard Thin"), url("../fonts/rajdhani-bold-Thin.woff2") format("woff2");
+  src: local("Pretendard Thin"), url("../fonts/Pretendard-Thin.woff2") format("woff2");
 }
 @font-face {
   font-family: "GmarketSans";
@@ -48383,6 +48383,37 @@ input[type=radio][readonly]:not([checked]) {
   -webkit-box-shadow: 0 0 0 2px #407aec;
   box-shadow: 0 0 0 2px #407aec;
 }
+.input-label--tab input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.input-label--tab input:checked + .input-label__txt {
+  background: #246BEB;
+  border-color: #246BEB;
+  color: #fff;
+}
+.input-label--tab input:disabled + .input-label__txt {
+  pointer-events: none;
+}
+.input-label--tab .input-label__txt {
+  display: inline-block;
+  padding: 7px 19px;
+  border-radius: 90px;
+  border: 1px solid #E6E6E6;
+  background: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
 
 .board-box p {
   word-break: break-all;
@@ -51548,4 +51579,31 @@ body.layer-oepn {
 }
 .white-nowrap {
   white-space: nowrap !important;
+}
+
+.row.row-sm {
+  margin-right: -9px !important;
+  margin-left: -9px !important;
+  gap: 18px 0 !important;
+}
+.row.row-sm [class*=col] {
+  padding: 0 9px !important;
+}
+@media all and (max-width: 768px) {
+  .row.row-sm {
+    gap: 12px 0 !important;
+  }
+}
+.row.row-xs {
+  margin-right: -4px !important;
+  margin-left: -4px !important;
+  gap: 8px 0 !important;
+}
+.row.row-xs [class*=col] {
+  padding: 0 4px !important;
+}
+@media all and (max-width: 768px) {
+  .row.row-xs {
+    gap: 4px 0 !important;
+  }
 }

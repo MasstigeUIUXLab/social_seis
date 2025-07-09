@@ -2191,7 +2191,7 @@
           align-items: flex-start;
   gap: 0.875rem 0;
 }
-.form-input-group, .form-row {
+.form-input-group, .form-row, .form-md-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2200,10 +2200,10 @@
           align-items: center;
   gap: 0.5rem;
 }
-.form-input-group .form-group, .form-row .form-group {
+.form-input-group .form-group, .form-row .form-group, .form-md-row .form-group {
   margin-top: 0;
 }
-.form-input-group > *:not([class*=p], [class*=w], [class*=fix], .btn, .input-tit), .form-row > *:not([class*=p], [class*=w], [class*=fix], .btn, .input-tit) {
+.form-input-group > *:not([class*=p], [class*=w], [class*=fix], .btn, .input-tit), .form-row > *:not([class*=p], [class*=w], [class*=fix], .btn, .input-tit), .form-md-row > *:not([class*=p], [class*=w], [class*=fix], .btn, .input-tit) {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -2212,31 +2212,33 @@
 }
 .form-input-group .w-auto,
 .form-input-group .input-tit, .form-row .w-auto,
-.form-row .input-tit {
+.form-row .input-tit, .form-md-row .w-auto,
+.form-md-row .input-tit {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
 }
-.form-input-group + [class*=form-], .form-row + [class*=form-] {
+.form-input-group + [class*=form-], .form-row + [class*=form-], .form-md-row + [class*=form-] {
   margin-top: 1rem;
 }
 .form-input-group select.w-auto,
 .form-input-group input.w-auto, .form-row select.w-auto,
-.form-row input.w-auto {
+.form-row input.w-auto, .form-md-row select.w-auto,
+.form-md-row input.w-auto {
   width: 7.5rem;
 }
-.form-input-group .btn, .form-row .btn {
+.form-input-group .btn, .form-row .btn, .form-md-row .btn {
   height: 40px;
   line-height: 40px;
   font-size: 18px;
   border-radius: 4px;
   white-space: nowrap;
 }
-.form-input-group:not(.flex-column) > .input-label:not(:last-child), .form-row:not(.flex-column) > .input-label:not(:last-child) {
+.form-input-group:not(.flex-column) > .input-label:not(:last-child), .form-row:not(.flex-column) > .input-label:not(:last-child), .form-md-row:not(.flex-column) > .input-label:not(:last-child) {
   margin-right: 0.75rem;
 }
-.form-input-group .form-control ~ .btn, .form-row .form-control ~ .btn {
+.form-input-group .form-control ~ .btn, .form-row .form-control ~ .btn, .form-md-row .form-control ~ .btn {
   height: 48px;
   line-height: 48px;
 }
@@ -2249,6 +2251,28 @@
 .form-row > .form-group, .form-row > .form-input-group {
   margin-top: 0;
   margin-bottom: 0;
+}
+@media all and (min-width: 768.02px) {
+  .form-md-row {
+    gap: 1.25rem;
+  }
+  .form-md-row .form-tit-wrp {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 76px;
+    min-height: 48px;
+    margin-bottom: 0;
+  }
+  .form-md-row > .form-group, .form-md-row > .form-input-group {
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .form-md-row .form-control {
+    max-width: 160px;
+  }
 }
 @media all and (max-width: 1024px) {
   .form-sub-header .tit {
@@ -2292,6 +2316,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .form-md-row {
+    display: block;
   }
 }
 
@@ -2521,6 +2548,10 @@
   gap: 1.5625rem !important;
 }
 
+.gap32 {
+  gap: 2rem !important;
+}
+
 .btn-bottom {
   margin-top: 32px;
   -webkit-box-pack: end;
@@ -2582,6 +2613,9 @@
 .board-srch-bx .row {
   gap: 16px 0;
 }
+.board-srch-bx .form-md-row .datepicker {
+  max-width: 160px;
+}
 .board-srch-bx .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2610,6 +2644,9 @@
   .board-srch-bx {
     padding: 0;
     background: #fff;
+  }
+  .board-srch-bx .form-md-row .datepicker {
+    max-width: 100%;
   }
   .board-srch-bx .row {
     gap: 24px 0;
@@ -4006,6 +4043,9 @@
   display: none;
 }
 
+.table-group + .table-group {
+  margin-top: 30px;
+}
 .table-group .table-header {
   margin-bottom: 1rem;
 }
@@ -4017,19 +4057,6 @@
   margin-right: -12px;
   margin-left: -12px;
   gap: 24px 0;
-}
-.table-group .table-body .row.row-sm {
-  margin-right: -9px;
-  margin-left: -9px;
-  gap: 9px 0;
-}
-.table-group .table-body .row.row-sm [class*=col] {
-  padding: 0 9px;
-}
-@media all and (max-width: 768px) {
-  .table-group .table-body .row.row-sm {
-    gap: 12px 0;
-  }
 }
 .table-group .table-body [class*=col] {
   padding: 0 12px;

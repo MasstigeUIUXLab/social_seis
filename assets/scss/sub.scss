@@ -2571,7 +2571,8 @@
     }
 
     &-input-group,
-    &-row{
+    &-row,
+    &-md-row{
         display:flex;
         align-items:center;
         gap:rem(8);
@@ -2631,6 +2632,30 @@
             margin-bottom:0;
         }
     }
+    
+  @include mdq-min(md){
+    &-md-row{
+        gap:rem(20);
+
+        .form-tit-wrp{
+            align-self: flex-start;
+            width: 76px;
+            min-height: $form-control-height;
+            margin-bottom: 0;
+        }
+
+        & > .form-group,
+        & > .form-input-group{
+            margin-top:0;
+            margin-bottom:0;
+            flex: 1;
+        }
+
+        .form-control{
+            max-width: 160px;
+        }
+    }
+  }
 
   @include mdq-max(lg){
     &-sub-header{
@@ -2686,6 +2711,10 @@
         &.d-flex{
             flex-direction:column;
         }
+    }
+
+    &-md-row{
+        display: block;
     }
   }
 }
@@ -2933,6 +2962,10 @@
     gap:rem(25) !important;
 }
 
+.gap32{
+    gap:rem(32) !important;
+}
+
 .btn-bottom{
     margin-top:32px;
     justify-content:flex-end;
@@ -2984,6 +3017,10 @@
         gap:16px 0;
     }
 
+    .form-md-row .datepicker{
+        max-width: 160px;
+    }
+
     .bottom{
         display:flex;
         justify-content:space-between;
@@ -3008,6 +3045,10 @@
     @include mdq-max(md){
         padding:0;
         background:#fff;
+
+        .form-md-row .datepicker{
+            max-width: 100%;
+        }
 
         .row{
             gap:24px 0;
@@ -4474,6 +4515,10 @@
 }
 
 .table-group{
+    & + .table-group{
+        margin-top:30px;
+    }
+    
     .table-header{
         margin-bottom:1rem;
 
@@ -4488,20 +4533,6 @@
             margin-right:-12px;
             margin-left:-12px;
             gap:24px 0;
-
-            &.row-sm{
-                margin-right:-9px;
-                margin-left:-9px;
-                gap:9px 0;
-
-                [class*=col]{
-                    padding:0 9px;
-                }
-
-                @include mdq-max(md){
-                    gap:12px 0;
-                }
-            }
         }
        
 
@@ -5955,3 +5986,4 @@
         }
     }
 }
+
