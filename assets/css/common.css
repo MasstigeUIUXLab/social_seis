@@ -51309,6 +51309,15 @@ body.layer-oepn {
   background-size: 100% auto;
 }
 
+.btn-text {
+  text-decoration: underline !important;
+  text-underline-offset: 0.2em !important;
+  font-weight: 400 !important;
+}
+.btn-text.text-blue2 {
+  color: #246BEB !important;
+}
+
 .link-underline {
   position: relative;
 }

@@ -79,6 +79,16 @@ body {
     background-size: 100% auto;
 }
 
+.btn-text{
+    text-decoration: underline !important;
+    text-underline-offset: 0.2em !important;    
+    font-weight: 400 !important;
+
+    &.text-blue2{
+        color: $blue !important;
+    }
+}
+
 .link-underline{
     position: relative;
 

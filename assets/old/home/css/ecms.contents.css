@@ -124,6 +124,11 @@
 .sub-asis .box2 p+.list_ul-dot{margin-top:10px;}
 .sub-asis .box2.pattern{background-image:url('../../home/imgs/content/bg_box-pattern.svg');background-repeat:no-repeat;background-position:0 50%;font-weight:400;}
 .sub-asis .box2.pattern>strong{font-size:18px;font-weight:400;}
+@media all and (max-width:768px) {
+	.sub-asis .box2.pattern.large{
+		background-position: 0 0;
+	}
+}
 .sub-asis .box2.promo{border:1px dashed #86c8f8;background-color:#fff;background-image:url('../../home/imgs/content/bg_box_promo.png');background-repeat:no-repeat;background-position:30px 50%;}
 .sub-asis .box2.promo dl{padding:20px 0 20px 164px;}
 .sub-asis .box2.promo dt{font-size:20px;font-weight:400;color:#407aec;}
