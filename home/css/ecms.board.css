@@ -46,7 +46,8 @@
 .radio input[type="radio"]:checked + label:before{background-position:-22px -1px;}
 .radio input[type="radio"]:focus + label:before{outline:1px solid #407aec;box-shadow:0 0 0 2px #407aec;}
 
-.category_tab{overflow:hidden;margin:0 0 14px;}
+.category_tab{overflow:hidden;margin:0 0 14px}
+.category_tab.data-tab button{display: none;}
 .category_tab ul{display:flex;border-bottom:1px solid #ddd;}
 .category_tab ul li{margin-right:6px;}
 .category_tab ul li a{position:relative;display:block;padding:6px 26px 8px;padding-top:0;font-size:20px;font-weight:500;}
@@ -432,7 +433,6 @@
 .chart_container .sbchart-labels .sbchart-text{fill:#000 !important;}
 .sbchart-axis{font-size:medium;}
 
-
 @media all and (max-width:1000px) {
     .view_box_items-top{}
     .view_box_items-top .subj dt{align-self:center;flex:0 0 auto;margin-right:10px;line-height:20px;}
@@ -473,7 +473,7 @@
 	.category_tab ul li a:hover:before,.category_tab ul li a.on:before{background:none;}
 	.category_tab ul li:has(a.on) {display:block !important;margin: 0;border-bottom:1px solid #e4e6ea;position: absolute;top:0;width: 100%;background:url('/home/imgs/board/select2_arrow.svg') no-repeat 98% center; }
 	.category_tab.data-tab ul { position:relative; }
-	.category_tab.data-tab button { position: absolute; }
+	.category_tab.data-tab button {display:block;position: absolute; }
 	
 	.width_tab ul{display:flex;border-bottom:1px solid #ddd;flex-grow: 1; justify-content: space-around;}
 	.width_tab ul li{margin-right:0; text-align:center;}

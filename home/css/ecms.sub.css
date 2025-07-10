@@ -65,8 +65,8 @@
 .subMenu ul ul ul li.on a{color:#000;}
 .subMenu ul ul ul li.on a:before{border-color:#000;background:none;}
 .subMenu ul ul li a[target="_blank"] span{position:static;display:inline-block;vertical-align:middle;width:13px;height:13px;margin-left:5px;}
-.menu_tab4{margin:0 0 40px;}
-.menu_tab4 ul{display:flex;border-bottom:1px solid #222;}
+.menu_tab4{margin:0 0 40px;overflow-x: auto;}
+.menu_tab4 ul{display:inline-flex;min-width: 100%;border-bottom:1px solid #222;}
 .menu_tab4 li{min-width:220px;margin-right:1px;}
 .menu_tab4 li a{display:block;padding:10px 0;background:#f2f2f2;font-size:20px;font-weight:400;text-align:center;}
 .menu_tab4 li.on a{background:#222;font-weight:500;color:#fff;}
@@ -88,7 +88,7 @@
 	.menu_tab4 ul{display:block;border-radius:0;}
 	.menu_tab4 li{border:0;border-top:1px solid #e1e1e1;}
 	.menu_tab4 li:first-child{border:0;}
-	.menu_tab4 li a{height:50px;padding:10px 20px;text-align:center;}
+	.menu_tab4 li a{padding:12px 20px;text-align:center;}
 	.menu_tab4 li.on a:before{box-shadow:none;border-radius:0;}
 	.leftColumn+.centerColumn { margin-bottom:20px; }
 	.sub_top .snsBox { top:-6px; }
