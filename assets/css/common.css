@@ -42593,6 +42593,17 @@ body.is-scroll .header {
 .btn:hover {
   background: #f8f8f8;
 }
+.btn:focus, .btn:focus-visible {
+  outline-offset: 1px !important;
+}
+.btn-shadow {
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow:hover {
+  border: 1px solid #222;
+  background-color: #fff;
+}
 .btn-wrp {
   display: -webkit-box;
   display: -ms-flexbox;

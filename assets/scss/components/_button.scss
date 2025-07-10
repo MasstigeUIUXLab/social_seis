@@ -20,6 +20,18 @@
   @include hover {
     background: #f8f8f8;
   }
+
+  &:focus, &:focus-visible{
+    outline-offset: 1px !important;
+  }
+  &-shadow{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+
+    &:hover{
+      border: 1px solid #222;
+      background-color: #fff;
+    }
+  }
   
   &-wrp {
     display: flex;
