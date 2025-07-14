@@ -71,6 +71,11 @@
 <!-- <link rel="stylesheet" href="../assets/css/main.css" />
 <script src="../assets/js/main.js"></script> -->
 <!-- [D] * only sub -->
+<!-- [D] 05-30 추가 old 파일 링크 추가 -->
+<link rel="stylesheet" type="text/css" href="../assets/css/old2.css" />
+<!-- [D] 07-02 추가 old 파일 링크 추가 (js) -->
+<script src="../assets/js/old.js"></script>
+<!-- //-->
 <link rel="stylesheet" href="../assets/css/sub.css" />
 <title></title>
 </head>
@@ -619,29 +624,23 @@
 		<div class="container">
 			<div class="layout">
 				<div class="snb" id="snb">
-                    <h2><a href="#" data-toggle="snb">현황·성과</a></h2>
+                    <h2><a href="#" data-toggle="snb">고객센터</a></h2>
 					<ul class="nav nav-side">
 						<li class="nav-item">
 							<!-- [D] 04-16 수정 
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a class="nav-link" href="#">사회적기업 주요현황</a>
+							<a href="sub_고객센터_공지사항.html" class="nav-link">공지사항</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">사회적기업 조회</a>
+							<a href="sub_고객센터_자주하는질문.html" class="nav-link">자주하는 질문</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link on" href="#">자율경영공시 자료 조회</a>
+							<a href="sub_고객센터_게시요청.html" class="nav-link on">게시요청</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">사회적가치지표(SVI) 평가 조회</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">사회적성과</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">경제적성과</a>
+							<a href="sub_고객센터_관련사이트.html" class="nav-link">관련사이트</a>
 						</li>
 					</ul>
             	</div>
@@ -653,7 +652,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">현황·성과</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">고객센터</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -662,7 +661,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">자율경영공시 자료 조회</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">게시요청</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -671,279 +670,130 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">경영공시</h2>
-					</div>
-					<div class="sub-contents">
-						<div class="tab">
-							<ul class="nav nav-tabs">
-								<li class="nav-item">
-									<a href="#" class="nav-link active" data-toggle="tab">기업개요</a>
+						<h2 class="tit">게시요청</h2>
+						<!-- [D] 07-02 추가 -->
+						<script type="text/javascript">
+						//<![CDATA[
+							$(function() {
+								var url = window.location.href;
+								var proto = window.location.protocol;
+								
+								$('#urlText').val(url);
+								
+								$('#btnCopy').on("click", function(e) {
+									e.preventDefault();
+									
+									$('#urlText').focus();
+									var content = document.getElementById('urlText').value;
+									
+									if (proto.indexOf('https') != -1) {
+										// https 에서만 작동
+										window.navigator.clipboard.writeText(content).then(() => {
+											alert('복사되었습니다.');
+											$(".layer_close").click();
+											return;
+										})
+										.catch(err => {
+											console.log('err', err);
+										})
+									} else {
+										var t = document.createElement("textarea");
+										document.body.appendChild(t);
+										t.value = content;
+										t.select();
+										document.execCommand('copy');
+										document.body.removeChild(t);
+										alert('복사되었습니다.');
+										$(".layer_close").click();
+									}
+								});
+							});
+						//]]>
+						</script>
+						<div class="snsBox">
+							<ul>
+								<li class="share">
+									<a href="#" onclick="return false;" class="sns_open">SNS<span>열기</span></a>
+									<ul>
+										<li><a href="#" title="페이스북에 공유하기 (새창)"><i class="icon-facebook"></i></a></li>
+										<li><a href="#" title="트위터에 공유하기 (새창)"><i class="icon-twiter"></i></a></li>
+										<li><a href="#" title="카카오톡에 공유하기 (새창)"><i class="icon-kakao"></i></a></li>
+										<li class="url"><a href="#modal1" data-toggle="modal" class="btn_open_layer">주소복사</a></li>
+									</ul>
 								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link" data-toggle="tab">사회적 성과</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link" data-toggle="tab">경제적 성과</a>
-								</li>
+								<li class="print"><a href="#" onclick="return window.print();">인쇄</a></li>
 							</ul>
 						</div>
-						<div class="form-container">
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">기업개요</h3>
-								</div>
-								<ul class="form-body">
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">기업명</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="(주)이노턴파트너" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">대표자</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="홍길동" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">조직형태</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="상법에 따른 회사" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">분야</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="일자리제공형" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-lg-8">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">소재지</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="(15970) 서울특별시 서대문구 연희로2길 76 4층(창천동, 한빛빌딩 A동)" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">사회적목적 실현유형</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="일자리제공형" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">사회서비스 분야</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="일자리제공형" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">인증번호</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="제2014-145호" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">인증일자</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="2014-09-19" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">대표번호</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="02-3482-5255" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">팩스번호</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="031-945-5350" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">홈페이지</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="https://www.ing.co.kr" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group w-100">
-											<div class="form-tit-wrp">
-												<p class="form-tit">설립연도</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="2023년" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group w-100">
-											<div class="form-tit-wrp">
-												<p class="form-tit">주업종</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="제조업" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">주업태</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="제조업" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">주종목</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="제조업" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<ul class="form-body">
-									<li class="col-12">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">사회적 기업가 인사말</p>
-											</div>
-											<div class="form-input-group">
-												<textarea name="" id="" readonly class="form-control">- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.</textarea>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<ul class="form-body">
-									<li class="col-12">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">미션과 비전</p>
-											</div>
-											<div class="form-input-group">
-												<textarea name="" id="" readonly class="form-control">- 빠르게 변화하는 환경에 맞추어 품질과 디자인을 개선하고 한발 빠르게 앞서나가 투명하고 건강한 기업으로서의 자세로 사람을 먼저 생각하고 나눔으로써 사회에 이바지하고 더 좋은 사회를 위해 끊임없이 노력하며 미래를 만들어 감. - 취약계층에게 사회서비스와 일자리를 제공하고 지역사회에 공헌함으로써 지역 주민의 삶의 질을 높이는 등의 사회적 목적을 우선적으로 추구하며 영업활동을 수행하는 기업 및 조직</textarea>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<ul class="form-body">
-									<li class="col-12">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">주요사업 내용</p>
-											</div>
-											<div class="form-input-group">
-												<textarea name="" id="" readonly class="form-control">- 사용자 주문 가구 제작</textarea>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<div class="form-tit-wrp">
-									<p class="form-tit">연혁</p>
-								</div>
-								<!-- 표 -->
-								<div class="board-wrap">
-									<div class="tb-wrap tb-mobile tb-column">
-										<table class="tb">
-											<colgroup>
-												<col width="20%">
-												<col width="80%">
-											</colgroup>
-											<thead>
-												<tr>
-													<th>공시연도</th>
-													<th>내용</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="b"><span>2023-11-15</span></td>
-													<td class="text-left"><span>가구브랜드 라운지어바웃 런칭가구브랜드 라운지어바웃 런칭</span></td>
-												</tr>
-												<tr>
-													<td class="b"><span>2023-01-05</span></td>
-													<td class="text-left"><span>경기도 착한기업 인증</span></td>
-												</tr>
-												<tr>
-													<td class="b"><span>2022-05-19</span></td>
-													<td class="text-left"><span>우수제품 지정서 획득(30T 파티션/비바 시리즈)</span></td>
-												</tr>
-												<tr>
-													<td class="b"><span>2022-05-19</span></td>
-													<td class="text-left"><span>(주)동연디자인 설립</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- // -->
-							</div>
+						<!-- // [D] 07-02 추가 -->
+					</div>
+					<div class="sub-contents sub-asis contentBody" id="contentBody">
+						<script>
+						function rememberRef(btnIdx) {
+							if (btnIdx != null && btnIdx != '') {
+								location.href = "/member/sub.do?menukey=4000&ref=" + btnIdx;
+							}
+							alert('로그인 후 사용이 가능합니다.\n로그인페이지로 이동합니다.');
+						}
+						</script>
+
+						<div class="posting_wrap">
+							<dl class="posting_info">
+								<dt>공고등록</dt>
+								<dd>
+									<ul class="list_ul-dot">
+										<li>사업공고에 게시를 원하시는 기관은 아래 게시요청을 선택하셔서 관련 내용 및 자료를 등록해 주시기 바랍니다.</li>
+										<li>신청하신 내용은 담당자 확인 후 게시하겠습니다.</li>
+									</ul>
+									<p class="btns tc">
+										<a href="/member/sub.do?menukey=4000&amp;refcode=Y" onclick="rememberRef('3'); return false;" class="btn_view icon--arrow">게시요청</a>
+											</p>
+								</dd>
+								<dd class="contact">
+									<dl>
+										<dt>문의</dt>
+										<dd>
+											<ul>
+												<li>정보화기획팀</li>
+												<li class="manager">한태휘</li>
+												<li class="tel">031-697-7871</li>
+												<li class="email">hth@ikosea.or.kr</li>
+											</ul>
+										</dd>
+									</dl>
+								</dd>
+							</dl>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- [D] 07-02 추가 / 주소복사 팝업 -->
+	<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="tit">주소복사</h3>
+					<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="sect-body">
+						<div class="form-tit-wrp">
+							<p class="form-tit">아래 복사하기를 누르신 후 원하는 곳에 <span class="text-red">Ctrl+V</span>를 눌러 붙여넣기 하세요.</p>
+						</div>
+						<div class="mt-4">
+							<input id="urlText" type="text" class="form-control" value="" placeholder="http://" style="width:100%;" onfocus="this.select()">
+						</div>
+					</div>
+					<div class="btn-wrp justify-content-center gap8">
+						<button id="btnCopy" class="btn btn-black">복사하기</button>
+					</div>
+				</div>          
+			</div>
+		</div>
+	</div>
+	<!-- // 07-02 추가 / 주소복사 팝업 -->
 </div>
 <!-- // 페이지시작 -->
 

@@ -626,22 +626,57 @@
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a class="nav-link" href="#">사회적기업 주요현황</a>
+							<a href="#" class="nav-link nav-btn">사회적기업조회</a>
+							<ul class="depth2">
+								<li>
+									<a href="sub_현황성과_사회적기업조회_사회적기업.html" class="nav-link">사회적기업</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_사회적기업조회_예비사회적기업.html" class="nav-link">예비사회적기업</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">사회적기업 조회</a>
+							<a href="#" class="nav-link nav-btn on">자율경영공시</a>
+							<ul class="depth2">
+								<li>
+									<a href="sub_현황성과_자율경영공시_소개.html" class="nav-link">소개</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_자율경영공시_공시자료조회_목록.html" class="nav-link on">공시자료조회</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link on" href="#">자율경영공시 자료 조회</a>
+							<a href="#" class="nav-link nav-btn">사회적가치지표(SVI)</a>
+							<ul class="depth2">
+								<li>
+									<a href="sub_현황성과_사회적가치지표(SVI)_평가자료조회.html" class="nav-link">평가자료조회</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">사회적가치지표(SVI) 평가 조회</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">사회적성과</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">경제적성과</a>
+							<a href="#" class="nav-link nav-btn">주요성과</a>
+							<ul class="depth2">
+								<li>
+									<a href="sub_현황성과_주요성과_총괄현황.html" class="nav-link">총괄현황</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_조직형태별.html" class="nav-link">조직형태별</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_인증유형별.html" class="nav-link">인증유형별</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_서비스분야별.html" class="nav-link">서비스분야별</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_사회적성과.html" class="nav-link">사회적성과</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_경제적성과.html" class="nav-link">경제적성과</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
             	</div>
@@ -662,8 +697,17 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">자율경영공시 자료 조회</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">자율경영공시</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
+								<li><a class="dropdown-item" href="#">link 1</a></li>
+								<li><a class="dropdown-item" href="#">link 2</a></li>
+								<li><a class="dropdown-item" href="#">link 3</a></li>
+							</ul>
+						</div>
+						<i class="icon-lnb-arr"></i>
+						<div class="dropdown">
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth3">공시자료조회</button>
+							<ul class="dropdown-menu" aria-labelledby="lnbDepth3">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
 								<li><a class="dropdown-item" href="#">link 3</a></li>
@@ -677,13 +721,13 @@
 						<div class="tab">
 							<ul class="nav nav-tabs">
 								<li class="nav-item">
-									<a href="#" class="nav-link" data-toggle="tab">기업개요</a>
+									<a href="sub_현황성과_자율경영공시_공시자료조회_기업개요.html" class="nav-link">기업개요</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" class="nav-link" data-toggle="tab">사회적 성과</a>
+									<a href="sub_현황성과_자율경영공시_공시자료조회_사회적성과.html" class="nav-link">사회적 성과</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" class="nav-link active" data-toggle="tab">경제적 성과</a>
+									<a href="sub_현황성과_자율경영공시_공시자료조회_경제적성과.html" class="nav-link active">경제적 성과</a>
 								</li>
 							</ul>
 						</div>

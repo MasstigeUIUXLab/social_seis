@@ -619,29 +619,23 @@
 		<div class="container">
 			<div class="layout">
 				<div class="snb" id="snb">
-					<h2><a href="#" data-toggle="snb">현황·성과</a></h2>
+                    <h2><a href="#" data-toggle="snb">사업신청</a></h2>
 					<ul class="nav nav-side">
 						<li class="nav-item">
 							<!-- [D] 04-16 수정 
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a class="nav-link" href="#">사회적기업 주요현황</a>
+							<a href="sub_사업신청_사회적기업인증지정_목록.html" class="nav-link">사회적기업 인증·지정</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">사회적기업 조회</a>
+							<a href="#" class="nav-link">재정지원사업</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link on" href="#">자율경영공시 자료 조회</a>
+							<a href="sub_사업신청_통합사업신청_목록.html" class="nav-link on">통합사업 신청</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">사회적가치지표(SVI) 평가 조회</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">사회적성과</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">경제적성과</a>
+							<a href="#" class="nav-link">협업커뮤니티</a>
 						</li>
 					</ul>
             	</div>
@@ -653,7 +647,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">현황·성과</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">마이페이지</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -662,8 +656,24 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">자율경영공시 자료 조회</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">사업신청</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
+								<li><a class="dropdown-item" href="#">link 1</a></li>
+								<li><a class="dropdown-item" href="#">link 2</a></li>
+								<li><a class="dropdown-item" href="#">link 3</a></li>
+							</ul>
+						</div>
+						<div class="dropdown">
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth3">통합신청</button>
+							<ul class="dropdown-menu" aria-labelledby="lnbDepth3">
+								<li><a class="dropdown-item" href="#">link 1</a></li>
+								<li><a class="dropdown-item" href="#">link 2</a></li>
+								<li><a class="dropdown-item" href="#">link 3</a></li>
+							</ul>
+						</div>
+						<div class="dropdown">
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth4">목록</button>
+							<ul class="dropdown-menu" aria-labelledby="lnbDepth4">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
 								<li><a class="dropdown-item" href="#">link 3</a></li>
@@ -671,16 +681,17 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">경영공시</h2>
+						<h2 class="tit">통합신청</h2>
 					</div>
 					<div class="sub-contents">
 						<div class="tab">
+							<!-- [D] 04-21 수정 nav-pills -> nav-tabs로 변경 -->
 							<ul class="nav nav-tabs">
 								<li class="nav-item">
-									<a href="#" class="nav-link" data-toggle="tab">기업개요</a>
+									<a href="#" class="nav-link active" data-toggle="tab">기업개요</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" class="nav-link active" data-toggle="tab">사회적 성과</a>
+									<a href="#" class="nav-link" data-toggle="tab">사회적 성과</a>
 								</li>
 								<li class="nav-item">
 									<a href="#" class="nav-link" data-toggle="tab">경제적 성과</a>
@@ -688,861 +699,164 @@
 							</ul>
 						</div>
 						<div class="form-container">
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">지배구조</h3>
-								</div>
-								<div class="form-body no-gutters">
-									<!-- 연혁 -->
-									<div class="table-group">
-										<div class="table-header">
-											<h4 class="tit">연혁</h4>
-										</div>
-										<div class="table-body">
-											<div class="row">
-												<div class="col-12 col-md-6">
-													<table class="tb">
-														<colgroup>
-															<col width="28%">
-															<col width="72%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">이사회</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th colspan="2" class="text-center">사내 이해관계자</th>
-															</tr>
-															<tr>
-																<th>임원 등</th>
-																<td class="text-right">4명</td>
-															</tr>
-															<tr>
-																<th>근로자 대표</th>
-																<td class="text-right">4명</td>
-															</tr>
-															<tr>
-																<th colspan="2" class="text-center">사외 이해관계자</th>
-															</tr>
-															<tr>
-																<th>수혜자</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>지역사회</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>기타</th>
-																<td class="text-right">3명</td>
-															</tr>
-														</tbody>
-														<tfoot>
-															<tr>
-																<th>연간 개회 횟수</th>
-																<td class="text-right">3회</td>
-															</tr>
-														</tfoot>
-													</table>
-												</div>
-												<div class="col-12 col-md-6">
-													<table class="tb">
-														<colgroup>
-															<col width="28%">
-															<col width="72%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">기타</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th colspan="2" class="text-center">사내 이해관계자</th>
-															</tr>
-															<tr>
-																<th>임원 등</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>근로자 대표</th>
-																<td class="text-right">3명</td>
-															</tr>
-															<tr>
-																<th colspan="2" class="text-center">사외 이해관계자</th>
-															</tr>
-															<tr>
-																<th>수혜자</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>지역사회</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>기타</th>
-																<td class="text-right">0명</td>
-															</tr>
-														</tbody>
-														<tfoot>
-															<tr>
-																<th>연간 개회 횟수</th>
-																<td class="text-right">0회</td>
-															</tr>
-														</tfoot>
-													</table>
-												</div>
+							<div class="board-srch-bx">
+								<ul class="row">
+									<li class="col-12 col-md-6 col-lg-5">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">신청기간</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" id="" class="datepicker form-control" data-type="single"/>
+												<input type="text" name="" id="" class="datepicker form-control" data-type="single"/>
 											</div>
 										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">사업분류</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">지역</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">부처</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="bottom">
+									<div class="flex-1">
+										<div class="form-tit-wrp d-md-none">
+											<p class="form-tit">공고명</p>
+										</div>
+										<input type="text" name="" value="" placeholder="공고명을 입력하세요." class="form-control"/>
 									</div>
-									<!-- // 연혁 -->
-									 
-									<!-- 주주구성 현황 -->
-									<div class="table-group">
-										<div class="table-header">
-											<h4 class="tit">주주구성 현황</h4>
-										</div>
-										<div class="table-body">
-											<div class="row">
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">오택환</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>소속</th>
-																<td class="text-right">동연디자인</td>
-															</tr>
-															<tr>
-																<th>직위</th>
-																<td class="text-right">대표이사</td>
-															</tr>
-															<tr>
-																<th>지분비율</th>
-																<td class="text-right">66%</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">신효순</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>소속</th>
-																<td class="text-right">개인</td>
-															</tr>
-															<tr>
-																<th>직위</th>
-																<td class="text-right">개인</td>
-															</tr>
-															<tr>
-																<th>지분비율</th>
-																<td class="text-right">20%</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">기타</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>소속</th>
-																<td class="text-right"></td>
-															</tr>
-															<tr>
-																<th>직위</th>
-																<td class="text-right"></td>
-															</tr>
-															<tr>
-																<th>지분비율</th>
-																<td class="text-right">14%</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<tbody>
-															<tr>
-																<th>계</th>
-																<td class="text-right">100%</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- // 주주구성 현황 -->
-								</div>
-							</div>
-
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">사회적 성과</h3>
-								</div>
-								<div class="form-body no-gutters">
-									<!-- 유급근로자 고용 -->
-									<div class="table-group">
-										<div class="table-header">
-											<h4 class="tit">유급근로자 고용</h4>
-										</div>
-										<div class="table-body">
-											<div class="row">
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">취약계층</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>총 인원</th>
-																<td class="text-right">17명</td>
-															</tr>
-															<tr>
-																<th>자체 고용 근로자 수</th>
-																<td class="text-right">17명</td>
-															</tr>
-															<tr>
-																<th>사회적 일자리 사업참여 근로자 수</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>평균 임금</th>
-																<td class="text-right">3,489,382원</td>
-															</tr>
-															<tr>
-																<th>평균 근로시간(주 단위)</th>
-																<td class="text-right">40시간</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">비취약계층</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>총 인원</th>
-																<td class="text-right">17명</td>
-															</tr>
-															<tr>
-																<th>자체 고용 근로자 수</th>
-																<td class="text-right">17명</td>
-															</tr>
-															<tr>
-																<th>사회적 일자리 사업참여 근로자 수</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>평균 임금</th>
-																<td class="text-right">3,489,382원</td>
-															</tr>
-															<tr>
-																<th>평균 근로시간(주 단위)</th>
-																<td class="text-right">40시간</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">총 유급근로자</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>총 인원</th>
-																<td class="text-right">17명</td>
-															</tr>
-															<tr>
-																<th>자체 고용 근로자 수</th>
-																<td class="text-right">17명</td>
-															</tr>
-															<tr>
-																<th>사회적 일자리 사업참여 근로자 수</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>평균 임금</th>
-																<td class="text-right">3,489,382원</td>
-															</tr>
-															<tr>
-																<th>평균 근로시간(주 단위)</th>
-																<td class="text-right">40시간</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- // 유급근로자 고용 -->
-								</div>
-							</div>
-
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">취약계층 고용</h3>
-								</div>
-								<div class="form-body no-gutters">
-									<!-- 취약계층 고용 -->
-									<div class="table-group">
-										<div class="table-header">
-											<h4 class="tit">취약계층 고용</h4>
-										</div>
-										<div class="table-body">
-											<div class="row">
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th>취약계층 유형</th>
-																<th>계</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>저소득자</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>고령자</th>
-																<td class="text-right">10명</td>
-															</tr>
-															<tr>
-																<th>장애인</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>그밖의 취약계층</th>
-																<td class="text-right">0명</td>
-															</tr>
-														</tbody>
-														<tfoot>
-															<tr>
-																<th>총계</th>
-																<td class="text-right">10명</td>
-															</tr>
-														</tfoot>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- // 취약계층 고용 -->
-								</div>
-							</div>
-							
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">사회서비스 및 제품</h3>
-								</div>
-								<div class="form-body no-gutters">
-									<!-- 연혁 -->
-									<div class="table-group">
-										<div class="table-header">
-											<h4 class="tit">연혁</h4>
-										</div>
-										<div class="table-body">
-											<div class="row row-sm">
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1" checked>
-														<span class="input-label__txt">교육</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">보건</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">사회복지</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">보육</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">환경</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">간병가사</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">산림</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">고용</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">청소</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">문화예술</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">관광운동</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">문화재</span>
-													</label>
-												</div>
-												<div class="col-4 col-md-auto">
-													<label class="input-label input-label--checkbox">
-														<input type="checkbox" name="chk1">
-														<span class="input-label__txt">기타</span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- // 연혁 -->
-
-									<!-- 취약계층 -->
-									<div class="table-group">
-										<div class="table-header">
-											<h4 class="tit">취약계층</h4>
-										</div>
-										<div class="table-body">
-											<div class="row">
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<tbody>
-															<tr>
-																<th>대상</th>
-																<td class="text-right">저소득자</td>
-															</tr>
-															<tr>
-																<th>서비스 내용</th>
-																<td class="text-right">일자리제공</td>
-															</tr>
-															<tr>
-																<th>제공인원</th>
-																<td class="text-right">2명</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<tbody>
-															<tr>
-																<th>대상</th>
-																<td class="text-right">고령자</td>
-															</tr>
-															<tr>
-																<th>서비스 내용</th>
-																<td class="text-right">일자리제공</td>
-															</tr>
-															<tr>
-																<th>제공인원</th>
-																<td class="text-right">6명</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<tbody>
-															<tr>
-																<th>대상</th>
-																<td class="text-right">장기실업자</td>
-															</tr>
-															<tr>
-																<th>서비스 내용</th>
-																<td class="text-right">일자리제공</td>
-															</tr>
-															<tr>
-																<th>제공인원</th>
-																<td class="text-right">1명</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- // 취약계층 -->
-								</div>
-							</div>
-
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">자원연계</h3>
-								</div>
-								<div class="form-body no-gutters">
-									<div class="table-group">
-										<div class="table-body">
-											<div class="row">
-												<div class="col-12 col-md-6">
-													<table class="tb">
-														<colgroup>
-															<col width="28%">
-															<col width="72%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">연계기업</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>기업/기관명</th>
-																<td class="text-right">경기도경제과학진흥원</td>
-															</tr>
-															<tr>
-																<th>재정지원</th>
-																<td class="text-right">5,000,000원</td>
-															</tr>
-															<tr>
-																<th>상품구매</th>
-																<td class="text-right">0원</td>
-															</tr>
-															<tr>
-																<th>사업위탁</th>
-																<td class="text-right">0원</td>
-															</tr>
-															<tr>
-																<th>경영지원</th>
-																<td class="text-right">0원</td>
-															</tr>
-															<tr>
-																<th>기타1</th>
-																<td class="text-right">0원</td>
-															</tr>
-															<tr>
-																<th>기타2</th>
-																<td class="text-right">0원</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6">
-													<table class="tb">
-														<colgroup>
-															<col width="28%">
-															<col width="72%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">지방자치단체</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>기업/기관명</th>
-																<td class="text-right">(재)경기대진테크노파크</td>
-															</tr>
-															<tr>
-																<th>재정지원</th>
-																<td class="text-right">13,915,000원</td>
-															</tr>
-															<tr>
-																<th>상품구매</th>
-																<td class="text-right">0원</td>
-															</tr>
-															<tr>
-																<th>사업위탁</th>
-																<td class="text-right">0원</td>
-															</tr>
-															<tr>
-																<th>경영지원</th>
-																<td class="text-right">0원</td>
-															</tr>
-															<tr>
-																<th>기타1</th>
-																<td class="text-right">0원</td>
-															</tr>
-															<tr>
-																<th>기타2</th>
-																<td class="text-right">0원</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
+									<div class="btn-wrp">
+										<button type="button" class="btn btn-blue">검색</button>
 									</div>
 								</div>
 							</div>
 
 							<div class="form-sect">
 								<div class="form-header">
-									<h3 class="tit">이윤의 사회적 목적 재투자</h3>
+									<h3 class="tit normal">신청공고<span>(총 <strong class="text-primary">5</strong>건)</span></h3>
 								</div>
-								<div class="form-body no-gutters">
-									<div class="table-group">
-										<div class="table-body">
-											<div class="row">
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">일자리 창출</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>내용</th>
-																<td>기술개발, 제품개발연구비 등</td>
-															</tr>
-															<tr>
-																<th>수혜자 인원</th>
-																<td class="text-right">10명</td>
-															</tr>
-															<tr>
-																<th>금액</th>
-																<td class="text-right">832,031,463원</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">사회서비스 제공</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>내용</th>
-																<td class="text-right"></td>
-															</tr>
-															<tr>
-																<th>수혜자 인원</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>금액</th>
-																<td class="text-right">0원</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">근로자 처우개선</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>내용</th>
-																<td>대표이사 제외 직원 성과급</td>
-															</tr>
-															<tr>
-																<th>수혜자 인원</th>
-																<td class="text-right">30명</td>
-															</tr>
-															<tr>
-																<th>금액</th>
-																<td class="text-right">132,836,000원</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">지역사회 재투자</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>내용</th>
-																<td>지역 장학금 지급</td>
-															</tr>
-															<tr>
-																<th>수혜자 인원</th>
-																<td class="text-right">2명</td>
-															</tr>
-															<tr>
-																<th>금액</th>
-																<td class="text-right">38,879,034원</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">기타</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>내용</th>
-																<td>기술개발, 제품개발연구비 등</td>
-															</tr>
-															<tr>
-																<th>수혜자 인원</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>금액</th>
-																<td class="text-right">0원</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-												<div class="col-12 col-md-6 col-lg-4">
-													<table class="tb">
-														<colgroup>
-															<col width="43%">
-															<col width="57%">
-														</colgroup>
-														<thead>
-															<tr>
-																<th colspan="2">미처분 이익 잉여금(배당액)</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>내용</th>
-																<td>기술개발, 제품개발연구비 등</td>
-															</tr>
-															<tr>
-																<th>수혜자 인원</th>
-																<td class="text-right">0명</td>
-															</tr>
-															<tr>
-																<th>금액</th>
-																<td class="text-right">0(0)원</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
+
+								<div class="board-wrap">
+									<!-- 표 -->
+									<div class="tb-wrap tb-mobile tb-card">
+										<table class="tb">
+											<colgroup>
+												<col width="11%">
+												<col width="calc( (100% - 33%) / 2 )">
+												<col width="calc( (100% - 33%) / 2 )">
+												<col width="11%">
+												<col width="11%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>구분</th>
+													<th>공고명</th>
+													<th>신청 기간</th>
+													<th>공고상태</th>
+													<th>즐겨찾기</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<!-- [D] 04-15 추가 Mobile_cadr유형에서 보여질 <td>태그에 inline 클래스 +, 
+														이 중에서 한줄 전부 차지해야할 경우 block 클래스 + -->
+													<td class="inline block b"><span>인증</span></td>
+													<td class="inline block">
+														<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
+													</td>
+													<td class="inline block"><span>2025-05-01 ~ 2025-05-31</span></td>
+													<td class="inline block b"><span>D-1</span></td>
+													<td class="inline cell-btn">
+														<!-- [D] 활성화 on -->
+														<button type="button" class="tb-btn-icon tb-btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
+													</td>
+												</tr>
+												<tr>
+													<td class="inline block"><span>예비(지역형)</span></td>
+													<td class="inline block">
+														<p class="txt">국가유산청 2025년도 1차 지정공모</p>
+													</td>
+													<td class="inline block"><span>2025-05-01 ~ 2025-05-31</span></td>
+													<td class="inline block">
+														<span class="badge">마감</span>
+													</td>
+													<td class="inline cell-btn">
+														<!-- [D] 활성화 on -->
+														<button type="button" class="tb-btn-icon tb-btn-bookmark"><span class="sr-only">즐겨찾기</span></button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
+									<!-- // -->
+
+									<!-- 페이징 -->
+									<div class="paging-area">
+										<ul>
+											<li>
+												<a href="javascript:;" class="prev"><span>이전</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="active"><span>1</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>2</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>3</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>4</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>5</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="dot"><span></span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>10</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="next"><span>다음</span></a>
+											</li>
+										</ul>
+									</div> 
+									<!-- // 페이징 -->
 								</div>
 							</div>
 						</div>

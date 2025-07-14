@@ -14,7 +14,7 @@
 .sub-asis .boardViewBox .bvbox_tit .bvbox_item ul li span {color:#009d60;}
 .sub-asis .boardViewBox .bvbox_tit .bvbox_item ul li span.date {color:#19a8d1;}
 .sub-asis .boardViewBox .bvbox_tit {border:1px solid #e3e8ed;background:#fff;border-radius:7px;padding:10px 20px;margin:15px 0 0;}
-.sub-asis .boardViewBox .bvbox_txt {background:#fff;border:1px solid #e3e8ed;border-radius:7px;padding:20px;margin:5px 0 0;box-shadow:5px 5px 10px rgb(38 36 50 / 10%);font-family:"Malgun Gothic","Sans-serif";color:#666;}
+.sub-asis .boardViewBox .bvbox_txt {background:#fff;border:1px solid #e3e8ed;border-radius:7px;padding:20px;margin:5px 0 0;box-shadow:5px 5px 10px rgb(38 36 50 / 10%);color:#666;}
 .sub-asis .boardViewBox .bvbox_txt figure {width:100% !important;word-break:keep-all;}
 .sub-asis .boardViewBox .bvbox_txt * {line-height: 1.6 !important;}
 .sub-asis .boardViewBox .bvbox_txt img {max-width:100%;}
@@ -106,7 +106,7 @@
 .sub-asis .boardReplyBox .brbox_tit .brbox_item ul li span {color:#009d60;}
 .sub-asis .boardReplyBox .brbox_tit .brbox_item.type2 ul li {width:calc(100%/2);}
 .sub-asis .boardReplyBox .brbox_tit {border:1px solid #e3e8ed;background:#fff;border-radius:2px;padding:10px 20px;margin:15px 0 0;}
-.sub-asis .boardReplyBox .brbox_txt {background:#fff;border:1px solid #e3e8ed;border-radius:2px;padding:20px;margin:5px 0 0;box-shadow:5px 5px 10px rgb(38 36 50 / 10%);font-family:"Malgun Gothic","Sans-serif";color:#666;}
+.sub-asis .boardReplyBox .brbox_txt {background:#fff;border:1px solid #e3e8ed;border-radius:2px;padding:20px;margin:5px 0 0;box-shadow:5px 5px 10px rgb(38 36 50 / 10%);color:#666;}
 .sub-asis .boardReplyBox .brbox_txt figure {width:100% !important;word-break:keep-all;}
 .sub-asis .boardReplyBox .brbox_txt * {line-height: 1.6 !important;}
 .sub-asis .boardReplyBox .brbox_txt.files {position:relative;border:none;box-shadow:none;padding:7px 0 0 65px;border-top:1px dotted #bbd9e7;border-radius:0;}

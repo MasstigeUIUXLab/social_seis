@@ -71,6 +71,11 @@
 <!-- <link rel="stylesheet" href="../assets/css/main.css" />
 <script src="../assets/js/main.js"></script> -->
 <!-- [D] * only sub -->
+<!-- [D] 05-30 추가 old 파일 링크 추가 -->
+<link rel="stylesheet" type="text/css" href="../assets/css/old2.css" />
+<!-- [D] 07-02 추가 old 파일 링크 추가 (js) -->
+<script src="../assets/js/old.js"></script>
+<!-- //-->
 <link rel="stylesheet" href="../assets/css/sub.css" />
 <title></title>
 </head>
@@ -619,34 +624,23 @@
 		<div class="container">
 			<div class="layout">
 				<div class="snb" id="snb">
-                    <h2><a href="#" data-toggle="snb">사업신청</a></h2>
+                    <h2><a href="#" data-toggle="snb">고객센터</a></h2>
 					<ul class="nav nav-side">
 						<li class="nav-item">
 							<!-- [D] 04-16 수정 
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a class="nav-link nav-btn" href="#">인증·지정</a>
+							<a href="sub_고객센터_공지사항.html" class="nav-link">공지사항</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">재정지원</a>
-							<ul class="depth2">
-								<li>
-									<a href="#" class="nav-link">메뉴1</a>
-								</li>
-								<li>
-									<a href="#" class="nav-link">메뉴2</a>
-								</li>
-							</ul>
+							<a href="sub_고객센터_자주하는질문.html" class="nav-link">자주하는 질문</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link on active" href="#">통합신청</a>
+							<a href="sub_고객센터_게시요청.html" class="nav-link">게시요청</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">사업공고</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">취약계층고용비율점검</a>
+							<a href="sub_고객센터_관련사이트.html" class="nav-link on">관련사이트</a>
 						</li>
 					</ul>
             	</div>
@@ -658,7 +652,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">마이페이지</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">고객센터</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -667,26 +661,8 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">사업신청</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">관련사이트</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
-								<li><a class="dropdown-item" href="#">link 1</a></li>
-								<li><a class="dropdown-item" href="#">link 2</a></li>
-								<li><a class="dropdown-item" href="#">link 3</a></li>
-							</ul>
-						</div>
-						<i class="icon-lnb-arr"></i>
-						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth3">통합신청</button>
-							<ul class="dropdown-menu" aria-labelledby="lnbDepth3">
-								<li><a class="dropdown-item" href="#">link 1</a></li>
-								<li><a class="dropdown-item" href="#">link 2</a></li>
-								<li><a class="dropdown-item" href="#">link 3</a></li>
-							</ul>
-						</div>
-						<i class="icon-lnb-arr"></i>
-						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth4">목록</button>
-							<ul class="dropdown-menu" aria-labelledby="lnbDepth4">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
 								<li><a class="dropdown-item" href="#">link 3</a></li>
@@ -694,393 +670,95 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">통합신청</h2>
+						<h2 class="tit">관련사이트</h2>
+						<!-- [D] 07-02 추가 -->
+						<script type="text/javascript">
+						//<![CDATA[
+							$(function() {
+								var url = window.location.href;
+								var proto = window.location.protocol;
+								
+								$('#urlText').val(url);
+								
+								$('#btnCopy').on("click", function(e) {
+									e.preventDefault();
+									
+									$('#urlText').focus();
+									var content = document.getElementById('urlText').value;
+									
+									if (proto.indexOf('https') != -1) {
+										// https 에서만 작동
+										window.navigator.clipboard.writeText(content).then(() => {
+											alert('복사되었습니다.');
+											$(".layer_close").click();
+											return;
+										})
+										.catch(err => {
+											console.log('err', err);
+										})
+									} else {
+										var t = document.createElement("textarea");
+										document.body.appendChild(t);
+										t.value = content;
+										t.select();
+										document.execCommand('copy');
+										document.body.removeChild(t);
+										alert('복사되었습니다.');
+										$(".layer_close").click();
+									}
+								});
+							});
+						//]]>
+						</script>
+						<div class="snsBox">
+							<ul>
+								<li class="share">
+									<a href="#" onclick="return false;" class="sns_open">SNS<span>열기</span></a>
+									<ul>
+										<li><a href="#" title="페이스북에 공유하기 (새창)"><i class="icon-facebook"></i></a></li>
+										<li><a href="#" title="트위터에 공유하기 (새창)"><i class="icon-twiter"></i></a></li>
+										<li><a href="#" title="카카오톡에 공유하기 (새창)"><i class="icon-kakao"></i></a></li>
+										<li class="url"><a href="#modal1" data-toggle="modal" class="btn_open_layer">주소복사</a></li>
+									</ul>
+								</li>
+								<li class="print"><a href="#" onclick="return window.print();">인쇄</a></li>
+							</ul>
+						</div>
+						<!-- // [D] 07-02 추가 -->
 					</div>
-					<div class="sub-contents">
-						<div class="form-container">
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">기업기본정보</h3>
-									<div class="btn-wrp">
-										<button type="button" class="btn btn-xs btn-blue">불러오기</button>
-									</div>
-								</div>
-								<ul class="form-body">
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">기업명</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="㈜동연디자인" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">사업자등록번호</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="214-22-95412" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">법인등록번호</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="110111-1111111" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">대표자이름</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="홍길동" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-lg-8">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">연락처(전화번호/팩스번호)</p>
-											</div>
-											<div class="row">
-												<div class="col-12 col-lg-6">
-													<div class="form-input-group">
-														<input type="number" name="" value="02" readonly class="form-control"/>
-														<span class="w-auto">-</span>
-														<input type="number" name="" value="3333" readonly class="form-control"/>
-														<span class="w-auto">-</span>
-														<input type="number" name="" value="1111" readonly class="form-control"/>
-													</div>
-												</div>
-												<div class="col-12 col-lg-6">
-													<div class="form-input-group">
-														<input type="number" name="" value="02" readonly class="form-control"/>
-														<span class="w-auto">-</span>
-														<input type="number" name="" value="3333" readonly class="form-control"/>
-														<span class="w-auto">-</span>
-														<input type="number" name="" value="1111" readonly class="form-control"/>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">대표자주민번호</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="730205-1******" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-lg-8">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">이메일</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value=" admin" class="form-control"/>
-												<span class="w-auto">@</span>
-												<input type="text" name="" value="naver.com" class="form-control"/>
-												<select name="" readonly class="form-control w-24">
-													<option value="" selected>직접입력</option>
-													<option value="">선택</option>
-												</select>
-											</div>
-										</div>
-									</li>
-									<li class="col-12">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">소재지</p>
-											</div>
-											<div class="row">
-												<div class="col-12 col-lg-4">
-													<div class="form-input-group">
-														<input type="text" name="" value="08591" readonly class="form-control"/>
-														<button type="button" class="btn btn-black">검색</button>
-													</div>
-												</div>
-												<div class="col-12">
-													<div class="row">
-														<div class="col-12 col-lg-7">
-															<div class="form-input-group">
-																<input type="text" name="" value="서울 금천구 가산디지털1로 16" readonly class="form-control"/>
-															</div>
-														</div>
-														<div class="col-12 col-lg">
-															<div class="form-input-group">
-																<input type="text" name="" value=" 1205호1206호(SK V1 AP Towr)" readonly class="form-control"/>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">담당자정보</h3>
-								</div>
-								<ul class="form-body">
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">담당자이름</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="나담당" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">직급</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="대리" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">담당자연락처</p>
-											</div>
-											<div class="form-input-group">
-												<input type="number" name="" value="010" readonly class="form-control"/>
-												<span class="w-auto">-</span>
-												<input type="number" name="" value="3333" readonly class="form-control"/>
-												<span class="w-auto">-</span>
-												<input type="number" name="" value="1111" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-lg-8">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">이메일</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value=" admin" class="form-control"/>
-												<span class="w-auto">@</span>
-												<input type="text" name="" value="naver.com" class="form-control"/>
-												<select name="" readonly class="form-control w-24">
-													<option value="" selected>직접입력</option>
-													<option value="">선택</option>
-												</select>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">인·지정정보</h3>
-									<div class="btn-wrp">
-										<button type="button" class="btn btn-xs btn-blue">불러오기</button>
-									</div>
-								</div>
-								<ul class="form-body">
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">사회적기업유형</p>
-											</div>
-											<div class="form-input-group">
-												<select name="" readonly class="form-control">
-													<option value="" selected disabled>선택</option>
-													<option value="">선택</option>
-												</select>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">인·지정유형</p>
-											</div>
-											<div class="form-input-group">
-												<select name="" readonly class="form-control">
-													<option value="" selected disabled>선택</option>
-													<option value="">선택</option>
-												</select>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">인·지정연도</p>
-											</div>
-											<div class="form-input-group">
-												<select name="" readonly class="form-control">
-													<option value="" selected disabled>선택</option>
-													<option value="">선택</option>
-												</select>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit asterisk">인·지정번호</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" value="제2024-012" readonly class="form-control"/>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">사회적 가치지표(SVI) 측정결과</h3>
-									<div class="btn-wrp">
-										<button type="button" class="btn btn-xs btn-blue">불러오기</button>
-									</div>
-								</div>
-								<ul class="form-body">
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">2022년</p>
-											</div>
-											<!-- [D] input-cover에 직접 readonly & disabled -->
-											<div class="input-cover readonly">
-												<div class="form-input-group">
-													<input type="text" name="" value="" readonly class="form-control"/>
-													<span class="w-auto">/</span>
-													<input type="text" name="" value="" readonly class="form-control"/>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">2023년</p>
-											</div>
-											<!-- [D] input-cover에 직접 readonly & disabled -->
-											<div class="input-cover readonly">
-												<div class="form-input-group">
-													<input type="text" name="" value="" readonly class="form-control"/>
-													<span class="w-auto">/</span>
-													<input type="text" name="" value="" readonly class="form-control"/>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">2024년</p>
-											</div>
-											<!-- [D] input-cover에 직접 readonly & disabled -->
-											<div class="input-cover readonly">
-												<div class="form-input-group">
-													<input type="text" name="" value="" readonly class="form-control"/>
-													<span class="w-auto">/</span>
-													<input type="text" name="" value="" readonly class="form-control"/>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">기타사항</h3>
-								</div>
-								<ul class="form-body">
-									<li class="col-12">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">1. 창업 아이템 및 제품소개를 기술하세요(한글 4000자 이내)</p>
-											</div>
-											<div class="form-input-group">
-												<textarea name="" id="" readonly class="form-control">- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.</textarea>
-											</div>
-										</div>
-									</li>
-									<li class="col-12">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">2. 특허나 기술인증 내역을 기술하세요(한글 4000자 이내)</p>
-											</div>
-											<div class="form-input-group">
-												<textarea name="" id="" readonly class="form-control"></textarea>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">첨부서류</h3>
-								</div>
-								<!-- 표 -->
-								<div class="board-wrap">
-									<div class="tb-wrap tb-mobile">
-										<table class="tb">
-											<colgroup>
-												<col width="20%">
-												<col width="80%">
-											</colgroup>
-											<tbody>
-												<tr>
-													<th class="text-left">첨부서류</th>
-													<td>
-														<div class="file-group">
-															<div class="form-row">
-																<ul class="file-list">
-																	<li class="item">
-																		<p class="file-name"><span>사업계획서.pdf</span></p>
-																		<div class="file-control">
-																			<label class="file-label">
-																				<input type="file" name="file1" onchange="onchangeUpload(event);">
-																				<span class="btn btn-xs btn-outline-blue file-label__btn">파일첨부</span>
-																			</label>
-																			<button type="button" class="btn btn-xs btn-outline-red">파일삭제</button>
-																			<button type="button" class="btn btn-xs btn-outline-blue">PDF 보기</button>
-																			<a href="#" download="" class="btn btn-xs btn-blue">파일다운</a>
-																		</div>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- // -->
-							</div>
-						</div>
-						<div class="btn-wrp btn-bottom">
-							<button type="button" class="btn btn-outline-blue">임시저장</button>
-							<button type="button" class="btn btn-blue">제출</button>
-							<button type="button" class="btn btn-outline-black">목록</button>
-						</div>
+					<div class="sub-contents sub-asis contentBody" id="contentBody">
+						<div class="raw-html-embed"> <h4 class="title2 bul"> 한국사회적기업진흥원 사이트 </h4> <ul class="related_lst" border-style="1"> <li> <a href="https://socialenterprise.or.kr" target="_blank" title="새창열림">기관 홈페이지</a> </li> <li> <a href="https://www.sepp.or.kr" target="_blank" title="새창열림">판로지원 통합플랫폼</a> </li> <li> <a href="https://www.coop.go.kr" target="_blank" title="새창열림">협동조합 홍보포털</a> </li> </ul> <h4 class="title2 bul"> 고용노동부 및 산하기관 </h4> <ul class="related_lst" border-style="2"> <li> <a href="https://www.moel.go.kr" target="_blank" title="새창열림">고용노동부</a> </li> <li> <a href="https://www.comwel.or.kr" target="_blank" title="새창열림">근로복지공단</a> </li> <li> <a href="https://www.hrdkorea.or.kr" target="_blank" title="새창열림">한국산업인력공단</a> </li> <li> <a href="https://www.kosha.or.kr" target="_blank" title="새창열림">한국산업안전보건공단</a> </li> <li> <a href="https://www.kead.or.kr" target="_blank" title="새창열림">한국장애인고용공단</a> </li> <li> <a href="https://www.keis.or.kr" target="_blank" title="새창열림">한국고용정보원</a> </li> <li> <a href="https://www.kopo.ac.kr" target="_blank" title="새창열림">한국폴리텍대학</a> </li> <li> <a href="https://www.koreatech.ac.kr" target="_blank" title="새창열림">한국기술교육대학교</a> </li> <li> <a href="https://www.keli.kr" target="_blank" title="새창열림">한국고용노동교육원</a> </li> <li> <a href="https://www.koreajobworld.or.kr" target="_blank" title="새창열림">한국잡월드</a> </li> <li> <a href="https://www.cw.or.kr" target="_blank" title="새창열림">건설근로자공제회</a> </li> <li> <a href="https://www.nosa.or.kr" target="_blank" title="새창열림">노사발전재단</a> </li> </ul> <h4 class="title2 bul"> 광역 사회적경제지원센터 </h4> <ul class="related_lst" border-style="3"> <li> <a href="https://gwse.or.kr" target="_blank" title="새창열림">강원도사회적경제지원센터</a> </li> <li> <a>경기도사회적경제센터<span>(22.12.31일자로 운영 종료)</span></a> </li> <li> <a href="https://gseic.or.kr" target="_blank" title="새창열림">경남사회적경제통합지원센터</a> </li> <li> <a href="http://gbse.or.kr" target="_blank" title="새창열림">경상북도사회적경제지원센터</a> </li> <li> <a href="https://www.gjsec.kr" target="_blank" title="새창열림">광주사회적경제지원센터</a> </li> <li> <a href="https://dgse.kr" target="_blank" title="새창열림">대구광역시사회적경제지원센터</a> </li> <li> <a href="https://bsec.or.kr" target="_blank" title="새창열림">부산광역시사회적경제지원센터</a> </li> <li> <a href="https://sehub.net" target="_blank" title="새창열림">서울특별시사회적경제지원센터</a> </li> <li> <a href="https://sejongcommunity.com" target="_blank" title="새창열림">세종사회적경제공동체센터</a> </li> <li> <a href="https://www.insehub.or.kr" target="_blank" title="새창열림">인천광역시사회적경제지원센터</a> </li> <li> <a href="http://www.jn-se.kr" target="_blank" title="새창열림">전남사회적경제통합지원센터</a> </li> <li> <a href="http://www.jbsecoop.or.kr" target="_blank" title="새창열림">전북광역사회적경제지원센터</a> </li> <li> <a href="https://jejuhub.org" target="_blank" title="새창열림">제주특별자치도사회적경제지원센터</a> </li> <li> <a href="https://www.cnse.kr" target="_blank" title="새창열림">충남사회적경제지원센터</a> </li> </ul> </div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- [D] 07-02 추가 / 주소복사 팝업 -->
+	<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="tit">주소복사</h3>
+					<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="sect-body">
+						<div class="form-tit-wrp">
+							<p class="form-tit">아래 복사하기를 누르신 후 원하는 곳에 <span class="text-red">Ctrl+V</span>를 눌러 붙여넣기 하세요.</p>
+						</div>
+						<div class="mt-4">
+							<input id="urlText" type="text" class="form-control" value="" placeholder="http://" style="width:100%;" onfocus="this.select()">
+						</div>
+					</div>
+					<div class="btn-wrp justify-content-center gap8">
+						<button id="btnCopy" class="btn btn-black">복사하기</button>
+					</div>
+				</div>          
+			</div>
+		</div>
+	</div>
+	<!-- // 07-02 추가 / 주소복사 팝업 -->
 </div>
 <!-- // 페이지시작 -->
 

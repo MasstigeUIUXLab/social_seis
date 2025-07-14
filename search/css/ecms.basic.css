@@ -5,7 +5,7 @@ html,body, iframe,h1, h2, h3, h4, h5, h6, p, blockquote,pre,
 q, s, dl, dt, dd, ol, ul, li, fieldset, form, input, table,tr, th ,td{ margin: 0; padding: 0; border:0; line-height: 1.5em; }
 img, fieldset{border:0 none;}
 
-body{position:relative;font-size:14px;line-height:1.8em;font-weight: 400;color:#161616; font-family:"Malgun Gothic","굴림","돋움",Dotum,Helvetica,AppleGothic,Sans-serif;}
+body{position:relative;font-size:14px;line-height:1.8em;font-weight: 400;color:#161616;}
 
 strong{ font-weight: bold; }
 em,dfn,cite,address{ font-style: normal; }

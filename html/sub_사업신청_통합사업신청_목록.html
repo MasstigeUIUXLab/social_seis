@@ -71,11 +71,6 @@
 <!-- <link rel="stylesheet" href="../assets/css/main.css" />
 <script src="../assets/js/main.js"></script> -->
 <!-- [D] * only sub -->
-<!-- [D] 05-30 추가 old 파일 링크 추가 -->
-<link rel="stylesheet" type="text/css" href="../assets/css/old2.css" />
-<!-- [D] 07-02 추가 old 파일 링크 추가 (js) -->
-<script src="../assets/js/old.js"></script>
-<!-- //-->
 <link rel="stylesheet" href="../assets/css/sub.css" />
 <title></title>
 </head>
@@ -624,64 +619,23 @@
 		<div class="container">
 			<div class="layout">
 				<div class="snb" id="snb">
-                    <h2><a href="#" data-toggle="snb">현황·성과</a></h2>
+                    <h2><a href="#" data-toggle="snb">사업신청</a></h2>
 					<ul class="nav nav-side">
 						<li class="nav-item">
 							<!-- [D] 04-16 수정 
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a href="#" class="nav-link nav-btn">사회적기업조회</a>
-							<ul class="depth2">
-								<li>
-									<a href="sub_현황성과_사회적기업조회_사회적기업.html" class="nav-link">사회적기업</a>
-								</li>
-								<li>
-									<a href="sub_현황성과_사회적기업조회_예비사회적기업.html" class="nav-link">예비사회적기업</a>
-								</li>
-							</ul>
+							<a href="sub_사업신청_사회적기업인증지정_목록.html" class="nav-link">사회적기업 인증·지정</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link nav-btn">자율경영공시</a>
-							<ul class="depth2">
-								<li>
-									<a href="sub_현황성과_자율경영공시_소개.html" class="nav-link">소개</a>
-								</li>
-								<li>
-									<a href="sub_현황성과_자율경영공시_공시자료조회_목록.html" class="nav-link">공시자료조회</a>
-								</li>
-							</ul>
+							<a href="#" class="nav-link">재정지원사업</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link nav-btn">사회적가치지표(SVI)</a>
-							<ul class="depth2">
-								<li>
-									<a href="sub_현황성과_사회적가치지표(SVI)_평가자료조회.html" class="nav-link">평가자료조회</a>
-								</li>
-							</ul>
+							<a href="sub_사업신청_통합사업신청_목록.html" class="nav-link on">통합사업 신청</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link nav-btn on">주요성과</a>
-							<ul class="depth2">
-								<li>
-									<a href="sub_현황성과_주요성과_총괄현황.html" class="nav-link">총괄현황</a>
-								</li>
-								<li>
-									<a href="sub_현황성과_주요성과_조직형태별.html" class="nav-link">조직형태별</a>
-								</li>
-								<li>
-									<a href="sub_현황성과_주요성과_인증유형별.html" class="nav-link on">인증유형별</a>
-								</li>
-								<li>
-									<a href="sub_현황성과_주요성과_서비스분야별.html" class="nav-link">서비스분야별</a>
-								</li>
-								<li>
-									<a href="sub_현황성과_주요성과_사회적성과.html" class="nav-link">사회적성과</a>
-								</li>
-								<li>
-									<a href="sub_현황성과_주요성과_경제적성과.html" class="nav-link">경제적성과</a>
-								</li>
-							</ul>
+							<a href="#" class="nav-link">협업커뮤니티</a>
 						</li>
 					</ul>
             	</div>
@@ -693,7 +647,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">현황·성과</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">마이페이지</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -702,7 +656,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">주요성과</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">사업신청</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -710,247 +664,235 @@
 							</ul>
 						</div>
 						<i class="icon-lnb-arr"></i>
-						<span>인증유형별</span>
-					</div>
-					<div class="sub-header">
-						<h2 class="tit">인증유형별</h2>
-						<!-- [D] 07-02 추가 -->
-						<script type="text/javascript">
-						//<![CDATA[
-							$(function() {
-								var url = window.location.href;
-								var proto = window.location.protocol;
-								
-								$('#urlText').val(url);
-								
-								$('#btnCopy').on("click", function(e) {
-									e.preventDefault();
-									
-									$('#urlText').focus();
-									var content = document.getElementById('urlText').value;
-									
-									if (proto.indexOf('https') != -1) {
-										// https 에서만 작동
-										window.navigator.clipboard.writeText(content).then(() => {
-											alert('복사되었습니다.');
-											$(".layer_close").click();
-											return;
-										})
-										.catch(err => {
-											console.log('err', err);
-										})
-									} else {
-										var t = document.createElement("textarea");
-										document.body.appendChild(t);
-										t.value = content;
-										t.select();
-										document.execCommand('copy');
-										document.body.removeChild(t);
-										alert('복사되었습니다.');
-										$(".layer_close").click();
-									}
-								});
-							});
-						//]]>
-						</script>
-						<div class="snsBox">
-							<ul>
-								<li class="share">
-									<a href="#" onclick="return false;" class="sns_open">SNS<span>열기</span></a>
-									<ul>
-										<li><a href="#" title="페이스북에 공유하기 (새창)"><i class="icon-facebook"></i></a></li>
-										<li><a href="#" title="트위터에 공유하기 (새창)"><i class="icon-twiter"></i></a></li>
-										<li><a href="#" title="카카오톡에 공유하기 (새창)"><i class="icon-kakao"></i></a></li>
-										<li class="url"><a href="#modal1" data-toggle="modal" class="btn_open_layer">주소복사</a></li>
-									</ul>
-								</li>
-								<li class="print"><a href="#" onclick="return window.print();">인쇄</a></li>
+						<div class="dropdown">
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth3">통합신청</button>
+							<ul class="dropdown-menu" aria-labelledby="lnbDepth3">
+								<li><a class="dropdown-item" href="#">link 1</a></li>
+								<li><a class="dropdown-item" href="#">link 2</a></li>
+								<li><a class="dropdown-item" href="#">link 3</a></li>
 							</ul>
 						</div>
-						<!-- // [D] 07-02 추가 -->
+						<i class="icon-lnb-arr"></i>
+						<div class="dropdown">
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth4">목록</button>
+							<ul class="dropdown-menu" aria-labelledby="lnbDepth4">
+								<li><a class="dropdown-item" href="#">link 1</a></li>
+								<li><a class="dropdown-item" href="#">link 2</a></li>
+								<li><a class="dropdown-item" href="#">link 3</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="sub-contents sub-asis contentBody" id="contentBody">
-						<!-- OrgChart CSS -->
-						<!-- <script src="https://www.sbchart.co.kr/res/js/sbchart.js"></script> -->
-						<!-- <link rel="stylesheet" href="https://www.sbchart.co.kr/res/css/sbchart.css"> -->
-						<!-- <link href="https://www.sbchart.co.kr/res/sborgchart/css/charta.css" rel="stylesheet" type="text/css"> -->
-						<!-- <link href="https://www.sbchart.co.kr/res/sborgchart/css/chartb.css" rel="stylesheet" type="text/css"> -->
-						<!-- <link href="https://www.sbchart.co.kr/res/sborgchart/css/customa.css" rel="stylesheet" type="text/css"> -->
-						<!-- <link href="https://www.sbchart.co.kr/res/sborgchart/css/customb.css" rel="stylesheet" type="text/css"> -->
-						<!-- <script type="text/javascript" src="https://www.sbchart.co.kr/res/sborgchart/js/sborgcharta.js"></script> -->
-						<!-- <script type="text/javascript" src="https://www.sbchart.co.kr/res/sborgchart/js/sborgchartb.js"></script> -->
-						<script src="../SBChart/js/sbchart.js"></script>
-						<link rel="stylesheet" href="../SBChart/css/sbchart.css">
-						<link href="../SBChart/css/charta.css" rel="stylesheet" type="text/css">
-						<link href="../SBChart/css/chartb.css" rel="stylesheet" type="text/css">
-						<link href="../SBChart/css/customa.css" rel="stylesheet" type="text/css">
-						<link href="../SBChart/css/customb.css" rel="stylesheet" type="text/css">
-						<script type="text/javascript" src="../SBChart/js/sborgcharta.js"></script>
-						<script type="text/javascript" src="../SBChart/js/sborgchartb.js"></script>
-
-						<div class="containerIn">
-							<ol class="list_ol-rd2">
-								<li>
-									<div class="tits">
-										<h5>인증유형별 사회적기업 현황</h5>
-										<div class="tails">
-											<h8>(단위 : 개소)</h8>
-											<!-- <a href="#" class="icon_excel_down">엑셀 다운로드</a> -->
+					<div class="sub-header">
+						<h2 class="tit">통합신청</h2>
+					</div>
+					<div class="sub-contents">
+						<div class="form-container">
+							<div class="board-srch-bx">
+								<ul class="row">
+									<li class="col-12 col-md-6 col-lg-4">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">신청기간</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" id="" class="datepicker form-control" data-type="single"/>
+												<input type="text" name="" id="" class="datepicker form-control" data-type="single"/>
+											</div>
 										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">사업분류</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">지역</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">공고상태</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="bottom">
+									<div class="flex-1">
+										<div class="form-tit-wrp d-md-none">
+											<p class="form-tit">공고명</p>
+										</div>
+										<input type="text" name="" value="" placeholder="공고명 또는 수행기관을 검색하세요." class="form-control"/>
 									</div>
-									<div class="table_cont">
-										<table class="contTable tr chart">
-											<caption><span>인증유형별 사회적기업 수의 정보테이블입니다.</span></caption>
-											<colgroup>
-												<col style="width:260px">
-												<col>
-												<col>
-												<col>
-											</colgroup>
-											<thead>
-												<tr>
-													<th scope="col">구분</th>
-													<th scope="col">2022년</th>
-													<th scope="col">2023년</th>
-													<th scope="col">2024년</th>
-													</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row">일자리제공형</th>
-													<td scope="col">2,349</td>
-													<td scope="col">2,488</td>
-													<td scope="col">2,492</td>
-													</tr>
-												<tr>
-													<th scope="row">사회서비스제공형</th>
-													<td scope="col">271</td>
-													<td scope="col">310</td>
-													<td scope="col">336</td>
-													</tr>
-												<tr>
-													<th scope="row">지역사회공헌형</th>
-													<td scope="col">309</td>
-													<td scope="col">346</td>
-													<td scope="col">362</td>
-													</tr>
-												<tr>
-													<th scope="row">혼합형</th>
-													<td scope="col">207</td>
-													<td scope="col">206</td>
-													<td scope="col">198</td>
-													</tr>
-												<tr>
-													<th scope="row">기타(창의/혁신형)</th>
-													<td scope="col">398</td>
-													<td scope="col">387</td>
-													<td scope="col">374</td>
-													</tr>
-												<tr>
-													<th scope="row">합계</th>
-													<td scope="col">3,534</td>
-													<td scope="col">3,737</td>
-													<td scope="col">3,762</td>
-													</tr>
-											</tbody>
-										</table>
+									<div class="btn-wrp">
+										<button type="button" class="btn btn-blue">조회</button>
 									</div>
-									<div class="chart_container">
-										<p id="chart5" style="min-height: 252px; position: relative;"><svg viewBox="0 0 1110 252" focusable="false" width="1110" height="252" class="sbchart sbchart-chart-svg" style="overflow: hidden; display: block;"><defs><clipPath id="sb-1751594650794-clip"><rect x="0" y="0" width="1048.015625" height="180.63999938964844"></rect></clipPath><clipPath id="sb-1751594650794-clip-grid"><rect width="1048.015625" height="180.63999938964844"></rect></clipPath><clipPath id="sb-1751594650794-clip-xaxis"><rect width="1133" height="106.36000061035156" x="-53.984375" y="-30"></rect></clipPath><clipPath id="sb-1751594650794-clip-yaxis"><rect width="81.984375" height="225.63999938964844" x="-51.984375" y="-5"></rect></clipPath><clipPath id="sb-1751594650794-clip-y2axis"><rect width="81.984375" height="225.63999938964844" x="-51.984375" y="-5"></rect></clipPath></defs><g transform="translate(52.984375, 5)"><g class="sbchart-grid sbchart-grid-y" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-grid)"><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="180.63999938964844" y2="180.63999938964844"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="158.35741099365634" y2="158.35741099365634"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="136.0748225976643" y2="136.0748225976643"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="113.79223420167224" y2="113.79223420167224"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="91.50964580568017" y2="91.50964580568017"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="69.2270574096881" y2="69.2270574096881"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="46.94446901369603" y2="46.94446901369603"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="24.661880617703968" y2="24.661880617703968"></line><line class="sbchart-grid-y-line" x1="0" x2="1048.015625" y1="2.3792922217118977" y2="2.3792922217118977"></line></g><g class="sbchart-chart" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip)"><g class="sbchart-paint-drawing-canvas0"></g><g class="sbchart-series-bars"><g class="sbchart-group sbchart-group-0"><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2022년 sbchart-target sbchart-target-2022년" style="pointer-events: none;"><rect x="90" y="128.29819924746306" width="30" height="52.34180014218538" animationX="90" animationY="128.29819924746306" animationW="30" animationH="52.34180014218538" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#4E16ED" rx="0" ry="0"></rect><rect x="299.603125" y="174.60141793433462" width="30" height="6.0385814553138175" animationX="299.603125" animationY="174.60141793433462" animationW="30" animationH="6.0385814553138175" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#4E16ED" rx="0" ry="0"></rect><rect x="509.20625" y="173.7546795752869" width="30" height="6.885319814361537" animationX="509.20625" animationY="173.7546795752869" animationW="30" animationH="6.885319814361537" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#4E16ED" rx="0" ry="0"></rect><rect x="718.8093749999999" y="176.02750359167808" width="30" height="4.612495797970354" animationX="718.8093749999999" animationY="176.02750359167808" animationW="30" animationH="4.612495797970354" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#4E16ED" rx="0" ry="0"></rect><rect x="928.4125" y="171.77152920804357" width="30" height="8.868470181604863" animationX="928.4125" animationY="171.77152920804357" animationW="30" animationH="8.868470181604863" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#4E16ED" rx="0" ry="0"></rect></g><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2023년 sbchart-target sbchart-target-2023년" style="pointer-events: none;"><rect x="90" y="72.85911931823482" width="30" height="55.43907992922824" animationX="90" animationY="72.85911931823482" animationW="30" animationH="55.43907992922824" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#79DFFF" rx="0" ry="0"></rect><rect x="299.603125" y="167.69381553157703" width="30" height="6.90760240275759" animationX="299.603125" animationY="167.69381553157703" animationW="30" animationH="6.90760240275759" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#79DFFF" rx="0" ry="0"></rect><rect x="509.20625" y="166.04490399027364" width="30" height="7.709775585013261" animationX="509.20625" animationY="166.04490399027364" animationW="30" animationH="7.709775585013261" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#79DFFF" rx="0" ry="0"></rect><rect x="718.8093749999999" y="171.43729038210373" width="30" height="4.590213209574358" animationX="718.8093749999999" animationY="171.43729038210373" animationW="30" animationH="4.590213209574358" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#79DFFF" rx="0" ry="0"></rect><rect x="928.4125" y="163.14816749879466" width="30" height="8.623361709248911" animationX="928.4125" animationY="163.14816749879466" animationW="30" animationH="8.623361709248911" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#79DFFF" rx="0" ry="0"></rect></g><g class="sbchart-series sbchart-bars sbchart-shapes sbchart-shapes-2024년 sbchart-target sbchart-target-2024년" style="pointer-events: none;"><rect x="90" y="17.33090903542257" width="30" height="55.528210282812246" animationX="90" animationY="17.33090903542257" animationW="30" animationH="55.528210282812246" class="sbchart-bar sbchart-shape sbchart-shape-0" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="299.603125" y="160.20686583052372" width="30" height="7.486949701053305" animationX="299.603125" animationY="160.20686583052372" animationW="30" animationH="7.486949701053305" class="sbchart-bar sbchart-shape sbchart-shape-1" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="509.20625" y="157.97860699092453" width="30" height="8.066296999349106" animationX="509.20625" animationY="157.97860699092453" animationW="30" animationH="8.066296999349106" class="sbchart-bar sbchart-shape sbchart-shape-2" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="718.8093749999999" y="167.02533787969728" width="30" height="4.41195250240645" animationX="718.8093749999999" animationY="167.02533787969728" animationW="30" animationH="4.41195250240645" class="sbchart-bar sbchart-shape sbchart-shape-3" fill="#E8A7FF" rx="0" ry="0"></rect><rect x="928.4125" y="154.81447943869364" width="30" height="8.333688060101025" animationX="928.4125" animationY="154.81447943869364" animationW="30" animationH="8.333688060101025" class="sbchart-bar sbchart-shape sbchart-shape-4" fill="#E8A7FF" rx="0" ry="0"></rect></g></g></g><g class="sbchart-series-lines"></g><g class="sbchart-event-rects" transform="translate(0, 0)" style="fill-opacity: 0;"><rect class="sbchart-event-rect-0" width="209.603125" height="180.63999938964844" x="0" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-1" width="209.603125" height="180.63999938964844" x="209.603125" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-2" width="209.603125" height="180.63999938964844" x="419.20625" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-3" width="209.603125" height="180.63999938964844" x="628.8093749999999" style="fill-opacity: 0;"></rect><rect class="sbchart-event-rect-4" width="209.603125" height="180.63999938964844" x="838.4125" style="fill-opacity: 0;"></rect><line class="sbchart-event-rects-line" pointer-events="none" style="opacity: 0;"></line></g><g class="sbchart-milestone" transform="translate(0, 0)" style="fill-opacity: 0;"></g><g class="sbchart-labels"></g></g><g class="sbchart-axis-container sbchart-axis-x-container" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-xaxis)"></g><g clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-xaxis)" class="sbchart-axis sbchart-axis-x" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle" style="visibility: visible; opacity: 1;" transform="translate(0, 180.63999938964844)"><text class="sbchart-axis-x-label" transform=""></text><path class="domain" stroke="currentColor" d="M0,6V0H1048.015625V6"></path><g class="tick" opacity="1" transform="translate(105, 0)"><line stroke="currentColor" y2="6" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-0" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">일자리제공형</tspan></text></g><g class="tick" opacity="1" transform="translate(314.603125, 0)"><line stroke="currentColor" y2="6" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-1" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">사회서비스제공형</tspan></text></g><g class="tick" opacity="1" transform="translate(524.20625, 0)"><line stroke="currentColor" y2="6" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-2" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">지역사회공헌형</tspan></text></g><g class="tick" opacity="1" transform="translate(733.8093749999999, 0)"><line stroke="currentColor" y2="6" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-3" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">혼합형</tspan></text></g><g class="tick" opacity="1" transform="translate(943.4125, 0)"><line stroke="currentColor" y2="0" x1="105" x2="105"></line><text fill="currentColor" y="9" dy="0.71em" class="sbchart-axis-x-label-index-4" transform="translate(0, 0)" x="0" text-anchor="middle"><tspan x="0" dy=".71em" dx="0">기타(창의/혁신형)</tspan></text></g></g><g class="sbchart-axis sbchart-axis-x" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-xaxis)" style="visibility: hidden;"></g><g class="sbchart-axis sbchart-axis-y" clip-path="url(https://www.seis.or.kr/home/sub.do?menukey=7204#sb-1751594650794-clip-yaxis)" style="visibility: visible; opacity: 1;" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><text class="sbchart-axis-y-label" transform="rotate(-90)"></text><path class="domain" stroke="currentColor" d="M-6,180.63999938964844H0V1H-6"></path><g class="tick" opacity="1" transform="translate(0, 180.63999938964844)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">0</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 158.35741099365634)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">1,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 136.0748225976643)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">2,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 113.79223420167224)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">3,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 91.50964580568017)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">4,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 69.2270574096881)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">5,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 46.94446901369603)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">6,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 24.661880617703968)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">7,000</tspan></text></g><g class="tick" opacity="1" transform="translate(0, 2.3792922217118977)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em" y="0" text-anchor="end" transform="translate(0, 0)"><tspan x="-9" dy="">8,000</tspan></text></g></g></g><g class="sbchart-legend" transform="translate(0, 219)" style="visibility: visible; opacity: 1;"><g class="sbchart-legend-item sbchart-legend-item-2022년 sbchart-target sbchart-target-2022년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="474.5199890136719" y="9" opacity="1" style="text-anchor: start;">2022년</text><path class="sbchart-legend-item-tile" d="M 460.5199890136719 0 h 10 v 10 h -10 v -10 Z" fill="#4E16ED" opacity="1"></path><rect class="sbchart-legend-item-event" width="66.32000732421875" height="28" x="460.5199890136719" y="-5" style="fill-opacity: 0;"></rect></g><g class="sbchart-legend-item sbchart-legend-item-2023년 sbchart-target sbchart-target-2023년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="540.8399963378906" y="9" opacity="1" style="text-anchor: start;">2023년</text><path class="sbchart-legend-item-tile" d="M 526.8399963378906 0 h 10 v 10 h -10 v -10 Z" fill="#79DFFF" opacity="1"></path><rect class="sbchart-legend-item-event" width="66.32000732421875" height="28" x="526.8399963378906" y="-5" style="fill-opacity: 0;"></rect></g><g class="sbchart-legend-item sbchart-legend-item-2024년 sbchart-target sbchart-target-2024년" style="cursor: pointer;"><text class="sbchart-legend-item-text" x="607.1600036621094" y="9" opacity="1" style="text-anchor: start;">2024년</text><path class="sbchart-legend-item-tile" d="M 593.1600036621094 0 h 10 v 10 h -10 v -10 Z" fill="#E8A7FF" opacity="1"></path><rect class="sbchart-legend-item-event" width="56.32000732421875" height="28" x="593.1600036621094" y="-5" style="fill-opacity: 0;"></rect></g></g><g></g><g></g><g></g></svg><div class="sbchart-tooltip" style="position: absolute; pointer-events: none; display: none;"></div></p>
-									</div>
-								</li>
-							</ol>
-						</div>
-						<script>
-							var conf5 = {
-								global:{
-									color: {
-										pattern: ["#4E16ED","#79DFFF","#E8A7FF"]
-									}
-								},
-								data: {
-									type: "stackbar",
-									columns: [
-										
-										['2022년',2349,271,309,207,398],
-										
-										['2023년',2488,310,346,206,387],
-										
-										['2024년',2492,336,362,198,374],
-										
-									]
-								},
-								axis: {
-									x: {
-										type: "category",
-										categories: ["일자리제공형","사회서비스제공형","지역사회공헌형","혼합형","기타(창의/혁신형)"]
-									},
-									y: {
-										tick: {
-											multiline: false
-										}
-									}
-								},
-								legend: {
-									item: {
-										onclick: function() {
-											return;
-										}
-									}
-								},
-								grid: {
-									x: { 
-										show: false
-									}
-								},
-								extend: {
-									bar: {
-										width: {
-											max: 30
-										}
-									}
-								},
-								tooltip: {
-									format: {
-										value: function(value, id, index, ratio) {
-											return new Intl.NumberFormat().format(value);
-										}
-									}
-								}
-							};
-							var chart5 = sb.chart.render("#chart5", conf5);
-						</script>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+								</div>
+							</div>
 
-	<!-- [D] 07-02 추가 / 주소복사 팝업 -->
-	<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h3 class="tit">주소복사</h3>
-					<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit normal">신청공고<span>(총 <strong class="text-primary">5</strong>건)</span></h3>
+									<div class="btn-area">
+										<select name="" class="form-control">
+											<option value="" selected>등록순</option>
+											<option value="">마감순</option>
+										</select>
+										<button type="button" class="btn btn-xs btn-blue">게시요청</button>
+									</div>
+								</div>
+
+								<div class="board-wrap">
+									<!-- 리스트 -->
+									<div class="board-type-card">
+										<ul class="card-list row">
+											<li class="col-12 col-lg-6 col-xl-4">
+												<a href="#" class="inner">
+													<span class="badge">창업</span>
+													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고 2025년도 3차 사회적기업 인증 계획 공고 2025년도 3차 사회적기업 인증 계획 공고 2025년도 3차 사회적기업 인증 계획 공고</p>
+													<div class="sub">
+														<p>지역과소셜비즈</p>
+														<span>전국</span>
+														<span>2025-05-01 ~ 2025-05-31</span>
+													</div>
+													<span class="text-blue state">D-120</span>
+													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+											<li class="col-12 col-lg-6 col-xl-4">
+												<a href="#" class="inner">
+													<span class="badge">사업화</span>
+													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
+													<div class="sub">
+														<p>중소상공인희망재단</p>
+														<span>전국</span>
+														<span>2025-05-01 ~ 2025-05-31</span>
+													</div>
+													<span class="text-red state">D-1</span>
+													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+											<li class="col-12 col-lg-6 col-xl-4">
+												<!-- [D] 05-14 수정 마감공고에는 .disabled -->
+												<a href="#" class="inner disabled">
+													<span class="badge">자금조달</span>
+													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
+													<div class="sub">
+														<p>(사)커뮤니티와경제</p>
+														<span>전국</span>
+														<span>2025-05-01 ~ 2025-05-31</span>
+													</div>
+													<span class="text-gray state">마감</span>
+													<button type="button" class="btn-icon btn-bookmark"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+											<li class="col-12 col-lg-6 col-xl-4">
+												<a href="#" class="inner">
+													<span class="badge">기술개발(R&D)</span>
+													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
+													<div class="sub">
+														<p>전남정보문화산업진흥원</p>
+														<span>전국</span>
+														<span>2025-05-01 ~ 2025-05-31</span>
+													</div>
+													<span class="text-blue state">D-120</span>
+													<button type="button" class="btn-icon btn-bookmark"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+											<li class="col-12 col-lg-6 col-xl-4">
+												<a href="#" class="inner">
+													<span class="badge">시설/공간</span>
+													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
+													<div class="sub">
+														<p>서울소셜벤처허브</p>
+														<span>전국</span>
+														<span>2025-05-01 ~ 2025-05-31</span>
+													</div>
+													<span class="text-red state">D-1</span>
+													<button type="button" class="btn-icon btn-bookmark"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+											<li class="col-12 col-lg-6 col-xl-4">
+												<a href="#" class="inner disabled">
+													<span class="badge">멘토링/컨설팅</span>
+													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
+													<div class="sub">
+														<p>엠와이소셜컴퍼니</p>
+														<span>전국</span>
+														<span>2025-05-01 ~ 2025-05-31</span>
+													</div>
+													<span class="text-gray state">마감</span>
+													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- // -->
+
+									<!-- 페이징 -->
+									<div class="paging-area">
+										<ul>
+											<li>
+												<a href="javascript:;" class="prev"><span>이전</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="active"><span>1</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>2</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>3</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>4</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>5</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="dot"><span></span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>10</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="next"><span>다음</span></a>
+											</li>
+										</ul>
+									</div> 
+									<!-- // 페이징 -->
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="modal-body">
-					<div class="sect-body">
-						<div class="form-tit-wrp">
-							<p class="form-tit">아래 복사하기를 누르신 후 원하는 곳에 <span class="text-red">Ctrl+V</span>를 눌러 붙여넣기 하세요.</p>
-						</div>
-						<div class="mt-4">
-							<input id="urlText" type="text" class="form-control" value="" placeholder="http://" style="width:100%;" onfocus="this.select()">
-						</div>
-					</div>
-					<div class="btn-wrp justify-content-center gap8">
-						<button id="btnCopy" class="btn btn-black">복사하기</button>
-					</div>
-				</div>          
 			</div>
 		</div>
 	</div>
-	<!-- // 07-02 추가 / 주소복사 팝업 -->
 </div>
 <!-- // 페이지시작 -->
 

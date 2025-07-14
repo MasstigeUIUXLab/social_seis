@@ -71,6 +71,11 @@
 <!-- <link rel="stylesheet" href="../assets/css/main.css" />
 <script src="../assets/js/main.js"></script> -->
 <!-- [D] * only sub -->
+<!-- [D] 05-30 추가 old 파일 링크 추가 -->
+<link rel="stylesheet" type="text/css" href="../assets/css/old2.css" />
+<!-- [D] 07-02 추가 old 파일 링크 추가 (js) -->
+<script src="../assets/js/old.js"></script>
+<!-- //-->
 <link rel="stylesheet" href="../assets/css/sub.css" />
 <title></title>
 </head>
@@ -619,34 +624,64 @@
 		<div class="container">
 			<div class="layout">
 				<div class="snb" id="snb">
-                    <h2><a href="#" data-toggle="snb">사업신청</a></h2>
+                    <h2><a href="#" data-toggle="snb">현황·성과</a></h2>
 					<ul class="nav nav-side">
 						<li class="nav-item">
 							<!-- [D] 04-16 수정 
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a class="nav-link nav-btn" href="#">인증·지정</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link nav-btn" href="#">재정지원</a>
+							<a href="#" class="nav-link nav-btn on">사회적기업조회</a>
 							<ul class="depth2">
 								<li>
-									<a href="#" class="nav-link">메뉴1</a>
+									<a href="sub_현황성과_사회적기업조회_사회적기업.html" class="nav-link on">사회적기업</a>
 								</li>
 								<li>
-									<a href="#" class="nav-link">메뉴2</a>
+									<a href="sub_현황성과_사회적기업조회_예비사회적기업.html" class="nav-link">예비사회적기업</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link on active" href="#">통합신청</a>
+							<a href="#" class="nav-link nav-btn">자율경영공시</a>
+							<ul class="depth2">
+								<li>
+									<a href="sub_현황성과_자율경영공시_소개.html" class="nav-link">소개</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_자율경영공시_공시자료조회_목록.html" class="nav-link">공시자료조회</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">사업공고</a>
+							<a href="#" class="nav-link nav-btn">사회적가치지표(SVI)</a>
+							<ul class="depth2">
+								<li>
+									<a href="sub_현황성과_사회적가치지표(SVI)_평가자료조회.html" class="nav-link">평가자료조회</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">취약계층고용비율점검</a>
+							<a href="#" class="nav-link nav-btn">주요성과</a>
+							<ul class="depth2">
+								<li>
+									<a href="sub_현황성과_주요성과_총괄현황.html" class="nav-link">총괄현황</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_조직형태별.html" class="nav-link">조직형태별</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_인증유형별.html" class="nav-link">인증유형별</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_서비스분야별.html" class="nav-link">서비스분야별</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_사회적성과.html" class="nav-link">사회적성과</a>
+								</li>
+								<li>
+									<a href="sub_현황성과_주요성과_경제적성과.html" class="nav-link">경제적성과</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
             	</div>
@@ -658,7 +693,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">마이페이지</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">현황·성과</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -667,7 +702,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">사업신청</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">사회적기업 조회</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -676,17 +711,8 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth3">통합신청</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth3">사회적기업</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth3">
-								<li><a class="dropdown-item" href="#">link 1</a></li>
-								<li><a class="dropdown-item" href="#">link 2</a></li>
-								<li><a class="dropdown-item" href="#">link 3</a></li>
-							</ul>
-						</div>
-						<i class="icon-lnb-arr"></i>
-						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth4">목록</button>
-							<ul class="dropdown-menu" aria-labelledby="lnbDepth4">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
 								<li><a class="dropdown-item" href="#">link 3</a></li>
@@ -694,210 +720,423 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">통합신청</h2>
+						<h2 class="tit">사회적기업</h2>
 					</div>
 					<div class="sub-contents">
 						<div class="form-container">
-							<div class="board-srch-bx">
-								<ul class="row">
-									<li class="col-12 col-md-6 col-lg-4">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">신청기간</p>
-											</div>
-											<div class="form-input-group">
-												<input type="text" name="" id="" class="datepicker form-control" data-type="single"/>
-												<input type="text" name="" id="" class="datepicker form-control" data-type="single"/>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">사업분류</p>
-											</div>
-											<div class="form-input-group">
-												<select name="" class="form-control">
-													<option value="" selected disabled>선택</option>
-													<option value="">선택</option>
-												</select>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">지역</p>
-											</div>
-											<div class="form-input-group">
-												<select name="" class="form-control">
-													<option value="" selected disabled>선택</option>
-													<option value="">선택</option>
-												</select>
-											</div>
-										</div>
-									</li>
-									<li class="col-12 col-md-6 col-lg">
-										<div class="form-group">
-											<div class="form-tit-wrp">
-												<p class="form-tit">공고상태</p>
-											</div>
-											<div class="form-input-group">
-												<select name="" class="form-control">
-													<option value="" selected disabled>선택</option>
-													<option value="">선택</option>
-												</select>
-											</div>
-										</div>
-									</li>
-								</ul>
-								<div class="bottom">
-									<div class="flex-1">
-										<div class="form-tit-wrp d-md-none">
-											<p class="form-tit">공고명</p>
-										</div>
-										<input type="text" name="" value="" placeholder="공고명 또는 수행기관을 검색하세요." class="form-control"/>
+							<div class="form-sect">
+								<div class="form-header align-items-start">
+									<div class="tit normal align-self-end">
+										<ul class="sub">
+											<li>
+												<button type="button" class="btn-bookmark" onclick="$(this).toggleClass('on')">
+													<i class="icon-sub-bookmark"></i>
+													<span>스크랩</span>
+												</button>
+											</li>
+										</ul>
 									</div>
-									<div class="btn-wrp">
-										<button type="button" class="btn btn-blue">조회</button>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>기업명</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">기업명</div>
+														<div class="cell">주식회사0000</div>
+													</td>
+												</tr>
+												<tr>
+													<th>사회적목적 <br>실현유형</th>
+													<td class="text-left">
+														<div class="cell-mo">사회적목적 실현유형</div>
+														<div class="cell">
+															일자리제공형
+														</div>
+													</td>
+													<th>분야</th>
+													<td class="text-left">
+														<div class="cell-mo">분야</div>
+														<div class="cell">
+															사회복지
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>설립연도</th>
+													<td class="text-left">
+														<div class="cell-mo">설립연도</div>
+														<div class="cell">
+															2022
+														</div>
+													</td>
+													<th>지역</th>
+													<td class="text-left">
+														<div class="cell-mo">지역</div>
+														<div class="cell">
+															서울
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">기업정보</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>조직형태</th>
+													<td class="text-left">
+														<div class="cell-mo">조직형태</div>
+														<div class="cell">
+															상법에 따른 회사
+														</div>
+													</td>
+													<th>분야</th>
+													<td class="text-left">
+														<div class="cell-mo">분야</div>
+														<div class="cell">
+															청소 등 사업시설관리
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>기업명</th>
+													<td class="text-left">
+														<div class="cell-mo">기업명</div>
+														<div class="cell">
+															주식회사0000
+														</div>
+													</td>
+													<th>대표자명</th>
+													<td class="text-left">
+														<div class="cell-mo">대표자명</div>
+														<div class="cell">
+															홍길동
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>소재지</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">소재지</div>
+														<div class="cell">서울 금천구 가산디지털1로 16 1205호 1206호(SK V1 AP Towr)</div>
+													</td>
+												</tr>
+												<tr>
+													<th>기업소개</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">기업소개</div>
+														<div class="cell">-</div>
+													</td>
+												</tr>
+												<tr>
+													<th>대표번호</th>
+													<td class="text-left">
+														<div class="cell-mo">대표번호</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+													<th>홈페이지</th>
+													<td class="text-left">
+														<div class="cell-mo">홈페이지</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>사업내용</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">사업내용</div>
+														<div class="cell">-</div>
+													</td>
+												</tr>
+												<tr>
+													<th>대표번호</th>
+													<td class="text-left">
+														<div class="cell-mo">대표번호</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+													<th>홈페이지</th>
+													<td class="text-left">
+														<div class="cell-mo">홈페이지</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>인증번호</th>
+													<td class="text-left">
+														<div class="cell-mo">인증번호</div>
+														<div class="cell">
+															제2025-002호
+														</div>
+													</td>
+													<th>인증연도</th>
+													<td class="text-left">
+														<div class="cell-mo">인증연도</div>
+														<div class="cell">
+															2025
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>사업자등록번호</th>
+													<td class="text-left">
+														<div class="cell-mo">사업자등록번호</div>
+														<div class="cell">
+															012-34-56789
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">자율경영공시</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap table-style">
+										<table class="tb">
+											<colgroup>
+												<col style="width:16%">
+												<col>
+												<col style="width:17%">
+												<col style="width:17%">
+												<col style="width:17%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="row" colspan="2">구분</th>
+													<th scope="col">2022</th>
+													<th scope="col">2023</th>
+													<th scope="col">2024</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row" rowspan="3">매출 및 손익 현황</th>
+													<th scope="row" class="bg1">매출액</th>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text2">232,078,090</span>원
+														</span>
+													</td>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text2">319,862,590</span>원
+														</span>
+													</td>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text2">652,750,999</span>원
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" class="bg1">영업이익</th>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text3">-121,406,182</span>원
+														</span>
+													</td>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text3">-108,030,114</span>원
+														</span>
+													</td>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text3">-147,421,188</span>원
+														</span>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" class="bg1">당기순이익</th>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text3">-35,479,004</span>원
+														</span>
+													</td>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text3">-5,075,776</span>원
+														</span>
+													</td>
+													<td class="tr">
+														<span class="units">
+															<span class="numb text3">-15,960,598</span>원
+														</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+							<div class="btn-wrp btn-bottom">
+								<a href="#" class="btn btn-outline-blue">자율경영공시 상세보기</a>
+							</div>
+
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">협업 커뮤니티 참여 이력</h3>
+								</div>
+
+								<div class="board-wrap">
+									<div class="tb-wrap">
+										<table class="tb">
+											<colgroup>
+												<col style="width:6%">
+												<col style="width:18%">
+												<col style="width:20%">
+												<col>
+												<col style="width:18%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>번호</th>
+													<th>협업커뮤니티 명</th>
+													<th>분야</th>
+													<th>기간</th>
+													<th>제안자</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td colspan="5">
+														등록된 협업 커뮤니티가 없습니다.
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
 							</div>
 
 							<div class="form-sect">
 								<div class="form-header">
-									<h3 class="tit normal">신청공고<span>(총 <strong class="text-primary">5</strong>건)</span></h3>
-									<div class="btn-area">
-										<select name="" class="form-control">
-											<option value="" selected>등록순</option>
-											<option value="">마감순</option>
-										</select>
-										<button type="button" class="btn btn-xs btn-blue">게시요청</button>
-									</div>
+									<h3 class="tit">채용정보</h3>
 								</div>
 
 								<div class="board-wrap">
-									<!-- 리스트 -->
-									<div class="board-type-card">
-										<ul class="card-list row">
-											<li class="col-12 col-lg-6 col-xl-4">
-												<a href="#" class="inner">
-													<span class="badge">창업</span>
-													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고 2025년도 3차 사회적기업 인증 계획 공고 2025년도 3차 사회적기업 인증 계획 공고 2025년도 3차 사회적기업 인증 계획 공고</p>
-													<div class="sub">
-														<p>지역과소셜비즈</p>
-														<span>전국</span>
-														<span>2025-05-01 ~ 2025-05-31</span>
-													</div>
-													<span class="text-blue state">D-120</span>
-													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
-												</a>
-											</li>
-											<li class="col-12 col-lg-6 col-xl-4">
-												<a href="#" class="inner">
-													<span class="badge">사업화</span>
-													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
-													<div class="sub">
-														<p>중소상공인희망재단</p>
-														<span>전국</span>
-														<span>2025-05-01 ~ 2025-05-31</span>
-													</div>
-													<span class="text-red state">D-1</span>
-													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
-												</a>
-											</li>
-											<li class="col-12 col-lg-6 col-xl-4">
-												<!-- [D] 05-14 수정 마감공고에는 .disabled -->
-												<a href="#" class="inner disabled">
-													<span class="badge">자금조달</span>
-													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
-													<div class="sub">
-														<p>(사)커뮤니티와경제</p>
-														<span>전국</span>
-														<span>2025-05-01 ~ 2025-05-31</span>
-													</div>
-													<span class="text-gray state">마감</span>
-													<button type="button" class="btn-icon btn-bookmark"><span class="sr-only">즐겨찾기</span></button>
-												</a>
-											</li>
-											<li class="col-12 col-lg-6 col-xl-4">
-												<a href="#" class="inner">
-													<span class="badge">기술개발(R&D)</span>
-													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
-													<div class="sub">
-														<p>전남정보문화산업진흥원</p>
-														<span>전국</span>
-														<span>2025-05-01 ~ 2025-05-31</span>
-													</div>
-													<span class="text-blue state">D-120</span>
-													<button type="button" class="btn-icon btn-bookmark"><span class="sr-only">즐겨찾기</span></button>
-												</a>
-											</li>
-											<li class="col-12 col-lg-6 col-xl-4">
-												<a href="#" class="inner">
-													<span class="badge">시설/공간</span>
-													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
-													<div class="sub">
-														<p>서울소셜벤처허브</p>
-														<span>전국</span>
-														<span>2025-05-01 ~ 2025-05-31</span>
-													</div>
-													<span class="text-red state">D-1</span>
-													<button type="button" class="btn-icon btn-bookmark"><span class="sr-only">즐겨찾기</span></button>
-												</a>
-											</li>
-											<li class="col-12 col-lg-6 col-xl-4">
-												<a href="#" class="inner disabled">
-													<span class="badge">멘토링/컨설팅</span>
-													<p class="txt">2025년도 3차 사회적기업 인증 계획 공고</p>
-													<div class="sub">
-														<p>엠와이소셜컴퍼니</p>
-														<span>전국</span>
-														<span>2025-05-01 ~ 2025-05-31</span>
-													</div>
-													<span class="text-gray state">마감</span>
-													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
-												</a>
-											</li>
-										</ul>
+									<div class="tb-wrap">
+										<table class="tb">
+											<colgroup>
+												<col style="width:12%">
+												<col style="width:20%">
+												<col>
+												<col style="width:20%">
+												<col style="width:20%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>기업명</th>
+													<th>채용공고명</th>
+													<th>담당업무 / 지원자격</th>
+													<th>근무조건</th>
+													<th>등록일 / 마감일</th>
+	                    						</tr>
+											</thead>
+											<tbody>
+												<tr onclick="" style="cursor:pointer;">
+													<td>이편한동행사회적협동조합</td>
+													<td>재가장기요양 라운딩 사회복지사 초빙</td>
+													<td>
+														<div>
+															<p>담당업무 : 사회복지사(사회복지시설)</p>
+															<ul class="inline_ul-dot">
+																<li>신입</li>
+																<li>학력무관</li>
+																<li>서울 노원구</li>
+															</ul>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>월급<span class="text2 fw400">209만원</span></p>
+															<ul class="inline_ul-dot">
+																<li>10</li>
+																<li>주5일근무</li>
+															</ul>
+														</div>
+													</td>
+													<td>
+														<div>
+															<ul class="fromto">
+																<li>
+																	<span>25-06-24</span>
+																	<span class="badge2">등록</span>
+																</li>
+																<li>
+																	<span>채용시까지  25-08-23</span>
+																	<span class="badge3">마감</span>
+																</li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<!-- // -->
-
-									<!-- 페이징 -->
-									<div class="paging-area">
-										<ul>
-											<li>
-												<a href="javascript:;" class="prev"><span>이전</span></a>
-											</li>
-											<li>
-												<a href="javascript:;" class="active"><span>1</span></a>
-											</li>
-											<li>
-												<a href="javascript:;"><span>2</span></a>
-											</li>
-											<li>
-												<a href="javascript:;"><span>3</span></a>
-											</li>
-											<li>
-												<a href="javascript:;"><span>4</span></a>
-											</li>
-											<li>
-												<a href="javascript:;"><span>5</span></a>
-											</li>
-											<li>
-												<a href="javascript:;" class="dot"><span></span></a>
-											</li>
-											<li>
-												<a href="javascript:;"><span>10</span></a>
-											</li>
-											<li>
-												<a href="javascript:;" class="next"><span>다음</span></a>
-											</li>
-										</ul>
-									</div> 
-									<!-- // 페이징 -->
 								</div>
 							</div>
+						</div>						
+						
+						<ul class="view-link">
+							<li class="prev">
+								<span class="tit">이전 글</span>
+								<a href="#" title="이전 글로 이동" style="pointer-events: none;">이전 글이 없습니다.
+								</a>
+							</li>
+							<li class="next">
+								<span class="tit">다음 글</span>
+								<a href="#" title="다음 글로 이동">주식회사 한국표준안전연구원</a>
+							</li>
+						</ul>
+
+						<div class="btn-wrp btn-bottom">
+							<button type="button" class="btn btn-outline-black">목록</button>
 						</div>
 					</div>
 				</div>
