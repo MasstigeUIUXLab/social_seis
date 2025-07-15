@@ -71,7 +71,6 @@
 <!-- <link rel="stylesheet" href="../assets/css/main.css" />
 <script src="../assets/js/main.js"></script> -->
 <!-- [D] * only sub -->
-<link rel="stylesheet" href="../assets/css/old2.css" />
 <link rel="stylesheet" href="../assets/css/sub.css" />
 <title></title>
 </head>
@@ -617,7 +616,7 @@
 
 <!-- 페이지시작 -->
 <div id="ct">
-	<div class="login join">
+	<div class="login doc">
 		<div class="container">
 			<form action="">
 				<fieldset>
@@ -627,7 +626,7 @@
 							<h2 class="tit">회원가입</h2>
 							<div class="join-step">
 								<ol class="step">
-									<!-- [D] 활성화 .active -->
+									<!-- [D] 활성화 .active / 완료 .ok -->
 									<li class="active">
 										<span>약관동의</span>
 									</li>
@@ -648,7 +647,7 @@
 							<div class="list">
 								<div class="item">
 									<div class="terms-hd">
-										<h3>서비스 표준 이용약관 (필수)</h3>
+										<h3>서비스 표준 이용약관(필수)</h3>
 										<label class="input-label input-label--checkbox">
 											<input type="checkbox">
 											<span class="input-label__txt">동의함</span>
@@ -888,12 +887,47 @@
 									</div>
 								</div>
 								<div class="item">
-									
+									<div class="terms-hd">
+										<h3>개인정보 수집·이용동의(필수)</h3>
+										<label class="input-label input-label--checkbox">
+											<input type="checkbox">
+											<span class="input-label__txt">동의함</span>
+										</label>
+									</div>
+									<div class="terms-body">
+										<div class="inner">
+											<div class="raw-html-embed">
+												<h4 class="tit1">개인정보 수집 및 이용에 대한 안내</h4>
+												<ol class="terms-txtbx">
+													<li>
+														<p>1.개인정보의 수집/이용 목적</p>
+														<p>회원가입 및 회원제 서비스 이용 및 제한적 본인 확인제에 따른 본인확인</p>
+														<p>개인 식별, 부정이용방지, 비인가 사용방지, 가입의사 확인</p>
+														<p>인증 업무관리, 온라인사업보고서 관리, 각종 재정지원내역 등록 등</p>
+													</li>
+													<li>
+														<p>2.수집하는 개인정보의 항목</p>
+														<p>기업정보 필수항목 : 사업자등록번호, 기업명, 대표자명, 대표자 성별, 대표자 생년월일, 설립연도, 전화번호, 팩스번호, 회사주소, 사업지역, 사업분야, 관할관청, 조직형태, 업종</p>
+														<p>기업정보 선택항목 : 회원유형, 기업유형, 인·지정일, 인·지정번호, 사업자관리번호, 홈페이지 주소</p>
+														<p>개인정보 필수항목 : 아이디, 비밀번호, 가입자명, 휴대전화번호, 가입자 성별, 가입자 생년월일, 공인인증서등록, IPIN등록, 이메일 주소, 이메일수신동의, SMS 수신동의</p>
+														<p>개인정보 선택항목 : 전화번호, 팩스번호</p>
+													</li>
+													<li>
+														<p>3. 개인정보의 보유 및 이용 기간 : 준영구</p>
+													</li>
+													<li>
+														<p>4. 동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익 내용</p>
+														<p>귀하는 개인정보 수집 및 이용 동의를 거부할 권리가 있습니다. 다만, 필수항목 미동의 시에는 회원가입이 제한 될 수 있으며, 선택항목 미동의 시에는 회원가입은 가능하나 선택항목에 대한 일부 서비스가 제한될 수 있습니다.</p>
+													</li>
+												</ol>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="item">
 									<label class="input-label input-label--checkbox">
 										<input type="checkbox">
-										<span class="input-label__txt">이용약관에 동의합니다.</span>
+										<span class="input-label__txt">이용약관 및 개인정보 수집 및 이용에 모두 동의합니다.</span>
 									</label>
 								</div>
 							</div>
@@ -901,15 +935,9 @@
 					</div>
 				</fieldset>
 			</form>
-			<div class="login-footer d-flex">
-				<div class="logo-wrap d-flex">
-					<div class="img-wrap">
-						<img src="../assets/images/common/logo_icon.svg" alt="" />
-					</div>
-					<p class="font-sans">사회적기업포털</p>
-				</div>
-				<p class="copyright">Copyright@Korea Social Enterprise Promotion Agency. <br class="d-block d-sm-none" />All Contents Reserved</p>
-				<a href="#" class="btn">공무원/관리자 로그인</a>
+			<div class="btn-wrp btn-bottom">
+				<button type="button" class="btn btn-outline-green">취소</button>
+				<button type="button" class="btn btn-green">다음</button>
 			</div>
 		</div>
 	</div>

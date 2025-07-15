@@ -624,55 +624,85 @@
 					<div class="login-body">
 						<div class="tit-wrap text-center">
 							<h2 class="tit">회원가입</h2>
-							<p class="txt">회적기업 포털에 오신 것을 환영합니다. <br class="d-lg-none">해당하는 회원 유형을 선택해주세요.</p>
+							<div class="join-step">
+								<ol class="step">
+									<!-- [D] 활성화 .active / 완료 .ok -->
+									<li class="ok">
+										<span>약관동의</span>
+									</li>
+									<li class="ok">
+										<span>본인인증</span>
+									</li>
+									<li class="active">
+										<span>정보입력</span>
+									</li>
+									<li>
+										<span>가입완료</span>
+									</li>
+								</ol>
+							</div>
+							<p class="txt">사회적기업 포털 회원가입을 위해 아래 이용약관 및 개인정보수집·이용동의 안내를 읽고 동의하여 주시기 바랍니다.</p>
 						</div>
-						<div class="section-inner join-type">
-							<ul class="list">
-								<li class="item">
-									<a href="sub_로그인_회원가입_약관동의.html" class="link">
-										<i class="icon_join_type1"></i>
-										<strong>개인</strong>
-										<p>개인회원</p>
-									</a>
+						<div class="section-inner doc-form">
+							<ul class="form-body">
+								<li class="col-12 col-md-6 col-lg-3">
+									<div class="form-group">
+										<div class="form-tit-wrp">
+											<p class="form-tit">신청기관명</p>
+										</div>
+										<div class="form-input-group">
+											<input type="text" name="" value="㈜동연디자인" class="form-control">
+										</div>
+									</div>
 								</li>
-								<li class="item">
-									<a href="sub_로그인_회원가입_약관동의.html" class="link">
-										<i class="icon_join_type2"></i>
-										<strong>기업</strong>
-										<p>기업 대표자 및 소속 직원 <br>중간지원기관 및 소속 직원</p>
-									</a>
+								<li class="col-12 col-md-6 col-lg-3">
+									<div class="form-group">
+										<div class="form-tit-wrp">
+											<p class="form-tit">전화번호</p>
+										</div>
+										<div class="form-input-group">
+											<input type="number" name="" value="02" class="form-control text-center">
+											<span class="w-auto">-</span>
+											<input type="number" name="" value="3333" class="form-control text-center">
+											<span class="w-auto">-</span>
+											<input type="number" name="" value="1111" class="form-control text-center">
+										</div>
+									</div>
 								</li>
-								<li class="item">
-									<a href="sub_로그인_회원가입_약관동의.html" class="link">
-										<i class="icon_join_type3"></i>
-										<strong>공무원</strong>
-										<p>정부부처, 지방자치단체 <br>소속 공무원</p>
-										<span class="badge">관리자</span>
-									</a>
-								</li>
-								<li class="item">
-									<a href="sub_로그인_회원가입_약관동의.html" class="link">
-										<i class="icon_join_type4"></i>
-										<strong>진흥원</strong>
-										<p>한국사회적기업진흥원 <br>소속 임직원</p>
-										<span class="badge">관리자</span>
-									</a>
+								<li class="col-12">
+									<div class="form-group">
+										<div class="form-tit-wrp">
+											<p class="form-tit asterisk">소재지</p>
+										</div>
+										<div class="row">
+											<div class="col-12 col-lg-3">
+												<div class="form-input-group">
+													<input type="text" name="" value="08591" class="form-control">
+													<button type="button" class="btn btn-black">검색</button>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="row">
+													<div class="col-12 col-lg-7">
+														<div class="form-input-group">
+															<input type="text" name="" value="서울 금천구 가산디지털1로 16" class="form-control">
+														</div>
+													</div>
+													<div class="col-12 col-lg">
+														<div class="form-input-group">
+															<input type="text" name="" value=" 1205호1206호(SK V1 AP Towr)" class="form-control">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</fieldset>
 			</form>
-			<div class="login-footer d-flex">
-				<div class="logo-wrap d-flex">
-					<div class="img-wrap">
-						<img src="../assets/images/common/logo_icon.svg" alt="" />
-					</div>
-					<p class="font-sans">사회적기업포털</p>
-				</div>
-				<p class="copyright">Copyright@Korea Social Enterprise Promotion Agency. <br class="d-block d-sm-none" />All Contents Reserved</p>
-				<a href="#" class="btn">공무원/관리자 로그인</a>
-			</div>
 		</div>
 	</div>
 </div>
