@@ -41174,7 +41174,7 @@ html {
 }
 .main-body::-webkit-scrollbar,
 .sub-body::-webkit-scrollbar {
-  width: 4px;
+  width: 10px;
 }
 .main-body::-webkit-scrollbar-thumb,
 .sub-body::-webkit-scrollbar-thumb {
@@ -48550,6 +48550,12 @@ input[type=radio][readonly]:not([checked]) {
   display: inline-block;
   position: relative;
 }
+.file-label.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+}
 .file-label:hover .btn-blue {
   background: #1d56bc;
   border-color: #1d56bc;
@@ -48577,6 +48583,7 @@ input[type=radio][readonly]:not([checked]) {
   filter: alpha(opacity=0);
   cursor: pointer;
   -webkit-appearance: none;
+  padding: 0;
 }
 .file-label__btn {
   display: -webkit-inline-box;

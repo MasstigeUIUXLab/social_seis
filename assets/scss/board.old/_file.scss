@@ -93,6 +93,11 @@
   position: relative;
   $btn: rem(76);
 
+  &.btn{
+    display: inline-flex;
+    cursor: pointer;
+  }
+
   &:hover {
     .btn-blue {
       background: #1d56bc;
@@ -128,6 +133,7 @@
     filter: alpha(opacity=0);
     cursor: pointer;
     -webkit-appearance: none;
+    padding: 0;
   }
 
   &__btn {
