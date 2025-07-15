@@ -4267,7 +4267,8 @@
     height:100vh;
     overflow:auto;
     padding:60px 0;
-    background:#F2FEF4;
+    --login-background: #F2FEF4;
+    background: var(--login-background);
     --login-color1:#006012;
     --login-color2:#2D873E;
     --login-color3:#44AB57;
@@ -4284,7 +4285,10 @@
     }
   
     .container{
+        display: flex;
+        flex-direction: column;
         max-width:1029px;
+        height: 100%;
     }
   
     .tit-wrap{
@@ -4300,6 +4304,7 @@
             font-size:rem(19);
             font-weight:400;
             color:#555;
+            line-height: 1.527;
         }
         
         @include mdq-max(md){
@@ -4642,11 +4647,13 @@
     }
   
     &-footer{
+        min-height: 74px;
         align-items:center;
         justify-content:center;
+        flex-wrap: wrap;
         gap:rem(16);
         padding:0 1rem;
-        margin-top:rem(38);
+        margin-top:20px;
         color:#1d1d1d;
 
         .logo-wrap{
@@ -4674,21 +4681,29 @@
         .copyright{
             font-size:rem(13);
         }
-        @include mdq-max(md){
+
+        @include mdq-max(lg){
             flex-direction:column;
-            gap:10px;
-            .logo-wrap{
-                order:2;
-            }
+            gap:12px;
+            margin-top: 40px;
 
             .copyright{
                 text-align:center;
-                order:3;
+                font-size: 12px;
+            }
+        }
+        
+        @include mdq-max(md){
+            .logo-wrap{
+                order:2;
             }
             
+            .copyright{
+                order: 3;
+            }
+
             .btn{
                 order:1;
-                margin-bottom:20px;
                 margin-left:0;
             }
         }
@@ -4700,6 +4715,223 @@
 
     #header, #footer, .top-banner{
         display:none;
+    }
+}
+
+/* 회원가입 */
+.join{
+    padding: rem(80) 0;
+
+    .container{
+        max-width: 1070px;
+
+        & > *:first-child{
+            flex: 1;
+
+            & > *{
+                height: 100%;
+            }
+        }
+    }
+
+    .login-body{
+        display: flex;
+        flex-direction: column;
+        height:100%;
+    
+        .section-inner{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    &-step{
+        display: inline-block;
+        position: relative;
+        margin: 1rem 0;
+            
+        &:before{
+            content:'';
+            position: absolute;
+            top: 12px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            border-top: 1px dashed #DFDFDF;
+        }
+
+        .step{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: rem(24);
+        }
+
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+
+            &:first-child:before,
+            &:last-child:before{
+                content: '';
+                position: absolute;
+                left:0;
+                top: 0;
+                width: 50%;
+                height: 100%;
+                background-color: var(--login-background);
+            }
+            
+            &:last-child:before{
+                right: 0;
+                left: auto;
+            }
+
+            &:after{
+                content: '';
+                display: inline-block;
+                position: relative;
+                order: 1;
+                width: 24px;
+                height: 24px;
+                background: url(../images/sub/login/icon_join_step.svg) no-repeat center / 100% auto;
+            }
+
+            span{
+                position: relative;
+                order: 2;
+                color: #666;
+            }
+
+            &.active{
+                &:after{
+                    background-image: url(../images/sub/login/icon_join_step_active.svg);
+                }
+
+                span{
+                    color: #1D1D1D;
+                }
+            }
+        }
+    }
+}
+
+.join-type{
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(24) 0;
+        margin-right: -12px;
+        margin-left: -12px; 
+        width: calc(100% + 24px);
+
+        .item{
+            flex-basis: 25%;
+            max-width: 25%;
+            padding: 0 12px;
+        }
+
+        .link{
+            display: block;
+            height: 100%;
+            padding: rem(30) 16px;
+            border-radius: 1rem;
+            background: #FFF;
+            border: 1px solid #fff;
+            box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            line-height: 1.5;
+            transition: 0.4s;
+
+            [class^=icon]{
+                display: inline-block;
+                width: rem(80);
+                height: rem(80);
+                margin-bottom: rem(20);
+                background-size: 100% auto;
+                
+                @for $i from 1 to 5{
+                    &.icon_join_type#{$i}{
+                        background-image:url(../../assets/images/sub/login/icon_join_type#{$i}.png);
+                    }
+                }
+            }
+
+            strong{
+                display: block;
+                font-size: 19px;
+                font-weight: 600;
+                color: #1d1d1d;
+            }
+
+            p{
+                margin-top: 0.5rem;
+                font-size: 17px;
+                font-weight: 400;
+                color: #666;
+                letter-spacing: -0.04em;
+            }
+
+            &:hover, &:active{
+                border-color: var(--login-color3);
+            }
+        }
+
+        .badge{
+            margin-top: 1rem;
+            padding: 5px 12px;
+            border: 1px solid #006012;
+            background-color: #fff;
+            color: #006012;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            line-height: 1.5;
+        }
+        
+        @include mdq-max(lg){
+            .item{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+
+            .link{
+                height: 256px;
+                padding: 24px 20px;
+
+                [class^=icon]{
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 8px;
+                }
+
+                strong{
+                    font-size: 18px;
+                }
+            
+                p{
+                    font-size: 16px;
+                }
+            }
+
+            .badge{
+                padding: 4px 12px;
+                font-size: 16px;
+            }
+        }
+
+        @include mdq-max(sm){
+            .item{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
     }
 }
 
@@ -4923,6 +5155,10 @@
         &.item-bx{
             justify-content:flex-end;
         }
+
+        &:last-child .middle:after{
+            display:none;
+        }
     }
 
     .step{
@@ -4933,16 +5169,17 @@
         padding:0 40px;
         height:56px;
         line-height:56px;
-        background:#2D873E;
+        background:#976AF9;
         font-weight:600;
         color:#fff;
     }
 
     .middle{
+        position: relative;
         width:100%;
         padding:rem(20) 10px;
         border-radius:12px 12px 0 0;
-        background:#FAFAFA;
+        background:#EAE1FE;
         height:84px;
         line-height:1.286;
 
@@ -4951,6 +5188,16 @@
             align-items:center;
             justify-content:center;
             height:100%;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 50%;
+            left: 100%;
+            width: 50%;
+            height: 1px;
+            border-top: 1px solid #D2D2D2;
         }
     }
 
@@ -5013,6 +5260,10 @@
         .middle{
             height:50px;
             padding:12px;
+
+            &:after{
+                display: none;
+            }
         }
 
         .bottom{
@@ -14011,7 +14262,7 @@
         &.resep-wrp2{
             .info .item{
                 &:after, &:before, .num{
-                    background-color:#45B453;
+                    background-color:#976AF9;
                 }
             }
         }
