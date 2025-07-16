@@ -48604,12 +48604,15 @@ input[type=radio][readonly]:not([checked]) {
 }
 
 .file-control {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
+  gap: 4px;
   margin: 0;
   margin-left: auto;
   color: #222;
@@ -48641,18 +48644,13 @@ input[type=radio][readonly]:not([checked]) {
   border-top: 1px solid #E7E7E7;
 }
 .file-list .item .file-name {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 36%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  overflow: hidden;
-}
-.file-list .item .file-name span {
-  display: block;
   word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .file-wrp {
   margin-top: 24px;
@@ -48713,17 +48711,14 @@ input[type=radio][readonly]:not([checked]) {
     margin-top: 10px;
   }
   .file-list .item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    gap: 10px 0;
+    gap: 10px 8px;
   }
   .file-list .item .file-name {
     width: 100%;
+    white-space: normal;
   }
   .file-list .item span {
     -webkit-box-flex: 1;
@@ -48744,6 +48739,11 @@ input[type=radio][readonly]:not([checked]) {
   }
   .file-group.w-100 .file-list .item:first-child {
     border-top: 1px solid #E7E7E7;
+  }
+}
+@media all and (max-width: 1024px) and (max-width: 768px) {
+  .file-list .item .file-name {
+    white-space: nowrap;
   }
 }
 

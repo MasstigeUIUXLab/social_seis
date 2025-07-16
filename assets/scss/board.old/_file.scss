@@ -161,9 +161,10 @@
 
 .file {
   &-control {
+    flex: 0 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 4px;
     margin: 0;
     margin-left: auto;
     color: #222;
@@ -188,15 +189,11 @@
       }
 
       .file-name{
-        flex: 1;
-        min-width: 36%;
         align-self: center;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         overflow: hidden;
-        
-        span{
-          display: block;
-          word-break: break-all;
-        }
       }
     }
   }
@@ -261,28 +258,30 @@
       }
     }
 
-    &-list .item {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px 0;
+    &-list {
+      .item {
+        align-items: flex-start;
+        gap: 10px 8px;
 
-      .file-name{
-         width: 100%;
-      }
-
-      span {
-        flex: 1;
-      }
-
-      .btn-delete-one {
-        i {
-          margin: 0;
+        .file-name{
+          width: 100%;
+          white-space: normal;
         }
 
         span {
-          visibility: hidden;
-          width: 0;
-          height: 0;
+          flex: 1;
+        }
+
+        .btn-delete-one {
+          i {
+            margin: 0;
+          }
+
+          span {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+          }
         }
       }
     }
@@ -297,6 +296,12 @@
         }
       }
     }
+    
+  @include mdq-max(md) {
+    &-list .item .file-name{
+      white-space: nowrap;
+    }
+  }
   }
 }
 
