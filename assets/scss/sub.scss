@@ -1924,6 +1924,7 @@
                     background:#FFF;
                     font-weight:600;
                     font-size:rem(20);
+                    white-space: normal;
                 
                     &.active, &.on{
                         border-bottom:3px solid #656EB7;

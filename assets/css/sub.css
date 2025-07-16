@@ -1588,6 +1588,7 @@
   background: #FFF;
   font-weight: 600;
   font-size: 1.25rem;
+  white-space: normal;
 }
 .layout .snb .nav-side .nav-item > .nav-link.active, .layout .snb .nav-side .nav-item > .nav-link.on {
   border-bottom: 3px solid #656EB7;
