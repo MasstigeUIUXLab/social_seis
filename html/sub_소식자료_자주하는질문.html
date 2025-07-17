@@ -626,23 +626,37 @@
 		<div class="container">
 			<div class="layout">
 				<div class="snb" id="snb">
-                    <h2><a href="#" data-toggle="snb">고객센터</a></h2>
+                    <h2><a href="#" data-toggle="snb">소식·자료</a></h2>
 					<ul class="nav nav-side">
 						<li class="nav-item">
 							<!-- [D] 04-16 수정 
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a href="sub_고객센터_공지사항.html" class="nav-link on">공지사항</a>
+							<a href="sub_소식자료_공지사항.html" class="nav-link">공지사항</a>
 						</li>
 						<li class="nav-item">
-							<a href="sub_고객센터_자주하는질문.html" class="nav-link">자주하는 질문</a>
+							<a href="#" class="nav-link">보도자료</a>
 						</li>
 						<li class="nav-item">
-							<a href="sub_고객센터_게시요청.html" class="nav-link">게시요청</a>
+							<a href="#" class="nav-link nav-btn">조사연구 및 발간자료</a>
+							<ul class="depth2">
+								<li>
+									<a href="#" class="nav-link">정책리포트</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link">발간자료</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="sub_고객센터_관련사이트.html" class="nav-link">관련사이트</a>
+							<a href="#" class="nav-link">채용정보</a>
+						</li>
+						<li class="nav-item">
+							<a href="sub_소식자료_자주하는질문.html" class="nav-link on">자주하는 질문</a>
+						</li>
+						<li class="nav-item">
+							<a href="sub_소식자료_게시요청.html" class="nav-link">게시요청</a>
 						</li>
 					</ul>
             	</div>
@@ -654,7 +668,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">고객센터</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">소식·자료</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -663,7 +677,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">공지사항</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">자주하는질문</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -672,7 +686,7 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">공지사항</h2>
+						<h2 class="tit">자주하는질문</h2>
 						<!-- [D] 07-02 추가 -->
 						<script type="text/javascript">
 						//<![CDATA[
@@ -731,7 +745,7 @@
 					<div class="sub-contents sub-asis contentBody" id="contentBody">
 						<form>
 							<div class="title_wrap2">
-								<h4 class="title1">지원제도 및 사업공고, 선정결과, 시스템 운영 관련 공지사항입니다.</h4>
+								<h4 class="title1">시스템 및 사회적기업 지원 제도 관련 자주하는 질문에 대한 답변입니다.</h4>
 							</div>
 							
 							<div class="tab">
@@ -740,13 +754,10 @@
 										<a href="#" class="nav-link active">전체</a>
 									</li>
 									<li class="nav-item">
-										<a href="#" class="nav-link">안내</a>
+										<a href="#" class="nav-link">인·지정</a>
 									</li>
 									<li class="nav-item">
-										<a href="#" class="nav-link">사업공고</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link">선정결과</a>
+										<a href="#" class="nav-link">기타</a>
 									</li>
 								</ul>
 							</div>
@@ -772,60 +783,85 @@
 
 								<div class="form-sect">
 									<div class="form-header">
-										<h3 class="tit normal"><span>총 <strong class="text-primary">1,547</strong>건의 게시물이 있습니다.</span></h3>
-										<div class="btn-area">
-											<select name="" class="form-control">
-												<option value="" selected>등록순</option>
-												<option value="">조회순</option>
-											</select>
-										</div>
+										<h3 class="tit normal"><span>총 <strong class="text-primary">4</strong>건의 게시물이 있습니다.</span></h3>
 									</div>
 
 									<div class="board-wrap">
-										<!-- 리스트 -->
-										<div class="board-type-card">
-											<ul class="card-list row">
-												<li class="col-12 col-lg-6 col-xl-4">
-													<a href="#" class="inner">
-														<span class="badge badge3 normal">안내</span>
-														<p class="txt">[설립지원팀] 2025년 하반기 전국 릴레이 사회적협동조합 설립 인가 교육 안내</p>
-														<ul class="group column info-txt sm flex-1">
-															<li class="li_icon date">
-																<span>2025-07-14</span>
-															</li>
-															<li class="li_icon view">
-																<p>14</p>
-															</li>
-														</ul>
-													</a>
+										<div class="containerIn">
+											<script>
+												$(document).ready(function(){
+													$(".board_data_box>li .head").click(function(e){
+														e.preventDefault();
+														//$("[class^='board_qna_type'] li .qna_question .icon_qna_more").text('내용보기');
+														var accordionCtsShow = $(this).parent().hasClass("on");
+														if(accordionCtsShow == true){
+															$(this).parent().removeClass("on");
+														//$("[class^='board_qna_type'] li").removeClass("on");
+														//$("[class^='board_qna_type'] .qna_answer").stop().slideUp();
+														}else{
+															$(this).parent().addClass("on").siblings().removeClass('on');
+															//$("[class^='board_qna_type'] li").removeClass("on");
+															//$(this).parent().addClass("on");
+															//$("[class^='board_qna_type'] .qna_answer").stop().slideUp();
+															//$(this).next().stop().slideDown();
+															//$(this).children(".icon_qna_more").text('내용닫기');
+														}
+													});
+												})
+											</script>
+
+											<ul class="board_data_box faq">
+												<li>
+													<div class="head">
+														<div class="data_category">
+															<span class="tag on" data-color="1">기타</span>
+														</div>
+														<strong><a href="?menukey=7153&amp;mode=view&amp;bno=12190" class="b_title" style="">고용노동부 장관의 인증을 받은 회사만 사회적기업인가요?</a></strong>
+														<a href="#" class="ico_detail">상세보기</a>
+													</div>
+													<div class="body">
+														<div class="ck-content">
+															<p>사회적기업을 직관적으로 이해할 때는 넓은 의미로 이해해도 충분합니다.</p><p>&nbsp;</p><p>다만 공식적으로 ‘사회적기업’이라는 명칭을 사용하려면 사회적기업 인증을 받아야 합니다.</p><p>&nbsp;</p><p>법으로 정해진 요건을 갖추지 못한 기업이 무분별하게 명칭을 사용하는데서 오는 혼란을 방지하기 위함입니다.<br>(「사회적기업 육성법」제 19조: 사회적기업이 아닌 자는 사회적기업 또는 유사한 명칭을 사용해서는 아니 된다.)</p><p>&nbsp;</p><p>* 넓은 의미의 사회적기업이란?&nbsp;<br>&nbsp; &nbsp;영리기업과 비영리조직의 중간 형태로, 사회적 목적을 우선적으로 추구하면서 재화, 서비스의 생산, 판매 등 영업활동을 수행하는 기업 및 조직.<br>&nbsp;</p><p>&nbsp;</p><p>출저: 2023 한 손에 잡히는 사회적기업</p></div>
+													</div>
 												</li>
-												<li class="col-12 col-lg-6 col-xl-4">
-													<a href="#" class="inner">
-														<span class="badge badge4 normal">선정결과</span>
-														<p class="txt">[설립지원팀] 2025년 하반기 전국 릴레이 사회적협동조합 설립 인가 교육 안내</p>
-														<ul class="group column info-txt sm flex-1">
-															<li class="li_icon date">
-																<span>2025-07-14</span>
-															</li>
-															<li class="li_icon view">
-																<p>14</p>
-															</li>
-														</ul>
-													</a>
+												<li>
+													<div class="head">
+														<div class="data_category">
+															<span class="tag on" data-color="1">기타</span>
+														</div>
+														<strong><a href="?menukey=7153&amp;mode=view&amp;bno=12089" class="b_title" style="">국내 사회적기업 육성법은 왜 제정되었나요?</a></strong>
+														<a href="#" class="ico_detail">상세보기</a>
+													</div>
+													<div class="body">
+														<div class="ck-content">
+															<p>2000년대 고용 없는 성장의 구조화, 사회서비스 수요 증가 등 변화하는 사회 환경 속에서 정부는 시민사회와 자활 정책 연구 모임과 같은</p><p>&nbsp;</p><p>연구자들이 제안했던 사회적기업의 설립과 법적 지원에 대한 필요성을 적극적으로 검토하게 되었습니다.&nbsp;<br>&nbsp;</p><p>그 결과 2007년 사회적기업을 제도화하고 체계적으로 육성하기 위하여「사회적기업 육성법」을 제정(2007.1.3.)하고 시행(2007.7.1.)하였습니다.</p><p>&nbsp;</p><p>&nbsp;</p><p>출저: 2023 한 손에 잡히는 사회적기업</p></div>
+													</div>
 												</li>
-												<li class="col-12 col-lg-6 col-xl-4">
-													<a href="#" class="inner">
-														<span class="badge normal">사업공고</span>
-														<p class="txt">[설립지원팀] 2025년 하반기 전국 릴레이 사회적협동조합 설립 인가 교육 안내</p>
-														<ul class="group column info-txt sm flex-1">
-															<li class="li_icon date">
-																<span>2025-07-14</span>
-															</li>
-															<li class="li_icon view">
-																<p>14</p>
-															</li>
-														</ul>
-													</a>
+												<li>
+													<div class="head">
+														<div class="data_category">
+															<span class="tag on" data-color="1">인·지정</span>
+														</div>
+														<strong><a href="?menukey=7153&amp;mode=view&amp;bno=11996" class="b_title" style="">사회적기업 인증서 재발급 및 정관 변경은 어떻게 하나요?</a></strong>
+														<a href="#" class="ico_detail">상세보기</a>
+													</div>
+													<div class="body">
+														<div class="ck-content">
+															<p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">○ 사회적기업 인증서 재발급<br>&nbsp;</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">&nbsp; &nbsp; &nbsp;- 사회적기업은 상호명, 대표자, 소재지, 조직형태가 변경이 될 경우, 진흥원에 사회적기업 인증서 재발급 신청을 해야합니다.<br>&nbsp;</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">&nbsp; &nbsp; &nbsp;- 진흥원은 변경 사실 확인 및 제반 서류 검토 후 검토 의견을 고용노동부 본부에 송부, 본부는 검토의견이 적정하다고 판단될 경우 인증서를 발급합니다.<br>&nbsp;</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">&nbsp; &nbsp; ※ 인증서 재발급을 위한 제출서류: &nbsp;진흥원 홈페이지&gt;진흥원소식&gt;공지사항&gt;인증서 재발급 및 정관 변경 신고 관련 안내</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">&nbsp;</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">&nbsp;</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">○ 사회적기업 정관 변경<br>&nbsp;</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">&nbsp; &nbsp; &nbsp;- 사회적기업은 사회적기업육성법 제9조에 따른 정관이나 규약 등의 기재사항을 변경할 경우에는 변경일로부터 14일 이내에 그 내용을 진흥원에 신고해야 합니다.<br>&nbsp;</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border-width:0px;box-sizing:border-box;color:rgb(34, 34, 34);font-family:&quot;Noto Sans KR&quot;, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-size:16px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:300;letter-spacing:-0.8px;line-height:inherit;margin:0px;orphans:2;padding:0px;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">&nbsp; &nbsp; ※ 정관 변경을 위한 제출서류: 진흥원 홈페이지&gt;진흥원소식&gt;공지사항&gt;인증서 재발급 및 정관 변경 신고 관련 안내)</p></div>
+													</div>
+												</li>
+												<li>
+													<div class="head">
+														<div class="data_category">
+															<span class="tag on" data-color="1">인·지정</span>
+														</div>
+														<strong><a href="?menukey=7153&amp;mode=view&amp;bno=11686" class="b_title" style="">인증 이후 사회적기업이 지점을 설립하면 어떻게 해야하나요?</a></strong>
+														<a href="#" class="ico_detail">상세보기</a>
+													</div>
+													<div class="body">
+														<div class="ck-content">
+															<p>○ 사회적기업이 인증 이후, 지부(지점·분사무소) 설립 및 폐업을 하게 되면 진흥원에 별도로 신고해야 합니다.</p></div>
+													</div>
 												</li>
 											</ul>
 										</div>
