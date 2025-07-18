@@ -41377,9 +41377,6 @@ html {
   .sitemap .inner #menu .nav .nav-list--depth3 {
     padding-left: 16px;
   }
-  .sitemap .inner #menu .nav .depth-3 .link {
-    font-size: 14px;
-  }
 }
 @media all and (max-width: 1200px) {
   .sitemap {
@@ -41861,6 +41858,7 @@ body.is-scroll .header {
   gap: 24px;
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 428px;
 }
 .header .nav .submenu-inner .nav-list--depth2 {
   position: relative;
