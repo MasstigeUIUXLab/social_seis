@@ -4072,9 +4072,16 @@
 }
 
 /* 회원가입 */
+.sub-join {
+  background: #F2FEF4;
+}
+.sub-join #footer {
+  display: none;
+}
+
 .doc {
   height: auto;
-  padding: 5rem 0;
+  padding: 32px 0 40px;
 }
 .doc .container {
   max-width: 1070px;
@@ -4102,11 +4109,6 @@
       -ms-flex: 1;
           flex: 1;
   width: 100%;
-}
-@media all and (max-width: 768px) {
-  .doc {
-    padding: 50px 0;
-  }
 }
 
 .join-step {
@@ -4203,7 +4205,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 6vw 0;
+  padding: 3vw 0;
   max-height: 480px;
 }
 .join-type .join-type-list {

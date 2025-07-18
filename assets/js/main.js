@@ -110,16 +110,25 @@ $(document).ready(function() {
 	}
 
 	var bannerSwiper = new Swiper(".swiper-banner", {
-		speed: 1200,
-		loop: true,  
+		speed: 300,
+		loop: true,
+		loopFillGroupWithBlank: true,
+		slidesPerView: 1,
+		spaceBetween: 16,
 		autoplay: {
-		  delay: 5000,
-		  disableOnInteraction: false,	
+			delay: 4000,
+			disableOnInteraction: true,	
+		},
+		breakpoints: {
+			769: {
+				slidesPerView: 2,
+				spaceBetween: 24,
+			},
 		},
 		pagination: {
 			el: ".swiper-banner .swiper-pagination",
 			type: "fraction"
-		}
+		},
 	})
 
 	
