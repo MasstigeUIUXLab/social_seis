@@ -190,7 +190,7 @@ $(document).ready(function() {
 			disableOnInteraction: false,
 		},
 		breakpoints: {
-			768: {
+			576: {
 				slidesPerView: 2,
 			},
 			1440: {

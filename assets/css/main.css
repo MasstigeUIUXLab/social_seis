@@ -946,9 +946,9 @@
   gap: 3rem;
 }
 .main-section.ms8 .comm-wrp {
-  -ms-flex-preferred-size: 64.444%;
-      flex-basis: 64.444%;
-  max-width: 64.444%;
+  -ms-flex-preferred-size: calc(100% - 464px - 3rem);
+      flex-basis: calc(100% - 464px - 3rem);
+  max-width: calc(100% - 464px - 3rem);
 }
 .main-section.ms8 .comm-wrp .comm-hd {
   padding-bottom: 1rem;
@@ -1109,7 +1109,7 @@
   border: 1px solid #0478ED;
   background: #FFF;
   color: #0478ED;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1;
 }
@@ -1123,14 +1123,12 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #888;
 }
 .main-section.ms8 .pub-wrp {
-  -ms-flex-preferred-size: 32.22%;
-      flex-basis: 32.22%;
-  max-width: 32.22%;
+  width: 464px;
 }
 .main-section.ms8 .swiper-pub {
   position: relative;
@@ -1337,10 +1335,38 @@
     margin: 1rem auto 0;
     font-size: 18px;
   }
+  .main-section.ms8 .container > .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 80px;
+  }
+  .main-section.ms8 .comm-wrp, .main-section.ms8 .pub-wrp {
+    width: 100%;
+  }
+  .main-section.ms8 .comm-wrp {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .main-section.ms8 .comm-wrp .comm-hd {
+    font-size: 24px;
+  }
+  .main-section.ms8 .swiper-comm .link .thumb {
+    max-height: 272px;
+  }
+  .main-section.ms8 .swiper-pagination.pagination-custom {
+    gap: 12px;
+    font-size: 24px;
+  }
+  .main-section.ms8 .swiper-pagination.pagination-custom span {
+    padding: 8px;
+  }
 }
 @media all and (max-width: 1200px) {
   .main-section.ms2 .swiper-menu1 {
-    padding: 24px 60px;
+    padding: 48px 60px;
   }
   .main-section.ms2 .swiper-menu1 .swiper-slide {
     width: auto !important;
@@ -1359,11 +1385,26 @@
   .main-section.ms6 .card-list {
     gap: 60px 0;
     max-width: 720px;
+    margin: 0 auto;
   }
   .main-section.ms6 .card-list .item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     max-width: 50%;
+  }
+}
+@media (min-width: 576.02px) and (max-width: 1280px) {
+  .main-section.ms8 .swiper-pub .link {
+    gap: 40px;
+  }
+  .main-section.ms8 .swiper-pub .link .thumb {
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
+  }
+  .main-section.ms8 .swiper-pub .link .text-area {
+    -ms-flex-preferred-size: calc(100% - 270px - 40px);
+        flex-basis: calc(100% - 270px - 40px);
+    max-width: calc(100% - 270px - 40px);
   }
 }
 @media all and (max-width: 1024px) {
@@ -1469,28 +1510,6 @@
   }
   .main-section.ms6 .card-list .txt {
     font-size: 14px;
-  }
-  .main-section.ms8 .container > .inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 80px;
-  }
-  .main-section.ms8 .comm-wrp, .main-section.ms8 .pub-wrp {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    max-width: 100%;
-  }
-  .main-section.ms8 .comm-wrp .comm-hd {
-    font-size: 24px;
-  }
-  .main-section.ms8 .swiper-pagination.pagination-custom {
-    gap: 12px;
-    font-size: 24px;
-  }
-  .main-section.ms8 .swiper-pagination.pagination-custom span {
-    padding: 8px;
   }
   .main-section.ms9 .swiper-menu2 {
     padding: 50px 40px;

@@ -119,10 +119,6 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
     &__wrap {
       .logo{
         display: block;
-        
-        img{
-          height: 30px;
-        }
       }
     }
   }
@@ -130,7 +126,6 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
   @include mdq-max(lg) {
     &__wrap {
       height: $nav-height-lg;
-
     }
   }
 

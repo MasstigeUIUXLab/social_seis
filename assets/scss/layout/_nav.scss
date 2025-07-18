@@ -389,7 +389,7 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		}
 
 		.util{
-			right: 54px;
+			right: 72px;
 			gap: 10px;
 			font-size: 12px;
 		}
@@ -405,6 +405,10 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 		
 		@include mdq-max(lg) {
 			height: $nav-height-lg;
+			
+			.util{
+				right:54px
+			}
 		}
 	}
 	&__body {
@@ -521,7 +525,19 @@ $nav-mobile-direction: right; //네비버튼 위치 , 네비 나오는 방향
 	// .nav-list--depth3{
 	// 	margin-top: 6px;
 	// 	margin-bottom: 12px;
-	// }
+		// }
+		
+	@include mdq-min(lg) {
+		.depth-2{
+			& > .link{
+
+			}
+			
+			&:first-child > .link{
+			
+			}
+		}
+	}
 }
 
 @include mdq-max(xxl) {

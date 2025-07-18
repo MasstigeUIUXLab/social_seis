@@ -41133,9 +41133,6 @@ html {
   .header__wrap .logo {
     display: block;
   }
-  .header__wrap .logo img {
-    height: 30px;
-  }
 }
 @media all and (max-width: 1024px) {
   .header__wrap {
@@ -42075,7 +42072,7 @@ body.is-scroll .header {
   height: 100%;
 }
 .nav-mobile__head .util {
-  right: 54px;
+  right: 72px;
   gap: 10px;
   font-size: 12px;
 }
@@ -42089,6 +42086,9 @@ body.is-scroll .header {
 @media all and (max-width: 1024px) {
   .nav-mobile__head {
     height: 60px;
+  }
+  .nav-mobile__head .util {
+    right: 54px;
   }
 }
 .nav-mobile__body {
@@ -42171,7 +42171,6 @@ body.is-scroll .header {
   padding: 0 12px;
   overflow-y: auto;
 }
-
 @media all and (max-width: 1400px) {
   body.nav-mobile-open {
     overflow: hidden !important;

@@ -944,8 +944,9 @@
             }
 
             .comm-wrp{
-                flex-basis: 64.444%;
-                max-width: 64.444%;
+                flex-basis:calc( 100% - 464px - rem(48));
+                max-width:calc( 100% - 464px - rem(48));
+                
 
                 .comm-hd{
                     padding-bottom: 1rem;
@@ -1110,7 +1111,7 @@
                                 border: 1px solid #0478ED;
                                 background: #FFF;
                                 color: #0478ED;
-                                font-size: 14px;
+                                font-size: rem(14);
                                 font-weight: 400;
                                 line-height: 1;
 
@@ -1122,7 +1123,7 @@
                             p{
                                 flex: 1;
                                 align-self: center;
-                                font-size: 16px;
+                                font-size: 1rem;
                                 font-weight: 400;
                                 color: #888;
                             }
@@ -1132,8 +1133,7 @@
             }
 
             .pub-wrp{
-                flex-basis: 32.22%;
-                max-width: 32.22%;
+                width: 464px;
             }
 
             .swiper-pub{
@@ -1340,6 +1340,39 @@
                     }
                 }
             }
+
+            &.ms8 {
+                .container > .inner{
+                    flex-direction: column;
+                    gap: 80px;
+                }
+
+                .comm-wrp, .pub-wrp{
+                    width: 100%;
+                }
+
+                .comm-wrp{
+                    flex-basis: 100%;
+                    max-width: 100%;
+
+                    .comm-hd{
+                        font-size: 24px;
+                    }
+                }
+
+                .swiper-comm .link .thumb {
+                    max-height: 272px;
+                }
+                
+                .swiper-pagination.pagination-custom{
+                    gap: 12px;
+                    font-size: 24px;
+
+                    span{
+                        padding: 8px;
+                    }
+                }
+            }
         }
         
         @include mdq-max(xl) {
@@ -1370,10 +1403,28 @@
                 .card-list{
                     gap: 60px 0;
                     max-width: 720px;
+                    margin: 0 auto;
 
                     .item{
                         flex-basis: 50%;
                         max-width: 50%;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 576.02px) and (max-width: 1280px) {
+            &.ms8{
+                .swiper-pub .link{
+                    gap: 40px;
+
+                    .thumb{
+                        flex-basis: 270px;
+                    }
+
+                    .text-area{
+                        flex-basis: calc(100% - 270px - 40px);
+                        max-width: calc(100% - 270px - 40px);
                     }
                 }
             }
@@ -1512,33 +1563,6 @@
 
                     .txt{
                         font-size: 14px;
-                    }
-                }
-            }
-
-            &.ms8 {
-                .container > .inner{
-                    flex-direction: column;
-                    gap: 80px;
-                }
-
-                .comm-wrp, .pub-wrp{  
-                    flex-basis: 100%;
-                    max-width: 100%;
-                }
-
-                .comm-wrp{
-                    .comm-hd{
-                        font-size: 24px;
-                    }
-                }
-                
-                .swiper-pagination.pagination-custom{
-                    gap: 12px;
-                    font-size: 24px;
-
-                    span{
-                        padding: 8px;
                     }
                 }
             }
