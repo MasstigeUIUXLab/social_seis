@@ -65,9 +65,9 @@
 .leftColumn #lnb .top2m {display:none;}
 
 /* footer */
-#footer {padding:10px 10px; font-size:0.95em; color:#a3a5ab; font-family:tahoma; text-align:left; line-height:1.12em; opacity:0.8}
+/* #footer {padding:10px 10px; font-size:0.95em; color:#a3a5ab; font-family:tahoma; text-align:left; line-height:1.12em; opacity:0.8}
 #footer address {font-size:0.95em; color:#a3a5ab; font-family:dotum; font-style:normal; text-align:left;}
-#footer p {font-size:0.9em; margin-top:7px; color: #fff; text-align:center;}
+#footer p {font-size:0.9em; margin-top:7px; color: #fff; text-align:center;} */
 
 /* Main content */
 .mainCont1 * {font-family:var(--ecms-font-family-a) !important;}

@@ -51,8 +51,8 @@ span.blank_b{display:inline-block;margin-left:5px;vertical-align:middle;width:14
 }
 
 /* InputBox */
-input:focus {border-color: #ccc;}
-input:read-only {background: #eee;}
+/* input:focus {border-color: #ccc;}
+input:read-only {background: #eee;} */
 input.inpline {border:1px solid #ccc; padding:2px 8px; height:39px; border-radius:5px; vertical-align: middle; margin-bottom: 1px; margin-right: 2px;}
 input.inplinekr {border:1px solid #ccc; padding:2px 8px; height:39px; border-radius:5px; vertical-align: middle; margin-bottom: 1px; margin-right: 2px; -webkit-ime-mode:active; -moz-ime-mode:active; -ms-ime-mode:active; ime-mode:active;}
 input.fileline {border:1px solid #ccc; padding:2px 8px; height:39px; border-radius:5px; vertical-align:middle; width:300px;}
@@ -72,8 +72,8 @@ select.selline{border:1px #CCC solid;padding:2px 32px 2px 10px;height:38px;borde
 select::-ms-expand{display:none;}
 
 /* CheckBox */
-input[type=checkbox] + label{display:inline-block;cursor:pointer;position:relative;font-size:13px;}
-input[type=checkbox] + label strong{font-size:1.2em;}
+/* input[type=checkbox] + label{display:inline-block;cursor:pointer;position:relative;font-size:13px;}
+input[type=checkbox] + label strong{font-size:1.2em;} */
 
 /* Mouse-Drag Color */
 *::selection{ background-color:#217adf;color:#fff;}

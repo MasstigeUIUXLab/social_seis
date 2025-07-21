@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.wrap{width:1200px;margin:0 auto;position:relative;}
+/* .wrap{width:1200px;margin:0 auto;position:relative;}
 @media all and (max-width:1500px) {
 	.wrap{width:96%;min-width:auto;}
 }
@@ -10,7 +10,7 @@
 #header .logo{text-align:center;color:#fff;padding-top:70px;}
 #header .logo a{color:#fff;}
 #header .logo img{vertical-align:middle;display:inline-block;padding:0 10px 0 0;}
-#header .logo span{font-size:35px;display:inline-block;vertical-align:middle;border-left:solid 1px #68d369;line-height:35px;padding-left:10px;font-weight:bold;}
+#header .logo span{font-size:35px;display:inline-block;vertical-align:middle;border-left:solid 1px #68d369;line-height:35px;padding-left:10px;font-weight:bold;} */
 /* lnb */
 #lnb{width:100%;margin-top:90px;}
 #lnb ul{display:flex;flex-wrap:wrap;box-shadow: 8px 8px 17px rgba(0, 0, 0, 0.07);background:#f2fdf5;}
@@ -23,7 +23,7 @@
 #lnb ul li.on{box-shadow:8px 8px 17px rgba(0, 0, 0, 0.14);}
 #lnb ul li.on a{padding-right:18px;color:#2da338;border:solid 1px #38ac31 !important;background:#fff url(../imgs/lnb_on.png) no-repeat 90% 50%;}
 #lnb ul li.on a span{font-size:20px;}
-#footer{width:100%;background:#f7f7f7;height:170px;padding:20px 0;}
+/* #footer{width:100%;background:#f7f7f7;height:170px;padding:20px 0;}
 #footer .link{border-bottom:1px solid #d9d9d9;padding-bottom:20px;margin-bottom:30px;}
 #footer .link li{float:left;}
 #footer .link li:after{content:'';width:5px;height:5px;display:inline-block;margin:0 10px;background:#bfbfbf;border-radius:10px;vertical-align:middle;}
@@ -34,39 +34,39 @@
 #footer .copy{font-size:15px;word-break:keep-all;overflow:hidden;line-height:1.4;}
 #footer .copy address{font-style:normal;float:left;margin-right:50px;}
 #footer .copy span{margin-bottom:10px;float:left;}
-#footer .copy p{margin-top:5px;float:right;}
+#footer .copy p{margin-top:5px;float:right;} */
 .go-top-box{position:relative;position:absolute;top:-46px;right:0;z-index:1;}
 .go-top-box a:before{position:absolute;top:0;left:0;z-index:-1;content:'';display:block;width:53px;height:53px;background:#187cbb;border-radius:100px;opacity:0.25;transition:all .4s;}
 .go-top-box a:hover:before{transform:scale(1.5);}
 @media all and (max-width:1300px) {
-	#footer .copy p{float:left;}
+	/* #footer .copy p{float:left;} */
 }
 @media all and (max-width:1200px) {
-	#header .home{right:2%;}
-	#footer{height:auto;}
+	/* #header .home{right:2%;} */
+	/* #footer{height:auto;} */
 }
 @media all and (max-width:1024px) {
-	#header{height:auto;background-color:transparent;background-size:auto 200px;}
-	#header .home{top:15px;}
+	/* #header{height:auto;background-color:transparent;background-size:auto 200px;}
+	#header .home{top:15px;} */
 	#lnb{margin-top:45px;}
 	#lnb ul li{flex-basis:50%;}	
 	#lnb ul li a{height:50px;line-height:49px;border-top:0;}
 	#lnb ul li:nth-child(2n) a{border-right:solid 1px #d3d3d3;}
 	#lnb ul li:nth-child(-n+2) a{border-top:solid 1px #d3d3d3;}
 	#lnb ul li.logout a:before{display:none;}	
-	#footer .copy address{float:none;}
-	#footer .copy span{display:block;float:none;margin-top:10px;}
+	/* #footer .copy address{float:none;}
+	#footer .copy span{display:block;float:none;margin-top:10px;} */
 }
 @media all and (max-width:580px) {
-	#header .logo img{height:40px;}
-	#header .logo span{font-size:27px;}
+	/* #header .logo img{height:40px;}
+	#header .logo span{font-size:27px;} */
 	#lnb{margin-top:65px;}
 	#lnb ul li a{height:47px;line-height:46px;}
 	#lnb ul li a span{font-size:16px !important;}
-	#footer .copy address span{margin-bottom:5px;line-height:1.3;}
+	/* #footer .copy address span{margin-bottom:5px;line-height:1.3;} */
 }
 @media all and (max-width:400px) {	
-	#header .logo span{display:block;border:0;padding:5px 0 0;}
+	/* #header .logo span{display:block;border:0;padding:5px 0 0;} */
 	#lnb{margin-top:25px;}
 }
 
