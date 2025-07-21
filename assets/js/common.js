@@ -716,3 +716,22 @@ document.querySelectorAll(".number-input").forEach(function (input) {
     e.target.value = inputValue.replace(/[^0-9\-]/g, "");
   });
 });
+
+
+// as-is
+$(document).ready(function () {
+	$('.util .btn-srch').on('click', function(e){
+		var $this = $(this),
+			$Layer = $('#header').find('.layerbox');
+
+    if($this.hasClass('on')){
+      $('html').removeClass('allmenu_open');
+      $this.removeClass('on');
+      $Layer.fadeOut();
+    } else {
+      $('html').addClass('allmenu_open');
+      $this.addClass('on');
+      $Layer.fadeIn();
+    }
+	});
+})

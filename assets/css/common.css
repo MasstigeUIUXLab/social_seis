@@ -41477,8 +41477,11 @@ html {
   width: 4.375rem;
   height: 4.375rem;
   background: url(../../assets/images/common/icon_srch.svg) no-repeat center/1.875rem auto;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+.util .btn-srch.on {
+  background-image: url(../../assets/images/common/icon_srch_on.svg);
 }
 .util .btn-sitemap {
   display: none;

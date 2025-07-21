@@ -496,7 +496,12 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
     width: rem(70);
     height: rem(70);
     background: url(../../assets/images/common/icon_srch.svg) no-repeat center / rem(30) auto;
-    transition: all .35s;
+    // transition: all .35s;
+    transition: none !important;
+
+    &.on{
+        background-image: url(../../assets/images/common/icon_srch_on.svg);
+    }
   }
 
   .btn-sitemap{
