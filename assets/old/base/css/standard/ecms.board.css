@@ -321,8 +321,8 @@ div.holiday{margin:0 0 2px 0;padding:2px 1px 1px 10px;background:#ffe2e5;text-al
 div.lastday{margin:0 0 2px 0;padding:2px 1px 1px 10px;background:#EAEAEA;text-align:left;font-size:16px;}
 div.holiday2{margin:0 0 2px 0;padding:2px 1px 1px 10px;background:#f4ece7;text-align:left;font-size:16px;color:#a68d78;}
 div.holiday3{color:#f15b2b;text-align:center;line-height:4.6;}
-.today{font-weight:500;color:#00D8FF;}
-.today:after{visibility:visible;content:'Today';font-style:italic;}
+/* .today{font-weight:500;color:#00D8FF;}
+.today:after{visibility:visible;content:'Today';font-style:italic;} */
 
 .alignCalendarCell{display:flex;flex-direction:column;/* 세로로 정렬하겠다는 의미 */}
 .stop-dragging{/* -ms-user-select:none;-moz-user-select:-moz-none;-khtml-user-select:none;-webkit-user-select:none; */user-select:none;}

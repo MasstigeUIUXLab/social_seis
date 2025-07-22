@@ -42615,7 +42615,6 @@ body.is-scroll .header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 0.75rem;
-  margin-top: 3.75rem;
 }
 .btn-wrp .btn {
   border-radius: 4px;
@@ -42877,6 +42876,10 @@ body.is-scroll .header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+* + .btn-wrp {
+  margin-top: 3.75rem;
 }
 
 .bullet-list {
