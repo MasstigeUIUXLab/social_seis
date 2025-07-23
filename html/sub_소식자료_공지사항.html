@@ -748,7 +748,8 @@
 								<h4 class="title1">지원제도 및 사업공고, 선정결과, 시스템 운영 관련 공지사항입니다.</h4>
 							</div>
 							
-							<div class="tab">
+							<!-- [D] 07-23 tab 삭제 -->
+							<!-- <div class="tab">
 								<ul class="nav nav-tabs">
 									<li class="nav-item">
 										<a href="#" class="nav-link active">전체</a>
@@ -763,7 +764,8 @@
 										<a href="#" class="nav-link">선정결과</a>
 									</li>
 								</ul>
-							</div>
+							</div> -->
+							<!-- // -->
 							
 							<div class="form-container">
 								<div class="board-srch-bx">
@@ -785,68 +787,174 @@
 								</div>
 
 								<div class="form-sect">
+									<ul class="tb-category">
+										<li><a href="#" class="on">전체</a></li><!-- [D] 활성화 .on -->
+										<li><a href="#">사업공고</a></li>
+										<li><a href="#">선정결과</a></li>
+										<li><a href="#">안내</a></li>
+									</ul>
+									
 									<div class="form-header">
-										<h3 class="tit normal"><span>총 <strong class="text-primary">1,547</strong>건의 게시물이 있습니다.</span></h3>
+										<h3 class="tit normal"><span>총 <strong class="text-primary">769</strong>건의 게시물이 있습니다.</span></h3>
 										<div class="btn-area">
 											<select name="" class="form-control">
 												<option value="" selected>등록순</option>
 												<option value="">조회순</option>
 											</select>
+											<!-- <a href="#" class="btn btn-xs btn-outline-green"><i class="icon-excel"></i>엑셀다운로드</a> -->
 										</div>
 									</div>
 
-									<div class="board-wrap">
-										<!-- 리스트 -->
-										<div class="board-type-card">
-											<ul class="card-list row">
-												<li class="col-12">
-													<a href="#" class="inner">
-														<span class="badge badge3 normal">안내</span>
-														<p class="txt text-truncate-1">[설립지원팀] 2025년 하반기 전국 릴레이 사회적협동조합 설립 인가 교육 안내</p>
-														<ul class="group info-txt sm flex-1">
-															<li class="li_icon date">
-																<span>2025-07-14</span>
-															</li>
-															<li class="li_icon view">
-																<p>14</p>
-															</li>
-														</ul>
-														<span class="btn-icon icon_detail btm"></span>
-													</a>
-												</li>
-												<li class="col-12">
-													<a href="#" class="inner">
-														<span class="badge badge4 normal">선정결과</span>
-														<p class="txt text-truncate-1">[설립지원팀] 2025년 하반기 전국 릴레이 사회적협동조합 설립 인가 교육 안내</p>
-														<ul class="group info-txt sm flex-1">
-															<li class="li_icon date">
-																<span>2025-07-14</span>
-															</li>
-															<li class="li_icon view">
-																<p>14</p>
-															</li>
-														</ul>
-														<span class="btn-icon icon_detail btm"></span>
-													</a>
-												</li>
-												<li class="col-12">
-													<a href="#" class="inner">
-														<span class="badge normal">사업공고</span>
-														<p class="txt text-truncate-1">[설립지원팀] 2025년 하반기 전국 릴레이 사회적협동조합 설립 인가 교육 안내</p>
-														<ul class="group info-txt sm flex-1">
-															<li class="li_icon date">
-																<span>2025-07-14</span>
-															</li>
-															<li class="li_icon view">
-																<p>14</p>
-															</li>
-														</ul>
-														<span class="btn-icon icon_detail btm"></span>
-													</a>
-												</li>
-											</ul>
+									<div class="board-wrap board-cs enterprise">
+										<!-- 표 -->
+										<div class="tb-wrap">
+											<table class="tb v2">
+												<caption><span>공지사항 게시판의 번호, 구분, 제목 및 첨부파일, 등록일, 조회수 테이블입니다.</span></caption>
+												<colgroup>
+													<col width="7%">
+													<col width="11%">
+													<col width="60%">
+													<col width="14%">
+													<col width="10%">
+												</colgroup>
+												<thead class="sr-only">
+													<tr>
+														<th scope="col">번호</th>
+														<th scope="col">구분</th>
+														<th scope="col">제목/첨부파일</th>
+														<th scope="col">등록일</th>
+														<th scope="col">조회수</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<!-- [D] 04-15 추가 Mobile에서 보일 요소의 <td>태그에 inline 클래스 ++, 한줄 전부 차지해야할 경우 block 클래스 ++ -->
+														<td class="inline"><span>10</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+																<!-- [D] 첨부파일 있을 경우 -->
+																<i class="icon-file"></i>
+																<span class="sr-only">첨부파일</span>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">13312</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>9</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+																<!-- [D] 첨부파일 있을 경우 -->
+																<i class="icon-file"></i>
+																<span class="sr-only">첨부파일</span>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">73</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>8</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+																<!-- [D] 첨부파일 있을 경우 -->
+																<i class="icon-file"></i>
+																<span class="sr-only">첨부파일</span>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">556</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>7</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+																<!-- [D] 첨부파일 있을 경우 -->
+																<i class="icon-file"></i>
+																<span class="sr-only">첨부파일</span>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">1099</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>6</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내 [재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내 [재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">13312</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>5</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">13312</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>4</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">13312</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>3</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">13312</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>2</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">13312</span></td>
+													</tr>
+													<tr>
+														<td class="inline"><span>1</span></td>
+														<td class="inline"><span class="badge cate">안내</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_공지사항_상세.html" class="link">
+																<p class="txt">[재안내] 공공조달 및 민간위탁 1:1 맞춤형 컨설팅 신청 안내</p>
+															</a>
+														</td>
+														<td class="inline small"><span>2025-03-31</span></td>
+														<td class="inline small"><span class="num-view">13312</span></td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
-
+										<!-- // -->
+						
 										<!-- 페이징 -->
 										<div class="paging-area">
 											<ul>
@@ -880,7 +988,7 @@
 											</ul>
 										</div> 
 										<!-- // 페이징 -->
-									</div>
+									</div>     
 								</div>
 							</div>
 						</form>

@@ -48617,7 +48617,6 @@ input[type=radio][readonly]:not([checked]) {
       flex-wrap: wrap;
   gap: 4px;
   margin: 0;
-  margin-left: auto;
   color: #222;
 }
 .file-list {
@@ -48630,16 +48629,11 @@ input[type=radio][readonly]:not([checked]) {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
-  color: #222;
-  font-weight: 400;
 }
 .file-list .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 0.75rem 1.5rem;
 }
 .file-list .item:not(:first-child) {
@@ -48718,10 +48712,6 @@ input[type=radio][readonly]:not([checked]) {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 10px 8px;
-  }
-  .file-list .item .file-name {
-    width: 100%;
-    white-space: normal;
   }
   .file-list .item span {
     -webkit-box-flex: 1;
