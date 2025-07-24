@@ -430,7 +430,7 @@
 .btn_outline_primary[disabled="disabled"]{border-color:#c7cee3;background-color:#f2f2f2;color:#888 !important;pointer-events:none;}
 .btn_outline_primary[disabled="disabled"].icon--arrow:after{background-position:0 -36px;}
 .btn_xs{min-width:0;padding:0 10px 1px;font-size:11px;}
-.btn_sm{padding-top:5px;padding-bottom:5px;font-size:14px;}
+.btn_sm{padding-top:7px;padding-bottom:7px;font-size:14px;}
 .btn_md{min-width:140px;}
 .btn_dw_file{display:inline-block;min-width:90px;padding:5px 16px;border-radius:3px;border:1px solid #4e16ed;color:#4e16ed !important;font-size:14px;font-weight:400;text-align:center;line-height:normal;}
 .btn_dw_file>span{position:relative;padding-right:30px;}

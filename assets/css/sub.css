@@ -398,6 +398,37 @@
   }
 }
 
+.nodata {
+  padding: 100px 0 0 !important;
+  background: url(../images/sub/icon_nodata.svg) no-repeat 50% 40px !important;
+  border-bottom: 1px solid #E7E7E7 !important;
+  border: 0 !important;
+  color: #666 !important;
+  text-align: center !important;
+}
+.nodata:before, .nodata:after {
+  display: none !important;
+}
+.nodata p {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: center !important;
+  color: #666;
+  font-weight: 400 !important;
+}
+
+tr.nodata {
+  padding: 0 !important;
+}
+tr.nodata td {
+  padding: 100px 0 0 !important;
+}
+
+.board-type-card .nodata {
+  padding: 86px 0 0 !important;
+  background: url(../images/sub/icon_nodata.svg) no-repeat 50% 26px !important;
+}
+
 .list-bullet {
   font-size: 1.125rem;
   text-align: left;
@@ -934,6 +965,12 @@
 .tb textarea {
   font-size: inherit;
 }
+.tb p {
+  text-align: left;
+}
+.tb a {
+  color: inherit;
+}
 .tb tr {
   border-bottom: 1px solid #E7E7E7;
 }
@@ -1343,6 +1380,14 @@
   }
 }
 
+.badge.radius, [class^=badge].radius {
+  border-radius: 90px !important;
+  padding: 0.45em 0.889em !important;
+}
+.badge + .badge, .badge + [class^=badge], [class^=badge] + .badge, [class^=badge] + [class^=badge] {
+  margin-left: 4px;
+}
+
 .board-wrap {
   margin-top: 3.75rem;
 }
@@ -1401,11 +1446,11 @@
 .board-wrap .tb td {
   color: #666;
 }
-.board-wrap .tb td .form-control {
+.board-wrap .tb td .form-control:not(textarea) {
   height: 44px;
   padding: 0 8px;
 }
-.board-wrap .tb td .form-control ~ .btn {
+.board-wrap .tb td .form-control:not(textarea) ~ .btn {
   height: 44px;
   line-height: 44px;
 }
@@ -5009,9 +5054,16 @@
 }
 @media all and (max-width: 768px) {
   .doc-form-hd {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-size: 16px;
     padding-bottom: 12px;
     margin-bottom: 20px;
+  }
+  .doc-form-hd .doc_sub_text {
+    line-height: 1.2;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -14776,31 +14828,31 @@ select.doc_input:focus {
 
 .badge2 {
   background-color: #fff;
-  border-color: #246BEB;
+  border: 1px solid #246BEB;
   color: #246BEB;
 }
 
 .badge3 {
   background-color: #fff;
-  border-color: #FF5252;
+  border: 1px solid #FF5252;
   color: #FF5252;
 }
 
 .badge4 {
   background-color: #fff;
-  border-color: #7C61F0;
+  border: 1px solid #7C61F0;
   color: #7C61F0;
 }
 
 .badge5 {
   background-color: #fff;
-  border-color: #006012;
+  border: 1px solid #006012;
   color: #006012;
 }
 
 .badge6 {
   background-color: #fff;
-  border-color: #FF6200;
+  border: 1px solid #FF6200;
   color: #FF6200;
 }
 
@@ -15723,27 +15775,27 @@ select.doc_input:focus {
 }
 .board-type-card .inner .badge2 {
   background-color: #fff;
-  border-color: #246BEB !important;
+  border: 1px solid #246BEB !important;
   color: #246BEB !important;
 }
 .board-type-card .inner .badge3 {
   background-color: #fff;
-  border-color: #FF5252 !important;
+  border: 1px solid #FF5252 !important;
   color: #FF5252 !important;
 }
 .board-type-card .inner .badge4 {
   background-color: #fff;
-  border-color: #7C61F0 !important;
+  border: 1px solid #7C61F0 !important;
   color: #7C61F0 !important;
 }
 .board-type-card .inner .badge5 {
   background-color: #fff;
-  border-color: #006012 !important;
+  border: 1px solid #006012 !important;
   color: #006012 !important;
 }
 .board-type-card .inner .badge6 {
   background-color: #fff;
-  border-color: #FF6200 !important;
+  border: 1px solid #FF6200 !important;
   color: #FF6200 !important;
 }
 .board-type-card .inner .txt {

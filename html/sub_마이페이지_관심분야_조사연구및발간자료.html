@@ -630,23 +630,76 @@
 		<div class="container">
 			<div class="layout">
 				<div class="snb" id="snb">
-                    <h2><a href="#" data-toggle="snb">사업신청</a></h2>
+                    <h2><a href="#" data-toggle="snb">마이페이지</a></h2>
 					<ul class="nav nav-side">
 						<li class="nav-item">
 							<!-- [D] 04-16 수정 
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a href="sub_사업신청_사회적기업인증지정_목록.html" class="nav-link">사회적기업 인증·지정</a>
+							<a class="nav-link nav-btn" href="#">기업정보관리</a>
+							<ul class="depth2">
+								<li>
+									<a href="#" class="nav-link">나의 기본정보</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link">기업통합문서함</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">재정지원사업</a>
+							<a class="nav-link" href="#">사업보고서</a>
 						</li>
 						<li class="nav-item">
-							<a href="sub_사업신청_통합사업신청_목록.html" class="nav-link">통합사업 신청</a>
+							<a class="nav-link nav-btn" href="#">경영공시</a>
+							<ul class="depth2">
+								<li>
+									<a href="#" class="nav-link">신청현황</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link">참여확인서 발급</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link on">협업커뮤니티</a>
+							<a class="nav-link nav-btn" href="#">재정지원</a>
+							<ul class="depth2">
+								<li>
+									<a href="#" class="nav-link">일자리창출 지원사업</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link">전문인력 지원사업</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link">사업개발비 지원사업</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link">사회보험료 지원사업</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">나의 신청현황</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="sub_마이페이지_증명서확인서.html">증명서/확인서</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link on" href="sub_마이페이지_관심분야_관심공고.html">관심분야</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-btn" href="#">나의 정보</a>
+							<ul class="depth2">
+								<li>
+									<a href="sub_마이페이지_나의정보_정보수정.html" class="nav-link">정보수정</a>
+								</li>
+								<li>
+									<a href="sub_마이페이지_나의정보_알림관리.html" class="nav-link">알림관리</a>
+								</li>
+								<li>
+									<a href="sub_마이페이지_나의정보_회원탈퇴.html" class="nav-link">회원탈퇴</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
             	</div>
@@ -667,17 +720,8 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">사업신청</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">관심분야</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
-								<li><a class="dropdown-item" href="#">link 1</a></li>
-								<li><a class="dropdown-item" href="#">link 2</a></li>
-								<li><a class="dropdown-item" href="#">link 3</a></li>
-							</ul>
-						</div>
-						<i class="icon-lnb-arr"></i>
-						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth3">협업커뮤니티</button>
-							<ul class="dropdown-menu" aria-labelledby="lnbDepth3">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
 								<li><a class="dropdown-item" href="#">link 3</a></li>
@@ -685,544 +729,138 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">협업커뮤니티</h2>
-						<script>
-							(function($){
-								$(window).on("load",function(){
-									$(".js_scrollbar").mCustomScrollbar({
-										mouseWheelPixels: 100,
-										scrollInertia: 300,
-										advanced:{ updateOnContentResize: true }
-									});
-								});
-							})(jQuery);
-
-							window.onload = function(){
-							/* 	const element = document.getElementById("replyBox");
-								element.scrollTop = 300;
-								document.getElementById("tab2").scrollTop = document.getElementById("tab2").scrollHeight; */
-							}
-
-
-
-							// 수정하기 버튼
-							function modifyFn(btn){
-								var textId = btn.id + "text";
-								var textarea = document.getElementById(textId);
-								textarea.style.display="none";
-								
-								var modifyId = btn.id + "modify";
-								var modifyarea = document.getElementById(modifyId);
-								modifyarea.style.display="";
-								
-								var saveId = btn.id + "save";
-								var savebtn = document.getElementById(saveId);
-								savebtn.style.display="";
-								
-								var modifyId = btn.id;
-								var modifyarea = document.getElementById(modifyId);
-								modifyarea.style.display="none";
-								
-								var backId = btn.id + "back";
-								var backarea = document.getElementById(backId);
-								backarea.style.display="";
-							}
-							// 수정하기 저장 버튼
-							function saveFn(btn){
-								if(confirm("수정 사항을 저장하시겠습니까?")){
-									// mode = cmnt, act = modify
-									$('input[name=act]').attr('value', "modify");
-									$('input[name=cmnct_cmnt_no]').attr('value', btn.id.substring(0, btn.id.length - 4));
-									
-									var id = btn.id.substring(0, btn.id.length - 4) + "cmnct_cmnt_cn_modify";
-									var newCn = document.getElementById(id).value;
-									$('input[name=cmnct_cmnt_cn]').attr('value', newCn);
-									
-									document.getElementById("cmnctCmntRegistForm").submit();
-								}
-							}
-
-							// 수정하기 취소 버튼
-							function cancleFn(btn){
-								var btnId = btn.id.substring(0, btn.id.length - 4);
-								
-								var textId = btnId + "text";
-								var textarea = document.getElementById(textId);
-								textarea.style.display="";
-								
-								var modifyId = btnId + "modify";
-								var modifyarea = document.getElementById(modifyId);
-								modifyarea.style.display="none";
-								
-								var saveId = btnId + "save";
-								var savebtn = document.getElementById(saveId);
-								savebtn.style.display="none";
-								
-								var modifyId = btnId;
-								var modifyarea = document.getElementById(modifyId);
-								modifyarea.style.display="";
-								
-								var backId = btnId + "back";
-								var backarea = document.getElementById(backId);
-								backarea.style.display="none";
-							}
-
-							// 대화 등록 버튼
-							function insertCmnt(){
-								// mode = cmnt, act = insert
-								var id = "cmnct_cmnt_cn_insert";
-								var cmntCn = document.getElementById(id).value;
-								
-								if(cmntCn.trim() == ''){
-									alert("대화 내용을 입력해주세요.");
-									location.reload();
-								}else{
-									// 참여자가 아니면 동의 받기
-									if(true){
-										document.getElementById("lyCommunityAgreePop").style.display = 'block';
-									}else{
-										agree();
-									}
-								}
-							}
-							// 동의하지 않음 버튼
-							function disagree(){
-								alert("정보공개에 동의하셔야 협업커뮤니티 참여가 가능합니다.");
-							}
-							// 동의함 버튼
-							function agree(){
-								$('input[name=act]').attr('value', "insert");
-								
-								var id = "cmnct_cmnt_cn_insert";
-								var cmntCn = document.getElementById(id).value;
-								$('input[name=cmnct_cmnt_cn]').attr('value', cmntCn);
-								
-								document.getElementById("cmnctCmntRegistForm").submit();
-								alert("협업 커뮤니티 참여 및 글 등록이 완료되었습니다.");
-							}
-							// 동의 팝업 닫기 버튼
-							function exit(){
-								document.getElementById("lyCommunityAgreePop").style.display = 'none';
-							}
-
-							// 등록 취소 버튼
-							function insertCancel(){
-								var id = "cmnct_cmnt_cn_insert";
-								document.getElementById(id).value = '';
-							}
-
-							// 대화 삭제 버튼
-							function deleteCmnt(btn){
-								// mode = cmnt, act = delete
-								$('input[name=act]').attr('value', "delete");
-								
-								if(confirm("대화를 삭제하시겠습니까?")){
-									$('input[name=cmnct_cmnt_no]').attr('value', btn.id.substring(0, btn.id.length - 6));
-									document.getElementById("cmnctCmntRegistForm").submit();
-									alert("삭제가 완료되었습니다.");
-								}
-								
-							}
-
-							function rememberRef(btnIdx, cmnct) {
-								if (btnIdx != null && btnIdx != '') {
-									location.href = "/member/sub.do?menukey=4000&ref=" + btnIdx + "&cmnct=" + cmnct;
-								}
-								alert('로그인 후 사용이 가능합니다.\n로그인페이지로 이동합니다.');
-							}
-
-							$( document ).ready( function() {
-								$(".nodata").parents(".comm_list_box").css( 'height', '200px' );
-								} );
-
-
-							</script>
+						<h2 class="tit">관심분야</h2>
 					</div>
-					<div class="sub-contents board_data_view">
-						<div class="form-container">
-							<div class="form-sect">
-								<div class="form-header align-items-start">
-									<div class="tit normal align-self-end">
-										<ul class="sub">
-											<li>
-												<p><i class="icon-sub-calendar"></i>
-												<span>2025-05-07</span></p>
-											</li>
-											<li>
-												<p><i class="icon-sub-person"></i>
-												<span>천지연</span></p>
-											</li>
-											<li>
-												<p><i class="icon-sub-view"></i>
-												<span>77</span></p>
-											</li>
-											<li>
-												<button type="button" class="btn-bookmark" onclick="$(this).toggleClass('on')">
-													<i class="icon-sub-bookmark"></i>
-													<span>스크랩</span>
-												</button>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+					<div class="sub-contents">
+						<div class="tab">
+							<ul class="nav nav-tabs">
+								<li class="nav-item">
+									<a href="sub_마이페이지_관심분야_관심공고.html" class="nav-link">관심공고</a>
+								</li>
+								<li class="nav-item">
+									<a href="sub_마이페이지_관심분야_관심기업.html" class="nav-link">관심기업</a>
+								</li>
+								<li class="nav-item">
+									<a href="sub_마이페이지_관심분야_협업커뮤니티.html" class="nav-link">협업커뮤니티</a>
+								</li>
+								<li class="nav-item">
+									<a href="sub_마이페이지_관심분야_조사연구및발간자료.html" class="nav-link active">조사연구 및 발간자료</a>
+								</li>
+							</ul>
+						</div>
 
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">제안자 정보</h3>
-								</div>
-
-								<!-- 표 -->
-								<div class="board-wrap">
-									<div class="tb-wrap tb-mobile tb-column v2">
-										<table class="tb">
-											<colgroup>
-												<col width="14%">
-												<col width="calc( 50% - 14% )">
-												<col width="14%">
-												<col width="calc( 50% - 14% )">
-											</colgroup>
-											<tbody>
-												<tr>
-													<th>제안자</th>
-													<td class="text-left">
-														<div class="cell-mo">제안자</div>
-														<div class="cell">
-															천지연
-														</div>
-													</td>
-													<th>기업명</th>
-													<td class="text-left">
-														<div class="cell-mo">기업명</div>
-														<div class="cell">
-															개인
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-
-							<div class="form-sect">
-								<div class="form-header">
-									<h3 class="tit">제안 내용</h3>
-								</div>
-
-								<!-- 표 -->
-								<div class="board-wrap">
-									<div class="tb-wrap tb-mobile tb-column v2">
-										<table class="tb">
-											<colgroup>
-												<col width="14%">
-												<col width="calc( 50% - 14% )">
-												<col width="14%">
-												<col width="calc( 50% - 14% )">
-											</colgroup>
-											<tbody>
-												<tr>
-													<th>기간</th>
-													<td class="text-left">
-														<div class="cell-mo">기간</div>
-														<div class="cell">
-															2025-01-24 ~ 2025-01-24
-														</div>
-													</td>
-													<th>지역</th>
-													<td class="text-left">
-														<div class="cell-mo">지역</div>
-														<div class="cell">
-															광주
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th>사업유형</th>
-													<td class="text-left">
-														<div class="cell-mo">사업유형</div>
-														<div class="cell">
-															창업, 교육
-														</div>
-													</td>
-													<th>상태</th>
-													<td class="text-left">
-														<div class="cell-mo">상태</div>
-														<div class="cell">
-															마감
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th>협업커뮤니티명</th>
-													<td colspan="3" class="text-left">
-														<div class="cell-mo">협업커뮤니티명</div>
-														<div class="cell">미혼모시설(아동보호시설)</div>
-													</td>
-												</tr>
-												<tr>
-													<th>협업커뮤니티내용</th>
-													<td colspan="3" class="text-left">
-														<div class="cell-mo">협업커뮤니티내용</div>
-														<div class="cell">
-															미혼모 및 아이를 위한 보호시설을 운영을 하고 싶지만 이러한 전반적인 루트를 알지 못하고 어디서 부터 교육을 받고, 운영체제는 어떻게 이루어지는지 알길이 없어 도움을 요청하고자 합니다. 저와 뜻이 같은 분이 계신다면 함께 공부하고 교육을 받아서 미혼모와 아이들을 잘 케어하고 보호할 수 있는기관을 운영해 보았으면 합니다.
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<!-- // -->
-							</div>
-
-							<div class="form-sect">
-								<!-- [D] as-is 소스 활용 -->
-								<div class="category_tabs community">
-									<span class="status"><span>참여중</span></span>
-										<div class="category_tab">
-										<ul>
-											<li><a href="#tab1" class="on" style="display: block;" title="선택됨"><span>참여</span><span>4</span></a></li>
-											<li><a href="#tab2" class=""><span>참여자</span><span>4</span></a></li>
-										</ul>
-									</div>
-									<form id="cmnctCmntRegistForm" name="cmnctCmntRegistForm" method="post" action="?menukey=7209&amp;cmnct_no=10">
-										<input type="hidden" name="mode" value="cmnt">
-										<input type="hidden" name="act" value="">
-										<input type="hidden" name="cmnct_no" value="">
-										<input type="hidden" name="cmnct_cmnt_no" value="">
-										<input type="hidden" name="cmnct_cmnt_cn" value="">
-										
-										<div class="category_tab_conts">
-											<div id="tab1" style="">
-												<h4 class="title2 bul">참여공간<span class="text2">(4)</span></h4>
-												<div id="replyBox" class="view_box_items comm_list_box js_scrollbar">
-													<ul id="cmntList">
-														<li>
-															<dl>
-																<dt>
-																	안인규<span class="company">
-																		포인트교육 주식회사</span>	
-																</dt>
-																<dd>
-																	<div id="23text" class="textbox"><pre>참여 신청합니다. 연락 부탁드립니다.</pre></div>
-																	<div id="23modify" style="display:none" class="textarea_wrap">
-																		<textarea id="23cmnct_cmnt_cn_modify" name="23cmnct_cmnt_cn_modify" cols="100">참여 신청합니다. 연락 부탁드립니다.</textarea>
-																	</div>
-																	<div class="etc_btm">
-																		<p class="comment_date">2024-12-13 20:40:44</p>
-																	</div>
-																</dd>
-															</dl>
-														</li>
-														<li>
-															<dl>
-																<dt>
-																	이혜성<span class="company">
-																		에이치비티복싱클럽</span>	
-																</dt>
-																<dd>
-																	<div id="24text" class="textbox"><pre>참여 신청합니다. 연락 부탁드립니다.</pre></div>
-																	<div id="24modify" style="display:none" class="textarea_wrap">
-																		<textarea id="24cmnct_cmnt_cn_modify" name="24cmnct_cmnt_cn_modify" cols="100">참여 신청합니다. 연락 부탁드립니다.</textarea>
-																	</div>
-																	<div class="etc_btm">
-																		<p class="comment_date">2024-12-19 19:29:54</p>
-																	</div>
-																</dd>
-															</dl>
-														</li>
-														<li>
-															<dl>
-																<dt>
-																	이디다<span class="company">디아앤코 주식회사</span>	
-																</dt>
-																<dd>
-																	<div id="27text" class="textbox"><pre>대표님 저도 함께 하고 싶습니다. 어떻게 연락드리면 될까요?</pre></div>
-																	<div id="27modify" style="display:none" class="textarea_wrap">
-																		<textarea id="27cmnct_cmnt_cn_modify" name="27cmnct_cmnt_cn_modify" cols="100">대표님 저도 함께 하고 싶습니다. 어떻게 연락드리면 될까요?</textarea>
-																	</div>
-																	<div class="etc_btm">
-																		<p class="comment_date">
-																			2025-01-31 16:25:31</p>
-																	</div>
-																</dd>
-															</dl>
-														</li>
-														<li>
-															<dl>
-																<dt>
-																	이디다<span class="company">디아앤코 주식회사</span>	
-																</dt>
-																<dd>
-																	<div id="28text" class="textbox"><pre>대표님 저도 함께 하고 싶습니다. 어떻게 연락드리면 될까요?</pre></div>
-																	<div id="28modify" style="display:none" class="textarea_wrap">
-																		<textarea id="28cmnct_cmnt_cn_modify" name="28cmnct_cmnt_cn_modify" cols="100">대표님 저도 함께 하고 싶습니다. 어떻게 연락드리면 될까요?</textarea>
-																	</div>
-																	<div class="etc_btm">
-																		<p class="comment_date">
-																			2025-01-31 16:25:36</p>
-																	</div>
-																</dd>
-															</dl>
-														</li>
-													</ul>
-													<!-- 
-													[D] 대화 없는 경우 
-
-													<ul id="cmntList">
-														<li class="nodata">
-															<p>대화가 없습니다.</p>
-														</li>
-													</ul> -->
+						<form>
+							<div class="form-container">
+								<div class="board-srch-bx">
+									<div class="bottom">
+										<div class="flex-1">
+											<div class="form-group">
+												<div class="form-tit-wrp d-md-none">
+													<p class="form-tit">검색어</p>
 												</div>
-												<div class="reg_comment">
-													<div class="textarea_wrap">
-														<div class="textarea">
-															<textarea id="cmnct_cmnt_cn_insert" name="cmnct_cmnt_cn_insert" cols="30" rows="3" class="">참여 신청합니다. 연락 부탁드립니다.</textarea>
-														</div>
-													</div>
-													<div class="btns">
-														<button type="button" class="btn_black btn_open_layer" onclick="insertCmnt()">글등록</button>
-														<button type="button" class="btn_outline_black" onclick="insertCancel()">취소</button>
-													</div>
+												<div class="form-input-group">
+													<input type="text" name="" value="" placeholder="검색어를 입력해주세요." class="form-control"/>
 												</div>
-											</div>
-											<div id="tab2" style="display: none;">
-												<h4 class="title2 bul">참여자 정보<span class="text2">(4)</span></h4>
-												<ul class="member_info_box">
-													<li><!-- 제안자 정보 -->
-														<dl>
-															<dt class="owner">이름</dt>
-															<dd>최운정</dd>
-														</dl>
-														<dl>
-															<dt>전화번호</dt>
-															<dd>
-																010-****-****
-															</dd>
-														</dl>
-														<dl>
-															<dt>이메일</dt>
-															<dd>icd2023@naver.com</dd>
-														</dl>
-														<dl>
-															<dt>소속기업</dt>
-															<dd>국제공예디자인주식회사</dd>
-														</dl>
-														<dl>
-															<dt>업종</dt>
-															<dd>교육 서비스업(P)</dd>
-														</dl>
-														<dl>
-															<dt>웹사이트</dt>
-															<dd>
-																<a>-</a>
-																	</dd>
-														</dl>
-													</li>
-													<!-- 제안자가 아니면 별표 처리 -->
-													<li>
-														<dl>
-															<dt>이름</dt>
-															<dd>안인*</dd>
-														</dl>
-														<dl>
-															<dt>전화번호</dt>
-															<dd>
-																010-****-****</dd>
-														</dl>
-														<dl>
-															<dt>이메일</dt>
-															<dd>********@naver.com</dd>
-														</dl>
-														<dl>
-															<dt>소속기업</dt>
-															<dd>포인트교육 주식회사</dd>
-														</dl>
-														<dl>
-															<dt>업종</dt>
-															<dd>교육 서비스업(P)</dd>
-														</dl>
-														<dl>
-															<dt>웹사이트</dt>
-															<dd>
-																<a>-</a>
-															</dd>
-														</dl>
-													</li>
-													<!-- 제안자가 아니면 별표 처리 -->
-													<li>
-														<dl>
-															<dt>이름</dt>
-															<dd>이혜*</dd>
-														</dl>
-														<dl>
-															<dt>전화번호</dt>
-															<dd>
-																010-****-****</dd>
-														</dl>
-														<dl>
-															<dt>이메일</dt>
-															<dd>*******@naver.com</dd>
-														</dl>
-														<dl>
-															<dt>소속기업</dt>
-															<dd>에이치비티복싱클럽</dd>
-														</dl>
-														<dl>
-															<dt>업종</dt>
-															<dd>교육 서비스업(P)</dd>
-														</dl>
-														<dl>
-															<dt>웹사이트</dt>
-															<dd>
-																<a>-</a>
-															</dd>
-														</dl>
-													</li>
-													<!-- 제안자가 아니면 별표 처리 -->
-													<li>
-														<dl>
-															<dt>이름</dt>
-															<dd>이디*</dd>
-														</dl>
-														<dl>
-															<dt>전화번호</dt>
-															<dd>
-																010-****-****</dd>
-														</dl>
-														<dl>
-															<dt>이메일</dt>
-															<dd>*******@gmail.com</dd>
-														</dl>
-														<dl>
-															<dt>소속기업</dt>
-															<dd>디아앤코 주식회사</dd>
-														</dl>
-														<dl>
-															<dt>업종</dt>
-															<dd>교육 서비스업(P)</dd>
-														</dl>
-														<dl>
-															<dt>웹사이트</dt>
-															<dd>
-																<a>-</a>
-															</dd>
-														</dl>
-													</li>
-												</ul>
 											</div>
 										</div>
-									</form>
+										<div class="btn-wrp">
+											<button type="button" class="btn btn-blue normal">검색</button>
+										</div>
+									</div>
 								</div>
-								<!-- // [D] as-is 소스 활용 -->
-							</div>
-						</div>			
+
+								<div class="form-sect">
+									<div class="form-header">
+										<h3 class="tit normal"><span>총 <strong class="text-primary">1</strong>건의 게시물이 있습니다.</span></h3>
+									</div>
+
+									<div class="board-wrap board-cs enterprise">
+										<!-- 표 -->
+										<div class="tb-wrap">
+											<table class="tb v2">
+												<caption><span>정책리포트 게시판의 번호, 제목 및 첨부파일, 등록자, 등록일, 조회수 테이블입니다.</span></caption>
+												<colgroup>
+													<col width="7%">
+													<col width="58%">
+													<col width="15%">
+													<col width="12%">
+													<col width="10%">
+												</colgroup>
+												<thead class="sr-only">
+													<tr>
+														<th scope="col">번호</th>
+														<th scope="col">제목/첨부파일</th>
+														<th scope="col">등록자</th>
+														<th scope="col">등록일</th>
+														<th scope="col">조회수</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<!-- [D] 04-15 추가 Mobile에서 보일 요소의 <td>태그에 inline 클래스 ++, 한줄 전부 차지해야할 경우 block 클래스 ++ -->
+														<td class="inline"><span>1</span></td>
+														<td class="inline block">
+															<a href="sub_소식자료_조사연구및발간자료_정책리포트_상세.html" class="link">
+																<p class="txt">글로벌 뉴스 Zoom In 11호~19호 모아보기</p>
+																<!-- [D] 첨부파일 있을 경우 -->
+																<i class="icon-file"></i>
+																<span class="sr-only">첨부파일</span>
+															</a>
+														</td>
+														<td class="inline small"><span>사회적가치인증센터</span></td>
+														<td class="inline small"><span>2025-06-27</span></td>
+														<td class="inline small"><span class="num-view">57</span></td>
+													</tr>
+
+													<!-- [D] 게시물 없을 때 -->
+													<tr class="nodata">
+														<td colspan="5">
+															<p>스크랩한 정보가 없습니다.</p>
+														</td>
+													</tr>
+													<!-- // -->
+												</tbody>
+											</table>
+										</div>
+										<!-- // -->
 						
-						<div class="btn-wrp btn-bottom">
-							<button type="button" class="btn btn-outline-black">목록</button>
-						</div>
+										<!-- 페이징 -->
+										<div class="paging-area">
+											<ul>
+												<li>
+													<a href="javascript:;" class="prev"><span>이전</span></a>
+												</li>
+												<li>
+													<a href="javascript:;" class="active"><span>1</span></a>
+												</li>
+												<li>
+													<a href="javascript:;"><span>2</span></a>
+												</li>
+												<li>
+													<a href="javascript:;"><span>3</span></a>
+												</li>
+												<li>
+													<a href="javascript:;"><span>4</span></a>
+												</li>
+												<li>
+													<a href="javascript:;"><span>5</span></a>
+												</li>
+												<li>
+													<a href="javascript:;" class="dot"><span></span></a>
+												</li>
+												<li>
+													<a href="javascript:;"><span>10</span></a>
+												</li>
+												<li>
+													<a href="javascript:;" class="next"><span>다음</span></a>
+												</li>
+											</ul>
+										</div> 
+										<!-- // 페이징 -->
+									</div> 
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -1295,5 +933,48 @@
 	</footer>
 	<!-- // footer -->
 </div>
+
+<!-- 반려사유서 -->
+<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="tit">반려사유서</h3>
+				<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="sect-hd">
+					<h2 class="tit">2026년 제1차 사회적기업 인증 신청 반려 사유</h2>
+				</div>
+				<div class="sect-body">
+					<div class="form-header normal sm">
+						<h3 class="tit">사업장명: (주)사회적기업진흥원</h3>
+					</div>
+					<div class="form-group">
+						<div class="form-tit-wrp">
+							<p class="form-tit">미충족 조건</p>
+						</div>
+						<div class="form-input-group">
+							<textarea name="" id="" readonly class="form-control">텍스트</textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-tit-wrp">
+							<p class="form-tit">내용</p>
+						</div>
+						<div class="form-input-group">
+							<textarea name="" id="" readonly class="form-control">텍스트</textarea>
+						</div>
+					</div>
+				</div>
+				<div class="btn-wrp justify-content-center gap8">
+					<a href="#" class="btn btn-outline-black" data-dismiss="modal">닫기</a>
+				</div>
+			</div>          
+		</div>
+	</div>
+</div>
+<!-- // 반려사유서 -->
+
 </body>
 </html>
