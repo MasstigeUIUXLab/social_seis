@@ -22,7 +22,7 @@
 #lnb .top2hover.mon .menu1th,#lnb .top2hover .menu1th.on,#lnb .top2hover .menu1th:hover{color:#407aec;}
 #lnb .top2hover.mon .menu1th:before,#lnb .top2hover .menu1th.on:before,#lnb .top2hover .menu1th:hover:before{content:'';display:block;position:absolute;bottom:0;left:0;width:100%;height:3px;background:#407aec;}
 #lnb .top2hover:nth-child(6) {display:none;}
-#lnb .top2m{display:none;position:absolute;top:56px;left:0;z-index:1000;width:100%;font-family:'Noto Sans KR';background:#fff;}
+#lnb .top2m{display:none;position:absolute;top:56px;left:0;z-index:1000;width:100%;background:#fff;}
 #lnb .top2m>ul{padding:0 20px;}
 #lnb .top2m>ul>li{margin-top:22px;}
 #lnb .top2m>ul>li:last-child{padding-bottom:50px;}
