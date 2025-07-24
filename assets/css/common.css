@@ -42576,16 +42576,16 @@ body.is-scroll .header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
-  height: 56px;
+  gap: 8px;
+  height: 48px;
   background-color: #FAFAFA;
   border: 1px solid #EAEAEA;
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 16px 20px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 48px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #222;
@@ -48041,7 +48041,7 @@ textarea {
   border: solid 1px #8E8E8E;
   background-color: #fff;
   overflow: auto;
-  min-height: 124px;
+  min-height: 127px;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -48186,7 +48186,12 @@ input[type=radio][readonly]:not([checked]) {
       -ms-flex: 0 0 auto !important;
           flex: 0 0 auto !important;
   display: inline-block;
-  line-height: 0;
+  line-height: 47px;
+}
+@media all and (max-width: 1024px) {
+  .input-type-ab > span {
+    line-height: 43px;
+  }
 }
 .input-type-ab.disabled, .input-type-ab.readonly {
   background-color: #F8F8F8 !important;
@@ -48204,9 +48209,10 @@ input[type=radio][readonly]:not([checked]) {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 8px;
 }
-.input-group label:not(:last-child) {
-  margin-right: 10px;
+.input-group label {
+  margin-right: 0;
 }
 .input-group label:not(:first-child, .file-label) {
   margin-top: 1.375rem;
@@ -48217,6 +48223,19 @@ input[type=radio][readonly]:not([checked]) {
 .input-group .input-label--checkbox input {
   width: 1.5rem;
   height: 1.5rem;
+}
+.input-group .w-auto {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.input-group .form-control {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .input-group.bx {
   display: -webkit-box;
@@ -48408,25 +48427,34 @@ input[type=radio][readonly]:not([checked]) {
   border: 0;
 }
 .input-label--tab input:checked + .input-label__txt {
-  background: #246BEB;
+  background-color: #246BEB;
   border-color: #246BEB;
   color: #fff;
 }
 .input-label--tab input:disabled + .input-label__txt {
   pointer-events: none;
+  border-color: #D2D2D2 !important;
+  background-color: #F8F8F8 !important;
+  color: #666;
 }
 .input-label--tab .input-label__txt {
   display: inline-block;
-  padding: 7px 19px;
-  border-radius: 90px;
+  padding: 8px 20px;
+  line-height: 1.286;
+  border-radius: 4px;
   border: 1px solid #E6E6E6;
-  background: #fff;
-  font-weight: 500;
+  border-radius: 90px;
+  background-color: #FFF;
   font-size: 14px;
-  line-height: 1.4;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  font-weight: 500;
+  color: #222;
+  word-break: break-all;
   cursor: pointer;
+}
+@media all and (max-width: 1024px) {
+  .input-label--tab .input-label__txt {
+    padding: 6px 16px;
+  }
 }
 
 .board-box p {

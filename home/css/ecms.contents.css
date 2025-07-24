@@ -54,7 +54,7 @@
 .symbols2{font-size:14px;color:#407aec;}
 .symbols3{font-size:14px;color:#ee2a7b;}
 [class*='symbols']:before{content:'';position:absolute;left:0;top:0;background-image:url('/home/imgs/content/icon_symbols2.svg');background-repeat:no-repeat;}
-[class*='symbols'].asterisk:before{top:5px;width:7px;height:7px;background-position-x:-1px;}
+[class*='symbols'].asterisk:before{top:5px;width:7px;height:7px;background-position-x:-1px;color:transparent}
 [class*='symbols'].reference:before{width:16px;height:18px;background-position-x:-18px;}
 .symbols1.asterisk:before{background-position-y:-5px;}
 .symbols2.asterisk:before{background-position-y:-22px;}
@@ -87,8 +87,8 @@
 .title2{margin-top:30px;margin-bottom:24px;font-size:20px;font-weight:500;}
 .title2+.box_inquiries{margin-top:24px;}
 .title1+.title2{margin-top:0;}
-.title2.bul{position:relative;padding-left:16px;line-height: 1.375;}
-.title2.bul:before{content:'';position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:4px;background:#ee2a7b;}
+.title2.bul{position: relative;padding: 0 0 0 0.7em;font-size: 1.5rem;font-weight: 600;line-height: 1.3334;}
+.title2.bul:before{content: "";position: absolute;top: 0.5em;left: 0;display: inline-block;width: 0.5rem;height: 0.5rem;margin-right: 4px;border-radius: 50%;background-color: #246BEB;}
 .title2.bul+.tails{}
 .title2.bul+.phar1{margin-top:-14px;}
 .title2.num{position:relative;}

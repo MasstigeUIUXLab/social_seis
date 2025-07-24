@@ -4,16 +4,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-	height: 56px;
+  gap: 8px;
+	height: $form-control-height;
   background-color: #FAFAFA;
   border: 1px solid #EAEAEA;
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 16px 20px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: $form-control-height;
   transition: .3s;
   color: #222;
 
@@ -24,6 +24,7 @@
   &:focus, &:focus-visible{
     outline-offset: 1px !important;
   }
+
   &-shadow{
     box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
 
@@ -291,8 +292,8 @@
   }
 
   @include mdq-max(lg) {
-    height: 44px;
-    line-height: 44px;
+    height: $form-control-height-lg;
+    line-height: $form-control-height-lg;
     border-radius: 4px;
     padding: 14px 18px;
     font-size: 15px;

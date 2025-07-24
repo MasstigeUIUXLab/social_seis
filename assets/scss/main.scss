@@ -476,6 +476,10 @@
             .swiper-banner{
                 .link{
                     display: block;
+                
+                    img{
+                        width: 100%;
+                    }
                 }
 
                 .swiper-pagination-fraction{
@@ -1643,13 +1647,16 @@
                 }
 
                 .news-list {
+                    .link{
+                        padding: 16px 0px;
+                    }
                     .cate{
                         font-size: 12px;
-                        line-height: 16px;
+                        line-height: 14px;
                     }
 
                     .tit{
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -1743,11 +1750,11 @@
 
         @include mdq-max(sm) {
             &.ms5 .swiper-board {
-                width: 64vw;
+                width: calc( 100% - 70px );
                 height: 278px;
 
                 .swiper-navigation{
-                    left: calc(64vw + 16px);
+                    left: calc( 100% + 16px);
                     gap: 5px;
                     height: 24px;
 

@@ -650,13 +650,13 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="sub_소식자료_채용정보.html" class="nav-link">채용정보</a>
+							<a href="sub_소식자료_채용정보.html" class="nav-link on">채용정보</a>
 						</li>
 						<li class="nav-item">
 							<a href="sub_소식자료_자주하는질문.html" class="nav-link">자주하는 질문</a>
 						</li>
 						<li class="nav-item">
-							<a href="sub_소식자료_게시요청.html" class="nav-link on">게시요청</a>
+							<a href="sub_소식자료_게시요청.html" class="nav-link">게시요청</a>
 						</li>
 					</ul>
             	</div>
@@ -677,7 +677,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">게시요청</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">채용정보</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -686,130 +686,240 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">게시요청</h2>
-						<!-- [D] 07-02 추가 -->
-						<script type="text/javascript">
-						//<![CDATA[
-							$(function() {
-								var url = window.location.href;
-								var proto = window.location.protocol;
-								
-								$('#urlText').val(url);
-								
-								$('#btnCopy').on("click", function(e) {
-									e.preventDefault();
-									
-									$('#urlText').focus();
-									var content = document.getElementById('urlText').value;
-									
-									if (proto.indexOf('https') != -1) {
-										// https 에서만 작동
-										window.navigator.clipboard.writeText(content).then(() => {
-											alert('복사되었습니다.');
-											$(".layer_close").click();
-											return;
-										})
-										.catch(err => {
-											console.log('err', err);
-										})
-									} else {
-										var t = document.createElement("textarea");
-										document.body.appendChild(t);
-										t.value = content;
-										t.select();
-										document.execCommand('copy');
-										document.body.removeChild(t);
-										alert('복사되었습니다.');
-										$(".layer_close").click();
-									}
-								});
-							});
-						//]]>
-						</script>
-						<div class="snsBox">
-							<ul>
-								<li class="share">
-									<a href="#" onclick="return false;" class="sns_open">SNS<span>열기</span></a>
-									<ul>
-										<li><a href="#" title="페이스북에 공유하기 (새창)"><i class="icon-facebook"></i></a></li>
-										<li><a href="#" title="트위터에 공유하기 (새창)"><i class="icon-twiter"></i></a></li>
-										<li><a href="#" title="카카오톡에 공유하기 (새창)"><i class="icon-kakao"></i></a></li>
-										<li class="url"><a href="#modal1" data-toggle="modal" class="btn_open_layer">주소복사</a></li>
-									</ul>
-								</li>
-								<li class="print"><a href="#" onclick="return window.print();">인쇄</a></li>
-							</ul>
-						</div>
-						<!-- // [D] 07-02 추가 -->
+						<h2 class="tit">채용정보</h2>
 					</div>
-					<div class="sub-contents sub-asis contentBody" id="contentBody">
-						<script>
-						function rememberRef(btnIdx) {
-							if (btnIdx != null && btnIdx != '') {
-								location.href = "/member/sub.do?menukey=4000&ref=" + btnIdx;
-							}
-							alert('로그인 후 사용이 가능합니다.\n로그인페이지로 이동합니다.');
-						}
-						</script>
+					<div class="sub-contents">
+						<div class="form-container">
+							<div class="title_wrap2">
+								<h4 class="title1">한국사회적기업진흥원의 채용정보는 워크넷 <span class="text2">www.work.go.kr</span> 에서 제공되는 정보를 연계하고 있습니다.</h4>
+								<p class="phar2">채용정보 등록이나 자세한 사항은 워크넷을 통해서 확인해 주시기 바랍니다.</p>
+							</div>
+							<div class="board-srch-bx">
+								<ul class="row">
+									<li class="col-12 col-md-6 col-lg-4">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">지역</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-4">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">희망직종</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-4">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">장애인 채용희망</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">희망임금</p>
+											</div>
+											<div class="row">
+												<div class="col-12 col-lg-4">
+													<div class="form-input-group">
+														<select name="" class="form-control">
+															<option value="" selected disabled>선택</option>
+															<option value="">선택</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-12 col-lg-8">
+													<div class="form-input-group">
+														<input type="text" name="" id="" value="" class="form-control"/>
+														<span class="w-auto">만원 ~</span>
+														<input type="text" name="" id="" value="" class="form-control"/>
+														<span class="w-auto">만원</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-4">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">학력</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-4">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">경력</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-4">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">등록기간</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control">
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="bottom">
+									<div class="flex-1">
+										<div class="form-group">
+											<div class="form-tit-wrp d-md-none">
+												<p class="form-tit">검색어</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" value="" placeholder="검색어를 입력해주세요." class="form-control"/>
+											</div>
+										</div>
+									</div>
+									<div class="btn-wrp">
+										<button type="button" class="btn btn-outline">초기화</button>
+										<button type="button" class="btn btn-blue">검색</button>
+									</div>
+								</div>
+							</div>
 
-						<div class="posting_wrap">
-							<dl class="posting_info">
-								<dt>공고등록</dt>
-								<dd>
-									<ul class="list_ul-dot">
-										<li>사업공고에 게시를 원하시는 기관은 아래 게시요청을 선택하셔서 관련 내용 및 자료를 등록해 주시기 바랍니다.</li>
-										<li>신청하신 내용은 담당자 확인 후 게시하겠습니다.</li>
-									</ul>
-									<p class="btns tc">
-										<a href="sub_소식자료_게시요청_신청서.html" class="btn_view icon--arrow">게시요청</a>
-									</p>
-								</dd>
-								<dd class="contact">
-									<dl>
-										<dt>문의</dt>
-										<dd>
-											<ul>
-												<li>정보화기획팀</li>
-												<li class="manager">한태휘</li>
-												<li class="tel">031-697-7871</li>
-												<li class="email">hth@ikosea.or.kr</li>
-											</ul>
-										</dd>
-									</dl>
-								</dd>
-							</dl>
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit normal"><span>총 <strong class="text-primary">457</strong>건의 게시물이 있습니다.</span></h3>
+									<div class="btn-area">
+										<select name="" class="form-control">
+											<option value="" selected>등록순</option>
+											<option value="">마감순</option>
+										</select>
+										<a href="#" class="btn btn-xs btn-outline-green"><i class="icon-excel"></i>엑셀다운로드</a>
+									</div>
+								</div>
+
+								<div class="board-wrap">
+									<!-- 리스트 -->
+									<div class="board-type-card">
+										<ul class="card-list row">
+											<li class="col-12 col-lg-6 col-xl-4">
+												<a href="sub_소식자료_채용정보_상세.html" class="inner">
+													<span class="badge">서울</span>
+													<p class="txt text-truncate-1">사회적협동조합 우리사이</p>
+													<div class="sub">
+														<span>시급 12470원 ~ 13000원</span>
+														<span>주5일근무</span>
+													</div>
+													<span class="date">25-07-23 ~ <span class="text-red">25-08-31</span></span>
+													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+											<li class="col-12 col-lg-6 col-xl-4">
+												<a href="sub_소식자료_채용정보_상세.html" class="inner">
+													<span class="badge">부산</span>
+													<p class="txt text-truncate-1">(사) 문화콘텐츠개발원부산지원</p>
+													<div class="sub">
+														<span>대학 시간강사(초빙,겸임,BK,강의전담 교수 등 비전임교원 포함)</span>
+													</div>
+													<div class="sub">
+														<span>시급 50000원</span>
+													</div>
+													<span class="date">25-07-23 ~ <span class="text-red">채용시까지 25-09-21</span></span>
+													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+											<li class="col-12 col-lg-6 col-xl-4">
+												<a href="sub_소식자료_채용정보_상세.html" class="inner">
+													<span class="badge">경기</span>
+													<p class="txt text-truncate-1">(주) 금성케이엔티</p>
+													<div class="sub">
+														<span>지하철 택배원</span>
+													</div>
+													<div class="sub">
+														<span>월급 250만원</span>
+														<span>주5일근무</span>
+													</div>
+													<span class="date">25-07-23 ~ <span class="text-red">25-08-09</span></span>
+													<button type="button" class="btn-icon btn-bookmark on"><span class="sr-only">즐겨찾기</span></button>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- // -->
+
+									<!-- 페이징 -->
+									<div class="paging-area">
+										<ul>
+											<li>
+												<a href="javascript:;" class="prev"><span>이전</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="active"><span>1</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>2</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>3</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>4</span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>5</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="dot"><span></span></a>
+											</li>
+											<li>
+												<a href="javascript:;"><span>10</span></a>
+											</li>
+											<li>
+												<a href="javascript:;" class="next"><span>다음</span></a>
+											</li>
+										</ul>
+									</div> 
+									<!-- // 페이징 -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- [D] 07-02 추가 / 주소복사 팝업 -->
-	<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h3 class="tit">주소복사</h3>
-					<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
-				</div>
-				<div class="modal-body">
-					<div class="sect-body">
-						<div class="form-tit-wrp">
-							<p class="form-tit">아래 복사하기를 누르신 후 원하는 곳에 <span class="text-red">Ctrl+V</span>를 눌러 붙여넣기 하세요.</p>
-						</div>
-						<div class="mt-4">
-							<input id="urlText" type="text" class="form-control" value="" placeholder="http://" style="width:100%;" onfocus="this.select()">
-						</div>
-					</div>
-					<div class="btn-wrp justify-content-center gap8">
-						<button id="btnCopy" class="btn btn-black">복사하기</button>
-					</div>
-				</div>          
-			</div>
-		</div>
-	</div>
-	<!-- // 07-02 추가 / 주소복사 팝업 -->
 </div>
 <!-- // 페이지시작 -->
 

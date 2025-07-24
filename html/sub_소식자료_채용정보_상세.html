@@ -650,13 +650,13 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="sub_소식자료_채용정보.html" class="nav-link">채용정보</a>
+							<a href="sub_소식자료_채용정보.html" class="nav-link on">채용정보</a>
 						</li>
 						<li class="nav-item">
 							<a href="sub_소식자료_자주하는질문.html" class="nav-link">자주하는 질문</a>
 						</li>
 						<li class="nav-item">
-							<a href="sub_소식자료_게시요청.html" class="nav-link on">게시요청</a>
+							<a href="sub_소식자료_게시요청.html" class="nav-link">게시요청</a>
 						</li>
 					</ul>
             	</div>
@@ -677,7 +677,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">게시요청</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">채용정보</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -686,7 +686,7 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">게시요청</h2>
+						<h2 class="tit">채용정보</h2>
 						<!-- [D] 07-02 추가 -->
 						<script type="text/javascript">
 						//<![CDATA[
@@ -742,42 +742,545 @@
 						</div>
 						<!-- // [D] 07-02 추가 -->
 					</div>
-					<div class="sub-contents sub-asis contentBody" id="contentBody">
-						<script>
-						function rememberRef(btnIdx) {
-							if (btnIdx != null && btnIdx != '') {
-								location.href = "/member/sub.do?menukey=4000&ref=" + btnIdx;
-							}
-							alert('로그인 후 사용이 가능합니다.\n로그인페이지로 이동합니다.');
-						}
-						</script>
+					<div class="sub-contents">
+						<div class="form-container">
+							<!-- [S] 기업정보 -->
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">기업정보</h3>
+								</div>
 
-						<div class="posting_wrap">
-							<dl class="posting_info">
-								<dt>공고등록</dt>
-								<dd>
-									<ul class="list_ul-dot">
-										<li>사업공고에 게시를 원하시는 기관은 아래 게시요청을 선택하셔서 관련 내용 및 자료를 등록해 주시기 바랍니다.</li>
-										<li>신청하신 내용은 담당자 확인 후 게시하겠습니다.</li>
-									</ul>
-									<p class="btns tc">
-										<a href="sub_소식자료_게시요청_신청서.html" class="btn_view icon--arrow">게시요청</a>
-									</p>
-								</dd>
-								<dd class="contact">
-									<dl>
-										<dt>문의</dt>
-										<dd>
-											<ul>
-												<li>정보화기획팀</li>
-												<li class="manager">한태휘</li>
-												<li class="tel">031-697-7871</li>
-												<li class="email">hth@ikosea.or.kr</li>
-											</ul>
-										</dd>
-									</dl>
-								</dd>
-							</dl>
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>회사명</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">회사명</div>
+														<div class="cell">사회적협동조합 우리사이</div>
+													</td>
+												</tr>
+												<tr>
+													<th>대표자명</th>
+													<td class="text-left">
+														<div class="cell-mo">대표자명</div>
+														<div class="cell">
+															김영숙
+														</div>
+													</td>
+													<th>근로자수</th>
+													<td class="text-left">
+														<div class="cell-mo">근로자수</div>
+														<div class="cell">
+															130 명
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>자본금</th>
+													<td class="text-left">
+														<div class="cell-mo">자본금</div>
+														<div class="cell">
+															0 백만원
+														</div>
+													</td>
+													<th>연매출액</th>
+													<td class="text-left">
+														<div class="cell-mo">연매출액</div>
+														<div class="cell">
+															0 백만원
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>업종</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">업종</div>
+														<div class="cell">그 외 기타 보건업</div>
+													</td>
+												</tr>
+												<tr>
+													<th>주요사업내용</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">주요사업내용</div>
+														<div class="cell">돌봄사업(장애활동지원,가사간병,노인돌봄,산모신생아,재가장기등)</div>
+													</td>
+												</tr>
+												<tr>
+													<th>회사주소</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">회사주소</div>
+														<div class="cell">08767 서울특별시 관악구 남부순환로 1457 (신림동, 보림빌딩)</div>
+													</td>
+												</tr>
+												<tr>
+													<th>홈페이지</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">홈페이지</div>
+														<div class="cell">-</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+							<!-- [E] 기업정보 -->
+
+							<!-- [S] 모집요강 -->
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">모집요강</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>모집직종</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">모집직종</div>
+														<div class="cell">사무 보조원(일반사업체)(029506)</div>
+													</td>
+												</tr>
+												<tr>
+													<th>관련직종</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">관련직종</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>직무내용</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">직무내용</div>
+														<div class="cell">
+															장애인활동지원사업의 행정업무(사무실 내에서 사회복지사의 행정업무 보조)
+															예시: 테이터 입력, 서류 정리, 전산정보 확인, 엑셀자료 정리
+															- 근무시간: 13:00~17:00/ 주 5일 20시간
+															- 시급: 11,000~12,000원
+															※ 복지카드 소지자 &lt;필수&gt;
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>접수마감일</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">접수마감일</div>
+														<div class="cell">
+															20250831
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>고용형태</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">고용형태</div>
+														<div class="cell">
+															기간의 정함이 있는 근로계약(시간(선택)제)6 개월/ 파견근로 비희망/ 대체인력채용 비희망
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>모집인원</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">모집인원</div>
+														<div class="cell">
+															2명
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>임금조건</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">임금조건</div>
+														<div class="cell">
+															시급12,470원 이상 ~ 13,000원 이하,
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>경력조건</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">경력조건</div>
+														<div class="cell">
+															관계없음
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>학력</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">학력</div>
+														<div class="cell">
+															학력무관
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>키워드</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">키워드</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+							<!-- [E] 모집요강 -->
+
+							<!-- [S] 우대사항 -->
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">우대사항</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>외국어 능력</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">외국어 능력</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>전공</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">전공</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>자격면허</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">자격면허</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>병역특례채용희망</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">병역특례채용희망</div>
+														<div class="cell">
+															비희망
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>컴퓨터 활용능력</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">컴퓨터 활용능력</div>
+														<div class="cell">
+															문서작성 (워드프로세스 활용),표계산 (스프레드시트 활용)
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>우대조건</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">우대조건</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>기타우대사항</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">기타우대사항</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+							<!-- [E] 우대사항 -->
+							
+							<!-- [S] 전형방법 -->
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">전형방법</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>전형방법</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">전형방법</div>
+														<div class="cell">
+															서류,면접
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>접수방법</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">접수방법</div>
+														<div class="cell">
+															방문,우편,팩스,고용24,이메일
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>제출서류 양식 첨부</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">제출서류 양식 첨부</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>제출서류 준비물</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">제출서류 준비물</div>
+														<div class="cell">
+															이력서,자기소개서,기타(복지카드 또는 장애인증명서 사본)
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+							<!-- [E] 전형방법 -->
+							 
+							<!-- [S] 근무환경 및 복리후생 -->
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">근무환경 및 복리후생</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>근무예정지</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">근무예정지</div>
+														<div class="cell">
+															(08767) 서울특별시 관악구 남부순환로 1457, 2층 (신림동)
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>인근 전철역</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">인근 전철역</div>
+														<div class="cell">
+															
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>근무시간/형태</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">근무시간/형태</div>
+														<div class="cell">
+															평일 : (근무시간) (오후) 1시 00분 ~ (오후) 5시 00분, 주 5일 근무
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>복리후생</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">복리후생</div>
+														<div class="cell">
+															<ul class="inline_ul-dot block">
+																<li>
+																	<strong>연금4대보험</strong>
+																	<dd>국민연금 고용보험 산재보험 의료보험</dd>
+																</li>
+																<li>
+																	<strong>퇴직금</strong>
+																	<p>해당없음</p>
+																</li>
+																<li>
+																	<strong>기타복리후생</strong>
+																	<p>기타(장애수당 월 10만원)</p>
+																</li>
+																<li>
+																	<strong>장애인편의시설</strong>
+																	<p>건물 내부 경사로,기타(없음)</p>
+																</li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+							<!-- [E] 근무환경 및 복리후생 -->
+
+							<!-- [S] 기타 -->
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">기타</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>기타 입력사항</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">기타 입력사항</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+							<!-- [E] 기타 -->
+							 
+							<!-- [S] 채용담당자 -->
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">채용담당자</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>채용담당자</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">채용담당자</div>
+														<div class="cell">
+															-
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>전화번호</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">전화번호</div>
+														<div class="cell">
+															070-7771-1468
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>팩스번호</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">팩스번호</div>
+														<div class="cell">
+															02-8883-0143
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+							<!-- [E] 채용담당자 -->
+						</div>
+
+						<ul class="view-link">
+							<li class="prev">
+								<span class="tit">이전 글</span>
+								<a href="#" title="이전 글로 이동" style="pointer-events: none;">이전 글이 없습니다.
+								</a>
+							</li>
+							<li class="next">
+								<span class="tit">다음 글</span>
+								<a href="#" title="다음 글로 이동">주식회사 한국표준안전연구원</a>
+							</li>
+						</ul>
+						
+						<div class="btn-wrp btn-bottom">
+							<button type="button" class="btn btn-outline-black">목록</button>
 						</div>
 					</div>
 				</div>

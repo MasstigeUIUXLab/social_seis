@@ -2230,11 +2230,19 @@
 .form-group + .form-group {
   margin-top: 1.5rem;
 }
-.form-input-group.flex-column {
+.form-input-group {
+  min-height: 48px;
+}
+.form-input-group.flex-column, .form-input-group .flex-column {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 0.875rem 0;
+  gap: 1rem 0;
+}
+@media all and (max-width: 1024px) {
+  .form-input-group {
+    min-height: 44px;
+  }
 }
 .form-input-group, .form-row, .form-md-row {
   display: -webkit-box;
@@ -2273,19 +2281,8 @@
 .form-md-row input.w-auto {
   width: 7.5rem;
 }
-.form-input-group .btn, .form-row .btn, .form-md-row .btn {
-  height: 40px;
-  line-height: 40px;
-  font-size: 18px;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-.form-input-group:not(.flex-column) > .input-label:not(:last-child), .form-row:not(.flex-column) > .input-label:not(:last-child), .form-md-row:not(.flex-column) > .input-label:not(:last-child) {
+.form-input-group:not(.flex-column) > .input-label:not(:last-child, .input-label--tab), .form-row:not(.flex-column) > .input-label:not(:last-child, .input-label--tab), .form-md-row:not(.flex-column) > .input-label:not(:last-child, .input-label--tab) {
   margin-right: 0.75rem;
-}
-.form-input-group .form-control ~ .btn, .form-row .form-control ~ .btn, .form-md-row .form-control ~ .btn {
-  height: 48px;
-  line-height: 48px;
 }
 .form-row {
   -webkit-box-align: start;
@@ -2296,6 +2293,9 @@
 .form-row > .form-group, .form-row > .form-input-group {
   margin-top: 0;
   margin-bottom: 0;
+}
+.form-row:not(.flex-column) > .input-label:not(:last-child) {
+  margin-right: 0;
 }
 @media all and (min-width: 768.02px) {
   .form-md-row {
@@ -2607,11 +2607,17 @@
   gap: 24px 8px;
 }
 .btn-bottom .btn {
+  height: 56px;
+  line-height: 56px;
   border-radius: 4px;
 }
 @media all and (max-width: 768px) {
   .btn-bottom {
     gap: 8px;
+  }
+  .btn-bottom .btn {
+    height: 48px;
+    line-height: 48px;
   }
 }
 
@@ -4557,6 +4563,7 @@
           box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
   text-align: center;
   line-height: 1.5;
+  cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -4945,6 +4952,20 @@
   }
 }
 
+.doc-form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.doc-form .row > [class^=col] {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
 .doc-form-hd {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5097,11 +5118,20 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.doc-form-input + .doc-form-input {
+.doc-form-input.d-flex + .doc-form-input {
   margin-top: 8px;
 }
+.doc-form-input .row {
+  gap: 12px 0;
+}
+.doc-form-input + .doc-form-input {
+  margin-top: 16px;
+}
 @media all and (max-width: 768px) {
-  .doc-form-input > .row > * + * {
+  .doc-form-input .row {
+    gap: 8px 0;
+  }
+  .doc-form-input + .doc-form-input {
     margin-top: 8px;
   }
 }
@@ -8278,148 +8308,6 @@ select.doc_input:focus {
   .sub-asis .box-img .tit {
     font-size: 18px;
   }
-}
-.sub-asis .input-label--radio {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  font-size: 1.125rem;
-  line-height: 1.3334;
-  text-align: left;
-  font-weight: 400;
-}
-.sub-asis .input-label--radio input {
-  position: relative;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 8px;
-  border-radius: 50%;
-  border: 1px solid #727272;
-  background-color: #fff;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.sub-asis .input-label--radio input:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0.75rem;
-  height: 0.75rem;
-  background: #FD8337;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.sub-asis .input-label--radio input:checked {
-  border-color: #FD8337;
-}
-.sub-asis .input-label--radio input:checked:after {
-  opacity: 1;
-}
-.sub-asis .input-label--radio input:checked + span {
-  font-weight: 600;
-  color: #222;
-}
-.sub-asis .input-label--radio input:disabled:after, .sub-asis .input-label--radio input[readonly]:after {
-  background: #aaa;
-}
-.sub-asis .input-label--radio span {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  color: #666;
-}
-.sub-asis .input-label--checkbox {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  vertical-align: middle;
-  font-size: 1.0625rem;
-  line-height: 1.4;
-  text-align: left;
-}
-.sub-asis .input-label--checkbox:not(:last-child) {
-  margin-right: 12px;
-}
-.sub-asis .input-label--checkbox input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-top: 0.15rem;
-  border: 1px solid #717171;
-  border-radius: 4px;
-  background-color: #fff;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.sub-asis .input-label--checkbox input:checked {
-  border-color: #246BEB;
-  background-color: #246BEB;
-  background-image: url(../images/enterprise/sub/icon_chkbx.svg);
-}
-.sub-asis .input-label--checkbox .input-label__txt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-left: 0.5rem;
-  line-height: 1.5;
-}
-.sub-asis .input-label--checkbox + .tb {
-  margin-top: 1rem;
-}
-.sub-asis .input-label--checkbox.md input {
-  margin-top: 1px;
-}
-.sub-asis .input-label--chkbx {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.sub-asis .input-label--chkbx + label {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  vertical-align: middle;
-  border-radius: 4px;
-  border: 1px solid #717171;
-  background-color: #fff;
-}
-.sub-asis .input-label--chkbx:checked + label {
-  border-color: #246BEB;
-  background: #246BEB url(../images/enterprise/sub/icon_chkbx.svg) no-repeat center/16px;
-}
-.sub-asis .input-label-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 0.5rem 1rem;
 }
 .sub-asis .btn-collapse {
   display: -webkit-box;
@@ -15681,6 +15569,9 @@ select.doc_input:focus {
 }
 
 .btn-ico {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding: 0 2px !important;
   border: 0 !important;
   background-color: transparent !important;
@@ -15914,6 +15805,13 @@ select.doc_input:focus {
 }
 .board-type-card .inner .state {
   font-weight: 600;
+}
+.board-type-card .inner .date {
+  display: block;
+  padding-left: 24px;
+  background: url(../images/sub/icon_sub_calendar.svg) no-repeat left/20px auto;
+  font-weight: 600;
+  line-height: 1.5;
 }
 .board-type-card .inner [class*=btn-icon] {
   position: absolute;

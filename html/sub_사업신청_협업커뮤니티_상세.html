@@ -626,37 +626,23 @@
 		<div class="container">
 			<div class="layout">
 				<div class="snb" id="snb">
-                    <h2><a href="#" data-toggle="snb">소식·자료</a></h2>
+                    <h2><a href="#" data-toggle="snb">사업신청</a></h2>
 					<ul class="nav nav-side">
 						<li class="nav-item">
 							<!-- [D] 04-16 수정 
 							* 하위뎁스가 있는 경우 a태그에 .nav-btn 추가, 
 							* 탭 활성화 .active 추가,
 							* 열려있는 페이지에 해당하는 메뉴의 .nav-link 뒤에 .on 추가 -->
-							<a href="sub_소식자료_공지사항.html" class="nav-link">공지사항</a>
+							<a href="sub_사업신청_사회적기업인증지정_목록.html" class="nav-link">사회적기업 인증·지정</a>
 						</li>
 						<li class="nav-item">
-							<a href="sub_소식자료_보도자료.html" class="nav-link">보도자료</a>
+							<a href="#" class="nav-link">재정지원사업</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link nav-btn">조사연구 및 발간자료</a>
-							<ul class="depth2">
-								<li>
-									<a href="sub_소식자료_조사연구및발간자료_정책리포트.html" class="nav-link">정책리포트</a>
-								</li>
-								<li>
-									<a href="sub_소식자료_조사연구및발간자료_발간자료.html" class="nav-link">발간자료</a>
-								</li>
-							</ul>
+							<a href="sub_사업신청_통합사업신청_목록.html" class="nav-link">통합사업 신청</a>
 						</li>
 						<li class="nav-item">
-							<a href="sub_소식자료_채용정보.html" class="nav-link">채용정보</a>
-						</li>
-						<li class="nav-item">
-							<a href="sub_소식자료_자주하는질문.html" class="nav-link">자주하는 질문</a>
-						</li>
-						<li class="nav-item">
-							<a href="sub_소식자료_게시요청.html" class="nav-link on">게시요청</a>
+							<a href="#" class="nav-link on">협업커뮤니티</a>
 						</li>
 					</ul>
             	</div>
@@ -668,7 +654,7 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">소식·자료</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth1">마이페이지</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth1">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
@@ -677,8 +663,17 @@
 						</div>
 						<i class="icon-lnb-arr"></i>
 						<div class="dropdown">
-							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">게시요청</button>
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth2">사업신청</button>
 							<ul class="dropdown-menu" aria-labelledby="lnbDepth2">
+								<li><a class="dropdown-item" href="#">link 1</a></li>
+								<li><a class="dropdown-item" href="#">link 2</a></li>
+								<li><a class="dropdown-item" href="#">link 3</a></li>
+							</ul>
+						</div>
+						<i class="icon-lnb-arr"></i>
+						<div class="dropdown">
+							<button type="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" id="lnbDepth3">협업커뮤니티</button>
+							<ul class="dropdown-menu" aria-labelledby="lnbDepth3">
 								<li><a class="dropdown-item" href="#">link 1</a></li>
 								<li><a class="dropdown-item" href="#">link 2</a></li>
 								<li><a class="dropdown-item" href="#">link 3</a></li>
@@ -686,130 +681,240 @@
 						</div>
 					</div>
 					<div class="sub-header">
-						<h2 class="tit">게시요청</h2>
-						<!-- [D] 07-02 추가 -->
-						<script type="text/javascript">
-						//<![CDATA[
-							$(function() {
-								var url = window.location.href;
-								var proto = window.location.protocol;
-								
-								$('#urlText').val(url);
-								
-								$('#btnCopy').on("click", function(e) {
-									e.preventDefault();
-									
-									$('#urlText').focus();
-									var content = document.getElementById('urlText').value;
-									
-									if (proto.indexOf('https') != -1) {
-										// https 에서만 작동
-										window.navigator.clipboard.writeText(content).then(() => {
-											alert('복사되었습니다.');
-											$(".layer_close").click();
-											return;
-										})
-										.catch(err => {
-											console.log('err', err);
-										})
-									} else {
-										var t = document.createElement("textarea");
-										document.body.appendChild(t);
-										t.value = content;
-										t.select();
-										document.execCommand('copy');
-										document.body.removeChild(t);
-										alert('복사되었습니다.');
-										$(".layer_close").click();
-									}
-								});
-							});
-						//]]>
-						</script>
-						<div class="snsBox">
-							<ul>
-								<li class="share">
-									<a href="#" onclick="return false;" class="sns_open">SNS<span>열기</span></a>
-									<ul>
-										<li><a href="#" title="페이스북에 공유하기 (새창)"><i class="icon-facebook"></i></a></li>
-										<li><a href="#" title="트위터에 공유하기 (새창)"><i class="icon-twiter"></i></a></li>
-										<li><a href="#" title="카카오톡에 공유하기 (새창)"><i class="icon-kakao"></i></a></li>
-										<li class="url"><a href="#modal1" data-toggle="modal" class="btn_open_layer">주소복사</a></li>
-									</ul>
-								</li>
-								<li class="print"><a href="#" onclick="return window.print();">인쇄</a></li>
-							</ul>
-						</div>
-						<!-- // [D] 07-02 추가 -->
+						<h2 class="tit">협업커뮤니티</h2>
 					</div>
-					<div class="sub-contents sub-asis contentBody" id="contentBody">
-						<script>
-						function rememberRef(btnIdx) {
-							if (btnIdx != null && btnIdx != '') {
-								location.href = "/member/sub.do?menukey=4000&ref=" + btnIdx;
-							}
-							alert('로그인 후 사용이 가능합니다.\n로그인페이지로 이동합니다.');
-						}
-						</script>
+					<div class="sub-contents">
+						<div class="form-container">
+							<div class="form-sect">
+								<div class="form-header align-items-start">
+									<div class="tit normal align-self-end">
+										<ul class="sub">
+											<li>
+												<p><i class="icon-sub-calendar"></i>
+												<span>2025-05-07</span></p>
+											</li>
+											<li>
+												<p><i class="icon-sub-person"></i>
+												<span>천지연</span></p>
+											</li>
+											<li>
+												<p><i class="icon-sub-view"></i>
+												<span>77</span></p>
+											</li>
+											<li>
+												<button type="button" class="btn-bookmark" onclick="$(this).toggleClass('on')">
+													<i class="icon-sub-bookmark"></i>
+													<span>스크랩</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
-						<div class="posting_wrap">
-							<dl class="posting_info">
-								<dt>공고등록</dt>
-								<dd>
-									<ul class="list_ul-dot">
-										<li>사업공고에 게시를 원하시는 기관은 아래 게시요청을 선택하셔서 관련 내용 및 자료를 등록해 주시기 바랍니다.</li>
-										<li>신청하신 내용은 담당자 확인 후 게시하겠습니다.</li>
-									</ul>
-									<p class="btns tc">
-										<a href="sub_소식자료_게시요청_신청서.html" class="btn_view icon--arrow">게시요청</a>
-									</p>
-								</dd>
-								<dd class="contact">
-									<dl>
-										<dt>문의</dt>
-										<dd>
-											<ul>
-												<li>정보화기획팀</li>
-												<li class="manager">한태휘</li>
-												<li class="tel">031-697-7871</li>
-												<li class="email">hth@ikosea.or.kr</li>
-											</ul>
-										</dd>
-									</dl>
-								</dd>
-							</dl>
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">제안자 정보</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>제안자</th>
+													<td class="text-left">
+														<div class="cell-mo">제안자</div>
+														<div class="cell">
+															천지연
+														</div>
+													</td>
+													<th>기업명</th>
+													<td class="text-left">
+														<div class="cell-mo">기업명</div>
+														<div class="cell">
+															개인
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">제안 내용</h3>
+								</div>
+
+								<!-- 표 -->
+								<div class="board-wrap">
+									<div class="tb-wrap tb-mobile tb-column v2">
+										<table class="tb">
+											<colgroup>
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+												<col width="14%">
+												<col width="calc( 50% - 14% )">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th>기간</th>
+													<td class="text-left">
+														<div class="cell-mo">기간</div>
+														<div class="cell">
+															2025-01-24 ~ 2025-01-24
+														</div>
+													</td>
+													<th>지역</th>
+													<td class="text-left">
+														<div class="cell-mo">지역</div>
+														<div class="cell">
+															광주
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>사업유형</th>
+													<td class="text-left">
+														<div class="cell-mo">사업유형</div>
+														<div class="cell">
+															창업, 교육
+														</div>
+													</td>
+													<th>상태</th>
+													<td class="text-left">
+														<div class="cell-mo">상태</div>
+														<div class="cell">
+															마감
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th>협업커뮤니티명</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">협업커뮤니티명</div>
+														<div class="cell">미혼모시설(아동보호시설)</div>
+													</td>
+												</tr>
+												<tr>
+													<th>협업커뮤니티내용</th>
+													<td colspan="3" class="text-left">
+														<div class="cell-mo">협업커뮤니티내용</div>
+														<div class="cell">
+															미혼모 및 아이를 위한 보호시설을 운영을 하고 싶지만 이러한 전반적인 루트를 알지 못하고 어디서 부터 교육을 받고, 운영체제는 어떻게 이루어지는지 알길이 없어 도움을 요청하고자 합니다. 저와 뜻이 같은 분이 계신다면 함께 공부하고 교육을 받아서 미혼모와 아이들을 잘 케어하고 보호할 수 있는기관을 운영해 보았으면 합니다.
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- // -->
+							</div>
+
+							<div class="form-sect">
+								<div class="category_tabs community">
+									<span class="status"><span>참여중</span></span>
+										<div class="category_tab">
+										<ul>
+											<li><a href="#tab1" class="on" style="display: block;" title="선택됨"><span>참여</span><span>0</span></a></li>
+											<li><a href="#tab2" class=""><span>참여자</span><span>1</span></a></li>
+										</ul>
+									</div>
+									<form id="cmnctCmntRegistForm" name="cmnctCmntRegistForm" method="post" action="?menukey=7209&amp;cmnct_no=12">
+										<input type="hidden" name="mode" value="cmnt">
+										<input type="hidden" name="act" value="">
+										<input type="hidden" name="cmnct_no" value="">
+										<input type="hidden" name="cmnct_cmnt_no" value="">
+										<input type="hidden" name="cmnct_cmnt_cn" value="">
+										
+										<div class="category_tab_conts">
+											<div id="tab1" style="">
+												<h4 class="title2 bul">참여공간<span class="text2"></span></h4>
+												<div id="replyBox" class="view_box_items comm_list_box js_scrollbar mCustomScrollbar _mCS_1 mCS_no_scrollbar" style="height: 200px;"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+													<ul id="cmntList">
+														<li class="nodata">
+																	<p>대화가 없습니다.</p>
+																</li>
+															</ul>
+												</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+												</div>
+											<div id="tab2" style="display: none;">
+												<h4 class="title2 bul">참여자 정보<span class="text2">(1)</span></h4>
+												<ul class="member_info_box">
+													<li><!-- 제안자 정보 -->
+														<dl>
+															<dt class="owner">이름</dt>
+															<dd>천지연</dd>
+														</dl>
+														<dl>
+															<dt>전화번호</dt>
+															<dd>
+																010-
+																
+																	*
+																
+																	*
+																
+																	*
+																
+																	*
+																
+																-
+																
+																	*
+																
+																	*
+																
+																	*
+																
+																	*
+																</dd>
+														</dl>
+														<dl>
+															<dt>이메일</dt>
+															<dd>yeon07e8@hanmail.net</dd>
+														</dl>
+														<dl>
+															<dt>소속기업</dt>
+															<dd>개인</dd>
+														</dl>
+														<dl>
+															<dt>업종</dt>
+															<dd>-</dd>
+														</dl>
+														<dl>
+															<dt>웹사이트</dt>
+															<dd>
+																<a>-</a>
+																	</dd>
+														</dl>
+													</li>
+													</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>			
+						
+						<div class="btn-wrp btn-bottom">
+							<button type="button" class="btn btn-outline-black">목록</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- [D] 07-02 추가 / 주소복사 팝업 -->
-	<div id="modal1" class="modal fade modal-small mw480" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h3 class="tit">주소복사</h3>
-					<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
-				</div>
-				<div class="modal-body">
-					<div class="sect-body">
-						<div class="form-tit-wrp">
-							<p class="form-tit">아래 복사하기를 누르신 후 원하는 곳에 <span class="text-red">Ctrl+V</span>를 눌러 붙여넣기 하세요.</p>
-						</div>
-						<div class="mt-4">
-							<input id="urlText" type="text" class="form-control" value="" placeholder="http://" style="width:100%;" onfocus="this.select()">
-						</div>
-					</div>
-					<div class="btn-wrp justify-content-center gap8">
-						<button id="btnCopy" class="btn btn-black">복사하기</button>
-					</div>
-				</div>          
-			</div>
-		</div>
-	</div>
-	<!-- // 07-02 추가 / 주소복사 팝업 -->
 </div>
 <!-- // 페이지시작 -->
 

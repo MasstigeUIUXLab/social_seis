@@ -475,7 +475,7 @@ textarea {
 	border: solid 1px $input-border;
 	background-color: #fff;
 	overflow: auto;
-	min-height: 124px;
+	min-height: 127px;
 	width: 100%;
 	box-sizing: border-box;
 	-webkit-appearance: none;
@@ -622,7 +622,11 @@ input[type='radio'] {
     & > span {
       flex: 0 0 auto !important;
       display: inline-block;
-      line-height: 0;
+      line-height: calc( $form-control-height - 1px );
+      
+      @include mdq-max(lg) {
+        line-height: calc( $form-control-height-lg - 1px );
+      }
     }
   
     &.disabled, &.readonly {
@@ -640,9 +644,10 @@ input[type='radio'] {
 .input-group {
     display: inline-flex;
     flex-wrap: wrap;
+    gap: 8px;
   
-    label:not(:last-child) {
-      margin-right: 10px;
+    label{
+      margin-right: 0;
     }
   
     label:not(:first-child, .file-label) {
@@ -657,7 +662,16 @@ input[type='radio'] {
       width: rem(24);
       height: rem(24);
     }
-  
+    
+    .w-auto{
+      flex: 0 0 auto;
+      align-self: center;
+    }
+
+    .form-control{
+      flex: 1;
+    }
+
     &.bx {
       display: flex;
       flex-wrap: wrap;
@@ -845,27 +859,37 @@ input[type='radio'] {
         border: 0;
 
         &:checked + .input-label__txt{
-          background: #246BEB;
-          border-color: #246BEB;
-          color: #fff;
+            background-color: #246BEB;
+            border-color: #246BEB;
+            color:#fff;
         }
 
         &:disabled + .input-label__txt{
           pointer-events: none;
+          border-color: #D2D2D2 !important;
+          background-color: #F8F8F8 !important;
+          color: #666;
         }
       }
       
       .input-label__txt{
-        display: inline-block;
-        padding: 7px 19px;
-        border-radius: 90px;
-        border: 1px solid #E6E6E6;
-        background: #fff;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.4;
-        transition: .25s;
-        cursor: pointer;
+          display: inline-block;
+          padding: 8px 20px;
+          line-height: 1.286;
+          border-radius: 4px;
+          border: 1px solid #E6E6E6;
+          border-radius: 90px;
+          background-color: #FFF;
+          font-size: 14px;
+          font-weight: 500;
+          color:#222;
+          word-break: break-all;
+          cursor: pointer;
+          // transition: .25s;
+
+          @include mdq-max(lg) {
+            padding: 6px 16px;
+          }
       }
     }
 }

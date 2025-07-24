@@ -742,7 +742,7 @@
 						</div>
 						<!-- // [D] 07-02 추가 -->
 					</div>
-					<div class="sub-contents sub-asis contentBody" id="contentBody">
+					<div class="sub-contents contentBody" id="contentBody">
 						<script>
 						function rememberRef(btnIdx) {
 							if (btnIdx != null && btnIdx != '') {
@@ -752,32 +752,367 @@
 						}
 						</script>
 
-						<div class="posting_wrap">
-							<dl class="posting_info">
-								<dt>공고등록</dt>
-								<dd>
-									<ul class="list_ul-dot">
-										<li>사업공고에 게시를 원하시는 기관은 아래 게시요청을 선택하셔서 관련 내용 및 자료를 등록해 주시기 바랍니다.</li>
-										<li>신청하신 내용은 담당자 확인 후 게시하겠습니다.</li>
-									</ul>
-									<p class="btns tc">
-										<a href="sub_소식자료_게시요청_신청서.html" class="btn_view icon--arrow">게시요청</a>
-									</p>
-								</dd>
-								<dd class="contact">
-									<dl>
-										<dt>문의</dt>
-										<dd>
-											<ul>
-												<li>정보화기획팀</li>
-												<li class="manager">한태휘</li>
-												<li class="tel">031-697-7871</li>
-												<li class="email">hth@ikosea.or.kr</li>
-											</ul>
-										</dd>
-									</dl>
-								</dd>
-							</dl>
+						<div class="form-container">
+							<div class="form-sect">
+								<div class="form-header">
+									<h3 class="tit">사회적기업 포털 공고등록 신청서</h3>
+								</div>
+								<ul class="form-body">
+									<li class="col-12 col-md-6 col-lg-3">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<!-- [D] 필수 요소에는 .asterisk -->
+												<p class="form-tit asterisk">공고유형</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control" required>
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-3">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">수행기관 구분</p>
+											</div>
+											<div class="form-input-group">
+												<select name="" class="form-control" required>
+													<option value="" selected disabled>선택</option>
+													<option value="">선택</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-6">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">공고명</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" value="" required class="form-control" placeholder="ex. OOOO 온라인 쇼핑몰 진출 지원사업"/>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-6">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">게시기간</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" id="" required class="datepicker form-control" data-type="single"/>
+												<span class="w-auto">~</span>
+												<input type="text" name="" id="" required class="datepicker form-control" data-type="single"/>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-3">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">수행기관</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" value="" required class="form-control" placeholder="ex. 한국사회적기업진흥원 (해당 사업 수행기관명 기재)"/>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-3">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">담당부서</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" value="" required class="form-control" placeholder="사업담당부서를 입력하세요"/>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-3">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">담당자</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" value="" class="form-control" placeholder="담당자 성명을 입력하세요"/>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-3">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">연락처</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" value="" class="form-control" placeholder="담당자 연락처를 입력하세요 (- 포함하여 입력)"/>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-3">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">소관기관</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" value="" required class="form-control" placeholder="ex. 고용노동부"/>
+											</div>
+										</div>
+									</li>
+									<li class="col-12 col-md-6 col-lg-3">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">바로가기URL</p>
+											</div>
+											<div class="form-input-group">
+												<input type="text" name="" value="" required class="form-control" placeholder="http://"/>
+											</div>
+										</div>
+									</li>
+									<li class="col-12">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">사업분류(중복선택 가능)</p>
+											</div>
+											<div class="form-input-group flex-wrap">
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">창업</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">사업화</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">기술개발(R&D)</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">시설/공간</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">멘토링/컨설팅</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">자금조달</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">인력/채용</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">판로</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">교육</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">행사/네트워크</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk1">
+													<span class="input-label__txt">해외진출</span>
+												</label>
+											</div>
+										</div>
+									</li>
+									<li class="col-12">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">지원지역(중복선택 가능)</p>
+											</div>
+											<div class="form-input-group flex-wrap">
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">전국</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">서울</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">인천</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">부산</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">대구</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">광주</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">대전</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">울산</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">세종</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">제주</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">경기</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">강원</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">충북</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">충남</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">전북</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">전남</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">경북</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk2">
+													<span class="input-label__txt">경남</span>
+												</label>
+											</div>
+										</div>
+									</li>
+									<li class="col-12">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">신청대상(중복선택 가능)</p>
+											</div>
+											<div class="form-input-group flex-wrap">
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk3">
+													<span class="input-label__txt">사회적기업</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk3">
+													<span class="input-label__txt">예비사회적기업</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk3">
+													<span class="input-label__txt">협동조합</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk3">
+													<span class="input-label__txt">사회적협동조합</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk3">
+													<span class="input-label__txt">마을기업</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk3">
+													<span class="input-label__txt">자활기업</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk3">
+													<span class="input-label__txt">소셜벤처</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk3">
+													<span class="input-label__txt">기타</span>
+												</label>
+											</div>
+										</div>
+									</li>
+									<li class="col-12">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit asterisk">신청 방법(중복선택 가능)</p>
+											</div>
+											<div class="form-input-group flex-wrap">
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk4">
+													<span class="input-label__txt">온라인</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk4">
+													<span class="input-label__txt">이메일</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk4">
+													<span class="input-label__txt">방문</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk4">
+													<span class="input-label__txt">우편</span>
+												</label>
+												<label class="input-label input-label--tab">
+													<input type="checkbox" name="chk4">
+													<span class="input-label__txt">기타</span>
+												</label>
+											</div>
+										</div>
+									</li>
+									<li class="col-12">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">안내사항</p>
+											</div>
+											<div class="form-input-group">
+												<textarea name="" id="" class="form-control" placeholder="「OOO 온라인 쇼핑몰 진출 지원사업」 참여기관 모집과 관련하여 △△기관에서는 온라인 쇼핑몰에 진출하고자 하는 (예비)사회적기업을 모집하고자 하오니, 많은 관심 바랍니다.
+
+0000년 00월 00일"></textarea>
+											</div>
+										</div>
+									</li>
+									<li class="col-12">
+										<div class="form-group">
+											<div class="form-tit-wrp">
+												<p class="form-tit">첨부파일</p>
+											</div>
+											<div class="form-input-group">
+												<ul class="file-list">
+													<li class="item">
+														<!-- <p class="file-name"><span>사업계획서.pdf</span></p> -->
+														<div class="file-control">
+															<!-- <button type="button" class="btn btn-xs btn-ico">
+																<i class="grid_delete_file"></i><span class="sr-only">파일삭제</span>
+															</button> -->
+															<label class="file-label btn btn-black">
+																<input type="file" name="file1" onchange="onchangeUpload(event);" class="sr-only">
+																<span>첨부파일 올리기</span>
+															</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="btn-wrp btn-bottom">
+							<button type="button" class="btn btn-outline-black">취소</button>
+							<button type="button" class="btn btn-blue">저장</button>
 						</div>
 					</div>
 				</div>
