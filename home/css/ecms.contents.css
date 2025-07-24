@@ -985,7 +985,7 @@ p.tr+.posting_wrap{margin-top:20px;}
 
 /* 주요성과 - 주요현황 : 타이틀 사이즈 - 10p // ecms.contents.css */
 .title2 {font-size: 26px;}
-.title2.bul:before {top:0.55em;}
+/* .title2.bul:before {top:0.55em;} */
 
 /* 테이블 폰트 통일 */
 .contTable.chart.tr tbody td {font-family: "Noto Sans KR", sans-serif;}
@@ -1026,6 +1026,8 @@ p.tr+.posting_wrap{margin-top:20px;}
 }
 
 @media all and (max-width:768px) {
+	.title2.bul{padding: 0 0 0 0.7em;font-size:18px;}
+	.title2.bul:before{width: 6px;height: 6px;}
 	.diagram_ol>li{display: flex; align-items: center; flex-wrap: wrap;}
 	.diagram_ol>li .num {flex: 0.5;}
     .diagram_ol>li span:not(.num) {flex: 1;}
@@ -1075,7 +1077,7 @@ p.tr+.posting_wrap{margin-top:20px;}
 	.tails .table_legend+.icon_excel_down{position: absolute; top: 0; right: 0;}
 	.tits .title2.bul{margin-top: 5px;}
 	.title2{font-size: 20px;}
-	.title2.bul:before {top: 0.45em;}
+	/* .title2.bul:before {top: 0.45em;} */
 	.title2.bul+.tails{margin-left: auto; margin-right: 50px;}
 	.title2.bul+.tails.table_legend+.icon_excel_down{position: relative;}
 	[class*="facility"]>li{flex: 0 0 calc(100% / 2); padding: 10px 0 20px 70px; margin-bottom: 20px;}
