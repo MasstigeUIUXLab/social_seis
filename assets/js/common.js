@@ -294,13 +294,15 @@ $(document).ready(function () {
     locale: {
       yearSuffix: "년",
       applyLabel:"확인", 
-      cancelLabel: "취소", 
+      cancelLabel: "초기화", 
       format: 'YYYY.MM.DD',
       daysOfWeek:["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ], 
       monthNames:["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"], 
       showDropdowns: true,
     },
     changeMonth: true, 
+  }).on('cancel.daterangepicker', function(ev, picker) {
+    $(ev.currentTarget).val('');
   });
 
   $('.datepicker').on('apply.daterangepicker', function(ev, picker) {
@@ -317,13 +319,15 @@ $(document).ready(function () {
     locale: {
       yearSuffix: "년",
       applyLabel:"확인", 
-      cancelLabel: "취소", 
+      cancelLabel: "초기화", 
       format: 'YYYY.MM.DD',
       daysOfWeek:["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ], 
       monthNames:["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"], 
       showDropdowns: true,
     },
     changeMonth: true, 
+  }).on('cancel.daterangepicker', function(ev, picker) {
+    $(ev.currentTarget).val('');
   });
 
   //scrollUp
