@@ -174,7 +174,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     // color: #222;
     // font-weight: 400;
 
@@ -184,7 +184,7 @@
       gap: rem(12) rem(24);
 
       &:not(:first-child){
-        padding-top: 12px;
+        padding-top: 8px;
         border-top: 1px solid #E7E7E7;
       }
 
