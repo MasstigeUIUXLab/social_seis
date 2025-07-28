@@ -4128,6 +4128,14 @@ tr.nodata td {
   gap: 2rem;
   margin-top: 18px;
 }
+.login .login-inner-wrap .radio-contain .radio-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .login .login-inner-wrap .radio-contain label {
   font-size: 15px;
   color: #555;
@@ -4481,6 +4489,105 @@ tr.nodata td {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
+}
+.doc .doc_input {
+  display: block;
+  width: 100% !important;
+  height: 44px !important;
+  padding: 11px 10px !important;
+  border: 1px solid #D2D2D2 !important;
+  background-color: #fff !important;
+  border-radius: 8px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+  font-weight: 400 !important;
+  color: #1D1D1D !important;
+  text-align: left !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.doc .doc_input::-webkit-input-placeholder {
+  color: #666 !important;
+}
+.doc .doc_input::-moz-placeholder {
+  color: #666 !important;
+}
+.doc .doc_input:-ms-input-placeholder {
+  color: #666 !important;
+}
+.doc .doc_input::-ms-input-placeholder {
+  color: #666 !important;
+}
+.doc .doc_input::placeholder {
+  color: #666 !important;
+}
+.doc .doc_input:disabled, .doc .doc_input[readonly] {
+  border-color: #D2D2D2 !important;
+  background-color: #E4EFE5 !important;
+  color: #666 !important;
+}
+.doc select.doc_input {
+  background: #fff url(../images/sub/login/doc_select_arr.svg) no-repeat center right 10px/24px auto;
+  padding-right: 40px !important;
+}
+.doc select.doc_input:focus {
+  background: #fff url(../images/sub/login/doc_select_arr_on.svg) no-repeat center right 10px/24px auto;
+}
+.doc .doc_btn {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  gap: 8px !important;
+  height: 44px !important;
+  background-color: #FAFAFA !important;
+  border: 1px solid #EAEAEA !important;
+  border-radius: 4px !important;
+  padding: 10px 24px !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #1d1d1d !important;
+  white-space: nowrap !important;
+}
+@media all and (max-width: 768px) {
+  .doc .doc_btn {
+    padding: 8px 16px !important;
+    font-size: 16px !important;
+  }
+}
+.doc .doc_btn.doc_btn_black {
+  background: #222222 !important;
+  border-color: #222 !important;
+  color: #fff !important;
+}
+.doc .doc_btn.doc_btn_outline_green {
+  background: transparent !important;
+  border-color: #44AB57 !important;
+  color: #006012 !important;
+}
+.doc .doc_btn.doc_btn_green {
+  background: #2D873E !important;
+  border-color: #2D873E !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+.doc .doc_btn.doc_btn_white {
+  background: #fff !important;
+}
+.doc .doc_text_red {
+  color: #E60012 !important;
 }
 
 .join-step {
@@ -5112,6 +5219,9 @@ tr.nodata td {
   margin-left: 2px;
   color: #E60012;
 }
+.doc-form-tit .asterisk:after {
+  display: none;
+}
 @media all and (max-width: 768px) {
   .doc-form-tit > * {
     font-size: 16px;
@@ -5186,109 +5296,6 @@ tr.nodata td {
   .doc-form-input + .doc-form-input {
     margin-top: 8px;
   }
-}
-
-.doc_input {
-  display: block;
-  width: 100% !important;
-  height: 44px !important;
-  padding: 11px 10px !important;
-  border: 1px solid #D2D2D2 !important;
-  background-color: #fff !important;
-  border-radius: 8px !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  font-size: 16px !important;
-  line-height: 1 !important;
-  font-weight: 400 !important;
-  color: #1D1D1D !important;
-  text-align: left !important;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.doc_input::-webkit-input-placeholder {
-  color: #666 !important;
-}
-.doc_input::-moz-placeholder {
-  color: #666 !important;
-}
-.doc_input:-ms-input-placeholder {
-  color: #666 !important;
-}
-.doc_input::-ms-input-placeholder {
-  color: #666 !important;
-}
-.doc_input::placeholder {
-  color: #666 !important;
-}
-.doc_input:disabled, .doc_input[readonly] {
-  border-color: #D2D2D2 !important;
-  background-color: #E4EFE5 !important;
-  color: #666 !important;
-}
-
-select.doc_input {
-  background: #fff url(../images/sub/login/doc_select_arr.svg) no-repeat center right 10px/24px auto;
-  padding-right: 40px !important;
-}
-select.doc_input:focus {
-  background: #fff url(../images/sub/login/doc_select_arr_on.svg) no-repeat center right 10px/24px auto;
-}
-
-.doc_btn {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-  gap: 8px !important;
-  height: 44px !important;
-  background-color: #FAFAFA !important;
-  border: 1px solid #EAEAEA !important;
-  border-radius: 4px !important;
-  padding: 10px 24px !important;
-  font-size: 18px !important;
-  font-weight: 400 !important;
-  letter-spacing: 0 !important;
-  line-height: 1 !important;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #1d1d1d !important;
-  white-space: nowrap !important;
-}
-@media all and (max-width: 768px) {
-  .doc_btn {
-    padding: 8px 16px !important;
-    font-size: 16px !important;
-  }
-}
-.doc_btn.doc_btn_black {
-  background: #222222 !important;
-  border-color: #222 !important;
-  color: #fff !important;
-}
-.doc_btn.doc_btn_outline_green {
-  background: transparent !important;
-  border-color: #44AB57 !important;
-  color: #006012 !important;
-}
-.doc_btn.doc_btn_green {
-  background: #2D873E !important;
-  border-color: #2D873E !important;
-  color: #fff !important;
-  font-weight: 700 !important;
-}
-.doc_btn.doc_btn_white {
-  background: #fff !important;
-}
-
-.doc_text_red {
-  color: #E60012 !important;
 }
 
 .doc_file_btn {
