@@ -38,6 +38,15 @@
 			}
 		}
 
+		.family{
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			flex: 0 0 auto;
+			width: 100%;
+			max-width: 420px;
+		}
+
 	}
 
 	&__bottom{
@@ -53,12 +62,13 @@
 			gap: 10px rem(30);
 			flex-wrap: wrap;
 
-			a{
+			a, button{
 				display: inline-block;
 				font-weight: 700;
 				font-size: 14px;
 				color: #727272;
-				line-height: 16px;
+				line-height: 1;
+    			vertical-align: top;
 			}
 
 			.link-underline:not(.text-body):after{
@@ -98,19 +108,26 @@
 			padding: 50px 0;
 		}
 
-		&__top .sns{
-			position: absolute;
-			bottom: 5px;
-			right: 20px;
-			z-index: 10;
+		&__top {
+			.sns{
+				position: absolute;
+				bottom: 5px;
+				right: 20px;
+				z-index: 10;
+			}
+
+			.family{
+				gap: 8px;
+    			margin-top: 8px;
+			}
 		}
 
 		&__bottom {
 			.link{
 			    gap: 12px 20px;
 				
-				a{
-					font-size: 13px;
+				a, button{
+					font-size: 12px;
 				}
 			}
 			.info{

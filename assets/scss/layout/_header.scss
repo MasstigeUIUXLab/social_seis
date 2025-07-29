@@ -274,7 +274,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
 
           & > .link{
             position:relative;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             padding:0 0 0 1.2em;
             border-bottom: 0;
             font-size:rem(20);
@@ -307,7 +307,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
         .depth-3 {
           .link{
             position: relative;
-            padding: 4px 0 4px 12px;
+            padding: 4px 20px 4px 12px;
 
             &:before{  
               content: "-";
@@ -335,7 +335,6 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
 
             &-inner{
               display: block;
-              
             }
 
             .nav-title{
@@ -388,6 +387,10 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
           .nav-list--depth3 {
             padding-left: 16px;
           }
+          
+          .submenu-inner{
+            min-height: auto;
+          }
         }
       }
     }
@@ -421,7 +424,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
           }
 
           & + .depth-1{
-            margin-top: 32px;
+            margin-top: 60px;
           }
         }
 
@@ -429,6 +432,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
           gap: 16px 0;
           margin-right: -8px;
           margin-left: -8px;
+          width: calc(100% + 16px);
         }
 
         .depth-2{
@@ -437,6 +441,7 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
           padding: 0 8px;
 
           & > .link{
+            margin-bottom: 8px;
             padding: 0 0 0 16px;
             font-size: 16px;
 
@@ -449,8 +454,14 @@ $header-fix: true; //true: 헤더가 상단 고정일 경우입니다.
         }
         .depth-3{
           .link{
-            padding: 2px 0 2px 10px;
+            padding: 6px 20px 6px 10px;
             font-size: 14px;
+            
+            &:after{
+                width: 16px;
+                height: 16px;
+                margin-top: -1px;
+            }
           }
         }
       }
