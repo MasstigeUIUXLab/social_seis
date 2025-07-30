@@ -7277,7 +7277,7 @@ tr.nodata td {
   margin-top: 24px;
 }
 .sub-asis .bx-contents * + .txt, .sub-asis .bx-top * + .txt {
-  margin-top: 1rem;
+  margin-top: 8px;
   font-weight: 400;
 }
 .sub-asis .bx-contents .txt-group, .sub-asis .bx-top .txt-group {
@@ -7346,9 +7346,6 @@ tr.nodata td {
   .sub-asis .bx-contents .txt.lg, .sub-asis .bx-top .txt.lg {
     text-align: left;
     font-size: 16px;
-  }
-  .sub-asis .bx-contents .txt-area .tit, .sub-asis .bx-top .txt-area .tit {
-    font-size: 18px;
   }
   .sub-asis .bx-contents .txt-area .txt, .sub-asis .bx-top .txt-area .txt {
     font-size: 14px;
