@@ -1104,6 +1104,9 @@ tr.nodata td {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.tb-wrap .tb .form-input-group {
+  width: 100%;
+}
 .tb-wrap.tb-mobile .cell-mo {
   display: none;
   color: #222;
@@ -1574,6 +1577,9 @@ tr.nodata td {
 @media all and (max-width: 1024px) {
   .board-wrap .tb-wrap.th-sticky .tb {
     border-top: 0;
+  }
+  .board-wrap .tb-wrap:not(.tb-column, .tb-card) .tb tr > *, .board-wrap .tb-wrap.tb-column.v2 .tb tr > * {
+    border-right: 1px solid #e7e7e7;
   }
   .board-wrap .tb {
     min-width: 768px;
@@ -8124,17 +8130,6 @@ tr.nodata td {
   width: 1.5rem;
   height: 1.5rem;
   background-image: url(../images/enterprise/sub/icon_view_gray.svg);
-}
-.sub-asis .icon-file {
-  width: 18px;
-  height: 19px;
-  background-image: url(../images/enterprise/sub/icon_file.svg);
-}
-@media all and (max-width: 768px) {
-  .sub-asis .icon-file {
-    width: 16px;
-    height: 16px;
-  }
 }
 .sub-asis .num-view {
   display: inline;
@@ -16045,4 +16040,16 @@ tr.nodata td {
 
 .view_cont {
   margin: 50px 0;
+}
+
+.icon-file {
+  width: 18px;
+  height: 19px;
+  background-image: url(../images/enterprise/sub/icon_file.svg);
+}
+@media all and (max-width: 768px) {
+  .icon-file {
+    width: 16px;
+    height: 16px;
+  }
 }

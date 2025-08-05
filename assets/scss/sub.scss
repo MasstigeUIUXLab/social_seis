@@ -1300,6 +1300,10 @@ tr.nodata{
         border:1px solid #E7E7E7;
         border-radius:0;
         box-shadow:none;
+
+        .form-input-group {
+            width: 100%;
+        }
     }
 
     &.tb-mobile{
@@ -1916,6 +1920,13 @@ tr.nodata{
         .tb-wrap{
             &.th-sticky .tb{
                 border-top: 0;
+            }
+
+            &:not(.tb-column, .tb-card),
+            &.tb-column.v2{
+                .tb tr > *{
+                    border-right: 1px solid #e7e7e7;
+                }
             }
         }
 
@@ -9548,17 +9559,6 @@ tr.nodata{
         height:rem(24);
         background-image:url(../images/enterprise/sub/icon_view_gray.svg);
     }
-    .icon-file{
-        width:18px;
-        height:19px;
-        background-image:url(../images/enterprise/sub/icon_file.svg);
-
-        @include mdq-max(md){
-            width:16px;
-            height:16px;
-        }
-    }
-
     .num-view{
         display:inline;
         background:url(../images/enterprise/sub/icon_view.svg) no-repeat left center / 1.5em auto;
@@ -18284,4 +18284,15 @@ tr.nodata{
 
 .view_cont{
     margin: 50px 0;
+}
+
+.icon-file{
+    width:18px;
+    height:19px;
+    background-image:url(../images/enterprise/sub/icon_file.svg);
+
+    @include mdq-max(md){
+        width:16px;
+        height:16px;
+    }
 }
