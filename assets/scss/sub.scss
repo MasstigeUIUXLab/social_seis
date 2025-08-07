@@ -2423,7 +2423,7 @@ tr.nodata{
                 }
             }
 
-            & > span{
+            & > span:not(.normal){
                 align-self:flex-end;
                 font-size:rem(16);
                 font-weight:400;
@@ -2443,6 +2443,14 @@ tr.nodata{
                         height:0.8em;
                         background:#e7e7e7;
                     }
+                }
+            }
+
+            & > span.normal{
+                font-weight: 400;
+                
+                strong{
+                    font-weight: 600;
                 }
             }
 

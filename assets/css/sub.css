@@ -2019,19 +2019,19 @@ tr.nodata td {
   border-radius: 50%;
   background-color: #246BEB;
 }
-.form-header .tit > span {
+.form-header .tit > span:not(.normal) {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: 1rem;
   font-weight: 400;
 }
-.form-header .tit > span.line {
+.form-header .tit > span:not(.normal).line {
   position: relative;
   padding-left: 0.5rem;
   font-size: 1.125rem;
   font-weight: 500;
 }
-.form-header .tit > span.line:before {
+.form-header .tit > span:not(.normal).line:before {
   content: "";
   position: absolute;
   top: 0.33em;
@@ -2039,6 +2039,12 @@ tr.nodata td {
   width: 1px;
   height: 0.8em;
   background: #e7e7e7;
+}
+.form-header .tit > span.normal {
+  font-weight: 400;
+}
+.form-header .tit > span.normal strong {
+  font-weight: 600;
 }
 .form-header .tit .sub {
   display: -webkit-box;
