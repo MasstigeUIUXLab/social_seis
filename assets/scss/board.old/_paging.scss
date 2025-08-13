@@ -7,6 +7,9 @@
 	font-size: 0;
 
 	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -60,7 +63,10 @@
 		}
 
 		&.prev-first {
+			padding-left: 24px;
 			background-image: url('../images/paging/prev-first.png');
+			background-position: left;
+			margin-right: 5px;
 		}
 
 		&.prev {
@@ -78,7 +84,10 @@
 		}
 
 		&.next-last {
+			padding-right: 24px;
 			background-image: url('../images/paging/next-last.png');
+			background-position: right;
+			margin-left: 5px;
 		}
 
 		&.dot {
@@ -101,6 +110,21 @@
 
 			&.active{
 				font-weight: 500;
+			}
+			
+			&.prev-first{
+				padding-left: 20px;
+			}
+
+			&.next-last {
+				padding-right: 20px;
+			}
+
+			&.prev-first,
+			&.prev,
+			&.next,
+			&.next-last {
+				text-indent: -9999em;
 			}
 		}
 	}

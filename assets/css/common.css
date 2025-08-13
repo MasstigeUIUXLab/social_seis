@@ -50217,6 +50217,15 @@ table td.text_left {
   font-size: 0;
 }
 .paging-area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -50263,7 +50272,10 @@ table td.text_left {
   width: auto;
 }
 .paging-area a.prev-first {
+  padding-left: 24px;
   background-image: url("../images/paging/prev-first.png");
+  background-position: left;
+  margin-right: 5px;
 }
 .paging-area a.prev {
   padding-left: 20px;
@@ -50278,7 +50290,10 @@ table td.text_left {
   margin-left: 5px;
 }
 .paging-area a.next-last {
+  padding-right: 24px;
   background-image: url("../images/paging/next-last.png");
+  background-position: right;
+  margin-left: 5px;
 }
 .paging-area a.dot {
   background-image: url("../images/paging/dot.png");
@@ -50297,6 +50312,15 @@ table td.text_left {
   }
   .paging-area a.active {
     font-weight: 500;
+  }
+  .paging-area a.prev-first {
+    padding-left: 20px;
+  }
+  .paging-area a.next-last {
+    padding-right: 20px;
+  }
+  .paging-area a.prev-first, .paging-area a.prev, .paging-area a.next, .paging-area a.next-last {
+    text-indent: -9999em;
   }
 }
 
