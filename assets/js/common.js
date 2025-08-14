@@ -296,7 +296,7 @@ $(document).ready(function () {
       applyLabel:"확인", 
       cancelLabel: "초기화", 
       format: 'YYYY.MM.DD',
-      daysOfWeek:["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ], 
+      daysOfWeek:["일", "월", "화", "수", "목", "금", "토" ], 
       monthNames:["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"], 
       showDropdowns: true,
     },
@@ -321,7 +321,7 @@ $(document).ready(function () {
       applyLabel:"확인", 
       cancelLabel: "초기화", 
       format: 'YYYY.MM.DD',
-      daysOfWeek:["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ], 
+      daysOfWeek:["일", "월", "화", "수", "목", "금", "토" ],
       monthNames:["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"], 
       showDropdowns: true,
     },
@@ -410,6 +410,16 @@ $(document).ready(function () {
       $('body').css('overflow-y', 'auto');
     }
   }) */
+
+  // 팝업 닫힐 때, body padding-right 원복
+  $(document).on('hidden.bs.modal', function () {
+    if ($('.modal.show').length === 0) {
+        $('body').css('padding-right', '');
+    } else {
+        $('body').css('padding-right', '17px');
+    }
+  });
+  // -------------------------------------------
 
     // 03-13 추가 특정 textarea 스크롤 생성시 Height값 변경
     $(".fixable").each(function(){

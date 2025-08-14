@@ -1415,14 +1415,25 @@ tr.nodata td {
 .board-wrap .tb-wrap.th-sticky {
   position: relative;
   max-height: 320px;
+  margin-top: 20px !important;
   overflow: auto;
 }
 .board-wrap .tb-wrap.th-sticky .tb {
   overflow: auto;
+  margin-top: 0 !important;
 }
 .board-wrap .tb-wrap.th-sticky thead th {
   position: sticky;
   top: 0;
+  z-index: 1;
+}
+.board-wrap .tb-wrap.th-sticky thead > tr:nth-child(2) th {
+  top: 52px;
+}
+@media all and (max-width: 1024px) {
+  .board-wrap .tb-wrap.th-sticky thead {
+    top: 42px;
+  }
 }
 .board-wrap .tb-wrap:not(.tb-column, .tb-card) .tb tr > *:first-child, .board-wrap .tb-wrap.tb-column.v2 .tb tr > *:first-child {
   border-left: 1px solid #e7e7e7;
@@ -3724,7 +3735,7 @@ tr.nodata td {
 }
 .form-processbar ul li p {
   margin-top: 8px;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   line-height: 1.42857;
 }
 .form-processbar ul li p > span:first-child {
@@ -6710,12 +6721,12 @@ tr.nodata td {
   font-size: 1rem;
   font-weight: 400;
 }
-.sub-asis .btn-wrp {
+.sub-asis .raw-html-embed .btn-wrp {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.sub-asis .btn-wrp .btn {
+.sub-asis .raw-html-embed .btn-wrp .btn {
   min-width: 310px;
   padding: 10px 21px;
   border-radius: 4px;
@@ -6730,7 +6741,7 @@ tr.nodata td {
   height: 40px;
 }
 @media (max-width: 640px) {
-  .sub-asis .btn-wrp .btn {
+  .sub-asis .raw-html-embed .btn-wrp .btn {
     min-width: 100%;
   }
 }
