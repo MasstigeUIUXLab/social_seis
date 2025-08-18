@@ -44,6 +44,11 @@ $(document).ready(function() {
 			bannerSwiper.autoplay.start();
 		}
 	});
+	
+	$(".swiper-banner .swiper-button-prev, .swiper-banner .swiper-button-next").on("click", function (e) {
+		$(".swiper-banner .btn-swiper-play").addClass('on');
+		bannerSwiper.autoplay.stop();
+	});
 
 	let cloneSlide = $('.swiper-board .swiper-wrapper').html();
 	let arraySlide = [];
@@ -112,12 +117,16 @@ $(document).ready(function() {
 	toggleBtnMore();
 
 	function toggleBtnMore() {
-		var $activeBtn = $('.category-list a.on');
-
+		const $activeBtn = $('.category-list a.on');
+        const btnMore = document.getElementById('btnMore');
 		if($activeBtn.length && $activeBtn.text().trim() === "전체") {
-			$("#btnMore").css('display', 'none');
+            btnMore.style.display = 'none';
+			btnMore.removeAttribute('href');
+			btnMore.removeAttribute('title');
 		} else {
-			$("#btnMore").css('display', 'inline-flex');
+            btnMore.style.display = 'inline-flex';
+			btnMore.setAttribute('href', $activeBtn.attr('data-href'));
+			btnMore.setAttribute('title', $activeBtn.attr('data-title') + ' 더보기');
 		}
 	}
    

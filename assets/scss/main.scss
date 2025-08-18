@@ -677,6 +677,7 @@
                 margin: 0 auto 0 0;
                 width: 346px;
                 overflow: visible;
+                padding-right: 4px;
 
                 .link{
                     display: block;
@@ -1813,8 +1814,6 @@
                 }
 
                 .swiper-board {
-                    padding-right: 4px;
-                    
                     .link .txt-area {
                         gap: 10px 0;
                         padding: 24px 20px;

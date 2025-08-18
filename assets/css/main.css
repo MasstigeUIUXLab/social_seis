@@ -654,6 +654,7 @@
   margin: 0 auto 0 0;
   width: 346px;
   overflow: visible;
+  padding-right: 4px;
 }
 .main-section.ms5 .swiper-board .link {
   display: block;
@@ -1716,9 +1717,6 @@
   }
   .main-section.ms5 .board-control .category-list a {
     padding: 8px 20px;
-  }
-  .main-section.ms5 .swiper-board {
-    padding-right: 4px;
   }
   .main-section.ms5 .swiper-board .link .txt-area {
     gap: 10px 0;
