@@ -1010,7 +1010,25 @@
 							</a>
 						</li>
 					</ul>
-					<div class="swiper-pagination"></div>
+					<!-- [D] 250818 재생/정지/프로그래스바 추가 페이지네이션 위치 변경 -->
+					<!-- <div class="swiper-pagination"></div> -->
+					 <div class="swiper-indicator">
+						<button type="button" class="btn-swiper-play">
+							<span class="sr-only">pause</span>
+							<span class="sr-only">play</span>
+						</button>
+						<div class="swiper-pagination"></div>
+						<div class="autoplay-progress banner-progress">
+							<svg viewBox="0 0 100 10">
+								<line x1="0" y1="0" x2="100" y2="0">
+							</svg>
+						</div>
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev"><span class="sr-only">이전 슬라이드</span></div>
+							<div class="swiper-button-next"><span class="sr-only">다음 슬라이드</span></div>
+						</div>
+					</div>
+					<!-- // [D] 250818 재생/정지/프로그래스바 추가 페이지네이션 위치 변경 -->
 				</div>
 			</div>
 		</div>
@@ -1104,10 +1122,12 @@
 						<div class="swiper-button-next"></div>
 					</div>
 				</div>
+				<!-- [D] 250818 더보기 버튼에 id="btnMore" 추가 -->
 				<div class="btn-area">
 					<a href="#" class="btn btn-radius btn-blue">게시요청<i class="icon-arr-sm"></i></a>
-					<a href="#" class="btn btn-radius btn-gray">더보기<i class="icon-arr"></i></a>
+					<a href="#" id="btnMore" class="btn btn-radius btn-gray">더보기<i class="icon-arr"></i></a>
 				</div>
+				<!-- // [D] 250818 더보기 버튼에 id="btnMore" 추가 -->
 			</div>
 		</div>
 	</section>

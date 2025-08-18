@@ -178,6 +178,7 @@
                 &-wrp{
                     flex-basis: rem(464);
                     border-radius: rem(20);
+                    overflow: hidden;
                     background: #FFF;
                     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
 
@@ -474,6 +475,9 @@
 
         &.ms4{
             .swiper-banner{
+                position: relative;
+                padding-bottom: 40px;
+
                 .link{
                     display: block;
                 
@@ -482,22 +486,152 @@
                     }
                 }
 
-                .swiper-pagination-fraction{
-                    position: absolute;
-                    top: 32.5%;
-                    right: 3.5%;
-                    bottom: auto;
-                    left: auto;
-                    width: auto;
-                    padding: 0.5em 1.15em;
-                    background: #fff;
-                    border-radius: 30px;
-                    font-size: 14px;
-                    letter-spacing: -0.1em;
-                    font-weight: 600;
+                // .swiper-pagination-fraction{
+                //     position: absolute;
+                //     top: 32.5%;
+                //     right: 3.5%;
+                //     bottom: auto;
+                //     left: auto;
+                //     width: auto;
+                //     padding: 0.5em 1.15em;
+                //     background: #fff;
+                //     border-radius: 30px;
+                //     font-size: 14px;
+                //     letter-spacing: -0.1em;
+                //     font-weight: 600;
 
-                    .swiper-pagination-total{
-                        color: #ddd;
+                //     .swiper-pagination-total{
+                //         color: #ddd;
+                //     }
+                // }
+
+                .swiper-indicator{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: auto;
+                    max-width: none;
+                    margin: 0;
+                    margin-top: 1rem;
+                    font-size: rem(14);
+                    transform: none;
+                    color: #666;
+                    font-weight: 400;
+                    
+                    .swiper-pagination{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: relative;
+                        width: 186px;
+
+                        .current{
+                            font-weight: 600;
+                            color: #222;
+                        }
+
+                        .total{
+                            font-weight: 400;
+                            color: #666;
+                        }
+                    }
+
+                    .btn-swiper-play{
+                        order: 3;
+                        margin-left: 8px;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../images/main/icon_swiper_pause_blk.svg)  no-repeat center / 100% auto;
+
+                        &.on{
+                            background-image: url(../images/main/icon_swiper_play_blk.svg);
+                        }
+                    }
+                }
+            
+                .autoplay-progress{
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    z-index: 10;
+                    margin: 0 30px;
+                    width: 120px;
+                    height: 1px;
+                    background-color: #E3E3E3;
+                
+                    svg {
+                        --progress: 0;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 10;
+                        width: 100%;
+                        stroke-width: 1px;
+                        stroke: #222;
+                        fill: none;
+                        stroke-dashoffset: calc(100 * (1 - var(--progress)));
+                        stroke-dasharray: 100;
+                    }
+                }
+                
+                .swiper-navigation{
+                    order: 4;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-left: 8px;
+
+                    .swiper-button-next, .swiper-button-prev{  
+                        background-image: url(../images/main/icon_swiper_banner_arr.svg);
+                        position: relative;
+                        top: unset;
+                        left: unset;
+                        right: unset;
+                        width: 24px;
+                        height: 24px;
+                        margin: 0;
+                        transform: none;
+                        background-size: cover;
+                        border-radius: 0;
+                        box-shadow: none;
+                    }
+                    
+                    .swiper-button-next{
+                        transform: scale(-1, 1);
+                    }
+                }
+            
+                @include mdq-max(sm) {
+                    .swiper-indicator{
+                        font-size: 12px;
+
+                        .swiper-pagination {
+                            width: 56px;
+                        }
+                        
+                        .btn-swiper-play{
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+
+                    .autoplay-progress {
+                       width: 16px;
+                        margin: 0px 20px;
+                    }
+
+                    .swiper-navigation{
+                        gap: 4px;
+
+                        .swiper-button-next, .swiper-button-prev{ 
+                            width: 16px;
+                            height: 16px;
+                        }
                     }
                 }
             }
@@ -1679,6 +1813,8 @@
                 }
 
                 .swiper-board {
+                    padding-right: 4px;
+                    
                     .link .txt-area {
                         gap: 10px 0;
                         padding: 24px 20px;

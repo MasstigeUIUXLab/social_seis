@@ -22,19 +22,28 @@ $(document).ready(function() {
 		},
 	});
 
-	$(".btn-swiper-play").on("click", function (e) {
+	$(".swiper-visual .btn-swiper-play").on("click", function (e) {
 		var $t = $(this);
 	
 		$t.toggleClass("on");
 		if ($(this).hasClass("on")) {
 			visualSwiper.autoplay.stop();
-			console.log('멈춤');
 		} else {
 			visualSwiper.autoplay.start();
-			console.log('재생');
 		}
-	  });
+	});
 	
+	
+	$(".swiper-banner .btn-swiper-play").on("click", function (e) {
+		var $t = $(this);
+	
+		$t.toggleClass("on");
+		if ($(this).hasClass("on")) {
+			bannerSwiper.autoplay.stop();
+		} else {
+			bannerSwiper.autoplay.start();
+		}
+	});
 
 	let cloneSlide = $('.swiper-board .swiper-wrapper').html();
 	let arraySlide = [];
@@ -51,6 +60,7 @@ $(document).ready(function() {
 		const type = $(this).text();
 		
 		$(this).addClass('on').parent().siblings().find('.on').removeClass('on');
+		toggleBtnMore();
 		$('.swiper-board .swiper-wrapper').empty();
 		
 		if (type === '전체') {
@@ -67,8 +77,6 @@ $(document).ready(function() {
 		boardSwiperInit();
 	});
 
-	boardSwiperInit();
-   
 	function boardSwiperInit() {
 		boardSwiper = new Swiper(".swiper-board", {
 			// autoplay: {
@@ -100,6 +108,19 @@ $(document).ready(function() {
 	   });
 	}
 	
+	boardSwiperInit();
+	toggleBtnMore();
+
+	function toggleBtnMore() {
+		var $activeBtn = $('.category-list a.on');
+
+		if($activeBtn.length && $activeBtn.text().trim() === "전체") {
+			$("#btnMore").css('display', 'none');
+		} else {
+			$("#btnMore").css('display', 'inline-flex');
+		}
+	}
+   
 	function swiperPaginationLoop(instance){
 		var currentIndex = instance.realIndex; 
 		var loopedSlides = instance.slides.length / 2; 
@@ -125,10 +146,31 @@ $(document).ready(function() {
 				spaceBetween: 24,
 			},
 		},
+		a11y: { 
+			enabled: true,
+			prevSlideMessage: '이전 슬라이드',
+			nextSlideMessage: '다음 슬라이드',   
+			slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+		},
+		navigation: {
+			nextEl: ".swiper-banner .swiper-button-next",
+			prevEl: ".swiper-banner .swiper-button-prev",
+		}, 	
 		pagination: {
 			el: ".swiper-banner .swiper-pagination",
-			type: "fraction"
+			clickable: false,
+			type: "custom",
+			renderCustom: function(swiper, current, total) {
+				return (
+					'<span class="current">' + 0 + (current) + '</span>' + '<span class="total">' + 0 + (total) + '</span>'
+				);
+			}
 		},
+		on: {
+			autoplayTimeLeft(s, time, progress) {
+				document.querySelector('.swiper-banner .banner-progress svg').style.setProperty("--progress", 1 - progress)
+			}
+		}
 	})
 
 	
@@ -208,6 +250,10 @@ $(document).ready(function() {
 		spaceBetween: 0,
 		observer: true,
 		observerParents: true,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
 		pagination: {
 			el: ".swiper-pub .pagination-custom",
 			clickable: true,
