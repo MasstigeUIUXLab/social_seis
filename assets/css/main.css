@@ -1381,7 +1381,7 @@
       -ms-flex: 1;
           flex: 1;
 }
-.main-section.ms8 .list li:first-child a {
+.main-section.ms8 .slide02 .list li:first-child a {
   border-color: #222;
   font-weight: 600;
 }

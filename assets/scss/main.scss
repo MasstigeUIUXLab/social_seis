@@ -1384,12 +1384,14 @@
 
                 li{
                     flex: 1;
+                }
+            }
 
-                    &:first-child{
-                        a{
-                            border-color: #222;
-                            font-weight: 600;
-                        }
+            .slide02{
+                .list li:first-child{
+                    a{
+                        border-color: #222;
+                        font-weight: 600;
                     }
                 }
             }
