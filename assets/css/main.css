@@ -652,16 +652,14 @@
 }
 .main-section.ms5 .swiper-board {
   margin: 0 auto 0 0;
-  width: 346px;
+  width: 342px;
   overflow: visible;
-  padding-right: 4px;
 }
 .main-section.ms5 .swiper-board .link {
   display: block;
   border-radius: 10px;
   border: 1px solid #eee;
   overflow: hidden;
-  pointer-events: none;
   -webkit-transition: 0.35s;
   transition: 0.35s;
 }
@@ -1262,12 +1260,18 @@
 .main-section.ms8 .swiper-pub {
   position: relative;
   padding-bottom: 2.25rem;
+  height: 420px;
+}
+.main-section.ms8 .swiper-pub .swiper-slide {
+  height: calc(100% - 59px);
 }
 .main-section.ms8 .swiper-pub .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
+  height: 100%;
+  background: #fff;
 }
 .main-section.ms8 .swiper-pub .link .thumb {
   -ms-flex-preferred-size: 47.41379%;
@@ -1327,22 +1331,90 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
+.main-section.ms8 .swiper-pub .link .text-area .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
 .main-section.ms8 .swiper-pub .link .text-area .list a {
-  display: block;
   padding: 1em 0;
+}
+.main-section.ms8 .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 325px;
+}
+.main-section.ms8 .list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 1.25em 0;
   border-bottom: 1px solid #DADADA;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   font-weight: 400;
   font-size: 1rem;
 }
-.main-section.ms8 .swiper-pub .link .text-area .list a:hover {
+.main-section.ms8 .list a p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main-section.ms8 .list a:hover {
   font-weight: 600;
 }
-.main-section.ms8 .swiper-pub .link .text-area .list li:first-child a {
+.main-section.ms8 .list li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.main-section.ms8 .list li:first-child a {
   border-color: #222;
   font-weight: 600;
+}
+.main-section.ms8 .slide03 .link {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.main-section.ms8 .slide03 .link a {
+  padding: 0.75em 0;
+}
+.main-section.ms8 .slide03 .link > * {
+  -ms-flex-preferred-size: 100% !important;
+      flex-basis: 100% !important;
+  max-width: 100% !important;
+}
+.main-section.ms8 .slide03 .link .thumb:before {
+  content: "";
+  display: block;
+  padding-top: 20.778%;
+}
+.main-section.ms8 .slide03 .link .text-area .tit {
+  padding: 4px 0;
+}
+.main-section.ms8 .slide03 .link .text-area .tit a {
+  padding: 0;
+  height: auto;
+  -webkit-line-clamp: 1;
+}
+.main-section.ms8 .slide03 .link .text-area .list a {
+  padding: 0.75em 0;
 }
 .main-section.ms8 .swiper-pagination {
   bottom: 0;
@@ -1492,6 +1564,12 @@
   .main-section.ms8 .swiper-pagination.pagination-custom span {
     padding: 8px;
   }
+  .main-section.ms8 .swiper-pub {
+    height: 600px;
+  }
+  .main-section.ms8 .list {
+    height: 100%;
+  }
 }
 @media all and (max-width: 1200px) {
   .main-section.ms2 .swiper-menu1 {
@@ -1640,6 +1718,9 @@
   .main-section.ms6 .card-list .txt {
     font-size: 14px;
   }
+  .main-section.ms8 .swiper-pub {
+    height: 520px;
+  }
   .main-section.ms9 .swiper-menu2 {
     padding: 50px 40px;
   }
@@ -1743,6 +1824,19 @@
   .main-section.ms8 .swiper-pagination.pagination-custom span {
     padding: 0 0 4px;
   }
+  .main-section.ms8 .swiper-pub {
+    height: 60vw;
+    min-height: 380px;
+  }
+  .main-section.ms8 .swiper-pub .list a {
+    padding: 12px 0;
+  }
+  .main-section.ms8 .swiper-pub .link .text-area .tit a {
+    font-size: 20px;
+  }
+  .main-section.ms8 .swiper-pub .slide03 .link .text-area .tit a {
+    font-size: 18px;
+  }
   .main-section.ms9 .swiper-menu2 {
     padding: 50px 60px;
   }
@@ -1768,7 +1862,7 @@
 }
 @media all and (max-width: 576px) {
   .main-section.ms5 .swiper-board {
-    width: calc(100% - 70px);
+    width: 64vw;
     height: 278px;
   }
   .main-section.ms5 .swiper-board .swiper-navigation {

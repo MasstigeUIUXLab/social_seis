@@ -90,16 +90,16 @@ $(document).ready(function() {
 			// },
 			slideToClickedSlide : true,
 			slidesPerView: 1,
-			spaceBetween: 16,
+            spaceBetween: 16,
+            breakpoints: {
+                769: {
+                    spaceBetween: 24,
+                },
+            },
 			navigation: {
 				nextEl: ".swiper-board .swiper-button-next",
 				prevEl: ".swiper-board .swiper-button-prev",
 			}, 	
-			breakpoints: {
-				769: {
-					spaceBetween: 24,
-				},
-			},
 			on: {
 				init: function(){
 				},
@@ -250,19 +250,23 @@ $(document).ready(function() {
 		},
 		pagination: {
 			el: ".swiper-comm .swiper-pagination",
+			clickable: true,
 		},
 	});
 
 	var pubCategory = ['보도자료', '발간자료', '교육정보'];
 	var pubSwiper = new Swiper('.swiper-pub', {
+		speed: 200,
+		loop: true,
 		slidesPerView: 1,
 		spaceBetween: 0,
 		observer: true,
 		observerParents: true,
-		autoplay: {
-			delay: 4000,
-			disableOnInteraction: false,
-		},
+		effect: 'fade',
+		// autoplay: {
+		// 	delay: 4000,
+		// 	disableOnInteraction: false,
+		// },
 		pagination: {
 			el: ".swiper-pub .pagination-custom",
 			clickable: true,
@@ -273,8 +277,10 @@ $(document).ready(function() {
 	});
 	
 	var pubPagingSwiper = new Swiper(".swiper-pub", {
+		effect: 'fade',
 		pagination: {
 			el: ".swiper-pub .pagination-bullet",
+			clickable: true,
 			type: "bullets",
 		},
 	});
