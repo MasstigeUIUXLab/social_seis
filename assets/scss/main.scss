@@ -71,6 +71,7 @@
             position: absolute;
             top: 0;
             right: 20px;
+            z-index: 1;
         }
 
         .btn-radius{
@@ -1081,12 +1082,14 @@
                 gap: rem(48);
             }
 
-            .comm-wrp{
+            .comm-wrp{    
+                position: relative;
                 flex-basis:calc( 100% - 464px - rem(48));
                 max-width:calc( 100% - 464px - rem(48));
                 
 
                 .comm-hd{
+                    position: relative;
                     padding-bottom: 1rem;
                     font-size: rem(24);
                     font-weight: 600;   
@@ -1097,6 +1100,10 @@
                         font-size: inherit;
                         font-weight: inherit;   
                         line-height: 1.1667;
+                    }
+
+                    .btn-area{
+                        right: 0;
                     }
                 }
             }
@@ -1271,7 +1278,12 @@
             }
 
             .pub-wrp{
+                position: relative;
                 width: 464px;
+
+                .btn-radius{
+                    right: 0;
+                }
             }
 
             .swiper-pub{
@@ -1288,6 +1300,12 @@
                     gap: rem(24);
                     height: 100%;
                     background: #fff;
+
+                    @media screen and (min-width: 1401px) {
+                        margin: 0 -1px;
+                        padding: 0 1px;
+                        min-height: 325px;
+                    }
 
                     .thumb{
                         flex-basis: 47.41379%;
@@ -1472,6 +1490,22 @@
                    
                 }
             }   
+
+            .btn-area{
+                right:0;
+            }
+
+            .btn-radius {
+                padding: 6px 16px;
+                font-size: 14px;
+                height: 40px;
+                line-height: 1;
+
+                .icon-arr{
+                    width: 14px;
+                    height: 14px;
+                }
+            }
         }
 
         &.ms9{
@@ -1524,7 +1558,7 @@
                 line-height: 1.2;
             }
         }
-
+        
         @include mdq-max(xxl) {
             &.ms6{
                 .card-list{
@@ -1639,12 +1673,12 @@
                     gap: 40px;
 
                     .thumb{
-                        flex-basis: 270px;
+                        flex-basis: 32%;
                     }
 
                     .text-area{
-                        flex-basis: calc(100% - 270px - 40px);
-                        max-width: calc(100% - 270px - 40px);
+                        flex-basis: calc(100% - 32% - 40px);
+                        max-width: calc(100% - 32% - 40px);
                     }
                 }
             }
@@ -1946,8 +1980,19 @@
                         padding: 12px 0;
                     }
 
-                    .link .text-area .tit a{
-                        font-size: 20px;
+                    .link {
+                        .thumb{
+                            flex-basis: 36vw;
+                        }
+
+                        .text-area {   
+                            flex-basis: calc(100% - 36vw - 40px);
+                            max-width: calc(100% - 36vw - 40px);
+                            
+                            .tit a{
+                                font-size: 20px;
+                            }
+                        }
                     }
 
                     .slide03 .link .text-area .tit a{
@@ -2028,6 +2073,25 @@
 
                 .btn-link{
                     font-size: 12px;
+                }
+            }
+
+            &.ms8{
+                .swiper-pub {
+                    .link {
+                        .thumb{
+                            flex-basis: 180px;
+                        }
+
+                        .text-area {   
+                            flex-basis: calc(100% - 180px - 40px);
+                            max-width: calc(100% - 180px - 40px);
+                            
+                            .tit a{
+                                font-size: 20px;
+                            }
+                        }
+                    }
                 }
             }
         }

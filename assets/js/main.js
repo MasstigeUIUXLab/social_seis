@@ -244,7 +244,7 @@ $(document).ready(function() {
 			576: {
 				slidesPerView: 2,
 			},
-			1440: {
+			1401: {
 				slidesPerView: 3,
 			},
 		},
@@ -263,10 +263,10 @@ $(document).ready(function() {
 		observer: true,
 		observerParents: true,
 		effect: 'fade',
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
 		pagination: {
 			el: ".swiper-pub .pagination-custom",
 			clickable: true,
@@ -278,6 +278,7 @@ $(document).ready(function() {
 	
 	var pubPagingSwiper = new Swiper(".swiper-pub", {
 		effect: 'fade',
+		loop: true,
 		pagination: {
 			el: ".swiper-pub .pagination-bullet",
 			clickable: true,
@@ -286,4 +287,27 @@ $(document).ready(function() {
 	});
 
 	pubSwiper.controller.control = pubPagingSwiper;
+	pubPagingSwiper.controller.control = pubSwiper;
+
+
+	function toggleBtnPubMore() {
+		const activeBulletText = document.querySelector('.pub-wrp .swiper-pagination-bullet-active span').textContent.trim();
+        const btnPubMore = document.querySelectorAll('.pub-wrp .btn-pub-more');
+
+		btnPubMore.forEach(function(e) {
+			var $link = e.getAttribute('data-link');
+			
+			if($link === activeBulletText) {
+				e.style.display = 'inline-flex';	
+			} else {
+				e.style.display = 'none';
+			}
+		});
+	}
+
+	toggleBtnPubMore();
+
+	pubSwiper.on('slideChange', function () {
+		toggleBtnPubMore();
+	})
 });

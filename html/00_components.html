@@ -60,6 +60,10 @@
 <script src="../assets/js/custom/resizingCheck-1.0.0.masstige.js"></script>
 <script src="../assets/js/custom/nav_drop-1.0.1.masstige.min.js"></script>
 <script src="../assets/js/custom/scroll_track-1.0.1.masstige.min.js"></script>
+ <!-- [D] 250819 다중선택 selectBox 추가 -->
+<link rel="stylesheet" href="../assets/css/sumoselect.min.css" />
+<script src="../assets/js/lib/jquery.sumoselect.min.js"></script>
+<!-- // -->
 <!-- [D] 달력 js/css -->
 <script src="../assets/js/lib/moment.min.js"></script>
 <script src="../assets/js/lib/daterangepicker.min.js"></script>
@@ -330,6 +334,67 @@
                             </select>
                         </div>
                     </div>
+                </li>
+                <li class="col-4">
+                    <div class="form-group">
+                        <div class="form-tit-wrp">
+                            <p class="form-tit">다중선택</p>
+                        </div>
+                        <div class="form-input-group">
+                            <select name="" class="form-control multiple_select" multiple="multiple">
+                                <option value="" selected="">전국</option>
+                                <option value="">선택</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                                <option value="">진행중</option>
+                            </select>
+                        </div>
+                    </div>
+                                
+                    <!-- [D] 250819 다중선택 selectBox 추가(select에 class="multiple_select" multiple="multiple")-->
+                    <script>
+                        $('.multiple_select').SumoSelect({
+                            csvDispCount: 7,
+                            floatWidth: 0,
+                            forceCustomRendering: true, 
+                            outputAsCSV: true
+                        })
+
+                        $('.multiple_select').on('sumo:opened', function(){
+                            $(this).closest('.tb-wrap').css('overflow', 'visible');
+                            $(this).closest('table').css('overflow', 'visible');
+                        });
+                        $('.multiple_select').on('sumo:closed', function(){
+                            $(this).closest('.tb-wrap').css('overflow', 'hidden');
+                            $(this).closest('table').css('overflow', 'hidden');
+                        });
+                    </script>
+                    <!-- // [D] 250819 다중선택 selectBox 추가 -->
                 </li>
             </ul>
         </div>
