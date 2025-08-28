@@ -92,29 +92,140 @@
 .total_ol > li:last-of-type {margin:5px 0 0 0; border-bottom:none;}
 .total_ol > li:before {content:counter(number); position:absolute; top:2px; left:0; width:16px; height:16px; font-size:13px; color:#407aec; text-align:center; line-height:16px; border-radius:50%; background:#e7edfc;}
 
+/* 250828 상품 탭 내 검색결과 수정 */
+.total_search__list .fc{
+	margin-top: 5rem;
+}
+
+.total_search__items{
+	max-width: 100%;
+}
+
+.total_search__items .gallery-list .item{
+	flex-basis: 20%;
+	max-width: 20%;
+}
+
+.total_search__items .gallery-list .thumb{
+	border-radius: 0;
+    border: 0;
+}
+
+.total_search__items .gallery-list .link .thumb:before {
+    padding-top: 100% !important;
+}
+
+.total_search__items .gallery-list .info > *:not(:first-child) {
+    margin-top: .5rem;
+}
+
+.total_search__items .gallery-list .info .tit span span {
+  display: unset;
+}
+
+.total_search__items .tag{
+    display: flex;	
+	background-color: transparent;
+	border-radius: 0;
+    height: 32px;
+	padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+}
+.total_search__items .tag span {
+	margin: 0 8px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 8px;
+    color: #222;
+    font-size: 12px;
+    border-radius: 20px;
+    background: #f2f2f2;
+}
+
+.total_search__items .price{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.total_search__items .price strong {
+    color: #FF5252;
+	font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.total_search__items .price del {
+    margin-left: 1px;
+    font-size: 16px;
+    color: #666;
+	font-weight: 500;
+    display: block;
+}
+
+.total_search__items .btn_wish {
+    position: absolute;
+    bottom: -9px;
+    right: 0;
+}
+
 @media all and (max-width:1399px) {
     .total_search__list-menu{margin-left:20px;margin-right:20px;}
-	.total_search__item{padding:0 20px;}
+	/* .total_search__item{padding:0 20px;} */
     .total_search__item .icon--more{right:20px;}
     /* 20240628 LHI 통합검색 인기검색어 */
 	.total_rank {width:100%; left:auto; right:0; transform:unset;}
 	.total_btn, .total_ol {width:155px;}
+
+	
+	/* 250828 상품 탭 내 검색결과 수정 */
+	.total_search__items .gallery-list .item{
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
 }
 @media all and (max-width:1300px) {
 
 }
 @media all and (max-width:1200px) {
-
+	/* 250828 상품 탭 내 검색결과 수정 */
+	.total_search__items .gallery-list .item{
+		flex-basis: 33.33%;
+		max-width: 33.33%;
+	}
 }
 @media all and (max-width:1024px) {
 	#searchWrapper #header{height:65px;}
 	
 }
 @media all and (max-width:768px) {
+	/* 250828 상품 탭 내 검색결과 수정 */
+	.total_search__list .fc{
+		margin-top: 40px;
+	}
 
+	.total_search__items .gallery-list .item{
+		flex-basis: 50%;
+		max-width: 50%;
+	}
 }
 @media all and (max-width:640px) {
 
+}
+@media all and (max-width:575px) {
+	/* 250828 상품 탭 내 검색결과 수정 */
+	.total_search__items .gallery-list .item{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
 }
 @media all and (max-width:486px) {
 	#searchWrapper #header{height:52px;}
