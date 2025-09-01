@@ -119,6 +119,10 @@
     margin-top: .5rem;
 }
 
+.total_search__items .gallery-list .info .tit {
+	font-weight: 400;
+}
+
 .total_search__items .gallery-list .info .tit span span {
   display: unset;
 }
