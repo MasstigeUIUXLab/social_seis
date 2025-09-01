@@ -273,7 +273,7 @@
                 <li class="col-12 col-md-6 col-lg-3">
                     <div class="form-group">
                         <div class="form-tit-wrp">
-                            <p class="form-tit">사업자등록번호(고유번호)</p>
+                            <p class="form-tit">사업자등록번호</p>
                         </div>
                         <div class="form-input-group">
                             <input type="number" name="" value="390" readonly="" class="form-control">
@@ -310,7 +310,7 @@
                 <li class="col-12">
                     <div class="form-group">
                         <div class="form-tit-wrp">
-                            <p class="form-tit">도로명주소</p>
+                            <p class="form-tit">주소</p>
                         </div>
                         <div class="form-input-group">
                             <input type="text" name="" value="서울 금천구 가산디지털1로 16" readonly="" class="form-control p60">
@@ -426,10 +426,10 @@
                             <th></th>
                             <th>구분</th>
                             <th>지점명</th>
-                            <th>대표자명</th>
+                            <th>대표자</th>
                             <th>사업자등록번호</th>
                             <th>사업장관리번호</th>
-                            <th>소재지</th>
+                            <th>주소</th>
                             <th>설립일</th>
                             <th>폐업일</th>
                             <th></th>
@@ -879,6 +879,101 @@
             <li>텍스트</li>
         </ul>
         <!-- E : list -->
+
+        <!-- S : 0901 내용추가 -->
+        <p class="h1" id="added_0901">0901 추가 내용</p>
+
+        <!-- 1) textarea 스크롤오류 관련 -->
+        <p class="h2">1) 비활성화 되어있는 데이터 표기는 input, textarea 태그 대신 &lt;div class="read-bx"&gt;&lt;/div&gt; 활용 / 회색 디자인 필요시 .disabled, .readonly 활용</p>
+        <p class="desc">
+            - textarea처럼 최소 높이값 적용 / 스크롤 기능 사용 원할 시 .textarea 클래스 삽입 <br />
+            - <a href="sub_사업신청_통합사업신청_등록.html">sub_사업신청_통합사업신청_등록.html</a>페이지에 예시로 작업이 되어 있음
+        </p>
+
+        <br /><br />
+
+        <!-- (변경 전) textarea에 readonly나 disabled -->
+        <!-- <textarea name="" id="" readonly class="form-control">- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.</textarea> -->
+
+        <!-- (변경 후) read-bx 활용 -->
+        <div class="read-bx">
+            - 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.
+        </div>
+
+        <!-- (변경 후) read-bx textarea 활용 -->
+        <div class="read-bx textarea">
+            - 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.
+        </div>
+
+        <!-- (변경 후) read-bx disabled 활용 -->
+        <div class="read-bx textarea disabled">
+            - 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.- 당사는 가구를 제조하는 회사로서 사회적 기업으로서의 역할을 충실히 이행하고자 노력하고 있습니다. 우리는 사회적 책임을 다하며 지속 가능한 방식으로 사업을 운영하고, - 지역사회 및 환경에 긍정적인 영향을 미치기 위해 노력하고 있습니다. 고객 여러분의 지지와 협력을 통해 더 나은 미래를 만들어 나가도록 최선을 다하겠습니다.
+        </div>
+
+        <br /><br />
+
+        <p class="h2">2) 홈페이지 링크값이 들어있는 input의 경우 &lt;div class="read-bx"&gt;&lt;/div&gt; 활용하여 클릭이 가능하도록 수정</p>
+
+        <p class="desc">
+            - <a href="sub_마이페이지_자율경영공시참여_신청이력_기업개요.html">sub_마이페이지_자율경영공시참여_신청이력_기업개요.html</a> 페이지에 적용
+        </p>
+        <!-- (변경 전) -->
+        <input type="text" name="" value="https://www.naver.com/" readonly="" class="form-control">
+        
+        <!-- (변경 후) read-bx 활용 -->
+        <p class="read-bx readonly"><a href="https://www.naver.com/">https://www.naver.com/</a></p>
+
+        <!-- (변경 후) 링크에 언더라인추가 원할 시 p 또는 a 태그에 link 태그 추가 -->
+        <p class="read-bx readonly"><a href="https://www.naver.com/" class="link">https://www.naver.com/</a></p>
+        
+
+        <p class="h2">3) 주소 한줄로 처리</p>
+
+        <p class="desc">
+            - <a href="sub_마이페이지_나의신청현황_인증신청조회.html">sub_마이페이지_나의신청현황_인증신청조회.html</a> 페이지에 적용
+        </p>
+        <div class="form-sect">
+            <ul class="form-body">
+                <li class="col-12">
+                    <div class="form-group">
+                        <div class="form-tit-wrp">
+                            <p class="form-tit asterisk">주소</p>
+                        </div>
+                        <div class="row">
+							<!-- [D] 250901 수정 우편주소 영역이 넓어서 (기존) col-12 col-lg-3에서 (변경 후) col-6 col-lg-3으로 변경 -->
+                            <div class="col-6 col-lg-3">
+                                <div class="form-input-group">
+                                    <input type="text" name="" value="08591" class="form-control"/>
+                                    <button type="button" class="btn btn-black">검색</button>
+                                </div>
+                            </div>
+                            <!-- [D] 기존 구조에서 아래 div태그에 col-lg만 추가 -->
+                            <div class="col-12 col-lg">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <div class="form-input-group">
+                                            <input type="text" name="" value="서울 금천구 가산디지털1로 16" class="form-control"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg">
+                                        <div class="form-input-group">
+                                            <input type="text" name="" value=" 1205호1206호(SK V1 AP Towr)" class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <p class="h2">4) table 내 텍스트 말줄임</p>
+        <p class="desc">
+            - <a href="sub_마이페이지_자율경영공시참여_신청이력_목록.html">sub_마이페이지_자율경영공시참여_신청이력_목록.html</a> 페이지에 적용
+        </p>
+        <!-- E : 0901 내용추가 -->
+         
     </div>
 </body>
 </html>

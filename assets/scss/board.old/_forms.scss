@@ -122,8 +122,6 @@ select {
       -webkit-box-shadow: 0 0 0 2px #407aec;
       box-shadow: 0 0 0 2px #407aec;
     }
-
- 
 }
 
 .form-btn{
@@ -150,12 +148,19 @@ select {
 }
 
 textarea{
-    &.form-control{
-      @extend %form-control;
-      padding: em(20);
-      height: auto;
-      line-height: 1.334;
-    }
+  &.form-control{
+    @extend %form-control;
+    padding: 0.844em 1em;
+    height: auto;
+    line-height: 1.334;
+  }
+
+  &.disabled, &.readonly{
+    border-color: #D2D2D2 !important;
+    background-color: #F8F8F8 !important;
+    color: #666 !important;
+    pointer-events: none
+  }
 }
 
 select{
@@ -462,10 +467,51 @@ select{
 }
 
 .read-bx{
-	border: solid 1px $input-border;
-	padding: 0.641rem  rem(16);
-	border-radius: rem(6);
-	font-size: rem(17);
+	display: block;
+  width: 100%;
+  border: 1px solid #ECECEC;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: none !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  text-align: left;
+  padding: 0.74em 1em;
+  height: auto;
+  line-height: 1.334;
+
+  a{
+    color: inherit;
+    line-height: inherit;
+    font-size: inherit;
+  }
+
+  &.link, a.link{
+    text-decoration: underline;
+  }
+
+  &.textarea{
+    min-height: 127px;
+    max-height: 127px;
+    overflow-y: auto;
+  }
+
+  &:not(.textarea){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &.disabled, &.readonly{
+    border-color: #D2D2D2 !important;
+    background-color: #F8F8F8 !important;
+    color: #666 !important;
+  }
+
+	@include mdq-max(lg) {
+		padding: 0.646em 10px;
+	}
 }
 
 select {
