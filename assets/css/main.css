@@ -100,7 +100,7 @@
 .main-section.ms1 .swiper-visual .item:before {
   content: "";
   display: block;
-  padding-top: 49.73%;
+  padding-top: 48.3194%;
 }
 .main-section.ms1 .swiper-visual .item img {
   position: absolute;
@@ -289,8 +289,8 @@
   color: #222;
 }
 .main-section.ms1 .user-mypage .bottom {
-  margin-top: 20px;
-  padding-top: 1.25rem;
+  margin-top: 30px;
+  padding-top: 30px;
   border-top: 1px solid rgba(236, 236, 236, 0.81);
 }
 .main-section.ms1 .user-mypage .bottom ul {
@@ -340,6 +340,18 @@
 }
 .main-section.ms1 .user-mypage .bottom ul li a.text-yellow p, .main-section.ms1 .user-mypage .bottom ul li a.text-red p {
   color: #222 !important;
+}
+@media all and (max-width: 1400px) {
+  .main-section.ms1 .inner {
+    display: block;
+    height: auto;
+  }
+  .main-section.ms1 .user-wrp {
+    margin-top: 24px;
+  }
+  .main-section.ms1 .user-mypage .info {
+    margin-top: 24px;
+  }
 }
 .main-section.ms2 {
   background: #FAFAFA;
@@ -1645,13 +1657,6 @@
   }
 }
 @media all and (max-width: 1024px) {
-  .main-section.ms1 .inner {
-    height: 360px;
-  }
-  .main-section.ms1 .user-wrp {
-    -ms-flex-preferred-size: 22rem;
-        flex-basis: 22rem;
-  }
   .main-section.ms1 .user-login {
     padding: 30px;
   }
@@ -1798,7 +1803,7 @@
     max-width: 100%;
   }
   .main-section.ms1 .inner > *:not(:first-child) {
-    margin-top: 24px;
+    margin-top: 16px;
   }
   .main-section.ms1 .swiper-visual .swiper-navigation {
     bottom: 5%;
