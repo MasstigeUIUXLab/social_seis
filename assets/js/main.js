@@ -15,6 +15,7 @@ $(document).ready(function() {
 		},
 		pagination: {
 			el: ".ms1 .swiper-pagination",
+			clickable: true,
 		},
 		navigation: {
 			nextEl: ".ms1 .swiper-button-next",

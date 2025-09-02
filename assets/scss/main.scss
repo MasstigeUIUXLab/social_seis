@@ -379,7 +379,18 @@
 
                     &-mypage{
                         .info{
+                            display: flex;
+                            gap: 48px;
                             margin-top: 24px;
+
+                            li{
+                                gap: 16px;
+                            }
+                        }
+
+                        .bottom ul li{
+                            flex-basis: calc(100% / 6);
+                            max-width: calc(100% / 6);
                         }
                     }
                 }
@@ -1750,8 +1761,8 @@
                         }
 
                         .bottom {
-                            margin-top: 14px;
-                            padding-top: 16px;
+                            margin-top: 16px;
+                            padding-top: 20px;
 
                             ul {
                                 gap: 16px 0;
@@ -1763,7 +1774,7 @@
     
                                     a{
                                         gap: 4px;
-                                        padding: 6px 10px;
+                                        padding: 12px;
     
                                         strong{
                                             font-size: 24px;
@@ -1878,6 +1889,19 @@
                 height: 44px;
                 padding: 1em 1.25em;
                 font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 1023.99px) {
+            &.ms1 .user-mypage {
+                .info{
+                    display: block;
+                }
+                
+                .bottom ul li{
+                    flex-basis: 33.33%;
+                    max-width: 33.33%;
+                }
             }
         }
 

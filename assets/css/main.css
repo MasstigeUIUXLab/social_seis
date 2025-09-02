@@ -350,7 +350,19 @@
     margin-top: 24px;
   }
   .main-section.ms1 .user-mypage .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 48px;
     margin-top: 24px;
+  }
+  .main-section.ms1 .user-mypage .info li {
+    gap: 16px;
+  }
+  .main-section.ms1 .user-mypage .bottom ul li {
+    -ms-flex-preferred-size: 16.6666666667%;
+        flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
   }
 }
 .main-section.ms2 {
@@ -1685,8 +1697,8 @@
     font-size: 14px;
   }
   .main-section.ms1 .user-mypage .bottom {
-    margin-top: 14px;
-    padding-top: 16px;
+    margin-top: 16px;
+    padding-top: 20px;
   }
   .main-section.ms1 .user-mypage .bottom ul {
     gap: 16px 0;
@@ -1698,7 +1710,7 @@
   }
   .main-section.ms1 .user-mypage .bottom ul li a {
     gap: 4px;
-    padding: 6px 10px;
+    padding: 12px;
   }
   .main-section.ms1 .user-mypage .bottom ul li a strong {
     font-size: 24px;
@@ -1781,6 +1793,16 @@
     height: 44px;
     padding: 1em 1.25em;
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 1023.99px) {
+  .main-section.ms1 .user-mypage .info {
+    display: block;
+  }
+  .main-section.ms1 .user-mypage .bottom ul li {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    max-width: 33.33%;
   }
 }
 @media all and (max-width: 768px) {
