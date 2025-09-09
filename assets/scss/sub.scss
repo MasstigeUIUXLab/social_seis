@@ -10404,6 +10404,21 @@ tr.nodata{
                 margin-bottom:10px;
                 font-size:12px;
             }
+
+            &.column{
+                .item{
+                    width: 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+
+                    & > *:before{
+                        bottom: 100%;
+                        top: unset;
+                        right: 50%;
+                        transform: translate(50%, 38%) rotate(90deg);
+                    }
+                }
+            }
         }
     }
 
