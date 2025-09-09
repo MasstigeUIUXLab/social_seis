@@ -181,7 +181,7 @@
                     border-radius: rem(20);
                     overflow: hidden;
                     background: #FFF;
-                    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+                    box-shadow: -10px -10px 20px 0px rgba(0, 0, 0, 0.05), 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
 
                     & > *{
                         width: 100%;
