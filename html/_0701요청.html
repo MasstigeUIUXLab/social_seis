@@ -702,9 +702,82 @@
 																	<a href="#" download="" class="btn btn-xs btn-blue">파일다운</a>
 																</div>
 															</li>
+															<!-- [D] 250910 수정 file-input  -->
+															<li class="item">
+																<p class="file-name file-input"><span>사업계획서.pdf 사업계획서.pdf 사업계획서.pdf 사업계획서.pdf 사업계획서.pdf 사업계획서.pdf 사업계획서.pdf 사업계획서.pdf 사업계획서.pdf 사업계획서.pdf</span></p>
+																<div class="file-control">
+																	<label class="file-label">
+																		<input type="file" name="file1" onchange="onchangeUpload(event);">
+																		<span class="btn btn-xs btn-outline-blue file-label__btn">파일첨부</span>
+																	</label>
+																	<button type="button" class="btn btn-xs btn-outline-red">파일삭제</button>
+																	<button type="button" class="btn btn-xs btn-outline-blue">PDF 보기</button>
+																	<a href="#" download="" class="btn btn-xs btn-blue">파일다운</a>
+																</div>
+															</li>
 														</ul>
 													</div>
 												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="text-left">첨부서류</th>
+											<td id="dropzone_job">									
+												<div>
+													<div id="dropbox_aply" class="drop-box">
+														<div id="drop-area" class="drop-area">
+															<div class="txt">
+																<i class="icon-upload"></i>
+																<p>업로드할 파일을 선택하거나<br>이곳에 파일을 드래그 해주세요.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="btn-file fill-black mt-2 text-left">
+													<button type="button" id="dropzoneSearch_aply" class="btn btn-black fileUpload dz-clickable">
+														<i class="icon_plus"></i>
+														파일첨부하기
+													</button>
+												</div>
+												<div class="mt-4">
+													<ul class="file-list" style="display:none;">
+														<li class="item d-flex dz-image-preview" id="dropzoneViewTemplate_aply">
+															<input type="hidden" name="fileId" value="">
+															<input type="hidden" name="fileAttachSn" value="">
+															<div class="file-name"><span data-dz-name=""></span></div>
+															<div class="file-control">
+																<button type="button" class="btn btn-xs btn-blue fileDownload" onclick="fn_fileDownAply(this);">파일다운</button>
+																<button type="button" class="btn btn-xs btn-outline-red fileDelete" onclick="fn_fileDelete(this)">파일삭제</button>
+																<button type="button" class="btn btn-xs btn-outline-blue filePdfViewer" onclick="fn_pdfViewerClick(this);">PDF보기</button>
+															</div>
+														</li>
+													</ul>
+													<ul class="file-list" id="dropzoneView_aply"><li class="item d-flex dz-image-preview" id="dropzoneViewTemplate_aply">
+															<input type="hidden" name="fileId" value="R27uhYC5iFMwR08hJJ05YGbC5hVzjYXQjt+TxC5NCNgH6g2PLdJ/0M2jq2xQssFz.enc">
+															<input type="hidden" name="fileAttachSn" value="T33jZo/pTO7JqsImdL8Z3g==.enc">
+															<div class="file-name file-input"><span data-dz-name="">TEST (3).pdf</span></div>
+															<div class="file-control">
+																<button type="button" class="btn btn-xs btn-blue fileDownload" onclick="fn_fileDownAply(this);">파일다운</button>
+																<button type="button" class="btn btn-xs btn-outline-red fileDelete" onclick="fn_fileDelete(this)">파일삭제</button>
+																<button type="button" class="btn btn-xs btn-outline-blue filePdfViewer" onclick="fn_pdfViewerClick(this);">PDF보기</button>
+															</div>
+														</li><li class="item d-flex dz-image-preview" id="dropzoneViewTemplate_aply">
+															<input type="hidden" name="fileId" value="r95SLhw4epcWLdF/IormnHjNFdHFGz/pFd6F6D1Sx5cQtTRnWrCuNnkz42WXhBXv.enc">
+															<input type="hidden" name="fileAttachSn" value="T33jZo/pTO7JqsImdL8Z3g==.enc">
+															<div class="file-name"><span data-dz-name="">TEST.pdf</span></div>
+															<div class="file-control">
+																<button type="button" class="btn btn-xs btn-blue fileDownload" onclick="fn_fileDownAply(this);">파일다운</button>
+																<button type="button" class="btn btn-xs btn-outline-red fileDelete" onclick="fn_fileDelete(this)">파일삭제</button>
+																<button type="button" class="btn btn-xs btn-outline-blue filePdfViewer" onclick="fn_pdfViewerClick(this);">PDF보기</button>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="mt-2">
+													<ul class="file-list" id="dropzonePreview_job">
+														
+													</ul>
+												</div>						
 											</td>
 										</tr>
 									</tbody>

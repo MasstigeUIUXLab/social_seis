@@ -48765,11 +48765,7 @@ input[type=radio][readonly]:not([checked]) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.75rem 1.5rem;
-}
-.file-list .item:not(:first-child) {
-  padding-top: 8px;
-  border-top: 1px solid #E7E7E7;
+  gap: 0.75rem 1rem;
 }
 .file-list .item .file-name {
   -ms-flex-item-align: center;
@@ -48779,6 +48775,23 @@ input[type=radio][readonly]:not([checked]) {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.file-list .item .file-input {
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-size: 18px;
+  min-width: 0;
+  background-color: #FAFAFA;
+  border: 1px solid #EAEAEA;
+  color: #222;
+}
+.file-list .item .file-input.bg-white {
+  background-color: #fff;
 }
 .file-wrp {
   margin-top: 24px;
@@ -48844,6 +48857,13 @@ input[type=radio][readonly]:not([checked]) {
             align-items: flex-start;
     gap: 10px 8px;
   }
+  .file-list .item .file-input {
+    height: 26px !important;
+    line-height: 26px !important;
+    border-radius: 4px !important;
+    padding: 0 6px !important;
+    font-size: 12px !important;
+  }
   .file-list .item span {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -48873,46 +48893,75 @@ input[type=radio][readonly]:not([checked]) {
 
 /* 드래그 앤 드롭 형식 파일첨부 */
 .drop-box {
-  width: 800px;
-  height: 400px;
   position: relative;
-}
-.drop-box #drop-area {
-  border: 1px solid #ddd;
   width: 100%;
-  height: 200px;
-  padding: 25px;
+  height: 100px;
+  border: 1px dashed #cad6ea;
+  border-radius: 12px;
+}
+.drop-box .drop-area {
+  width: 100%;
+  height: 100%;
+  padding: 0;
   text-align: center;
-  font-family: Arial, sans-serif;
   margin: 0 auto;
   position: relative;
 }
-.drop-box #drop-area::before {
-  content: "Drag & Drop";
-  display: block;
-  font-size: 50px;
-  font-weight: 500;
-  color: #eee;
+.drop-box .drop-area .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
 }
-.drop-box #drop-area.highlight {
+.drop-box .drop-area .txt .icon-upload {
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px;
+  width: 60px;
+  height: 64px;
+  background: url(../images/sub/icon_upload.svg) no-repeat center/100% auto;
+}
+.drop-box .drop-area .txt p {
+  display: inline-block;
+  text-align: center;
+}
+.drop-box .drop-area.highlight {
   background-color: #e9f4ff;
 }
-.drop-box #fileSelect {
-  background-color: #000;
-  height: 50px;
-  line-height: 50px;
-  width: 100px;
-  color: #fff;
+.drop-box .drop-area > label {
   position: absolute;
+  top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  margin-bottom: -60px;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999em;
+}
+.drop-box.dropped {
+  border: 0;
+  border-radius: 0;
+  height: auto;
+}
+.drop-box.dropped .txt {
+  visibility: hidden;
+}
+.drop-box.dropped .file-list {
+  position: relative;
+  z-index: 1;
 }
 .drop-box .file-item {
   margin-bottom: 5px;
@@ -49019,6 +49068,20 @@ input[type=radio][readonly]:not([checked]) {
   text-indent: -9999px;
   border: 0;
   z-index: 1;
+}
+
+.icon_plus {
+  width: 16px;
+  height: 16px;
+  -webkit-filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(0%) hue-rotate(127deg) brightness(104%) contrast(104%);
+  filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(0%) hue-rotate(127deg) brightness(104%) contrast(104%);
+  background: url(../images/sub/icon_plus_b.svg) no-repeat center/100% auto;
+}
+@media all and (max-width: 768px) {
+  .icon_plus {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 table .col_w {

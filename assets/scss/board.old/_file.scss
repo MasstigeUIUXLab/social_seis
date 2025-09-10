@@ -181,12 +181,12 @@
     .item {
       display: flex;
       // justify-content: space-between;
-      gap: rem(12) rem(24);
+      gap: rem(12) rem(16);
 
-      &:not(:first-child){
-        padding-top: 8px;
-        border-top: 1px solid #E7E7E7;
-      }
+      // &:not(:first-child){
+      //   padding-top: 8px;
+      //   border-top: 1px solid #E7E7E7;
+      // }
 
       .file-name{
         align-self: center;
@@ -194,6 +194,23 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        flex: 1;
+      }
+
+      .file-input{
+        height: 40px;
+        line-height: 40px;
+        border-radius: 4px;
+        padding: 0 16px;
+        font-size: 18px;
+        min-width: 0;
+        background-color: #FAFAFA;
+        border: 1px solid #EAEAEA;
+        color: #222;
+
+        &.bg-white{
+          background-color: #fff;
+        }
       }
     }
   }
@@ -267,6 +284,14 @@
           // width: 100%;
         }
 
+        .file-input{
+          height: 26px !important;
+          line-height: 26px !important;
+          border-radius: 4px !important;
+          padding: 0 6px !important;
+          font-size: 12px !important;
+        }
+
         span {
           flex: 1;
         }
@@ -306,123 +331,164 @@
 
 /* 드래그 앤 드롭 형식 파일첨부 */
 .drop-box {
-  width: 800px;
-  height: 400px;
-  position: relative;
+	position: relative;
+	width: 100%;
+	height: 100px;
+  border: 1px dashed #cad6ea;
+  border-radius: 12px;
 
-  #drop-area {
-    border: 1px solid #ddd;
-    width: 100%;
-    height: 200px;
-    padding: 25px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    position: relative;
+	.drop-area {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
 
-    &::before {
-      content: "Drag & Drop";
-      display: block;
-      font-size: 50px;
-      font-weight: 500;
-      color: #eee;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-    }
-  }
+		.txt{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 12px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			height: 100%;
+			font-size: 14px;
 
-  #drop-area.highlight {
-    background-color: #e9f4ff;
-  }
+			.icon-upload{
+				flex-basis: 60px;
+				width: 60px;
+				height: 64px;
+				background: url(../images/sub/icon_upload.svg) no-repeat center / 100% auto;
+			}
 
-  #fileSelect {
-    background-color: #000;
-    height: 50px;
-    line-height: 50px;
-    width: 100px;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-bottom: -60px;
-  }
+			p{
+				display: inline-block;
+				text-align: center;
+			}
+		}
 
-  .file-item {
-    margin-bottom: 5px;
-  }
+		&.highlight {
+			background-color: #e9f4ff;
+		}
 
-  .file-item button {
-    margin-left: 10px;
-  }
+		& > label {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-indent: -9999em;
+		}
+	
+	}
+
+	&.dropped{
+		border: 0;
+		border-radius: 0;
+		height: auto;
+
+		.txt{
+			visibility: hidden;
+		}
+
+		.file-list{
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	.file-item {
+		margin-bottom: 5px;
+		
+		button {
+			margin-left: 10px;
+		}
+	}
 }
 
 /* 드래그 앤 드롭 개발 class 스타일 추 */
 .file-upload-box {
-  min-height: rem(150);
-  position: relative;
-  z-index: 1;
-  &::before {
-    content: "Drag & Drop";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    font-weight: 500;
-    color: #eee;
-    z-index: -1;
-    font-family: "arial";
-    width: 100%;
-    text-align: center;
-  }
+	min-height: rem(150);
+	position: relative;
+	z-index: 1;
+	&::before {
+		content: 'Drag & Drop';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 40px;
+		font-weight: 500;
+		color: #eee;
+		z-index: -1;
+		font-family: 'arial';
+		width: 100%;
+		text-align: center;
+	}
 }
 .img_preview {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  padding: 10px;
-  height: auto;
-  border: 1px solid #ddd;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	padding: 10px;
+	height: auto;
+	border: 1px solid #ddd;
 }
 
 .editor-image-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: rem(10);
+	display: flex;
+	flex-wrap: wrap;
+	padding: rem(10);
 }
 .editor-image-item {
-  position: relative;
-  flex: 1 0 20%;
-  max-width: 20%;
-  padding: 1% 0.5%;
+	position: relative;
+	flex: 1 0 20%;
+	max-width: 20%;
+	padding: 1% 0.5%;
 }
 .editor-image-thumb {
-  position: relative;
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  border: 1px solid #e5e5e5;
-  @include img-to-bg(percentage(110/110));
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #e5e5e5;
+	@include img-to-bg(percentage(110/110));
 }
 .editor-image-delete {
-  position: absolute;
-  top: rem(8);
-  right: rem(8);
-  transform: translate(50%, -50%);
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 100%;
-  background-color: #cecece;
-  background-image: url(/sadmin/images/image_delete.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1.5rem auto;
-  cursor: pointer;
-  overflow: hidden;
-  text-indent: -9999px;
-  border: 0;
-  z-index: 1;
+	position: absolute;
+	top: rem(8);
+	right: rem(8);
+	transform: translate(50%, -50%);
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100%;
+	background-color: #cecece;
+	background-image: url(/sadmin/images/image_delete.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1.5rem auto;
+	cursor: pointer;
+	overflow: hidden;
+	text-indent: -9999px;
+	border: 0;
+	z-index: 1;
+}
+
+.icon_plus{
+    width:16px;
+    height:16px;
+    -webkit-filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(0%) hue-rotate(127deg) brightness(104%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(0%) hue-rotate(127deg) brightness(104%) contrast(104%);
+    background:url(../images/sub/icon_plus_b.svg) no-repeat center / 100% auto;
+
+    @include mdq-max(md){
+        width: 12px;
+        height: 12px;
+    }
 }
