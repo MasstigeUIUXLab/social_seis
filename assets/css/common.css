@@ -43633,6 +43633,12 @@ body.is-scroll .header {
 .modal .modal-body {
   padding: 0 1.5rem;
 }
+.modal .modal-footer {
+  padding: 1rem 1.5rem 20px;
+}
+.modal .modal-footer .btn-wrp {
+  margin-top: 0;
+}
 .modal .btn-wrp {
   margin-top: 2.5rem;
 }
@@ -43663,6 +43669,18 @@ body.is-scroll .header {
 }
 .modal.modal-large .modal-foot .btn-wrp {
   margin: 0;
+}
+.modal.modal-notice .modal-content {
+  width: auto;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+.modal.modal-notice .modal-header {
+  padding-top: 1.5rem;
+}
+.modal.modal-notice .modal-header .close {
+  top: 16px;
+  right: 18px;
 }
 .modal .form-group + .form-group {
   margin-top: 24px;

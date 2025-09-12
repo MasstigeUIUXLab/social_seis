@@ -476,6 +476,14 @@
     padding: 0 rem(24);
   }
 
+  .modal-footer{
+    padding: 1rem rem(24) 20px;
+
+    .btn-wrp{
+      margin-top: 0;
+    }
+  }
+
   .btn-wrp {
     margin-top: rem(40);
     
@@ -515,6 +523,23 @@
       padding-top: rem(40);
       .btn-wrp{
         margin: 0;
+      }
+    }
+  }
+
+  &.modal-notice{
+    .modal-content{
+      width: auto;
+      margin: 0 auto;
+      padding-bottom: 0;
+    }
+  
+    .modal-header{
+      padding-top: 1.5rem;
+
+      .close {
+        top: 16px;
+        right: 18px;
       }
     }
   }

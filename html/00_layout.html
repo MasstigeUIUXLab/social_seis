@@ -758,14 +758,24 @@
 						<ul class="swiper-wrapper">
 							<li class="swiper-slide">
 								<a href="#" class="item">
-									<img src="../assets/images/main/visual1.png" alt="" class="d-none d-md-block">
-									<img src="../assets/images/main/visual1_m.png" alt="" class="d-md-none">
+									<!-- PC/MO 이미지 따로 쓸 경우 -->
+									<!-- 
+										<img src="../assets/images/main/visual1.png" alt="" class="d-none d-md-block">
+										<img src="../assets/images/main/visual1_m.png" alt="" class="d-md-none">
+									-->
+									<!-- // -->
+									<img src="../assets/images/main/visual1.png" alt="">
 								</a>
 							</li>
 							<li class="swiper-slide">
 								<a href="#" class="item">
-									<img src="../assets/images/main/visual2.png" alt="" class="d-none d-md-block">
-									<img src="../assets/images/main/visual2_m.png" alt="" class="d-md-none">
+									<!-- PC/MO 이미지 따로 쓸 경우 -->
+									<!-- 
+										<img src="../assets/images/main/visual2.png" alt="" class="d-none d-md-block">
+										<img src="../assets/images/main/visual2_m.png" alt="" class="d-md-none"> 
+									-->
+									<!-- // -->
+									<img src="../assets/images/main/visual2.png" alt="">
 								</a>
 							</li>
 						</ul>
@@ -1657,5 +1667,36 @@
 	</footer>
 	<!-- // footer -->
 </div>
+
+<!-- 공지팝업 (.modal-notice 클래스 ++) -->
+<div id="modalNotice" class="modal fade modal-notice" tabindex="-1" aria-modal="true" role="dialog" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="tit sr-only">공지팝업</h3>
+				<button type="button" class="close" data-dismiss="modal"><i class="xi-close"></i><span class="sr-only">닫기</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="popup-cont">
+					<p>
+						<a href="#" title="상세내용 보러가기"><img src="../assets/images/popup.png" alt="사회적기업 포털이 새롭게 단장했습니다. (예비)사회적기업 인증(지정) 신청안내 1. 로그인 2. 사업신청 3. 사회적기업 인증·지정. 포털 메뉴 인증·지정에서 공고 클릭 후 신청하기 버튼을 눌러 작성하세요. 작성 중인 신청서도 이어서 작성하실 수 있습니다. 재정지원사업 지원금 신청안내 1. 로그인 2.마이페이지 3.재정지원. 포털 메뉴 마이페이지> 재정지원 > 해당 사업으로 이동하여 신청서를 작성하세요. 시스템 관련 문의사항은 1.로그인 2.마이페이지 3.시스템 이용 문의 참고 바랍니다. (콜센터) 1661-4006/ (정보화기획팀) 031-697-7870~4. 상세내용 보러가기"></a>
+					</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="btn-wrp justify-content-center">
+					<a href="#" class="btn btn-xs btn-outline-black" data-dismiss="modal">오늘하루 그만보기</a>
+					<a href="#" class="btn btn-xs btn-outline-black" data-dismiss="modal">닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$('#modalNotice').modal();
+</script>
+<!-- // 공지팝업 -->
+
 </body>
 </html>
